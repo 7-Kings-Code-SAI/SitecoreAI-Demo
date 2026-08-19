@@ -1,0 +1,210 @@
+---
+description: Next.js specific patterns and best practices for XM Cloud starter development
+alwaysApply: false
+globs:
+  - "next.config.*"
+  - "src/app/**"
+  - "src/proxy.ts"
+  - "**/proxy.ts"
+  - "**/*page*.tsx"
+  - "**/*layout*.tsx"
+---
+
+# Next.js Development Patterns
+
+## Configuration
+
+Next.js Config:
+- Configure i18n for multi-language XM Cloud sites
+- Set up proper image domains for XM Cloud media
+- Implement rewrites for XM Cloud API routes
+- Configure webpack for SCSS and other assets
+- Set up proper build optimization
+
+```javascript
+// next.config.js pattern
+const nextConfig = {
+  i18n: {
+    locales: ['en', 'en-CA'],
+    defaultLocale: process.env.DEFAULT_LANGUAGE || 'en',
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'edge*.**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'xmc-*.**',
+      },
+    ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/robots.txt',
+        destination: '/api/robots',
+      },
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap',
+      },
+    ];
+  },
+};
+```
+
+Environment Variables:
+- Use NEXT_PUBLIC_ prefix for client-side variables
+- Validate required environment variables at build time
+- Use different .env files for different environments
+- Never commit sensitive environment variables
+
+## App Router Pages and Routing
+
+Catch-All Routes:
+- Use `src/app/[site]/[locale]/[[...path]]/page.tsx` for XM Cloud page routing
+- Fetch layout data in the Server Component with `sitecore-client`
+- Call `notFound()` when the route does not exist
+- Use `draftMode()` and editing search params for preview and Pages Editor
+
+```typescript
+// page.tsx pattern (App Router)
+export default async function Page({ params, searchParams }: PageProps) {
+  const { site, locale, path } = await params;
+  const draft = await draftMode();
+
+  let page;
+  if (draft.isEnabled) {
+    const editingParams = await searchParams;
+    page = await client.getPreview(editingParams);
+  } else {
+    page = await client.getPage(path ?? [], { site, locale });
+  }
+
+  if (!page) {
+    notFound();
+  }
+
+  return (/* Layout + Providers */);
+}
+```
+
+Pages Router:
+- Only `examples/basic-nextjs-pages-router` uses `src/pages/[[...path]].tsx` with `getStaticProps` / `getServerSideProps`
+- Do not add Pages Router patterns to App Router starters
+
+## API Routes
+
+XM Cloud Integration:
+- Create API routes for XM Cloud services
+- Handle authentication and authorization properly
+- Implement proper error handling and logging
+- Cache responses when appropriate
+
+```typescript
+// src/app/api/robots/route.ts pattern
+import { createRobotsRouteHandler } from '@sitecore-content-sdk/nextjs/route-handler';
+
+const { GET: sitecoreGET } = createRobotsRouteHandler({ client, sites });
+
+export async function GET(request: NextRequest) {
+  return sitecoreGET(request);
+}
+```
+
+## Proxy (request pipeline)
+
+App Router starters use `src/proxy.ts` (not `src/middleware.ts`) with Content SDK proxy classes:
+- `LocaleProxy` - locale detection and routing
+- `AppRouterMultisiteProxy` - site resolution
+- `RedirectsProxy` - Sitecore redirect rules
+- `PersonalizeProxy` - personalization
+
+```typescript
+// src/proxy.ts pattern
+import { defineProxy, LocaleProxy, AppRouterMultisiteProxy } from '@sitecore-content-sdk/nextjs/proxy';
+
+export default function proxy(req: NextRequest) {
+  return defineProxy(locale, multisite, redirects, personalize).exec(req);
+}
+
+export const config = { matcher: [/* exclude api, _next, static assets */] };
+```
+
+Pages Router starter (`basic-nextjs-pages-router`) uses `src/proxy.ts` with the Pages Router multisite proxy variant.
+
+## Performance Optimization
+
+Image Optimization:
+- Always use NextImage component from ContentSDK for XM Cloud media as it supports inline editing in editor mode and uses Image component from next internally
+- Configure proper image domains and sizes
+- Implement lazy loading for below-fold images
+- Use proper alt text from XM Cloud fields
+
+Code Splitting:
+- Use dynamic imports for large components
+- Implement route-based code splitting
+- Lazy load non-critical functionality
+- Optimize bundle size with proper imports
+
+Caching:
+- Implement proper caching headers for XM Cloud content
+- Use ISR for frequently updated content
+- Cache API responses appropriately
+- Consider CDN caching strategies
+
+## Development Patterns
+
+TypeScript Integration:
+- Use proper TypeScript configuration
+- Define types for XM Cloud data structures
+- Implement proper type guards for runtime validation
+- Use strict mode for better type safety
+
+Error Handling:
+- Implement proper error boundaries
+- Handle XM Cloud API errors gracefully
+- Provide meaningful error messages to users
+- Log errors appropriately for debugging
+
+Testing:
+- Write tests for page components and API routes
+- Mock XM Cloud services in tests
+- Test error scenarios and edge cases
+- Use proper test data that matches XM Cloud structures
+
+## App Router
+
+Server Components:
+- Use Server Components for XM Cloud data fetching
+- Implement proper loading and error handling
+- Handle streaming for better user experience
+- Use Client Components only when necessary
+
+Layout Files:
+- Create proper layout hierarchy
+- Handle XM Cloud navigation and footer
+- Implement proper SEO meta tags
+- Support multi-language layouts
+
+## Deployment
+
+Build Optimization:
+- Optimize for XM Cloud deployment environment
+- Handle environment-specific configurations
+- Implement proper health checks
+- Monitor build performance and size
+
+XM Cloud Integration:
+- Configure proper rendering host settings
+- Handle XM Cloud deployment pipelines
+- Implement proper monitoring and logging
+- Support blue-green deployment patterns
+
+Referenced:
+@examples/kit-nextjs-article-starter/next.config.js
+@examples/basic-nextjs/src/app/[site]/[locale]/[[...path]]/page.tsx
+@examples/basic-nextjs/src/proxy.ts
+@examples/basic-nextjs/src/app/api/robots/route.ts
