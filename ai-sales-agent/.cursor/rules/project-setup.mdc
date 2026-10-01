@@ -1,0 +1,13 @@
+---
+description: Getting started with your Sitecore Content SDK Next.js project
+alwaysApply: true
+globs: []
+---
+
+# Sitecore Content SDK — Pages Router
+
+Next.js Pages Router + TypeScript. **Commands:** `npm install`, `npm run dev`, `npm run build`, `npm run lint`, `npm run type-check`. Copy `.env.example` → `.env.local` (never commit secrets).
+
+**Structure:** `src/pages/[[...path]].tsx`, `src/pages/api/`, `src/components/`, `src/lib/sitecore-client.ts`, `src/proxy.ts`, `.sitecore/`, `sitecore.config.ts`, `next.config.js`.
+
+**Detail:** Guardrails in [`AGENTS.md`](../../AGENTS.md). Depth: [`.agents/docs/`](../../.agents/docs/) (`extractPath`, `context.locale`, proxy order). Skills: [`Skills.md`](../../Skills.md).

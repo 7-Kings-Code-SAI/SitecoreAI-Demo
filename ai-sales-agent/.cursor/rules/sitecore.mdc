@@ -1,0 +1,21 @@
+---
+description: Sitecore development patterns for your Pages Router project
+alwaysApply: false
+globs:
+  - 'src/pages/**'
+  - 'src/components/**'
+  - 'src/lib/**'
+  - 'sitecore.config.ts'
+  - '**/*sitecore*'
+---
+
+# Sitecore (Pages Router)
+
+- **Data:** `getStaticProps` / `getServerSideProps` in `src/pages/[[...path]].tsx`; `extractPath(context)` + `context.locale`
+- **Client:** single `SitecoreClient` in `src/lib/sitecore-client.ts`
+- **Preview:** `context.preview` + `context.previewData` → `getPreview` / `getDesignLibraryData`
+- **Fields:** use `<Text>`, `<RichText>`, `<Image>`, `<Link>`; validate before render
+- **Map:** `.sitecore/component-map.ts` auto-generated from `src/components/`
+- **Config:** env-only in `sitecore.config.ts`
+
+Depth: [`.agents/docs/`](../../.agents/docs/) · skill: [content-sdk-graphql-data-fetching](../../.agents/skills/content-sdk-graphql-data-fetching/SKILL.md)

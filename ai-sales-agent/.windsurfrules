@@ -1,0 +1,11 @@
+# Sitecore Content SDK — Next.js (Pages Router)
+
+**Primary:** [`AGENTS.md`](AGENTS.md) — commands, structure, best practices, guardrails.
+
+**Layering:** [`CLAUDE.md`](CLAUDE.md) — start with `AGENTS.md`; open one [`.agents/docs/`](.agents/docs/) layer, [`.agents/skills/`](.agents/skills/) skill, or [`.cursor/rules/`](.cursor/rules/) file when needed.
+
+**Capabilities:** [`Skills.md`](Skills.md) → one folder under `.agents/skills/` per task.
+
+**Commands:** `npm install`, `npm run dev`, `npm run build`, `npm run lint`, `npm run type-check`. Copy `.env.example` → `.env.local`; never commit secrets.
+
+**Docs:** [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html)

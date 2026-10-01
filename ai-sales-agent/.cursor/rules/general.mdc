@@ -1,0 +1,16 @@
+---
+description: Core coding principles for your Sitecore project
+alwaysApply: false
+globs:
+  - 'src/**'
+---
+
+# General principles
+
+Follow [`AGENTS.md`](../../AGENTS.md) guardrails. Prefer small, focused changes; match existing patterns in `src/`.
+
+- DRY, SOLID, explicit naming
+- Validate inputs at boundaries; never log secrets
+- Run `npm run build` after substantive edits
+
+More: [`.agents/docs/`](../../.agents/docs/) · [`.cursor/rules/javascript.mdc`](./javascript.mdc) · [`.cursor/rules/sitecore.mdc`](./sitecore.mdc)
