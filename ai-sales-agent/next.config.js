@@ -73,6 +73,11 @@ const nextConfig = {
         source: '/feaas-render',
         destination: '/api/editing/feaas/render',
       },
+      // proxy aisaleagent videos to bypass NotSameSite CORS blocks
+      {
+        source: '/proxy-media/aisaleagent/:path*',
+        destination: 'https://aisaleagent.com/:path*',
+      },
     ];
   },
 

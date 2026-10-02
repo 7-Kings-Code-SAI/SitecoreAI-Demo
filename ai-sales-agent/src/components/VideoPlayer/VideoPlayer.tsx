@@ -1,6 +1,6 @@
 "use client";
 
-import { JSX, useMemo, useRef, useState, useCallback } from "react";
+import { JSX, useMemo, useRef, useState, useCallback, useEffect } from "react";
 import { Field, TextField, LinkField } from "@sitecore-content-sdk/nextjs";
 import { ComponentProps } from "lib/component-props";
 
@@ -65,6 +65,14 @@ const extractStringValue = (field: any): string => {
     return field.value.href.trim();
   }
 
+  if (typeof field?.value?.url === "string") {
+    return field.value.url.trim();
+  }
+
+  if (typeof field?.value?.src === "string") {
+    return field.value.src.trim();
+  }
+
   if (typeof field?.href === "string") {
     return field.href.trim();
   }
@@ -73,12 +81,24 @@ const extractStringValue = (field: any): string => {
     return field.url.trim();
   }
 
+  if (typeof field?.src === "string") {
+    return field.src.trim();
+  }
+
   if (typeof field?.jsonValue?.value === "string") {
     return field.jsonValue.value.trim();
   }
 
   if (typeof field?.jsonValue?.value?.href === "string") {
     return field.jsonValue.value.href.trim();
+  }
+
+  if (typeof field?.jsonValue?.value?.url === "string") {
+    return field.jsonValue.value.url.trim();
+  }
+
+  if (typeof field?.jsonValue?.value?.src === "string") {
+    return field.jsonValue.value.src.trim();
   }
 
   return "";
@@ -146,10 +166,15 @@ export const VideoPlayer = (props: VideoPlayerProps): JSX.Element => {
 
   const fields = dataSource?.fields || dataSource;
 
-  const rawVideoUrl = resolveField(fields, "Video URL");
-  const rawShadeColor = resolveField(fields, "Shade Color");
+  const rawVideoUrl = resolveField(fields, "Video URL", "VideoUrl", "videoUrl", "Video", "video");
+  const rawShadeColor = resolveField(fields, "Shade Color", "ShadeColor", "shadeColor");
 
-  const videoUrl = extractStringValue(rawVideoUrl);
+  let videoUrl = extractStringValue(rawVideoUrl);
+
+  // Hack: Proxy video through middleware to bypass ERR_BLOCKED_BY_RESPONSE.NotSameSite
+  if (videoUrl.includes('aisaleagent.com')) {
+    videoUrl = videoUrl.replace('https://aisaleagent.com/', '/proxy-media/aisaleagent/');
+  }
 
   const shadeColor =
     extractStringValue(rawShadeColor) || "rgba(15, 23, 42, 0.4)";
@@ -174,6 +199,18 @@ export const VideoPlayer = (props: VideoPlayerProps): JSX.Element => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMuted, setIsMuted] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
+
+  // Force load and play the video when URL changes
+  useEffect(() => {
+    if (videoRef.current && isDirectFile && videoUrl) {
+      videoRef.current.muted = isMuted;
+      videoRef.current.load();
+      videoRef.current.play().catch((err) => {
+        console.warn("VideoPlayer: autoPlay failed", err);
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [videoUrl, isDirectFile]);
 
   const toggleMute = useCallback(() => {
     if (videoRef.current) {
@@ -263,22 +300,31 @@ export const VideoPlayer = (props: VideoPlayerProps): JSX.Element => {
 
               /* MP4 / WebM / OGG / MOV */
               <video
+                key={videoUrl}
                 ref={videoRef}
-                src={videoUrl}
                 autoPlay
                 loop
-                muted
+                muted={isMuted}
                 playsInline
                 className="absolute inset-0 h-full w-full object-cover"
-              />
+              >
+                <source src={videoUrl} type={videoUrl.endsWith('.webm') ? 'video/webm' : videoUrl.endsWith('.ogg') ? 'video/ogg' : 'video/mp4'} />
+                Your browser does not support the video tag.
+              </video>
 
             ) : (
 
               /* No valid video */
-              <div className="absolute inset-0 flex items-center justify-center bg-slate-950">
-                <p className="text-slate-400">
-                  No valid video source configured.
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-950 p-4 text-xs overflow-auto">
+                <p className="text-red-400 font-bold mb-2">
+                  DEBUG: No valid video source configured.
                 </p>
+                <div className="text-left text-slate-300 space-y-1 w-full max-w-lg">
+                  <p><strong>videoUrl:</strong> {JSON.stringify(videoUrl)}</p>
+                  <p><strong>rawVideoUrl:</strong> {JSON.stringify(rawVideoUrl)}</p>
+                  <p><strong>fields object keys:</strong> {JSON.stringify(fields ? Object.keys(fields) : null)}</p>
+                  <p><strong>raw object:</strong> {JSON.stringify(raw)}</p>
+                </div>
               </div>
             )}
 
