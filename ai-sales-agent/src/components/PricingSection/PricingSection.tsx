@@ -117,8 +117,20 @@ export const Default = (props: PricingSectionProps) => {
             const metrics = parseMetrics(card.fields['Metric Features']?.value);
             const isPopular = isEditing || !!card.fields['Popular Badge']?.value;
 
+            // Find the category this card belongs to
+            const linkedCategoryId = card.fields['Linked Category']?.id;
+            const parentCategory = categories.find((cat: PricingCategory) => cat.id === linkedCategoryId);
+            const parentCategoryName = parentCategory?.fields['Category Name']?.value || 'Unlinked';
+
             return (
-              <div key={card.id} className={`relative flex flex-col bg-white rounded-[20px] p-5 md:p-6 ${isPopular ? 'border-2 border-[#30A3FF]/20 shadow-xl shadow-[#30A3FF]/5' : 'border border-gray-200 shadow-sm'} ${isEditing ? 'w-[320px] shrink-0' : ''}`}>
+              <div key={card.id} className={`relative flex flex-col bg-white rounded-[20px] p-5 md:p-6 ${isPopular ? 'border-2 border-[#30A3FF]/20 shadow-xl shadow-[#30A3FF]/5' : 'border border-gray-200 shadow-sm'} ${isEditing ? 'w-[320px] shrink-0 pt-8' : ''}`}>
+                
+                {isEditing && (
+                  <div className="absolute top-0 left-0 w-full bg-purple-100 text-purple-800 text-[10px] font-bold px-2 py-1 rounded-t-[20px] border-b border-purple-200 uppercase tracking-wider text-center z-10 shadow-sm">
+                    Category: {parentCategoryName}
+                  </div>
+                )}
+
                 <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
                   <div className="inline-flex items-center gap-1.5 border border-gray-200 rounded-full px-2.5 py-0.5 w-max">
                     <JssImage field={card.fields['Tier Icon']} className="w-3.5 h-3.5" />
