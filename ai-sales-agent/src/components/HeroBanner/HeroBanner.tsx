@@ -85,6 +85,15 @@ const toTextField = (field: any): { value?: string; metadata?: any } | undefined
 };
 
 /**
+ * Determines whether a field contains rich HTML content (e.g. CKEditor output).
+ */
+const isRichText = (field: any): boolean => {
+  if (!field) return false;
+  const val = field?.value || field?.jsonValue?.value || (typeof field === 'string' ? field : '');
+  return typeof val === 'string' && /<[a-z][\s\S]*>/i.test(val);
+};
+
+/**
  * Normalize link fields for <Link> component.
  */
 const toLinkField = (field: any): LinkField | undefined => {
@@ -261,8 +270,8 @@ export const DefaultHeroBanner = (props: HeroBannerProps): JSX.Element => {
 
           {/* 2. Title */}
           {(hasTitle || isEditing) && (
-            <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-[52px] sm:leading-tight lg:leading-[1.18]">
-              {titleField && <Text field={titleField} />}
+            <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-[52px] sm:leading-tight lg:leading-[1.18] [&_.ck-content]:inline [&_p]:inline [&_p]:m-0">
+              {titleField && (isRichText(titleField) ? <RichText field={titleField} /> : <Text field={titleField} />)}
             </h1>
           )}
 
@@ -423,41 +432,6 @@ export const FullPage = (props: HeroBannerProps): JSX.Element => {
     return null;
   };
 
-  // Render title with the first three words styled with #30A3FF (FullPage variant only, zero fallback text)
-  const renderFullPageTitle = () => {
-    if (isEditing && titleField?.metadata) {
-      return <Text field={titleField} />;
-    }
-
-    const rawTitle = titleField?.value;
-    if (rawTitle && typeof rawTitle === 'string' && rawTitle.trim().length > 0) {
-      const words = rawTitle.trim().split(/\s+/);
-      if (words.length <= 3) {
-        return (
-          <span className="text-[#30A3FF]" style={{ color: '#30A3FF' }}>
-            {rawTitle}
-          </span>
-        );
-      }
-      const firstThree = words.slice(0, 3).join(' ');
-      const remaining = words.slice(3).join(' ');
-      return (
-        <>
-          <span className="text-[#30A3FF]" style={{ color: '#30A3FF' }}>
-            {firstThree}
-          </span>{' '}
-          <span>{remaining}</span>
-        </>
-      );
-    }
-
-    if (titleField) {
-      return <Text field={titleField} />;
-    }
-
-    return null;
-  };
-
   return (
     <section
       className="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24"
@@ -491,8 +465,8 @@ export const FullPage = (props: HeroBannerProps): JSX.Element => {
 
           {/* 2. Title */}
           {(hasTitle || isEditing) && (
-            <h1 className="max-w-[650px] mx-auto text-[20px] lg:text-[32px] font-[600] text-slate-900 sm:text-5xl  sm:leading-tight lg:leading-[1.18]">
-              {renderFullPageTitle()}
+            <h1 className="max-w-[650px] mx-auto text-[20px] lg:text-[32px] font-[600] text-slate-900 sm:text-5xl sm:leading-tight lg:leading-[1.18] [&_.ck-content]:inline [&_p]:inline [&_p]:m-0">
+              {titleField && (isRichText(titleField) ? <RichText field={titleField} /> : <Text field={titleField} />)}
             </h1>
           )}
 
