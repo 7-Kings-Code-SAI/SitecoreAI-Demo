@@ -1,0 +1,35 @@
+﻿---
+ID: "a4fd0862-d1df-44cb-9ad2-c6a24bc20756"
+Parent: "6e5f1931-e19e-4e75-b19a-59a9332cbe4e"
+Template: "e31ad73c-b7f4-492c-b812-8a18806a60f1"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Logos/CRM Platforms/insightly"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T200137Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "83e06807-2b6b-4793-8f81-edd26d9fdb69"
+      Hint: Logo Image
+      Value: |
+        <image mediaid="{A430DF5D-BC99-41E6-B8B2-70BDAFEF0CA0}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "09f3dc06-4258-4278-9d84-23d017bd2543"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260917T202531Z

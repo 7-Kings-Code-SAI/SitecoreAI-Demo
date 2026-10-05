@@ -1,0 +1,39 @@
+﻿---
+ID: "e377cd9c-3c4c-4a56-9b92-9d07e3b1d9f5"
+Parent: "ff7e9bfa-7923-468a-969c-5aa2a6600892"
+Template: "ccd221b8-0efc-4c02-8e61-e72dc129c54e"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Global Footer/Global Footer/Social Links/Instagram"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "01a76128-67b7-40fe-813b-8db370c2b5b9"
+      Hint: Link
+      Value: |
+        <link linktype="external" url="https://www.instagram.com/aisaleagent/" anchor="" target="_blank" />
+    - ID: "19a0183b-2c40-4546-ac3c-ee08b9d7ccae"
+      Hint: Icon
+      Value: |
+        <image mediaid="{B4CF36BA-6428-4CE8-B583-EB47C4645ACB}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T154115Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9403434c-fe67-4b68-ada7-a00e7f4209ea"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260917T160333Z

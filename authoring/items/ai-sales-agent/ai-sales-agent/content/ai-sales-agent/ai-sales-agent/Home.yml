@@ -1,0 +1,308 @@
+﻿---
+ID: "9c887615-27db-41a4-b229-2e223a024947"
+Parent: "876e455d-0aeb-495f-acda-2c4340fe081b"
+Template: "1454a0f3-e9a4-489b-9778-db6b5ba5bd6d"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{04075981-8BA0-4B8E-AF65-9DACD50DD9CD}" />
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}"
+              p:before="*"
+              s:ds="local:/Data/Hero banner"
+              s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
+              s:par="CSSStyles&amp;FieldNames=%7B1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7D"
+              s:ph="headless-main" />
+            <r
+              uid="{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}"
+              p:after="r[@uid='{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}']"
+              s:ds="local:/Data/Video player"
+              s:id="{09F215E8-7CED-4A70-9588-041F496EDA4A}"
+              s:par="CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{949D458F-B626-4246-8442-82E9A238A180}"
+              p:after="r[@uid='{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}']"
+              s:ds="local:/Data/Integration Logos"
+              s:id="{EFBF672E-AC17-4ED7-A0DB-69CE83C6BA97}"
+              s:par="GridParameters&amp;FieldNames=%7B70B450C0-6963-44B5-8090-0D4D364627A6%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}"
+              p:after="r[@uid='{949D458F-B626-4246-8442-82E9A238A180}']"
+              s:ds="local:/Data/Industry Grid"
+              s:id="{76B61C82-F557-4B54-8E2D-AF782120066D}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}"
+              p:after="r[@uid='{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}']"
+              s:ds="local:/Data/new Integration Logos"
+              s:id="{EFBF672E-AC17-4ED7-A0DB-69CE83C6BA97}"
+              s:par="GridParameters&amp;FieldNames=%7BC212B759-D864-4EE2-A476-D81FA98F8680%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}"
+              p:after="r[@uid='{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}']"
+              s:ds="local:/Data/ROI Calculate"
+              s:id="{65B8671F-F7AD-4E92-AD2A-5817FB73DB45}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{212BC737-DD42-4137-B7A2-75167977F60B}"
+              p:after="r[@uid='{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}']"
+              s:ds="local:/Data/Clients Testimonials"
+              s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}"
+              p:after="r[@uid='{212BC737-DD42-4137-B7A2-75167977F60B}']"
+              s:ds="local:/Data/Pricing section"
+              s:id="{F972B3BA-9FA8-4328-AE21-263A7588A975}"
+              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}"
+              p:after="r[@uid='{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}']"
+              s:ds="local:/Data/Testing logo"
+              s:id="{EFBF672E-AC17-4ED7-A0DB-69CE83C6BA97}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B70B450C0-6963-44B5-8090-0D4D364627A6%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{94ABD86B-1D79-4732-B16D-FA0035C863A1}"
+              p:after="r[@uid='{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}']"
+              s:ds="local:/Data/FAQs"
+              s:id="{B136A9BA-9C9E-48C4-BA27-CD5444568674}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{85AD90E4-E438-4C52-BA6D-D58A797ED002}"
+              p:after="r[@uid='{94ABD86B-1D79-4732-B16D-FA0035C863A1}']"
+              s:ds="local:/Data/Wysiwyg"
+              s:id="{F1FFB9C4-74A9-418D-8967-708BD237592C}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{203F07EB-AE36-4D15-97A0-6587444F8501}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/testimon"
+              s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+          </d>
+        </r>
+    - ID: "1ecab949-14f1-40bc-b043-ee7e941cb6bc"
+      Hint: Meta Title
+      Value: Scale Your Sales Team | Not Your Payroll | AI Sale Agent
+    - ID: "2569d76b-a34e-48bd-9fb5-505f5f170c51"
+      Hint: baseMetadataDescription
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T145837Z
+    - ID: "385ca9b8-d5ff-46c5-ae57-51167e7ea9b5"
+      Hint: OG Image
+      Value: |
+        <image mediaid="c2776e0c-dafb-46d5-96b8-a6f6df8dc928" />
+    - ID: "42054f12-b7ea-41c8-8a54-8610886b839f"
+      Hint: OG Description
+      Value: "Grow revenue without growing your headcount. AI Sale Agent automates outreach, follow-ups, and lead qualification, so your sales team can scale faster."
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "ai-sales-agent"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "56a9ea26-c14d-461c-bcf9-773ace02d842"
+      Hint: Meta Description
+      Value: "Grow revenue without growing your headcount. AI Sale Agent automates outreach, follow-ups, and lead qualification, so your sales team can scale faster."
+    - ID: "574ea69e-011d-499d-8356-a58c6d9ffe39"
+      Hint: Meta Keywords
+      Value: "AI Sale Agent,scale sales team,automated outreach,lead qualification,AI sales follow-ups"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "87d3b52f-a73c-4b4b-bf19-30920981bfbe"
+      Hint: OG Title
+      Value: Scale Your Sales Team | Not Your Payroll | AI Sale Agent
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "50ca9c69-56cd-4a02-a155-6eb913045abc"
+    - ID: "a1b03767-ad31-45d6-8edb-1940f1ab4d0d"
+      Hint: baseMetadataTitle
+      Value: 
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cb3deb57-fa16-43de-a76b-9704e6620c24"
+      Hint: baseMetadataKeywords
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T191152Z
+    - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
+      Hint: Title
+      Value: Contact AI Sales Agent | Talk to Our AI Sales Experts
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T193416Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dde99d1a-b7c6-4e43-9d8f-fc4e26cbb35c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260922T155301Z
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}"
+              p:before="*"
+              s:ds="local:/Data/Hero banner"
+              s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
+              s:par="CSSStyles&amp;FieldNames=%7BEEB6C1D0-DA18-4D76-A87C-6CA2E1021060%7D"
+              s:ph="headless-main" />
+            <r
+              uid="{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}"
+              p:after="r[@uid='{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}']"
+              s:ds="local:/Data/Video player"
+              s:id="{09F215E8-7CED-4A70-9588-041F496EDA4A}"
+              s:par="CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{949D458F-B626-4246-8442-82E9A238A180}"
+              p:after="r[@uid='{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}']"
+              s:ds="local:/Data/Integration Logos"
+              s:id="{EFBF672E-AC17-4ED7-A0DB-69CE83C6BA97}"
+              s:par="GridParameters&amp;FieldNames=%7B70B450C0-6963-44B5-8090-0D4D364627A6%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}"
+              p:after="r[@uid='{949D458F-B626-4246-8442-82E9A238A180}']"
+              s:ds="local:/Data/Industry Grid"
+              s:id="{76B61C82-F557-4B54-8E2D-AF782120066D}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}"
+              p:after="r[@uid='{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}']"
+              s:ds="local:/Data/new Integration Logos"
+              s:id="{EFBF672E-AC17-4ED7-A0DB-69CE83C6BA97}"
+              s:par="GridParameters&amp;FieldNames=%7BC212B759-D864-4EE2-A476-D81FA98F8680%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}"
+              p:after="r[@uid='{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}']"
+              s:ds="local:/Data/ROI Calculate"
+              s:id="{65B8671F-F7AD-4E92-AD2A-5817FB73DB45}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{212BC737-DD42-4137-B7A2-75167977F60B}"
+              p:after="r[@uid='{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}']"
+              s:ds="local:/Data/Clients Testimonials"
+              s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}"
+              p:after="r[@uid='{212BC737-DD42-4137-B7A2-75167977F60B}']"
+              s:ds="local:/Data/Pricing section"
+              s:id="{F972B3BA-9FA8-4328-AE21-263A7588A975}"
+              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{94ABD86B-1D79-4732-B16D-FA0035C863A1}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/FAQs"
+              s:id="{B136A9BA-9C9E-48C4-BA27-CD5444568674}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T145837Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "ai-försäljningsagent"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1d56bffa-2270-4430-8acc-afd7465c638a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20261002T181003Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T131056Z
+    - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
+      Hint: Title
+      Value: "ai-försäljningsagent"

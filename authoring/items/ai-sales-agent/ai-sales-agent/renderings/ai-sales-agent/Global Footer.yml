@@ -1,0 +1,84 @@
+﻿---
+ID: "9beda9c8-3ead-4ec2-b69b-5590a0d0b4fa"
+Parent: "310e17cf-ce3c-424b-b9a9-83aa310f5125"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/ai-sales-agent/Global Footer"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: Global Footer
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query GetGlobalFooterData($language: String!) {
+      item(path: "{9E68DDEB-4CA9-43F3-BAC7-FA9F29E83C7B}", language: $language) {
+        id
+        name
+        
+        brandLogo: field(name: "Brand Logo") { jsonValue }
+        brandLogoLink: field(name: "Brand Logo Link") { jsonValue }
+        copyrightText: field(name: "Copyright Text") { jsonValue }
+        poweredByText: field(name: "Powered By Text") { jsonValue }
+        
+        socialLinks: field(name: "Social Links") {
+          ... on MultilistField {
+            targetItems {
+              id
+              name
+              link: field(name: "Link") { jsonValue }
+              icon: field(name: "Icon") { jsonValue }
+            }
+          }
+        }
+        
+        legalLinks: field(name: "Legal Links") {
+          ... on MultilistField {
+            targetItems {
+              id
+              name
+              title: field(name: "Title") { jsonValue }
+              link: field(name: "Link") { jsonValue }
+            }
+          }
+        }
+      }
+    }
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Feature/AI Sales Agent/Global Footer
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Global Footer"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c95f144a-cdc5-49db-b328-379294fbfe7b"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "bbf2c91e-4e2e-402b-ab03-76e2a87e7f14"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T160514Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3baac545-665f-4153-867c-77327150bdd8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260917T163347Z

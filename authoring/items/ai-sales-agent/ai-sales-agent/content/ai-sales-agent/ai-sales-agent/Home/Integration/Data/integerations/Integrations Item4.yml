@@ -1,0 +1,58 @@
+﻿---
+ID: "29102e96-e26f-49ef-8cfc-8f4cd9eae44e"
+Parent: "0e33e890-9b67-4a5e-bebd-fd9f62a79b43"
+Template: "d675bc01-1220-4def-a4d3-42b8cb6c9135"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Integration/Data/integerations/Integrations Item4"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 87
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "eac23268-448a-4aed-a414-4e914277d5a3"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165849Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="ec33821d-1b7c-4ed6-87e2-65e191ce5962" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9896dcdc-1978-47e7-bfd2-bd872db0cd8c"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Zoho CRM 
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Sync leads, notes, and call outcomes automatically with Zoho CRM modules.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T170853Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrated 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: CRM Platforms

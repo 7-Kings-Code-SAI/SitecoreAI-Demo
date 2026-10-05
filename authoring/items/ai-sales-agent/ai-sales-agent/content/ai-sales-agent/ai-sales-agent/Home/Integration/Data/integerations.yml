@@ -1,0 +1,115 @@
+﻿---
+ID: "0e33e890-9b67-4a5e-bebd-fd9f62a79b43"
+Parent: "dba49c40-039f-42a0-9515-6abce379c731"
+Template: "8728e900-0897-4f2e-a156-68c96d9dd939"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Integration/Data/integerations"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "05e1268d-c19b-4441-aff5-6ab1f5bcfaa2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>AI Sale Agent connects directly to the CRM and telephony providers your team already relies on - every one of them live and ready to go.</p></div>
+    - ID: "137633e5-e254-4aed-a1e9-82d9f9eb6c39"
+      Hint: Title
+      Value: All Integrations 
+    - ID: "1b2390ee-97ca-42ff-a3b2-885ef1dfb1a3"
+      Hint: FootText
+      Value: |
+        <div class="ck-content"><p>Don’t see your CRM or telephony provider? We build custom integrations on request.</p></div>
+    - ID: "24bead79-08ed-4017-a4a5-55bb08ae554e"
+      Hint: CTA
+      Value: |
+        <link linktype="external" url="#" text="Request an Integration"/>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T163854Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bf9586a6-b07c-415b-a3c0-59cd6657d9f3"
+    - ID: "a94c7b38-06e6-4663-9777-79d06e686fdb"
+      Hint: Integration items
+      Value: |
+        {BBA3ED6D-E33F-49BB-B451-F32EEFC49AAF}
+        {B29E60C0-14CF-4E87-BCA3-9E71E2A00054}
+        {001D0641-D1AD-4610-9F77-33DFB4BAEBEF}
+        {29102E96-E26F-49EF-8CFC-8F4CD9EAE44E}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T172653Z
+    - ID: "dcf5d807-42ca-49b7-be43-dfc609f1fa9a"
+      Hint: Label
+      Value: Integrations 
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "05e1268d-c19b-4441-aff5-6ab1f5bcfaa2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>AI Sale Agent ansluter direkt till de CRM- och telefonileverantörer som ditt team redan förlitar sig på – var och en live och redo att användas.</p></div>
+    - ID: "137633e5-e254-4aed-a1e9-82d9f9eb6c39"
+      Hint: Title
+      Value: Alla integrationer
+    - ID: "1b2390ee-97ca-42ff-a3b2-885ef1dfb1a3"
+      Hint: FootText
+      Value: |
+        <div class="ck-content"><p>Ser du inte din CRM- eller telefonileverantör? Vi bygger anpassade integrationer på begäran.</p></div>
+    - ID: "24bead79-08ed-4017-a4a5-55bb08ae554e"
+      Hint: CTA
+      Value: |
+        <link linktype="external" text="Begär en integration" url="#" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T163854Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "221be3d0-0210-4e9f-9743-02e9ebecd6d4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a94c7b38-06e6-4663-9777-79d06e686fdb"
+      Hint: Integration items
+      Value: |
+        {BBA3ED6D-E33F-49BB-B451-F32EEFC49AAF}
+        {B29E60C0-14CF-4E87-BCA3-9E71E2A00054}
+        {001D0641-D1AD-4610-9F77-33DFB4BAEBEF}
+        {29102E96-E26F-49EF-8CFC-8F4CD9EAE44E}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T194027Z
+    - ID: "dcf5d807-42ca-49b7-be43-dfc609f1fa9a"
+      Hint: Label
+      Value: Integrationer

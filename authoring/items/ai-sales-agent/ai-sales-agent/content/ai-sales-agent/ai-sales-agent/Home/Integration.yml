@@ -1,0 +1,169 @@
+﻿---
+ID: "e3e0eef3-a355-4691-8654-ec993c770176"
+Parent: "9c887615-27db-41a4-b229-2e223a024947"
+Template: "1454a0f3-e9a4-489b-9778-db6b5ba5bd6d"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Integration"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{D4D9F2D5-EBD6-49BD-A506-745D512778D1}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{450CB505-17DB-4D4D-9A1B-F5270EECC9E1}"
+              s:ds="local:/Data/integerations"
+              s:id="{5CFC1005-E658-44B2-8779-58263F504378}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+          </d>
+        </r>
+    - ID: "1ecab949-14f1-40bc-b043-ee7e941cb6bc"
+      Hint: Meta Title
+      Value: AI Sales Agent Integrations | Connect Your CRM & Tools 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T163832Z
+    - ID: "385ca9b8-d5ff-46c5-ae57-51167e7ea9b5"
+      Hint: OG Image
+      Value: |
+        <image mediaid="c2776e0c-dafb-46d5-96b8-a6f6df8dc928" />
+    - ID: "42054f12-b7ea-41c8-8a54-8610886b839f"
+      Hint: OG Description
+      Value: Integrate AI Sales Agent with leading CRM platforms, telephony systems, and business applications to streamline workflows and accelerate sales.
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Integration
+    - ID: "56a9ea26-c14d-461c-bcf9-773ace02d842"
+      Hint: Meta Description
+      Value: Connect AI Sales Agent with your CRM, phone system, and business tools. Integrate seamlessly to automate sales, sync customer data, and boost productivity.
+    - ID: "87d3b52f-a73c-4b4b-bf19-30920981bfbe"
+      Hint: OG Title
+      Value: AI Sales Agent Integrations for Your Business Stack
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "76299cf2-45e9-4d12-9f4d-508557a2ab02"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T194208Z
+    - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
+      Hint: Title
+      Value: Integration
+- Language: "sv-SE"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "52bcb1b6-6902-4570-9fd9-68ed20cd3a66"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Integration-sweden"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T194013Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cad16544-3650-40e7-bdf0-6e981587e217"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T194013Z
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{450CB505-17DB-4D4D-9A1B-F5270EECC9E1}"
+              s:ds="local:/Data/integerations"
+              s:id="{5CFC1005-E658-44B2-8779-58263F504378}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+          </d>
+        </r>
+    - ID: "1ecab949-14f1-40bc-b043-ee7e941cb6bc"
+      Hint: Meta Title
+      Value: "AI Sales Agent-integreringar | Anslut ditt CRM och dina verktyg"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T163832Z
+    - ID: "385ca9b8-d5ff-46c5-ae57-51167e7ea9b5"
+      Hint: OG Image
+      Value: |
+        <image mediaid="c2776e0c-dafb-46d5-96b8-a6f6df8dc928" alt="OGimg" />
+    - ID: "42054f12-b7ea-41c8-8a54-8610886b839f"
+      Hint: OG Description
+      Value: "Integrera AI Sales Agent med ledande CRM-plattformar, telefonisystem och affärsapplikationer för att effektivisera arbetsflöden och accelerera försäljningen."
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Integration
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "56a9ea26-c14d-461c-bcf9-773ace02d842"
+      Hint: Meta Description
+      Value: Anslut AI Sales Agent till ditt CRM, telefonsystem och dina affärsverktyg. Integrera sömlöst för att automatisera försäljning, synkronisera kunddata och öka produktiviteten.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "87d3b52f-a73c-4b4b-bf19-30920981bfbe"
+      Hint: OG Title
+      Value: "AI Sales Agent-integreringar för din affärsstack"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f01a6328-9991-4de3-aff7-e7da45d62a3b"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20261002T194022Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T194137Z
+    - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
+      Hint: Title
+      Value: Integration

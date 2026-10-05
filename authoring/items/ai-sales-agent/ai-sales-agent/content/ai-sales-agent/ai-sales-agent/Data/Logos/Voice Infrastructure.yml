@@ -1,0 +1,23 @@
+﻿---
+ID: "64413251-5fd5-4473-b7e4-0703bb965526"
+Parent: "b81e9444-0856-4ba4-97e7-876724b0a8d9"
+Template: "7cf7f8e8-c74d-47ac-af9d-1c2df877bd8b"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Logos/Voice Infrastructure"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T200130Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "46504507-b96f-4fb9-aaa2-6cfd246718b3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260917T200130Z

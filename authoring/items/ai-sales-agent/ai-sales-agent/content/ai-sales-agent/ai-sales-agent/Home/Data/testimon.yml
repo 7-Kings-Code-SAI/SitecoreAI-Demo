@@ -1,0 +1,29 @@
+﻿---
+ID: "aa4c3767-27a0-4742-81b7-354b499e8f7c"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "32c3e360-17b4-4c1d-99a4-ce4f7fdfe1c7"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/testimon"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261005T183720Z
+    - ID: "809c8de5-401b-462c-82e4-f1e49d67863d"
+      Hint: Testimonials
+      Value: "{838DE1CE-6CD8-4B2A-B861-531A554A2270}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2fe6d32a-d03d-4899-9492-2d0f4846297c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T183757Z

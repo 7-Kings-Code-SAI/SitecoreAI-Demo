@@ -1,0 +1,38 @@
+﻿---
+ID: "4489c87f-30de-469d-90c7-5194197148bd"
+Parent: "fde7e84a-5ae7-4bc8-a4b6-b663140d65ea"
+Template: "fde7e84a-5ae7-4bc8-a4b6-b663140d65ea"
+Path: "/sitecore/templates/Project/ai-sales-agent/Page Content/FAQs/FAQ Section/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{736CF16F-A306-462D-8ED3-72A061AA2EB6}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ece0f1a3-796c-41fd-968a-7a6495ac0bf2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T160301Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9483733c-1021-4991-b940-50375aab94ba"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T160321Z

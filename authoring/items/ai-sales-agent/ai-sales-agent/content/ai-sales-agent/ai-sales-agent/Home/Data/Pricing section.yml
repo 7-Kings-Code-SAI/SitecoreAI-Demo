@@ -1,0 +1,189 @@
+﻿---
+ID: "fc90c888-35ca-445b-8630-0cff365408ea"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "d2e6f67f-1658-439e-aae2-ecc9839e0806"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Pricing section"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0552b94f-a43f-435a-b01d-5b31f1c1919f"
+      Hint: Description
+      Value: <p><span>The LLM is included on every plan, no token charges, along with custom VoIP and CRM integration.&nbsp;</span></p>
+    - ID: "101dc332-a5b7-43bf-bbe5-08043d3983a8"
+      Hint: First Title
+      Value: FREE
+    - ID: "194669a8-f2ae-4fa4-9aae-3097163a98d4"
+      Hint: Enterprise Description
+      Value: "For teams that need volume, custom infrastructure, and white-glove support.   "
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T182352Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5732faeb-63e3-402d-8784-9c416a1f5f69"
+      Hint: First Description
+      Value: Zero Token Charges, LLM included on every plan 
+    - ID: "5c8ee643-2302-45bd-b015-8a9577a864a4"
+      Hint: Third description
+      Value: Most Number of Native CRM Integrations 
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5e50fad7-59e0-4654-8d3f-940d1848853f"
+      Hint: Label Text
+      Value: SUBSCRIPTION PLANS
+    - ID: "6246f8a4-6e03-4f5f-92cd-a56aabcd67a2"
+      Hint: Enterprise CTA
+      Value: |
+        <link linktype="internal" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" querystring="" target="" class="" text="Contact Sales" title=""/>
+    - ID: "63831e19-f95c-4e65-813f-673b639a14f2"
+      Hint: Third Title
+      Value: INCLUDED
+    - ID: "6650d4ce-86f0-4dd8-9dab-51e423f68f82"
+      Hint: Enterprise Features
+      Value: |
+        <div class="ck-content"><ul><li>Unlimited agents and campaigns</li><li>Custom call volume and concurrency</li><li>Dedicated infrastructure and phone numbers</li><li>Custom CRM, VoIP, and API integrations</li><li>Dedicated account manager and SLA</li><li>Private and compliant data storage</li></ul></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1bd973e1-e2d0-467f-88b6-cdaf8a0c685a"
+    - ID: "9d4bbb81-ee64-4d63-82de-a6cde7416eb0"
+      Hint: Pricing Cards
+      Value: |
+        {471BCAEE-83C0-4E4F-A6F5-99EB2C7B9F61}
+        {734157A4-7935-4DD5-BDA2-BFA1401AF41E}
+        {4B186B05-4D99-4A57-B9B5-FB335DF62E16}
+        {9A2C4890-CF4B-426D-A8C0-A6B1F19D3EAA}
+        {17E2613A-27A1-499D-B091-F59C8468DB1F}
+        {63CC753E-3A7B-4455-A47E-975F22725689}
+        {D1935709-F629-4428-A253-443C38CD2E87}
+        {8C5A7CCC-D948-4F2A-8563-0168A392C164}
+        {3549CDFC-BB94-49F3-BF31-BC00D3EF4668}
+    - ID: "a3da8214-38b0-404d-9aef-6871f30b142c"
+      Hint: Enterprise Title
+      Value: Custom pricing
+    - ID: "a74d6c0b-16f8-45fc-95f3-2454a196e25d"
+      Hint: Main Title
+      Value: Pricing That Scales With Your Pipeline
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260930T183500Z
+    - ID: "e1904b1f-0ef5-44a1-9e83-45d8f9f39b3f"
+      Hint: Enterprise Badge
+      Value: ENTERPRISE
+    - ID: "f00dab1a-4783-4189-af75-5554e54e3c9c"
+      Hint: Second Title
+      Value: INCLUDED 
+    - ID: "f596bbe9-eb99-4c8a-8a97-dc1c3958d8cc"
+      Hint: Second Description
+      Value: "Built-in VoIP Integration, No extra setup fee "
+    - ID: "fd9ecd1b-8c71-4c62-94e5-f961386d41e2"
+      Hint: Categories List
+      Value: |
+        {42F60B1F-D35F-4E9E-A25A-E71F06FA887F}
+        {059E15AB-EA50-4EF0-B7AD-448DE70A0F62}
+        {D6466643-7DE0-46A8-B721-F1D518091397}
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0552b94f-a43f-435a-b01d-5b31f1c1919f"
+      Hint: Description
+      Value: "<p><span>LLM ingår i varje plan, utan tokenavgifter, tillsammans med anpassad VoIP- och CRM-integration.&nbsp;</span></p>"
+    - ID: "101dc332-a5b7-43bf-bbe5-08043d3983a8"
+      Hint: First Title
+      Value: GRATIS
+    - ID: "194669a8-f2ae-4fa4-9aae-3097163a98d4"
+      Hint: Enterprise Description
+      Value: För team som behöver hög volym, anpassad infrastruktur och förstklassig support.   
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T182352Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5732faeb-63e3-402d-8784-9c416a1f5f69"
+      Hint: First Description
+      Value: Inga tokenavgifter, LLM ingår i varje plan 
+    - ID: "5c8ee643-2302-45bd-b015-8a9577a864a4"
+      Hint: Third description
+      Value: "Flest antal inbyggda CRM-integrationer "
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5e50fad7-59e0-4654-8d3f-940d1848853f"
+      Hint: Label Text
+      Value: PRENUMERATIONSPLANER
+    - ID: "6246f8a4-6e03-4f5f-92cd-a56aabcd67a2"
+      Hint: Enterprise CTA
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Kontakta säljavdelningen" />
+    - ID: "63831e19-f95c-4e65-813f-673b639a14f2"
+      Hint: Third Title
+      Value: INGÅR
+    - ID: "6650d4ce-86f0-4dd8-9dab-51e423f68f82"
+      Hint: Enterprise Features
+      Value: |
+        <div class="ck-content"><ul><li>Obegränsat antal agenter och kampanjer</li><li>Anpassad samtalsvolym och samtidighet</li><li>Dedikerad infrastruktur och telefonnummer</li><li>Anpassade CRM-, VoIP- och API-integrationer</li><li>Dedikerad account manager och SLA</li><li>Privat och kompatibel datalagring</li></ul></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0480426b-6c1c-45fa-9eca-6ba31cddacbf"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9d4bbb81-ee64-4d63-82de-a6cde7416eb0"
+      Hint: Pricing Cards
+      Value: |
+        {471BCAEE-83C0-4E4F-A6F5-99EB2C7B9F61}
+        {734157A4-7935-4DD5-BDA2-BFA1401AF41E}
+        {4B186B05-4D99-4A57-B9B5-FB335DF62E16}
+        {9A2C4890-CF4B-426D-A8C0-A6B1F19D3EAA}
+        {17E2613A-27A1-499D-B091-F59C8468DB1F}
+        {63CC753E-3A7B-4455-A47E-975F22725689}
+        {D1935709-F629-4428-A253-443C38CD2E87}
+        {8C5A7CCC-D948-4F2A-8563-0168A392C164}
+        {3549CDFC-BB94-49F3-BF31-BC00D3EF4668}
+    - ID: "a3da8214-38b0-404d-9aef-6871f30b142c"
+      Hint: Enterprise Title
+      Value: Anpassad prissättning
+    - ID: "a74d6c0b-16f8-45fc-95f3-2454a196e25d"
+      Hint: Main Title
+      Value: Prissättning som skalar med din pipeline
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T181012Z
+    - ID: "e1904b1f-0ef5-44a1-9e83-45d8f9f39b3f"
+      Hint: Enterprise Badge
+      Value: FÖRETAG
+    - ID: "f00dab1a-4783-4189-af75-5554e54e3c9c"
+      Hint: Second Title
+      Value: INGÅR 
+    - ID: "f596bbe9-eb99-4c8a-8a97-dc1c3958d8cc"
+      Hint: Second Description
+      Value: "Inbyggd VoIP-integration, ingen extra installationsavgift "
+    - ID: "fd9ecd1b-8c71-4c62-94e5-f961386d41e2"
+      Hint: Categories List
+      Value: |
+        {42F60B1F-D35F-4E9E-A25A-E71F06FA887F}
+        {059E15AB-EA50-4EF0-B7AD-448DE70A0F62}
+        {D6466643-7DE0-46A8-B721-F1D518091397}

@@ -1,0 +1,34 @@
+﻿---
+ID: "88df70a2-189d-4547-aa21-42e0ceba5301"
+Parent: "3c472977-f7d1-4bb3-a737-f681a3162a8a"
+Template: "ee36006f-c618-41eb-b306-7347b6e068e4"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Footer/Footer/Platform"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "072b857f-7669-4d28-8adf-e7025f4bf34c"
+      Hint: Navigation Title
+      Value: Platform
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T162936Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1d0d9171-a56e-4521-92f9-9ec2acf3a884"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260916T164610Z

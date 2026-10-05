@@ -1,0 +1,35 @@
+﻿---
+ID: "3d640186-9ff0-44f8-af92-f70ba9b16935"
+Parent: "64413251-5fd5-4473-b7e4-0703bb965526"
+Template: "e31ad73c-b7f4-492c-b812-8a18806a60f1"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Logos/Voice Infrastructure/Dial Pad"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T200300Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "83e06807-2b6b-4793-8f81-edd26d9fdb69"
+      Hint: Logo Image
+      Value: |
+        <image mediaid="{1DB7AB1F-2163-4762-BFB6-670BE3962540}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "739c9ae2-41b7-4670-9bbb-6ebadf0e354b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260917T202559Z

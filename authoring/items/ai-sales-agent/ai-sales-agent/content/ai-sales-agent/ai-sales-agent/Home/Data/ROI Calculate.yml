@@ -1,0 +1,223 @@
+﻿---
+ID: "92f82f98-7ffb-4bda-ace5-b2386a7d8c5f"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "f2839c07-9e7d-42c0-99ba-b52ab023e2f2"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/ROI Calculate"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0d73d086-9e1f-4010-8b3c-8e7ec423b262"
+      Hint: Leads Max Value
+      Value: 50000
+    - ID: "0e6e84fe-e6b7-4707-9281-da89b024dd08"
+      Hint: Hours Saved Per Lead Multiplier
+      Value: 20
+    - ID: "19f721c4-9a2b-45a1-b6a0-7af40f2a73c3"
+      Hint: "Hand-offs Label"
+      Value: "Sales-Ready Hand-offs "
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T143810Z
+    - ID: "2b26814d-8cd7-4b38-82ac-e4f1c4da39dc"
+      Hint: Rate Currency Symbol
+      Value: $
+    - ID: "2d225f7c-f804-494f-8520-5c2224864497"
+      Hint: Heading Title
+      Value: See How AI Sale Agent Scales Your Sales Operations 
+    - ID: "2e7d4b0a-e082-4673-b85a-a6ff064db404"
+      Hint: Description
+      Value: <p>Adjust the sliders below to model your own numbers, including leads contacted per month and your current cost per rep hour, then see the estimated time and cost savings of adding AI to your sales process.</p>
+    - ID: "33fccaa5-b147-4ab7-9b43-7d3351309d42"
+      Hint: Labor Saved Label
+      Value: Hours of Labor Saved 
+    - ID: "3a69044b-99b4-4b26-a77d-abe980fa0e07"
+      Hint: Rate Min Value
+      Value: 15
+    - ID: "40bac7a6-a302-4fda-9ddd-7d7a6327eefa"
+      Hint: Rate Suffix
+      Value: /hr
+    - ID: "44a4b568-033c-4cd6-88a0-3b3706d47e9f"
+      Hint: Badge Label
+      Value: ROI Calculator
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "59da0e79-2ac8-443b-aa15-eafaa6916bf0"
+      Hint: Savings Per Lead Multiplier
+      Value: 10
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5e21b314-d8a4-4ced-8c34-73ad0755c28c"
+      Hint: "Hand-offs Ratio"
+      Value: 30
+    - ID: "648eeccd-deb4-4ae1-a2e9-cafbed55dacc"
+      Hint: Cost Reduction Label
+      Value: Estimated Cost Reduction 
+    - ID: "716a43e7-8bd7-4c23-8698-5fb03ca10b70"
+      Hint: Leads Label
+      Value: "How many leads do you contact per month? "
+    - ID: "801c47a6-eee8-4dc6-a56f-ab019ee23473"
+      Hint: Rate Default Value
+      Value: 15
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90996938-11f4-4976-8e63-fd566b2e402a"
+    - ID: "9f09ea68-ed6d-40ef-b9f7-76e0f87d5966"
+      Hint: CTA Link
+      Value: |
+        <link linktype="external" url="#" text="Model Your Savings"/>
+    - ID: "a187364a-c452-4f07-a999-7bc3129091c5"
+      Hint: Cost Reduction Percentage
+      Value: 93
+    - ID: "b702935a-7e44-4a65-be45-924d5e601c35"
+      Hint: Rate Label
+      Value: "What's your average human rep hourly rate? "
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "be0479f6-980a-485a-bf1f-2f1eacc76963"
+      Hint: Card Title
+      Value: ESTIMATED MONTHLY SAVINGS 
+    - ID: "c6eccce8-13e5-4961-9b25-205e48ae5bdf"
+      Hint: Leads Suffix
+      Value: Leads
+    - ID: "d6841208-ad57-418f-acbd-3126d8ffc101"
+      Hint: Leads Min Value
+      Value: 500
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261001T150021Z
+    - ID: "deecfba4-c2a6-4242-b3ef-d5c25587a90a"
+      Hint: Rate Step
+      Value: 1
+    - ID: "f091e018-4dc9-4e0b-be4a-443e860ee308"
+      Hint: Rate Max Value
+      Value: 50
+    - ID: "f6f8a265-05be-44a1-98a5-cc42519e49a8"
+      Hint: Leads Default Value
+      Value: 5000
+    - ID: "f7e3d34e-3a27-4a8b-8b6d-e79ce769c9cb"
+      Hint: Footer Note
+      Value: "<p><span>These numbers scale with your own inputs, because the honest pitch is simple: a team that never takes a lunch break, never calls in sick, and never forgets to log a note is going to change your math.&nbsp;</span></p>"
+    - ID: "f9fcdb48-7b82-4d29-8ce7-a14dfab63693"
+      Hint: Leads Step
+      Value: 500
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0d73d086-9e1f-4010-8b3c-8e7ec423b262"
+      Hint: Leads Max Value
+      Value: 50000
+    - ID: "0e6e84fe-e6b7-4707-9281-da89b024dd08"
+      Hint: Hours Saved Per Lead Multiplier
+      Value: 20
+    - ID: "19f721c4-9a2b-45a1-b6a0-7af40f2a73c3"
+      Hint: "Hand-offs Label"
+      Value: Säljklara överlämningar 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T143810Z
+    - ID: "2b26814d-8cd7-4b38-82ac-e4f1c4da39dc"
+      Hint: Rate Currency Symbol
+      Value: $
+    - ID: "2d225f7c-f804-494f-8520-5c2224864497"
+      Hint: Heading Title
+      Value: Se hur AI Sale Agent skalar din säljverksamhet 
+    - ID: "2e7d4b0a-e082-4673-b85a-a6ff064db404"
+      Hint: Description
+      Value: "<p>Justera reglagen nedan för att modellera dina egna siffror, inklusive antal leads som kontaktas per månad och din nuvarande kostnad per säljtimme, och se sedan den uppskattade tids- och kostnadsbesparingen av att lägga till AI i din säljprocess.</p>"
+    - ID: "33fccaa5-b147-4ab7-9b43-7d3351309d42"
+      Hint: Labor Saved Label
+      Value: Sparade arbetstimmar 
+    - ID: "3a69044b-99b4-4b26-a77d-abe980fa0e07"
+      Hint: Rate Min Value
+      Value: 15
+    - ID: "40bac7a6-a302-4fda-9ddd-7d7a6327eefa"
+      Hint: Rate Suffix
+      Value: /tim
+    - ID: "44a4b568-033c-4cd6-88a0-3b3706d47e9f"
+      Hint: Badge Label
+      Value: "ROI-kalkylator"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "59da0e79-2ac8-443b-aa15-eafaa6916bf0"
+      Hint: Savings Per Lead Multiplier
+      Value: 10
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5e21b314-d8a4-4ced-8c34-73ad0755c28c"
+      Hint: "Hand-offs Ratio"
+      Value: 30
+    - ID: "648eeccd-deb4-4ae1-a2e9-cafbed55dacc"
+      Hint: Cost Reduction Label
+      Value: Uppskattad kostnadsminskning 
+    - ID: "716a43e7-8bd7-4c23-8698-5fb03ca10b70"
+      Hint: Leads Label
+      Value: "Hur många leads kontaktar du per månad? "
+    - ID: "801c47a6-eee8-4dc6-a56f-ab019ee23473"
+      Hint: Rate Default Value
+      Value: 15
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "15f56dd0-1398-4e26-8529-23d4dd86d67b"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9f09ea68-ed6d-40ef-b9f7-76e0f87d5966"
+      Hint: CTA Link
+      Value: |
+        <link linktype="external" text="Beräkna dina besparingar" url="#" />
+    - ID: "a187364a-c452-4f07-a999-7bc3129091c5"
+      Hint: Cost Reduction Percentage
+      Value: 93
+    - ID: "b702935a-7e44-4a65-be45-924d5e601c35"
+      Hint: Rate Label
+      Value: "Vad är din genomsnittliga timkostnad för en mänsklig säljrepresentant? "
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "be0479f6-980a-485a-bf1f-2f1eacc76963"
+      Hint: Card Title
+      Value: UPPSKATTAD MÅNATLIG BESPARING 
+    - ID: "c6eccce8-13e5-4961-9b25-205e48ae5bdf"
+      Hint: Leads Suffix
+      Value: Leads
+    - ID: "d6841208-ad57-418f-acbd-3126d8ffc101"
+      Hint: Leads Min Value
+      Value: 500
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T181012Z
+    - ID: "deecfba4-c2a6-4242-b3ef-d5c25587a90a"
+      Hint: Rate Step
+      Value: 1
+    - ID: "f091e018-4dc9-4e0b-be4a-443e860ee308"
+      Hint: Rate Max Value
+      Value: 50
+    - ID: "f6f8a265-05be-44a1-98a5-cc42519e49a8"
+      Hint: Leads Default Value
+      Value: 5000
+    - ID: "f7e3d34e-3a27-4a8b-8b6d-e79ce769c9cb"
+      Hint: Footer Note
+      Value: "<p><span>Dessa siffror skalar utifrån dina egna inmatningar, eftersom den ärliga poängen är enkel: ett team som aldrig tar lunchrast, aldrig sjukanmäler sig och aldrig glömmer att logga en anteckning kommer att förändra din kalkyl.&nbsp;</span></p>"
+    - ID: "f9fcdb48-7b82-4d29-8ce7-a14dfab63693"
+      Hint: Leads Step
+      Value: 500

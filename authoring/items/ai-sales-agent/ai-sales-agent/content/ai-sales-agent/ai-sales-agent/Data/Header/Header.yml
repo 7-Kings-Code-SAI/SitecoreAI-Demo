@@ -1,0 +1,105 @@
+﻿---
+ID: "ecd32e24-2631-409a-8340-4c65714d97bf"
+Parent: "c1ad2b53-1a8d-498a-9f7e-ade36d4eb0be"
+Template: "add59113-1fbe-4756-81ad-658fcf326983"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Header/Header"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "bfdbb249-ab82-4620-b4d6-4f61d0a439d8"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T151308Z
+    - ID: "46474e03-bf80-44dd-a9b9-d48e6c389d87"
+      Hint: Logo Link
+      Value: |
+        <link text="Home" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9C887615-27DB-41A4-B229-2E223A024947}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "6e1b6dc4-584b-47b6-bb06-f67e150e3611"
+      Hint: Sign Up Link
+      Value: |
+        <link text="Sign Up" linktype="external" url="http://#" anchor="" target="" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "29e53e83-48c9-4584-8db8-886ce5c972d0"
+    - ID: "abda5c77-eaf3-4d81-9dae-a4bd63021d08"
+      Hint: Logo
+      Value: |
+        <image mediaid="{9B1DDEB9-DC74-4F69-8787-13B101A77DC6}" />
+    - ID: "b13eef92-c854-489b-a2d7-78bc55c32568"
+      Hint: Login Link
+      Value: |
+        <link text="Login" linktype="external" url="http://#" anchor="" target="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T205933Z
+    - ID: "e2841c46-74ca-4315-9265-43eee73a81c1"
+      Hint: Supported Languages
+      Value: |
+        {9FA0CDEA-4C8E-43AB-AA0C-16505A5B53AB}
+        {48A1B05B-34A2-40F2-A3F3-3392854A84C6}
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T193646Z
+    - ID: "46474e03-bf80-44dd-a9b9-d48e6c389d87"
+      Hint: Logo Link
+      Value: |
+        <link text="gEASD" linktype="external" url="http://#" anchor="" target="" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "6e1b6dc4-584b-47b6-bb06-f67e150e3611"
+      Hint: Sign Up Link
+      Value: |
+        <link text="sIGNUP " linktype="external" url="http://#" anchor="" target="" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e2470f94-8eeb-46dd-aaa9-d4a89e2c794d"
+    - ID: "abda5c77-eaf3-4d81-9dae-a4bd63021d08"
+      Hint: Logo
+      Value: |
+        <image mediaid="{9B1DDEB9-DC74-4F69-8787-13B101A77DC6}" />
+    - ID: "b13eef92-c854-489b-a2d7-78bc55c32568"
+      Hint: Login Link
+      Value: |
+        <link text="lOGIN" linktype="external" url="http://#" anchor="" target="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T214809Z
+    - ID: "e2841c46-74ca-4315-9265-43eee73a81c1"
+      Hint: Supported Languages
+      Value: |
+        {9FA0CDEA-4C8E-43AB-AA0C-16505A5B53AB}
+        {48A1B05B-34A2-40F2-A3F3-3392854A84C6}

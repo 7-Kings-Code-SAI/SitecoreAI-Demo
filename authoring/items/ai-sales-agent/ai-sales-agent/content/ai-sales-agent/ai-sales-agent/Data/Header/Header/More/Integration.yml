@@ -1,0 +1,30 @@
+﻿---
+ID: "9a4f230f-022a-4f9d-82e5-d370d0e4cd1d"
+Parent: "8af967f7-e238-44d8-b4d9-d65bc2e6e5b4"
+Template: "ee36006f-c618-41eb-b306-7347b6e068e4"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Header/Header/More/Integration"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "072b857f-7669-4d28-8adf-e7025f4bf34c"
+      Hint: Navigation Title
+      Value: Integeration
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T171249Z
+    - ID: "31051e7f-cdb9-4668-8cf6-2cbd971e2050"
+      Hint: Link
+      Value: |
+        <link text="Integrations" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E3E0EEF3-A355-4691-8654-EC993C770176}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "50e2a49e-5be1-4b99-a79b-79c973c9d3d7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T171344Z

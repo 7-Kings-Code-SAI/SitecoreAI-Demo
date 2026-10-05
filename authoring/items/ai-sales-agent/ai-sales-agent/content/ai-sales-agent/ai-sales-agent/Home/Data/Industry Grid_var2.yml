@@ -1,0 +1,41 @@
+﻿---
+ID: "e08c47e8-fc3b-4fd2-8968-2cf9747a0378"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "aa08619c-4246-4928-8527-6e90564bd06c"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Industry Grid_var2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260918T185624Z
+    - ID: "3eff11b8-a7d3-422e-8685-8d443ea88d90"
+      Hint: Tag Label
+      Value: Hello
+    - ID: "604ef910-0d7b-4eb3-89da-7126b281cc77"
+      Hint: Heading
+      Value: Heading
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e83f229-03b3-43da-8798-f51180042b97"
+    - ID: "a2304e0a-82ac-4009-b4ed-d59578b78cfb"
+      Hint: Industry Cards
+      Value: |
+        {D09DE2CA-B02D-4E17-88AD-90DDE675B6AF}
+        {14AB07BF-F2B7-4DAE-85F3-27C40E9F2240}
+    - ID: "a9eb9b73-bd2e-4c30-9b83-6fd874b66076"
+      Hint: Sub Heading
+      Value: |
+        <div class="ck-content"><p style="margin-left:0px;"><span style="border-style:solid;border-width:0px;box-sizing:border-box;margin:0px;padding:0px;">Encrypted communications</span></p><p style="margin-left:0px;"><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-[#0099FF]" style="background-color:rgb(0, 153, 255);border-radius:3.40282e+38px;border-style:solid;border-width:0px;box-sizing:border-box;flex-shrink:0;height:6px;margin:0px;padding:0px;width:6px;"></span><span style="border-style:solid;border-width:0px;box-sizing:border-box;margin:0px;padding:0px;">Role-based access controls</span></p><p style="margin-left:0px;"><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-[#0099FF]" style="background-color:rgb(0, 153, 255);border-radius:3.40282e+38px;border-style:solid;border-width:0px;box-sizing:border-box;flex-shrink:0;height:6px;margin:0px;padding:0px;width:6px;"></span><span style="border-style:solid;border-width:0px;box-sizing:border-box;margin:0px;padding:0px;">Audit-ready reporting</span></p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260918T195901Z

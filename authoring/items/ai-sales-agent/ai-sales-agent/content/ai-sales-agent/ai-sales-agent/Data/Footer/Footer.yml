@@ -1,0 +1,43 @@
+﻿---
+ID: "3c472977-f7d1-4bb3-a737-f681a3162a8a"
+Parent: "022f815f-7939-4fff-8ffb-9eac4088e802"
+Template: "2bf34b65-442a-4cc4-9b32-a78198b85ab2"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Footer/Footer"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "185880c0-d1d9-47a8-8ca8-8b955169250e"
+      Hint: Column 3
+      Value: "{F5BDE7CE-4469-47CF-B5A5-9FF3ED1C3F8A}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T160127Z
+    - ID: "308d5b4d-a0c7-4128-9a3d-35a48c782944"
+      Hint: Newsletter
+      Value: "{9182E96B-E553-4918-AD67-E6C75451A641}"
+    - ID: "41f8d56f-e786-42e6-b56b-3c51469bc5da"
+      Hint: Column 1
+      Value: "{E1C4DC84-90BB-47C2-9A94-09F28125EB8B}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6e6f90ba-8d2a-4036-b0f7-a3e9117b3e67"
+      Hint: Column 2
+      Value: "{88DF70A2-189D-4547-AA21-42E0CEBA5301}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c49fd247-67a6-4847-ba76-cb98655330e5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260916T164541Z

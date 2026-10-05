@@ -1,0 +1,38 @@
+﻿---
+ID: "17802c33-006b-439a-94b8-593fcea50e91"
+Parent: "312f5dfc-a348-4dd7-8e5d-78cd61a7cd5f"
+Template: "312f5dfc-a348-4dd7-8e5d-78cd61a7cd5f"
+Path: "/sitecore/templates/Project/ai-sales-agent/Page Content/Pricing Section/Categories/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{5EB4F070-8584-46E0-92C3-1E4F9F979684}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "69eb7e11-a63e-4e13-b0a7-bced8cb4384f"
+Languages:
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T194151Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "512ee92d-68de-4856-affc-89537a2d4323"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260922T200818Z
