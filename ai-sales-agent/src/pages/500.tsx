@@ -43,9 +43,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   if (scConfig.generateStaticPaths) {
     try {
+      const targetLocale = (context.locale && context.locale !== 'default')
+        ? context.locale
+        : (scConfig.defaultLanguage || 'en');
       props.page = await client.getErrorPage(ErrorPage.InternalServerError, {
         site: scConfig.defaultSite,
-        locale: context.locale || context.defaultLocale || scConfig.defaultLanguage,
+        locale: targetLocale,
       });
     } catch (error) {
       console.log('Error occurred while fetching error pages');

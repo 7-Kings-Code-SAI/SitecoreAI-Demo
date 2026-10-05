@@ -1,9 +1,25 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/router";
+import { useSitecore } from "@sitecore-content-sdk/nextjs";
 import { LanguageDrawer } from "./LanguageDrawer"; // Adjust the import path if necessary
+import { normalizeHref } from "src/lib/useLinkNormalizer";
 
 export default function Header(props: any) {
+    const router = useRouter();
+    const { page } = useSitecore();
+    const currentLocale =
+        page?.layout?.sitecore?.route?.itemLanguage ||
+        page?.locale ||
+        (router?.locale && router.locale !== "default" ? router.locale : null) ||
+        "en";
+
+    const formatHref = (href?: string) => {
+        if (!href || href === "#" || href.trim() === "#" || href.trim() === "/#") return undefined;
+        return normalizeHref(href, currentLocale) || href;
+    };
+
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -46,11 +62,11 @@ export default function Header(props: any) {
     const logoLink = getField("Logo Link")?.jsonValue?.value;
     const loginLink = getField("Login Link")?.jsonValue?.value;
     const signUpLink = getField("Sign Up Link")?.jsonValue?.value;
-    
+
     // Fallback support for Layout Service vs GraphQL query structures
-    const supportedLanguages = 
-        getField("Supported Languages")?.jsonValue || 
-        props?.fields?.['Supported Languages'] || 
+    const supportedLanguages =
+        getField("Supported Languages")?.jsonValue ||
+        props?.fields?.['Supported Languages'] ||
         [];
 
     // Navigation items from Sitecore
@@ -76,8 +92,8 @@ export default function Header(props: any) {
 
                 {/* Logo */}
                 <a
-                    href={logoLink?.href || "#"}
-                    className="flex shrink-0 items-center"
+                    href={formatHref(logoLink?.href)}
+                    className="flex shrink-0 items-center cursor-pointer"
                 >
                     {logo?.src && (
                         <img
@@ -160,10 +176,9 @@ export default function Header(props: any) {
                                             font-medium
                                             transition-colors
                                             duration-200
-                                            ${
-                                                isOpen
-                                                    ? "text-gray-900"
-                                                    : "text-gray-600"
+                                            ${isOpen
+                                                ? "text-gray-900"
+                                                : "text-gray-600"
                                             }
                                             hover:text-gray-900
                                         `}
@@ -177,10 +192,9 @@ export default function Header(props: any) {
                                                 h-4 w-4
                                                 transition-transform
                                                 duration-200
-                                                ${
-                                                    isOpen
-                                                        ? "rotate-180"
-                                                        : ""
+                                                ${isOpen
+                                                    ? "rotate-180"
+                                                    : ""
                                                 }
                                             `}
                                             viewBox="0 0 24 24"
@@ -242,10 +256,9 @@ export default function Header(props: any) {
                                                             key={
                                                                 child.id
                                                             }
-                                                            href={
-                                                                childLink?.href ||
-                                                                "#"
-                                                            }
+                                                            href={formatHref(
+                                                                childLink?.href
+                                                            )}
                                                             className="
                                                                 block
                                                                 px-4
@@ -255,6 +268,7 @@ export default function Header(props: any) {
                                                                 transition-colors
                                                                 hover:bg-gray-50
                                                                 hover:text-gray-900
+                                                                cursor-pointer
                                                             "
                                                         >
                                                             {
@@ -276,7 +290,7 @@ export default function Header(props: any) {
                         return (
                             <a
                                 key={item.id}
-                                href={link?.href || "#"}
+                                href={formatHref(link?.href)}
                                 className="
                                     whitespace-nowrap
                                     text-sm
@@ -285,6 +299,7 @@ export default function Header(props: any) {
                                     transition-colors
                                     duration-200
                                     hover:text-gray-900
+                                    cursor-pointer
                                 "
                             >
                                 {navigationTitle}
@@ -297,7 +312,7 @@ export default function Header(props: any) {
                 <div className="flex shrink-0 items-center gap-3 ml-auto md:gap-5 lg:ml-10 lg:gap-4">
                     {loginLink && (
                         <a
-                            href={loginLink?.href || "#"}
+                            href={formatHref(loginLink?.href)}
                             className="
                                 hidden
                                 md:block
@@ -307,6 +322,7 @@ export default function Header(props: any) {
                                 text-gray-600
                                 transition-colors
                                 hover:text-gray-900
+                                cursor-pointer
                             "
                         >
                             {loginLink?.text}
@@ -315,7 +331,7 @@ export default function Header(props: any) {
 
                     {signUpLink && (
                         <a
-                            href={signUpLink?.href || "#"}
+                            href={formatHref(signUpLink?.href)}
                             className="
                                 flex
                                 h-10
@@ -508,10 +524,9 @@ export default function Header(props: any) {
                                                         h-4 w-4
                                                         transition-transform
                                                         duration-200
-                                                        ${
-                                                            isOpen
-                                                                ? "rotate-180"
-                                                                : ""
+                                                        ${isOpen
+                                                            ? "rotate-180"
+                                                            : ""
                                                         }
                                                     `}
                                                     viewBox="0 0 24 24"
@@ -575,10 +590,9 @@ export default function Header(props: any) {
                                                                     key={
                                                                         child.id
                                                                     }
-                                                                    href={
-                                                                        childLink?.href ||
-                                                                        "#"
-                                                                    }
+                                                                    href={formatHref(
+                                                                        childLink?.href
+                                                                    )}
                                                                     className="
                                                                         block
                                                                         py-2.5
@@ -587,6 +601,7 @@ export default function Header(props: any) {
                                                                         transition-colors
                                                                         duration-150
                                                                         hover:text-gray-900
+                                                                        cursor-pointer
                                                                     "
                                                                 >
                                                                     {
@@ -605,10 +620,9 @@ export default function Header(props: any) {
                                 return (
                                     <a
                                         key={item.id}
-                                        href={
-                                            link?.href ||
-                                            "#"
-                                        }
+                                        href={formatHref(
+                                            link?.href
+                                        )}
                                         className="
                                             border-b
                                             border-gray-100
@@ -620,6 +634,7 @@ export default function Header(props: any) {
                                             transition-colors
                                             duration-150
                                             hover:text-gray-900
+                                            cursor-pointer
                                         "
                                     >
                                         {
@@ -634,10 +649,9 @@ export default function Header(props: any) {
                         <div className="mt-4 flex flex-col gap-3 border-t border-gray-200 pt-4 md:hidden">
                             {loginLink && (
                                 <a
-                                    href={
-                                        loginLink?.href ||
-                                        "#"
-                                    }
+                                    href={formatHref(
+                                        loginLink?.href
+                                    )}
                                     className="
                                         py-2
                                         text-sm
@@ -646,6 +660,7 @@ export default function Header(props: any) {
                                         transition-colors
                                         duration-150
                                         hover:text-gray-900
+                                        cursor-pointer
                                     "
                                 >
                                     {loginLink?.text}
@@ -654,10 +669,9 @@ export default function Header(props: any) {
 
                             {signUpLink && (
                                 <a
-                                    href={
-                                        signUpLink?.href ||
-                                        "#"
-                                    }
+                                    href={formatHref(
+                                        signUpLink?.href
+                                    )}
                                     className="
                                         flex
                                         h-11
