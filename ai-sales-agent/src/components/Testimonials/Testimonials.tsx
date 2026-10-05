@@ -181,14 +181,17 @@ const Dots = ({
   </div>
 );
 
-const Badge = ({ field }: { field: any }) => (
-  <div className="inline-flex h-[30px] items-center gap-[7px] rounded-full border border-sky-200 bg-sky-50 px-[12px] text-[11px] font-medium uppercase tracking-[0.4px] text-sky-500">
-    <svg className="h-[12px] w-[12px] fill-current" viewBox="0 0 20 20" aria-hidden="true">
-      <path d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z" />
-    </svg>
-    <Text field={field} />
-  </div>
-);
+const Badge = ({ field, isEditing }: { field: any; isEditing?: boolean }) => {
+  if (!field?.value && !isEditing) return null;
+  return (
+    <div className="inline-flex h-[30px] items-center gap-[7px] rounded-full border border-sky-200 bg-sky-50 px-[12px] text-[11px] font-medium uppercase tracking-[0.4px] text-sky-500">
+      <svg className="h-[12px] w-[12px] fill-current" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z" />
+      </svg>
+      <Text field={field} />
+    </div>
+  );
+};
 
 const NameAndRole = ({ name, role }: { name: any; role: any }) => (
   <>
@@ -224,9 +227,21 @@ export const Testimonials = (props: any) => {
   const badgeLabel = fields["Badge Label"];
   const headingTitle = fields["Heading Title"];
 
-  const testimonials: any[] = Array.isArray(fields["Testimonials"])
+  const rawTestimonials: any[] = Array.isArray(fields["Testimonials"])
     ? fields["Testimonials"]
     : [];
+
+  const hasContent = (item: any) =>
+    Boolean(
+      getField(item, "Quote Text")?.value ||
+        getField(item, "Author Name")?.value ||
+        getField(item, "Author Role")?.value ||
+        getField(item, "Author Avatar")?.value?.src
+    );
+
+  const testimonials = isEditing
+    ? rawTestimonials
+    : rawTestimonials.filter(hasContent);
 
   // --------------------------------------------------------------------------
   // STATE (all hooks stay above any early return)
@@ -343,6 +358,10 @@ export const Testimonials = (props: any) => {
   // Show every testimonial so authors can edit every datasource item.
   // ==========================================================================
 
+  if (!isEditing && total === 0) {
+    return null;
+  }
+
   if (isEditing) {
     return (
       <section className="component w-full bg-slate-50/60 px-6 py-10 border-b border-slate-200">
@@ -350,7 +369,7 @@ export const Testimonials = (props: any) => {
           {/* Header */}
           <div className="mb-8">
             <div className="mb-4">
-              <Badge field={badgeLabel} />
+              <Badge field={badgeLabel} isEditing={isEditing} />
             </div>
 
             <h2 className="max-w-[700px] text-2xl sm:text-3xl font-extrabold tracking-tight text-[#101828]">
@@ -447,11 +466,7 @@ export const Testimonials = (props: any) => {
                         <Image
                           field={getField(item, "Author Avatar")}
                           className="h-full w-full object-cover"
-                          emptyFieldEditingComponent={() => (
-                            <span className="text-[10px] font-medium text-sky-500 text-center px-1">
-                              + Photo
-                            </span>
-                          )}
+
                         />
                       </div>
                       <span className="mt-1 block text-[10px] font-medium text-slate-400">Avatar</span>
@@ -466,11 +481,7 @@ export const Testimonials = (props: any) => {
                         <div className="text-sm font-bold text-slate-900">
                           <Text
                             field={getField(item, "Author Name")}
-                            emptyFieldEditingComponent={() => (
-                              <span className="text-xs font-normal italic text-sky-500">
-                                Click to add name...
-                              </span>
-                            )}
+
                           />
                         </div>
                       </div>
@@ -482,11 +493,7 @@ export const Testimonials = (props: any) => {
                         <div className="text-xs text-slate-600">
                           <Text
                             field={getField(item, "Author Role")}
-                            emptyFieldEditingComponent={() => (
-                              <span className="text-xs italic text-sky-500">
-                                Click to add role...
-                              </span>
-                            )}
+
                           />
                         </div>
                       </div>
@@ -501,9 +508,7 @@ export const Testimonials = (props: any) => {
                           </svg>
                           <Text
                             field={getField(item, "Rating Stars")}
-                            emptyFieldEditingComponent={() => (
-                              <span className="text-sky-500 italic">5</span>
-                            )}
+
                           />
                         </div>
                       </div>
@@ -521,11 +526,7 @@ export const Testimonials = (props: any) => {
                     <div className="text-xs italic leading-relaxed text-slate-600">
                       <RichText
                         field={getField(item, "Quote Text")}
-                        emptyFieldEditingComponent={() => (
-                          <span className="text-xs not-italic text-sky-500">
-                            Click to add quote content...
-                          </span>
-                        )}
+
                       />
                     </div>
                   </div>
@@ -575,19 +576,13 @@ export const Testimonials = (props: any) => {
 
         <div className="mb-10 lg:mb-[56px]">
           <div className="mb-5 lg:mb-[27px]">
-            <Badge field={badgeLabel} />
+            <Badge field={badgeLabel} isEditing={isEditing} />
           </div>
 
           <h2 className="max-w-[650px] text-[28px] font-extrabold leading-[1.2] tracking-[-0.75px] text-[#101828] sm:text-[32px] lg:text-[38px] lg:leading-[1.17] lg:tracking-[-1.25px]">
             <Text field={headingTitle} />
           </h2>
         </div>
-
-        {total === 0 && (
-          <div className="py-20 text-center text-sm text-gray-400">
-            No testimonials available.
-          </div>
-        )}
 
         {total > 0 && activeTestimonial && (
           <>
