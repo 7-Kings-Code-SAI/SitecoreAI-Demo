@@ -14,6 +14,7 @@ import {
 import { ComponentProps } from "lib/component-props";
 
 type IndustryGridVariant = 'default' | 'SecurityGrid';
+
 interface IndustryCard {
     id?: string;
     name?: string;
@@ -118,8 +119,8 @@ export function IndustryGrid({
             <div className="mx-auto w-full max-w-[1200px] px-6 md:px-8">
 
                 {/* =========================
-            SECTION HEADER
-        ========================== */}
+                    SECTION HEADER
+                ========================== */}
                 <div className="mx-auto mb-14 max-w-[760px] text-center">
 
                     {/* Tag */}
@@ -194,8 +195,8 @@ export function IndustryGrid({
                 </div>
 
                 {/* =========================
-            INDUSTRY CARDS
-        ========================== */}
+                    INDUSTRY CARDS
+                ========================== */}
                 {cards.length > 0 && (
                     <div
                         className="
@@ -220,6 +221,64 @@ export function IndustryGrid({
     );
 }
 
+/* ============================================================
+   PAGE BUILDER PLACEHOLDER ICONS
+============================================================ */
+
+const EMPTY_IMAGE_PLACEHOLDER_SRC =
+    'data:image/svg+xml,%3Csvg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 240" style="enable-background:new 0 0 240 240;" xml:space="preserve"%3E%3Cstyle type="text/css"%3E .st0%7Bfill:none;%7D .st1%7Bfill:%23969696;%7D .st2%7Bfill:%23FFFFFF;%7D .st3%7Bfill:%23FFFFFF;stroke:%23FFFFFF;stroke-width:0.75;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cg%3E%3Crect class="st0" width="240" height="240"/%3E%3Cg%3E%3Cg%3E%3Crect x="20" y="20" class="st1" width="200" height="200"/%3E%3C/g%3E%3Cg%3E%3Ccircle class="st2" cx="174" cy="67" r="14"/%3E%3Cpath class="st2" d="M174,54c7.17,0,13,5.83,13,13s-5.83,13-13,13s-13-5.83-13-13S166.83,54,174,54 M174,52 c-8.28,0-15,6.72-15,15s6.72,15,15,15s15-6.72,15-15S182.28,52,174,52L174,52z"/%3E%3C/g%3E%3Cpolyline class="st3" points="29.5,179.25 81.32,122.25 95.41,137.75 137.23,91.75 209.5,179.75 "/%3E%3C/g%3E%3C/g%3E%3C/svg%3E';
+
+const EmptySecurityCardIconPlaceholder: React.FC<any> = ({
+    field: _field,
+    ...rest
+}) => (
+    <img
+        {...rest}
+        suppressContentEditableWarning
+        alt="Select icon"
+        src={EMPTY_IMAGE_PLACEHOLDER_SRC}
+        className={`scEmptyImage industry-grid-empty-image ${rest.className || ""}`}
+        style={{
+            width: "40px",
+            height: "40px",
+            maxWidth: "40px",
+            maxHeight: "40px",
+            minWidth: "0px",
+            minHeight: "0px",
+            cursor: "pointer",
+            objectFit: "contain",
+            display: "block",
+            margin: "0 auto",
+            ...(rest.style || {}),
+        }}
+    />
+);
+
+const EmptyDefaultCardIconPlaceholder: React.FC<any> = ({
+    field: _field,
+    ...rest
+}) => (
+    <img
+        {...rest}
+        suppressContentEditableWarning
+        alt="Select icon"
+        src={EMPTY_IMAGE_PLACEHOLDER_SRC}
+        className={`scEmptyImage industry-default-empty-image ${rest.className || ""}`}
+        style={{
+            width: "20px",
+            height: "20px",
+            maxWidth: "20px",
+            maxHeight: "20px",
+            minWidth: "0px",
+            minHeight: "0px",
+            cursor: "pointer",
+            objectFit: "contain",
+            display: "block",
+            margin: "0 auto",
+            ...(rest.style || {}),
+        }}
+    />
+);
 
 /* ============================================================
    INDUSTRY CARD
@@ -230,7 +289,6 @@ function IndustryCardItem({
 }: {
     card: IndustryCard;
 }): JSX.Element {
-
     const cardFields = card.fields || {};
 
     const icon =
@@ -246,6 +304,9 @@ function IndustryCardItem({
         cardFields["Card Description"] ||
         cardFields.cardDescription;
 
+    const hasIcon = Boolean(
+        icon && (icon.value?.src || (icon as any)?.src || (icon as any)?.metadata || (icon as any)?.editable)
+    );
 
     return (
         <div
@@ -271,13 +332,13 @@ function IndustryCardItem({
         hover:shadow-[0_10px_30px_rgba(57,155,234,0.25)]
       "
         >
-
             {/* =========================
-          ICON
-      ========================== */}
-            {icon && (
+                ICON
+            ========================== */}
+            {hasIcon && (
                 <div
                     className="
+            industry-default-card-icon
             mb-5
             flex
             h-10
@@ -293,18 +354,26 @@ function IndustryCardItem({
             duration-300
             group-hover:scale-105
             group-hover:border-transparent
+            overflow-hidden
+            [&_.scEmptyImage]:!h-5
+            [&_.scEmptyImage]:!w-5
+            [&_.scEmptyImage]:!max-h-5
+            [&_.scEmptyImage]:!max-w-5
+            [&_.scEmptyImage]:!min-w-0
+            [&_.scEmptyImage]:!min-h-0
           "
                 >
                     <JssImage
                         field={icon}
+                        emptyFieldEditingComponent={EmptyDefaultCardIconPlaceholder}
                         className="h-5 w-5 object-contain"
                     />
                 </div>
             )}
 
             {/* =========================
-          TITLE
-      ========================== */}
+                TITLE
+            ========================== */}
             {title && (
                 <Text
                     field={title}
@@ -322,8 +391,8 @@ function IndustryCardItem({
             )}
 
             {/* =========================
-          DESCRIPTION
-      ========================== */}
+                DESCRIPTION
+            ========================== */}
             {description && (
                 <Text
                     field={description}
@@ -357,37 +426,6 @@ interface SecurityGridViewProps {
     styles?: string;
 }
 
-const defaultSecurityCards: IndustryCard[] = [
-    {
-        id: "soc2",
-        fields: {
-            "Card Title": { value: "SOC 2 Type II" },
-            "Card description": { value: "Audited security controls" },
-        },
-    },
-    {
-        id: "hipaa",
-        fields: {
-            "Card Title": { value: "HIPAA" },
-            "Card description": { value: "Healthcare compliant" },
-        },
-    },
-    {
-        id: "gdpr",
-        fields: {
-            "Card Title": { value: "GDPR" },
-            "Card description": { value: "EU data protection" },
-        },
-    },
-    {
-        id: "iso27001",
-        fields: {
-            "Card Title": { value: "ISO 27001" },
-            "Card description": { value: "Certified InfoSec" },
-        },
-    },
-];
-
 function SecurityGridView({
     fields,
     cards,
@@ -396,8 +434,6 @@ function SecurityGridView({
     subHeading,
     styles = "",
 }: SecurityGridViewProps): JSX.Element {
-    const displayCards = cards && cards.length > 0 ? cards : defaultSecurityCards;
-
     // Extract CTA
     const cta =
         fields?.CTA ||
@@ -425,55 +461,43 @@ function SecurityGridView({
                 <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-14 xl:gap-20">
 
                     {/* =========================
-              LEFT COLUMN (HEADER & CTAS)
-          ========================== */}
+                        LEFT COLUMN (HEADER & CTAS)
+                    ========================== */}
                     <div className="flex flex-col items-start text-left lg:col-span-5 xl:col-span-5">
 
                         {/* Tag Badge */}
-                        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-200/90 bg-sky-50 px-3.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-sky-500">
-                            <svg
-                                className="h-3.5 w-3.5 text-[#0099FF]"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                                <path d="m9 12 2 2 4-4" />
-                            </svg>
-                            {tagLabel ? (
+                        {tagLabel && (
+                            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-200/90 bg-sky-50 px-3.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-sky-500">
+                                <svg
+                                    className="h-3.5 w-3.5 text-[#0099FF]"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
                                 <Text field={tagLabel} tag="span" />
-                            ) : (
-                                <span>SECURITY</span>
-                            )}
-                        </div>
+                            </div>
+                        )}
 
                         {/* Heading */}
-                        {heading ? (
+                        {heading && (
                             <Text
                                 field={heading}
                                 tag="h2"
                                 className="text-3xl font-bold tracking-[-0.03em] text-slate-900 sm:text-4xl lg:text-[44px] lg:leading-[1.14]"
                             />
-                        ) : (
-                            <h2 className="text-3xl font-bold tracking-[-0.03em] text-slate-900 sm:text-4xl lg:text-[44px] lg:leading-[1.14]">
-                                Enterprise Security Without Enterprise Complexity.
-                            </h2>
                         )}
 
                         {/* Sub Heading / Description */}
-                        {subHeading ? (
+                        {subHeading && (
                             <div className="mt-5 text-sm leading-relaxed text-slate-500 sm:text-[15px]">
                                 <RichText field={subHeading as any} />
                             </div>
-                        ) : (
-                            <p className="mt-5 text-sm leading-relaxed text-slate-500 sm:text-[15px]">
-                                Business conversations deserve serious protection. AI Sales Agent
-                                is architected with security and compliance as a foundation, built
-                                to support the standards regulated industries require.
-                            </p>
                         )}
 
                         {/* Bullet Points */}
@@ -492,48 +516,31 @@ function SecurityGridView({
                         )}
 
                         {/* CTA Button */}
-                        <div className="mt-8 sm:mt-10">
-                            {cta && cta.value?.href ? (
+                        {(cta?.value?.href || (cta as any)?.metadata) && (
+                            <div className="mt-8 sm:mt-10">
                                 <JssLink
-                                    field={cta}
+                                    field={cta as any}
                                     className="inline-flex items-center gap-2 rounded-full bg-[#0099FF] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#0088EE] hover:shadow-md"
                                 />
-                            ) : (
-                                <a
-                                    href="#security"
-                                    className="inline-flex items-center gap-2 rounded-full bg-[#0099FF] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#0088EE] hover:shadow-md"
-                                >
-                                    <span>Talk to Security</span>
-                                    <svg
-                                        className="h-4 w-4"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2.5"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>
-                                </a>
-                            )}
-                        </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* =========================
-              RIGHT COLUMN (COMPLIANCE CARDS)
-          ========================== */}
-                    <div className="lg:col-span-7 xl:col-span-7">
-                        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
-                            {displayCards.map((card, index) => (
-                                <SecurityCardItem
-                                    key={card.id || card.name || index}
-                                    card={card}
-                                    index={index}
-                                />
-                            ))}
+                        RIGHT COLUMN (COMPLIANCE CARDS)
+                    ========================== */}
+                    {cards.length > 0 && (
+                        <div className="lg:col-span-7 xl:col-span-7">
+                            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
+                                {cards.map((card, index) => (
+                                    <SecurityCardItem
+                                        key={card.id || card.name || index}
+                                        card={card}
+                                    />
+                                ))}
+                            </div>
                         </div>
-                    </div>
+                    )}
 
                 </div>
             </div>
@@ -547,10 +554,8 @@ function SecurityGridView({
 
 function SecurityCardItem({
     card,
-    index,
 }: {
     card: IndustryCard;
-    index: number;
 }): JSX.Element {
     const cardFields = card.fields || {};
     const icon = cardFields["Card Icon"] || cardFields.cardIcon;
@@ -560,77 +565,22 @@ function SecurityCardItem({
         cardFields["Card Description"] ||
         cardFields.cardDescription;
 
-    // Fallback icons matching the 4 compliance logos when an image isn't configured yet
-    const renderFallbackIcon = (idx: number) => {
-        switch (idx) {
-            case 0:
-                // AICPA SOC circular badge
-                return (
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#007AC2] text-[9px] font-bold uppercase tracking-tight text-white shadow-xs">
-                        <div className="text-center leading-[10px]">
-                            <div>AICPA</div>
-                            <div className="text-[11px] font-extrabold">SOC</div>
-                        </div>
-                    </div>
-                );
-            case 1:
-                // HIPAA COMPLIANT badge
-                return (
-                    <div className="flex items-center gap-1.5 text-[#004B87]">
-                        <svg
-                            className="h-6 w-6 text-[#004B87]"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
-                        </svg>
-                        <div className="text-left font-black leading-none">
-                            <span className="block text-sm tracking-tight text-[#004B87]">HIPAA</span>
-                            <span className="block text-[8px] font-bold tracking-widest text-[#004B87]">COMPLIANT</span>
-                        </div>
-                    </div>
-                );
-            case 2:
-                // GDPR Compliant badge
-                return (
-                    <div className="flex items-center gap-2 rounded border border-slate-300 bg-white px-2 py-1 shadow-xs">
-                        <div className="flex h-5 w-7 items-center justify-center rounded-xs bg-[#003399]">
-                            <div className="flex h-3 w-3 items-center justify-center rounded-full border border-yellow-300 text-[6px] text-yellow-300">★</div>
-                        </div>
-                        <div className="text-left leading-tight">
-                            <span className="block text-[9px] font-bold text-slate-800">GDPR</span>
-                            <span className="block text-[7px] text-slate-500">Compliant</span>
-                        </div>
-                    </div>
-                );
-            case 3:
-            default:
-                // ISO 27001 badge
-                return (
-                    <div className="flex items-center gap-1 text-[#002D62]">
-                        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
-                            <circle cx="12" cy="12" r="9" />
-                            <path d="M3.6 9h16.8M3.6 15h16.8M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18" />
-                        </svg>
-                        <span className="text-sm font-extrabold tracking-tight">ISO 27001</span>
-                    </div>
-                );
-        }
-    };
+    const hasIcon = Boolean(
+        icon && (icon.value?.src || (icon as any)?.src || (icon as any)?.metadata || (icon as any)?.editable)
+    );
 
     return (
         <div className="group flex min-h-[190px] sm:min-h-[205px] flex-col items-center justify-center rounded-[24px] border border-slate-100/80 bg-white p-7 sm:p-9 text-center shadow-[0_4px_25px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-200 hover:shadow-[0_14px_35px_rgba(0,0,0,0.06)]">
             {/* Icon Area */}
-            <div className="mb-4 flex h-14 w-full items-center justify-center">
-                {icon?.value?.src || (icon as any)?.src ? (
+            {hasIcon && (
+                <div className="industry-grid-card-icon mb-4 flex h-12 sm:h-14 w-full items-center justify-center overflow-hidden [&_.scEmptyImage]:!h-10 [&_.scEmptyImage]:!w-10 [&_.scEmptyImage]:!max-h-10 [&_.scEmptyImage]:!max-w-10 [&_.scEmptyImage]:!min-w-0 [&_.scEmptyImage]:!min-h-0">
                     <JssImage
                         field={icon}
+                        emptyFieldEditingComponent={EmptySecurityCardIconPlaceholder}
                         className="max-h-12 max-w-[140px] w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-105"
                     />
-                ) : (
-                    renderFallbackIcon(index)
-                )}
-            </div>
+                </div>
+            )}
 
             {/* Title */}
             {title && (
