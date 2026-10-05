@@ -210,6 +210,19 @@ export const DefaultHeroBanner = (props: HeroBannerProps): JSX.Element => {
       (ctaField as any)?.jsonValue?.value?.text ||
       '';
 
+    if (isEditing && ctaField) {
+      return (
+        <div className={className} style={{ cursor: 'pointer' }}>
+          {logoElement && (
+            <span className="inline-flex shrink-0 items-center mr-1">
+              {logoElement}
+            </span>
+          )}
+          <JssLink field={ctaField} className="text-inherit outline-none" />
+        </div>
+      );
+    }
+
     if (ctaField && (ctaField.value?.href || (ctaField as any)?.href || (ctaField as any)?.metadata)) {
       return (
         <JssLink
@@ -217,19 +230,11 @@ export const DefaultHeroBanner = (props: HeroBannerProps): JSX.Element => {
           className={className}
         >
           {logoElement && (
-            <span className="inline-flex shrink-0 items-center">
+            <span className="inline-flex shrink-0 items-center mr-1">
               {logoElement}
             </span>
           )}
           {linkText && <span>{linkText}</span>}
-        </JssLink>
-      );
-    }
-
-    if (isEditing && ctaField) {
-      return (
-        <JssLink field={ctaField} className={className}>
-          {logoElement}
         </JssLink>
       );
     }
@@ -405,6 +410,19 @@ export const FullPage = (props: HeroBannerProps): JSX.Element => {
       (ctaField as any)?.jsonValue?.value?.text ||
       '';
 
+    if (isEditing && ctaField) {
+      return (
+        <div className={className} style={{ cursor: 'pointer' }}>
+          {logoElement && (
+            <span className="inline-flex shrink-0 items-center mr-1">
+              {logoElement}
+            </span>
+          )}
+          <JssLink field={ctaField} className="text-inherit outline-none" />
+        </div>
+      );
+    }
+
     if (ctaField && (ctaField.value?.href || (ctaField as any)?.href || (ctaField as any)?.metadata)) {
       return (
         <JssLink
@@ -412,19 +430,11 @@ export const FullPage = (props: HeroBannerProps): JSX.Element => {
           className={className}
         >
           {logoElement && (
-            <span className="inline-flex shrink-0 items-center">
+            <span className="inline-flex shrink-0 items-center mr-1">
               {logoElement}
             </span>
           )}
           {linkText && <span>{linkText}</span>}
-        </JssLink>
-      );
-    }
-
-    if (isEditing && ctaField) {
-      return (
-        <JssLink field={ctaField} className={className}>
-          {logoElement}
         </JssLink>
       );
     }
