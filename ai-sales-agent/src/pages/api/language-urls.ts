@@ -1,6 +1,6 @@
 // pages/api/language-urls.ts
 import type { NextApiRequest, NextApiResponse } from "next";
-import client from "lib/sitecore-client"; // adjust path if your singleton lives elsewhere
+import client from "lib/sitecore-client";
 
 interface ApiResponse {
   success: boolean;
@@ -27,7 +27,7 @@ export default async function handler(
 
   const cleanItemId = typeof itemId === "string" ? itemId.replace(/[{}]/g, "").trim() : "";
   const langList = Array.isArray(languages)
-    ? languages.filter((l): l is string => typeof l === "string" && l.trim().length > 0)
+    ? Array.from(new Set(languages.filter((l): l is string => typeof l === "string" && l.trim().length > 0)))
     : [];
 
   if (!cleanItemId || langList.length === 0) {

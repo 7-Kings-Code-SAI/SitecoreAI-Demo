@@ -76,11 +76,14 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
       (typeof urlField === "string" ? urlField : null);
 
     if (rawUrl && rawUrl !== "#") {
-      return rawUrl.startsWith("http")
+      let formatted = rawUrl.startsWith("http")
         ? rawUrl
         : rawUrl.startsWith("/")
         ? rawUrl
         : `/${rawUrl}`;
+      const lower = formatted.toLowerCase().replace(/\/+$/, "");
+      if (lower === "" || lower === "/en") return "/en";
+      return formatted;
     }
 
     const languageCode =
@@ -90,10 +93,12 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
 
     if (typeof languageCode === "string" && languageCode.trim()) {
       const clean = languageCode.trim();
-      return clean.toLowerCase() === "en" ? "/" : `/${clean}`;
+      const lower = clean.toLowerCase();
+      if (lower === "en") return "/en";
+      return `/${clean}`;
     }
 
-    return "/";
+    return "/en";
   };
 
   const getLanguageCode = (region: any): string => {
@@ -158,7 +163,7 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   };
 
   const normalizePath = (url: string) => {
-    if (!url) return "/";
+    if (!url) return "/en";
     const clean = url.split("?")[0].split("#")[0];
     return clean.length > 1 ? clean.replace(/\/+$/, "") : clean;
   };
@@ -229,10 +234,10 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
       return true;
     }
 
-    // Path prefix match for current route (e.g. /sv-se/... or /sv/...)
+    // Path prefix match for current route (e.g. /sv-se/... or /en/...)
     const currentPath = (router?.asPath || "").toLowerCase();
     for (const code of codes) {
-      if (code && code !== "en" && code !== "/") {
+      if (code && code !== "/") {
         if (
           currentPath === `/${code}` ||
           currentPath.startsWith(`/${code}/`) ||
@@ -243,10 +248,10 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
       }
     }
 
-    // Default English fallback if currentLocale is English
+    // Default English fallback if currentLocale is English or default
     if (
-      (currentLocale === "en" || currentLocale === "en-us") &&
-      (codes.includes("en") || codes.includes("en-us") || getAppendUrl(region) === "/")
+      (currentLocale === "en" || currentLocale === "en-us" || currentLocale === "default") &&
+      (codes.includes("en") || codes.includes("en-us") || getAppendUrl(region) === "/en" || getAppendUrl(region) === "/")
     ) {
       return true;
     }
@@ -266,6 +271,7 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     const isTargetDefault =
       targetCode.toLowerCase() === "en" ||
       targetCodes.includes("en") ||
+      getAppendUrl(region) === "/en" ||
       getAppendUrl(region) === "/";
 
     // Check if we fetched a translated path for this target language
@@ -283,31 +289,32 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     const prefix = normalizePath(getAppendUrl(region));
 
     if (translatedPath) {
-      const cleanPath = translatedPath.startsWith("/")
+      let cleanPath = translatedPath.startsWith("/")
         ? translatedPath
         : `/${translatedPath}`;
 
       if (isTargetDefault) {
-        // Strip out any leading /en for default English routing
-        const withoutEn = cleanPath.replace(/^\/en(\/|$)/i, "/");
-        return withoutEn || "/";
+        if (cleanPath === "/" || cleanPath === "") {
+          return "/en";
+        }
+        if (!cleanPath.toLowerCase().startsWith("/en")) {
+          return `/en${cleanPath}`;
+        }
+        return cleanPath;
       }
 
-      // For non-default languages (e.g. sv-SE)
-      const targetPrefixLower = prefix.toLowerCase();
-      if (
-        prefix &&
-        prefix !== "/" &&
-        !cleanPath.toLowerCase().startsWith(targetPrefixLower)
-      ) {
-        return `${prefix}${cleanPath}`;
+      // For non-default languages
+      const targetPrefix = prefix && prefix !== "/" ? prefix : `/${targetCode}`;
+      const targetPrefixLower = targetPrefix.toLowerCase();
+      if (!cleanPath.toLowerCase().startsWith(targetPrefixLower)) {
+        return `${targetPrefix}${cleanPath}`;
       }
       return cleanPath;
     }
 
     // Fallback if no translation returned
     if (isTargetDefault) {
-      return "/";
+      return "/en";
     }
 
     return prefix && prefix !== "/" ? prefix : `/${targetCode}`;

@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 import { Placeholder, DesignLibrary, Page, PageMetaTags } from '@sitecore-content-sdk/nextjs';
 import Scripts from 'src/Scripts';
 import SitecoreStyles from 'src/components/content-sdk/SitecoreStyles';
+import { useGlobalLinkNormalizer } from 'src/lib/useLinkNormalizer';
 
 interface LayoutProps {
   page: Page;
@@ -24,6 +25,9 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
   const { route } = layout.sitecore;
   const router = useRouter();
   const mainClassPageEditing = mode.isEditing ? 'editing-mode' : 'prod-mode';
+
+  // Globally normalize all internal links (including RichText) to have the language prefix
+  useGlobalLinkNormalizer(page?.locale || router?.locale || 'en');
 
   // Helper to extract field value safely
   const getFieldValue = (fieldName: string): string => {

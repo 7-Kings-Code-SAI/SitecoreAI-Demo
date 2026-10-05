@@ -1,4 +1,4 @@
-import { NextFetchEvent, type NextRequest } from 'next/server';
+import { NextFetchEvent, NextResponse, type NextRequest } from 'next/server';
 import {
   defineProxy,
   MultisiteProxy,
@@ -12,6 +12,15 @@ import scConfig from 'sitecore.config';
 import client from 'lib/sitecore-client';
 
 export default function proxy(req: NextRequest, event: NextFetchEvent) {
+  const { pathname } = req.nextUrl;
+
+  // When no language is present (locale is 'default'), fallback to {domain}/en/{page path}
+  if (req.nextUrl.locale === 'default') {
+    const url = req.nextUrl.clone();
+    url.pathname = pathname === '/' ? '/en' : `/en${pathname}`;
+    return NextResponse.redirect(url, 307);
+  }
+
   // PreviewProxy authorizes preview requests
   const preview = new PreviewProxy({
     client: client,
@@ -67,15 +76,6 @@ export default function proxy(req: NextRequest, event: NextFetchEvent) {
     // By default it is disabled while in development mode.
     // This is an important performance consideration since Next.js Edge proxy runs on every request
     skip: () => false,
-    // This is an example of how to provide geo data for personalization.
-    // The provided callback will be called on each request to extract geo data.
-    // extractGeoDataCb: () => {
-    //   return {
-    //     city: 'Athens',
-    //     country: 'Greece',
-    //     region: 'Attica',
-    //   };
-    // },
   });
 
   return defineProxy(preview, botTracking, multisite, redirects, personalize).exec(req);
@@ -89,7 +89,13 @@ export const config = {
    * 3. /sitecore/api (Sitecore API routes)
    * 4. /- (Sitecore media)
    * 5. /healthz (Health check)
-   * 7. all root files inside /public
+   * 6. /proxy-media (Proxied media)
+   * 7. /feaas-render (FEAAS rendering)
+   * 8. /robots.txt, /sitemap*.xml, /llms.txt
+   * 9. Static files with extensions in /public (e.g. .ico, .svg, .png, etc.)
    */
-  matcher: ['/', '/((?!api/|_next/|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)'],
+  matcher: [
+    '/',
+    '/((?!api/|_next/|healthz|sitecore/api/|-/|proxy-media/|feaas-render|robots\\.txt|sitemap|llms\\.txt|favicon\\.ico|sc_logo\\.svg|.*\\.[\\w]+$).*)',
+  ],
 };

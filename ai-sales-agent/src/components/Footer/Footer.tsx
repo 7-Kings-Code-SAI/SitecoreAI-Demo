@@ -1,17 +1,32 @@
+import { useRouter } from 'next/router';
 import {
   Text,
   RichText,
   Link as JssLink,
+  useSitecore,
 } from '@sitecore-content-sdk/nextjs';
 import { FooterProps } from './Footer.props';
+import { normalizeHref } from 'src/lib/useLinkNormalizer';
 
 export const Footer = (props: FooterProps) => {
+  const router = useRouter();
+  const { page } = useSitecore();
+  const currentLocale =
+    page?.layout?.sitecore?.route?.itemLanguage ||
+    page?.locale ||
+    (router?.locale && router.locale !== 'default' ? router.locale : null) ||
+    'en';
+
+  const formatHref = (href?: string) => {
+    if (!href || href === '#' || href.trim() === '#' || href.trim() === '/#') return undefined;
+    return normalizeHref(href, currentLocale) || href;
+  };
 
   // Resolve root item from layout fields.
   // With Integrated GraphQL configured in Sitecore, the response is typically in props.fields.data
   const rawFields = props?.fields || props?.rendering?.fields;
   const integratedData = rawFields?.data;
-  
+
   // The user's GQL query aliases the root item as 'datasource': datasource: item(path: ...)
   const item =
     integratedData?.datasource ||
@@ -68,18 +83,33 @@ export const Footer = (props: FooterProps) => {
                 linkItem?.displayName ||
                 'Link';
 
-              const href =
+              const rawHref =
                 linkField?.value?.href ||
                 linkField?.href ||
                 linkField?.value?.url ||
-                linkField?.url ||
-                '#';
+                linkField?.url;
+
+              const href = formatHref(rawHref);
+
+              if (!href) {
+                return (
+                  <li key={linkItem?.id || idx}>
+                    <span className="hover:text-blue-500 transition-colors cursor-pointer" role="button">
+                      {linkText}
+                    </span>
+                  </li>
+                );
+              }
 
               if (linkField && (linkField.value?.href || linkField.href)) {
+                const formattedField = linkField.value
+                  ? { ...linkField, value: { ...linkField.value, href } }
+                  : { value: { ...linkField, href } };
+
                 return (
                   <li key={linkItem?.id || idx}>
                     <JssLink
-                      field={linkField.value ? linkField : { value: linkField }}
+                      field={formattedField}
                       className="hover:text-blue-500 transition-colors"
                     />
                   </li>
