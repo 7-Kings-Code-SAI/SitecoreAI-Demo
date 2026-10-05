@@ -1,0 +1,109 @@
+﻿---
+ID: "d934adaa-adbe-4670-bd28-2fa887a21d54"
+Parent: "80faa4c5-92b6-4cdc-8b18-35a2aabef1a8"
+Template: "9916fc53-736e-4032-af70-2f37756f1281"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Features/Data/Hero Banner"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T154633Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;"><span style="background-color:rgb(255,255,255);color:rgb(107,114,128);"><span style="-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:&quot;SF Pro Text&quot;, &quot;SF Pro Display&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:-0.176px;orphans:2;text-align:center;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Deploy AI Sales Agents that sound human, represent your brand, and hold real conversations at a scale that no hiring plan can match. Import leads from your CRM, a spreadsheet, or a manual list. Launch as many agents as you need, each with its own voice, accent, personality, and playbook. Every conversation qualifies leads, handles objections, and updates your CRM automatically. No admin. No manual data entry. No missed follow-ups.</span></span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c9406b8f-57b2-4208-880a-6b08ec204560"
+    - ID: "8f73ba64-1ae8-43e5-b2dd-4ea5c6b12fa2"
+      Hint: Secondary CTA
+      Value: |
+        <link linktype="external" url="#" target="" text="Watch AI in Action" title="" class=""/>
+    - ID: "938e3ffc-d468-42a5-b361-93d17ba22a22"
+      Hint: Territory CTA
+      Value: |
+        <link linktype="external" url="#" target="" text="Start your 7-day free trial" title="" class=""/>
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: The AI Sales Platform for Modern Revenue Teams 
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="external" url="#" text="Book a Live Demo"/>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p><span style="color:#30A3FF;">AI Sale Agent</span> That Scales Your Sales Team. Not Your Payroll.</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T194812Z
+    - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
+      Hint: footnote
+      Value: "Enterprise-ready · Deploy in minutes · Works with the CRM and phone system you already run"
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T155043Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;"><span style="background-color:rgb(238,247,255);color:rgb(7,155,234);"><span style="-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:0.6px;orphans:2;text-align:center;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:uppercase;white-space:normal;widows:2;word-spacing:0px;"><strong>Sweden</strong></span></span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e0ae795d-23fe-4279-8150-b07019aa8c47"
+    - ID: "8f73ba64-1ae8-43e5-b2dd-4ea5c6b12fa2"
+      Hint: Secondary CTA
+      Value: |
+        <link linktype="external" url="#" target="" text="Sweden" title="" class=""/>
+    - ID: "938e3ffc-d468-42a5-b361-93d17ba22a22"
+      Hint: Territory CTA
+      Value: |
+        <link linktype="external" url="#" target="" text="v" title="" class=""/>
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: Sweden
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: Sweden
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260922T155058Z
+    - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
+      Hint: footnote
+      Value: Sweden

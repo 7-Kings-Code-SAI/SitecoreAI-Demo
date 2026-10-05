@@ -1,0 +1,51 @@
+﻿---
+ID: "37a9ad78-57af-48ba-990d-afe0e8421e8d"
+Parent: "8d3bcac9-e14e-4625-981c-5a3685a07b5c"
+Template: "736cf16f-a306-462d-8ed3-72a061aa2eb6"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/FAQs/What if my CRM or phone system is not on the supported"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1100
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "e868cef3-1a49-4511-8c98-f2555d93ac40"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161444Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9df0f29e-efc7-4a1f-a3d2-6ffbf0173d16"
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Integrations & Compatibility
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "What if my CRM or phone system isn't on the supported list?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T163129Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>AI Sale Agent will build a custom integration for CRMs that aren’t already supported, and custom carrier or SIP integrations are available on request for telephony. It’s worth raising directly with the team via a demo or contact request, since availability depends on your specific stack.&nbsp;</span></p></div>

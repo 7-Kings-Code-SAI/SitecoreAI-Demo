@@ -1,0 +1,55 @@
+﻿---
+ID: "508654ea-c8f6-4c94-b22d-19f00f588dbf"
+Parent: "7073c3b0-dd7d-497a-abe9-8e415ae64a39"
+Template: "9af2ae0a-581b-41cc-a696-0c7c41e41823"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Clients Testimonials/Copy of Testimonial Cards 2"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "731e390a-ca27-4178-b216-b575974d78be"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="709f78dc-e5b4-4361-b8c7-d80af8808b6d" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155408Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: Wifi
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5efc74b0-add0-4da0-b838-db067cd75a5a"
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Nothing in particular.&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Wireless
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T163610Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 5

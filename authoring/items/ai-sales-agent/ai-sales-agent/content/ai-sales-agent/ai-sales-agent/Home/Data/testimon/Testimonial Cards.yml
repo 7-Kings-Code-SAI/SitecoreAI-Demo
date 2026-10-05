@@ -1,0 +1,31 @@
+﻿---
+ID: "838de1ce-6cd8-4b2a-b861-531a554a2270"
+Parent: "aa4c3767-27a0-4742-81b7-354b499e8f7c"
+Template: "9af2ae0a-581b-41cc-a696-0c7c41e41823"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/testimon/Testimonial Cards"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261005T183752Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6bbaf711-12cc-41de-a128-28060befacc4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T183752Z

@@ -1,0 +1,58 @@
+﻿---
+ID: "9e68ddeb-4ca9-43f3-bac7-fa9f29e83c7b"
+Parent: "960c6650-a824-4010-b2f0-5e723c622d80"
+Template: "34011de2-8fe9-4add-8919-7a7e472a5f9a"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Global Footer/Global Footer"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T160741Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "569c5ecb-502e-4b76-98e6-bafc8715a283"
+      Hint: Legal Links
+      Value: |
+        {79A0A25B-6177-458E-8157-6750F4D56A28}
+        {681C9795-2410-4EC2-84B8-656D4A9CE21B}
+        {4AD438CF-FEE0-42D0-A549-D89DB0D1E7FE}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6a80b1b9-2898-41e6-b6c8-cbca50fc356a"
+      Hint: Brand Logo Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{9B1DDEB9-DC74-4F69-8787-13B101A77DC6}" />
+    - ID: "74c00275-368b-49ff-9daa-58c83f235590"
+      Hint: Powered By Text
+      Value: Powered by 7kctech.
+    - ID: "8555ebf9-b001-4b76-bb61-3ffcee1e858b"
+      Hint: Social Links
+      Value: |
+        {E10F0862-CB2E-49B8-B618-37E84AD3C7F6}
+        {E377CD9C-3C4C-4A56-9B92-9D07E3B1D9F5}
+        {BF2B93D8-CDFA-48D6-B0CF-714A8B1418E3}
+        {12618BFE-0BFC-4B08-BDFC-F3939F4894E7}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "603599d4-44e2-45bd-82eb-9778e99eab41"
+    - ID: "b8f154fb-6492-4ddb-9b69-536853096f36"
+      Hint: Brand Logo
+      Value: |
+        <image mediaid="{9B1DDEB9-DC74-4F69-8787-13B101A77DC6}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260917T160350Z
+    - ID: "ed8eb329-5ad6-4013-aff8-416fb7f02f17"
+      Hint: Copyright Text
+      Value: AI Sale Agent © 2026. All rights reserved.

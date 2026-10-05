@@ -1,0 +1,143 @@
+﻿---
+ID: "8d3bcac9-e14e-4625-981c-5a3685a07b5c"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "fde7e84a-5ae7-4bc8-a4b6-b663140d65ea"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/FAQs"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0288cede-9af5-4b32-a0fa-a07e56fd5f44"
+      Hint: Label Text
+      Value: FAQ
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155207Z
+    - ID: "310e71fc-5407-40e8-8b6b-d94511119b44"
+      Hint: Banner Title
+      Value: "Still have questions?"
+    - ID: "44f10d50-282b-4e11-8210-9e959a446b6e"
+      Hint: FAQ Items
+      Value: |
+        {940D36CA-4ED6-4262-961B-14702D5F3AC2}
+        {EB83050C-60DF-4959-AF7E-507EA4F6E646}
+        {04AAD919-3D12-44BA-A506-25A132C60B96}
+        {9E0FFB39-2F43-44DF-8909-5637CDEA8B94}
+        {6B6522B7-4A33-47F0-92DB-C0838D3F31A1}
+        {A3CF2E42-E989-4BD5-A1A5-C4BE667A80E2}
+        {79ECE7F1-8FB4-44E0-A3F0-0FDCBEEE561A}
+        {92218A56-8854-4C27-A34B-5F53AB3CD9E7}
+        {C11BDA60-EA66-4AF8-A3FD-7BED222B9726}
+        {20AE2048-B2CB-47CE-A4C9-916A707108FC}
+        {37A9AD78-57AF-48BA-990D-AFE0E8421E8D}
+    - ID: "4b3facf7-f0be-487a-ada5-e28f3891dced"
+      Hint: Main Title
+      Value: Frequently Asked Questions 
+    - ID: "508addea-7a64-41ad-b50f-52a8aac44ccc"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><span>We compiled a list of answers to address your most pressing questions regarding our Services.&nbsp;</span></p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6929f168-6843-481c-abed-bd44d190f70e"
+      Hint: Banner Description
+      Value: |
+        <div class="ck-content"><p><span>Please connect with our support team, we’re happy to help!&nbsp;</span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c6f3c9de-9cda-4b6b-af3d-0c4e2d1b3f9f"
+    - ID: "b4816928-f71c-4d59-9803-f0819309d0ef"
+      Hint: Secondary CTA
+      Value: |
+        <link linktype="internal" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" querystring="" target="" class="" text="Contact support" title=""/>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "c0d24515-f4ad-45b2-a008-387f36803b01"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="internal" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" querystring="" target="" class="" text="View all FAQs" title=""/>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T163259Z
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0288cede-9af5-4b32-a0fa-a07e56fd5f44"
+      Hint: Label Text
+      Value: FAQ
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155207Z
+    - ID: "310e71fc-5407-40e8-8b6b-d94511119b44"
+      Hint: Banner Title
+      Value: "Har du fortfarande frågor?"
+    - ID: "44f10d50-282b-4e11-8210-9e959a446b6e"
+      Hint: FAQ Items
+      Value: |
+        {940D36CA-4ED6-4262-961B-14702D5F3AC2}
+        {EB83050C-60DF-4959-AF7E-507EA4F6E646}
+        {04AAD919-3D12-44BA-A506-25A132C60B96}
+        {9E0FFB39-2F43-44DF-8909-5637CDEA8B94}
+        {6B6522B7-4A33-47F0-92DB-C0838D3F31A1}
+        {A3CF2E42-E989-4BD5-A1A5-C4BE667A80E2}
+        {79ECE7F1-8FB4-44E0-A3F0-0FDCBEEE561A}
+        {92218A56-8854-4C27-A34B-5F53AB3CD9E7}
+        {C11BDA60-EA66-4AF8-A3FD-7BED222B9726}
+        {20AE2048-B2CB-47CE-A4C9-916A707108FC}
+        {37A9AD78-57AF-48BA-990D-AFE0E8421E8D}
+    - ID: "4b3facf7-f0be-487a-ada5-e28f3891dced"
+      Hint: Main Title
+      Value: Vanliga frågor 
+    - ID: "508addea-7a64-41ad-b50f-52a8aac44ccc"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><span>Vi har sammanställt en lista med svar på dina viktigaste frågor om våra tjänster.&nbsp;</span></p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6929f168-6843-481c-abed-bd44d190f70e"
+      Hint: Banner Description
+      Value: |
+        <div class="ck-content"><p><span>Vänligen kontakta vårt supportteam, vi hjälper dig gärna!&nbsp;</span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ab6d2ae4-bf47-49e4-a8c1-bb8772bddc53"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b4816928-f71c-4d59-9803-f0819309d0ef"
+      Hint: Secondary CTA
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Kontakta supporten" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c0d24515-f4ad-45b2-a008-387f36803b01"
+      Hint: Primary CTA
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Visa alla vanliga frågor" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T181012Z

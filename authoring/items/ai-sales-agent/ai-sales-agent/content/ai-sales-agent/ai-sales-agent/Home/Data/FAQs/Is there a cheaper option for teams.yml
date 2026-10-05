@@ -1,0 +1,51 @@
+﻿---
+ID: "c11bda60-ea66-4af8-a3fd-7bed222b9726"
+Parent: "8d3bcac9-e14e-4625-981c-5a3685a07b5c"
+Template: "736cf16f-a306-462d-8ed3-72a061aa2eb6"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/FAQs/Is there a cheaper option for teams"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "4c5da2a8-5aca-4154-8035-8a05deaf623f"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3818ee58-a823-4444-8873-1d2433ac938c"
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Pricing & Plans
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Is there a cheaper option for teams with lower call volume?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T163100Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Yes. You can start with the 7 day free trial (3 hours of calling, 3 agents, 3 campaigns, up to 100 leads, 1 CRM plus 1 VoIP integration) to test the platform at no cost. After that, pricing is pay as you go by default, billed per minute with no prepaid balance required, so cost scales directly with actual usage. Monthly billing is also available for teams that want predictable costs and a discount of up to 31%.&nbsp;</span></p></div>

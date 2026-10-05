@@ -1,0 +1,49 @@
+﻿---
+ID: "1d543120-a290-41cf-bc8b-2c752d80a156"
+Parent: "ef7d4934-a7a4-4090-babd-f51ef826db38"
+Template: "9916fc53-736e-4032-af70-2f37756f1281"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/404 page/Data/page not found banner"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261005T161245Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><span>The page you are looking for doesn’t exist, has been removed, or is temporarily unavailable. Return to our main page to get back on track.&nbsp;</span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0359bc75-d975-4e2a-9292-228ebf7eaba5"
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: 404 ERROR 
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="internal" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" querystring="" target="" class="" text="Go to Homepage" title=""/>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p>Page Not Found</p><p>&nbsp;</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T162053Z

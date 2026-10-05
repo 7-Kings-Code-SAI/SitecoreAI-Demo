@@ -1,0 +1,55 @@
+﻿---
+ID: "fcc8b6bc-df47-49fa-9878-7de00f2cbad1"
+Parent: "7073c3b0-dd7d-497a-abe9-8e415ae64a39"
+Template: "9af2ae0a-581b-41cc-a696-0c7c41e41823"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Clients Testimonials/Copy of Testimonial Cards 3"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 63
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "8ba6be1e-8086-45ed-a78e-5a8af2e4ac9f"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="eee76446-9481-4800-90fe-45094f0a26ac" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155415Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: Phone
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "058f31b6-fb6a-43bf-a0a9-86ef9ffe0ac0"
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>To make phone calls. Nobody uses now</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: calls
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T163652Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 2

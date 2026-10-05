@@ -1,0 +1,133 @@
+﻿---
+ID: "a4d4810c-a0c5-48d0-b29d-c7a0018d9817"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "9916fc53-736e-4032-af70-2f37756f1281"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Hero banner"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T184218Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;"><span>Deploy AI Sales Agents that sound human, represent your brand, and hold real conversations at a scale that no hiring plan can match. Import leads from your CRM, a spreadsheet, or a manual list. Launch as many agents as you need, each with its own voice, accent, personality, and playbook. Every conversation qualifies leads, handles objections, and updates your CRM automatically. No admin. No manual data entry. No missed follow-ups.&nbsp;</span></p></div>
+    - ID: "85dd6a6d-65f1-49b5-b687-b13a09020368"
+      Hint: Secondary CTA Logo
+      Value: |
+        <image mediaid="709f78dc-e5b4-4361-b8c7-d80af8808b6d" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0e2cc021-3b5c-4e7a-8e38-4785b68d7f19"
+    - ID: "8f73ba64-1ae8-43e5-b2dd-4ea5c6b12fa2"
+      Hint: Secondary CTA
+      Value: |
+        <link linktype="external" url="#" target="" text="Watch AI in Action" title="" class=""/>
+    - ID: "938e3ffc-d468-42a5-b361-93d17ba22a22"
+      Hint: Territory CTA
+      Value: |
+        <link linktype="external" url="#" target="" text="Start your 7-day free trial" title="" class=""/>
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: The AI Sales Platform for Modern Revenue Teams 
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="external" url="#" target="" text="Book a Live Demo" title="" class=""/>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <h2><span style="color:#30ABFF;">AI Sale Agent</span> That Scales Your Sales Team. Not Your Payroll.</h2>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T134948Z
+    - ID: "f462a25e-08d1-49ff-86eb-b102d740729c"
+      Hint: Primary CTA Logo
+      Value: |
+        <image mediaid="eee76446-9481-4800-90fe-45094f0a26ac" />
+    - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
+      Hint: footnote
+      Value: "Enterprise-ready · Deploy in minutes · Works with the CRM and phone system you already run"
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T184218Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;"><span>Implementera AI-säljagenter som låter mänskliga, representerar ditt varumärke och för riktiga samtal i en skala som ingen rekryteringsplan kan matcha. Importera leads från ditt CRM, ett kalkylblad eller en manuell lista. Starta så många agenter du behöver, var och en med sin egen röst, accent, personlighet och spelbok. Varje konversation kvalificerar leads, hanterar invändningar och uppdaterar ditt CRM automatiskt. Ingen administration. Ingen manuell datainmatning. Inga missade uppföljningar.&nbsp;</span></p></div>
+    - ID: "85dd6a6d-65f1-49b5-b687-b13a09020368"
+      Hint: Secondary CTA Logo
+      Value: |
+        <image mediaid="709f78dc-e5b4-4361-b8c7-d80af8808b6d" alt="Trådlös ikon" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3e18c4f5-1f3c-47ef-a581-517f4bb0c8c0"
+    - ID: "8f73ba64-1ae8-43e5-b2dd-4ea5c6b12fa2"
+      Hint: Secondary CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Se AI i praktiken" url="#" />
+    - ID: "938e3ffc-d468-42a5-b361-93d17ba22a22"
+      Hint: Territory CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Starta din 7-dagars kostnadsfria provperiod" url="#" />
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: "AI-säljplattformen för moderna intäktsteam"
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Boka en livedemo" url="#" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p>AI-säljagent som skalar upp ditt säljteam. Inte din lönekostnad.</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T131106Z
+    - ID: "f462a25e-08d1-49ff-86eb-b102d740729c"
+      Hint: Primary CTA Logo
+      Value: |
+        <image mediaid="eee76446-9481-4800-90fe-45094f0a26ac" alt="Telefonikon" />
+    - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
+      Hint: footnote
+      Value: "Redo för företag · Implementera på några minuter · Fungerar med CRM-systemet och telefonsystemet som ni redan använder"

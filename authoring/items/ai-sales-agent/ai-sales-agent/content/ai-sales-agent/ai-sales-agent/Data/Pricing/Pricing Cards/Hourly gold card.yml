@@ -1,0 +1,131 @@
+﻿---
+ID: "9a2c4890-cf4b-426d-a8c0-a6b1f19d3eaa"
+Parent: "2dda2003-6935-48ea-933b-d4b0c785f1d4"
+Template: "7361361b-8b60-42a8-9734-d14d5925c077"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Pricing/Pricing Cards/Hourly gold card"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: min
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 10¢
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{059E15AB-EA50-4EF0-B7AD-448DE70A0F62}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T171241Z
+    - ID: "34f90bcf-139d-4f73-8bdc-5c5d892c46c6"
+      Hint: Popular Badge
+      Value: MOST POPULAR
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link linktype="internal" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" querystring="" target="" class="" text="Choose Gold plan" title=""/>
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <ul>
+          <li>Everything in Silver</li>
+          <li>24/7 online & phone support</li>
+        </ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1e91c7a5-f038-4d45-976d-9e6d4da7d783"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=10&Sales campaigns=15&Call data storage=%2060%20days
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{90FBADFE-1CFC-4316-9CFD-ED640B05F112}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + $9.99 per user / month
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: GOLD PLAN
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T190659Z
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: min
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 17¢
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{059E15AB-EA50-4EF0-B7AD-448DE70A0F62}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T201415Z
+    - ID: "34f90bcf-139d-4f73-8bdc-5c5d892c46c6"
+      Hint: Popular Badge
+      Value: MOST POPULAR
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link text="Choose Gold plan" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <ul>
+          <li>Everything in Silver</li>
+          <li>24/7 online & phone support</li>
+        </ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "26e3f33b-0cbd-4c77-9445-5d03a0e457a9"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=10&Sales campaigns=15&Call data storage=%2060%20days
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{90FBADFE-1CFC-4316-9CFD-ED640B05F112}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + $9.99 per user / month
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: GOLD PLAN
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260930T170145Z

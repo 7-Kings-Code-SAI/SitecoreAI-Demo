@@ -1,0 +1,44 @@
+﻿---
+ID: "940d36ca-4ed6-4262-961b-14702d5f3ac2"
+Parent: "8d3bcac9-e14e-4625-981c-5a3685a07b5c"
+Template: "736cf16f-a306-462d-8ed3-72a061aa2eb6"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/FAQs/What is an AI sales agent"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T160356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5aea1ba9-4b8a-4c99-972a-3a737862a025"
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Getting Started & How It Works
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "What is an AI sales agent and how does it work?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T161152Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>An AI sales agent is a voice based AI system that makes and takes sales calls on your behalf. It handles outreach, follow ups, and lead qualification the same way a human rep would. AI Sale Agent builds a custom agent for your business, complete with its own voice, accent, and personality, then connects it to your lead list and CRM. The agent calls prospects, holds a natural conversation, handles objections, qualifies the lead against your criteria, and logs a transcript, summary, and CRM update automatically once the call ends.&nbsp;</span></p></div>

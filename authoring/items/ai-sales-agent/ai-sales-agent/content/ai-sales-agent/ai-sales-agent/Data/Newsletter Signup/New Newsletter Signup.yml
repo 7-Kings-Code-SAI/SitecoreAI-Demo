@@ -1,0 +1,50 @@
+﻿---
+ID: "9182e96b-e553-4918-ad67-e6c75451a641"
+Parent: "ebaf1f8e-84e8-480c-83b5-6b2dc80feb10"
+Template: "46ad73cb-1970-448f-b9c4-48fb31f1b1fb"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Newsletter Signup/New Newsletter Signup"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T162242Z
+    - ID: "3de763a0-327b-4a08-94d0-eabbaefebbb7"
+      Hint: Input Placeholder
+      Value: Enter your email
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dc307dc-f658-4ca4-a387-ce6adeafd03b"
+      Hint: Button Text
+      Value: Subscribe
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "887570e6-bb18-4122-a7d0-adb3c83b7038"
+    - ID: "99bf130d-b552-48c1-8eac-f54a2e15233f"
+      Hint: Heading
+      Value: Stay Ahead of the Curve
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260916T175341Z
+    - ID: "e6a36a37-1676-4d4d-99ce-4cc1272d432f"
+      Hint: Disclaimer
+      Value: |
+        <div class="ck-content"><p>By subscribing, you agree to our Privacy Policy.</p></div>
+    - ID: "f28d9fef-02a6-4564-9b1b-4345fa944217"
+      Hint: Description
+      Value: Product updates and outbound playbooks, straight to your inbox.

@@ -1,0 +1,84 @@
+﻿---
+ID: "9fa0cdea-4c8e-43ab-aa0c-16505a5b53ab"
+Parent: "cb230c9c-6106-4bdb-a77b-8c39336dec24"
+Template: "cb898201-06a6-4632-96b1-0e3e7aa81c42"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Header/Language Drawer/Englsih"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T212919Z
+    - ID: "2dc15369-d3ea-4240-b17e-5285b92016d6"
+      Hint: Language Name Field
+      Value: English
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "75b1d4a6-7724-4f3a-905f-d6ae1c165315"
+      Hint: Language Code Field
+      Value: EN
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "be66981c-9560-45b2-ada9-406565f73d39"
+    - ID: "b6a1037a-ef9c-42b4-b664-4d2aafc09bbc"
+      Hint: Url
+      Value: |
+        <link text="EN" linktype="external" url="/en" anchor="" target="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T213446Z
+    - ID: "fd0f89ab-5679-4df5-9b64-aead4649fde2"
+      Hint: Icon
+      Value: |
+        <image mediaid="{A6E0BBA3-909E-41C7-A441-66F358117849}" />
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T214627Z
+    - ID: "2dc15369-d3ea-4240-b17e-5285b92016d6"
+      Hint: Language Name Field
+      Value: English
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "75b1d4a6-7724-4f3a-905f-d6ae1c165315"
+      Hint: Language Code Field
+      Value: EN
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f89bf1b3-56f8-48f9-aa6e-2ff9dc6c3f3b"
+    - ID: "b6a1037a-ef9c-42b4-b664-4d2aafc09bbc"
+      Hint: Url
+      Value: |
+        <link text="EN" linktype="external" url="/en/" anchor="" target="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T214846Z
+    - ID: "fd0f89ab-5679-4df5-9b64-aead4649fde2"
+      Hint: Icon
+      Value: |
+        <image mediaid="{A6E0BBA3-909E-41C7-A441-66F358117849}" />

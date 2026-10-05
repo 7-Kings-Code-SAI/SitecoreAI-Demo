@@ -1,0 +1,99 @@
+﻿---
+ID: "7073c3b0-dd7d-497a-abe9-8e415ae64a39"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "32c3e360-17b4-4c1d-99a4-ce4f7fdfe1c7"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Clients Testimonials"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1151ca18-d889-42c8-b0c5-09d0705a232f"
+      Hint: Badge Label
+      Value: REVIEWS
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155307Z
+    - ID: "5cfe752b-51f8-4a3f-ac72-5658a00f1cb6"
+      Hint: Heading Title
+      Value: Built for Teams That Measure Success in Revenue.
+    - ID: "809c8de5-401b-462c-82e4-f1e49d67863d"
+      Hint: Testimonials
+      Value: |
+        {A4412169-92BB-429B-AFA3-24CCF70F3353}
+        {AB8736AD-CDC5-4E3A-A7EE-316CFECBFE09}
+        {355D6978-9104-42F3-B051-7B9723226086}
+        {5E91452B-1AA3-40F4-AAE9-431FCBB32035}
+        {508654EA-C8F6-4C94-B22D-19F00F588DBF}
+        {BC0BE203-D2BF-462F-A914-FFEA7D4A6C1C}
+        {8BDB6D50-B3E3-4684-BD15-D1B8D9BE44A3}
+        {7AB63C71-04D9-49A9-B040-9FB4E092CE6C}
+        {8DC7B8F4-FE8B-42F0-A9B6-BF35A80309AF}
+        {FCC8B6BC-DF47-49FA-9878-7DE00F2CBAD1}
+        {CB881216-2E45-4C21-9A87-9531251F429C}
+        {34278AE0-FBD5-4D97-8492-E4E5D74BA5B9}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "55127439-f8ff-47d6-aa1f-be7ad4869311"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260921T171253Z
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1151ca18-d889-42c8-b0c5-09d0705a232f"
+      Hint: Badge Label
+      Value: OMDÖMEN
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155307Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5cfe752b-51f8-4a3f-ac72-5658a00f1cb6"
+      Hint: Heading Title
+      Value: Byggd för team som mäter framgång i intäkter.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "809c8de5-401b-462c-82e4-f1e49d67863d"
+      Hint: Testimonials
+      Value: |
+        {A4412169-92BB-429B-AFA3-24CCF70F3353}
+        {AB8736AD-CDC5-4E3A-A7EE-316CFECBFE09}
+        {355D6978-9104-42F3-B051-7B9723226086}
+        {5E91452B-1AA3-40F4-AAE9-431FCBB32035}
+        {508654EA-C8F6-4C94-B22D-19F00F588DBF}
+        {BC0BE203-D2BF-462F-A914-FFEA7D4A6C1C}
+        {8BDB6D50-B3E3-4684-BD15-D1B8D9BE44A3}
+        {7AB63C71-04D9-49A9-B040-9FB4E092CE6C}
+        {8DC7B8F4-FE8B-42F0-A9B6-BF35A80309AF}
+        {FCC8B6BC-DF47-49FA-9878-7DE00F2CBAD1}
+        {CB881216-2E45-4C21-9A87-9531251F429C}
+        {34278AE0-FBD5-4D97-8492-E4E5D74BA5B9}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "123deea5-a74a-4ac7-82d4-50927eb0dde3"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261002T181012Z

@@ -1,0 +1,38 @@
+﻿---
+ID: "4002a255-7a3b-42ce-8102-4ebd18ddc312"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "1b9d787e-a9f4-402a-8742-19a7227bfecc"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Wysiwyg"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261005T155348Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9fbd9d07-76ac-4d1f-ac56-03835a78ba22"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T171349Z
+    - ID: "e65b20e9-c052-4ba4-ad55-b34e5e9a1193"
+      Hint: Text
+      Value: |
+        <div class="ck-content"><p>jhfjskdhfjksdhf</p></div>

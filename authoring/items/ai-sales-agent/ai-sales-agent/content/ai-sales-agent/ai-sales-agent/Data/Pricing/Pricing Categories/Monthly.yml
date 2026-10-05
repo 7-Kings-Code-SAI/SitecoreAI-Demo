@@ -1,0 +1,81 @@
+﻿---
+ID: "d6466643-7de0-46a8-b721-f1d518091397"
+Parent: "9efb4a66-13d2-4c8e-b843-2e2d63af2a2c"
+Template: "5eb4f070-8584-46e0-92c3-1e4f9f979684"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Pricing/Pricing Categories/Monthly"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "46f0565f-9900-4001-9292-6e8a7dcb54b2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "049c65ee-f45c-4fb0-b0dd-203dd3bcd015"
+      Hint: Context Description
+      Value: 160 hours of shared org talk time each month · $9.99 per user / month (owner included)
+    - ID: "107a8a89-0c23-4bf0-b8f0-55452b6939fc"
+      Hint: Category Name
+      Value: Monthly
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T172315Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5adb671c-371a-4c99-bec2-64c9fbb5ad41"
+      Hint: Highlight Badge
+      Value: Save up to 31%
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "835f71f9-6457-431e-b2b7-c55254aa64d9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260930T172409Z
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "049c65ee-f45c-4fb0-b0dd-203dd3bcd015"
+      Hint: Context Description
+      Value: 160 hours of shared org talk time each month · $9.99 per user / month (owner included)
+    - ID: "107a8a89-0c23-4bf0-b8f0-55452b6939fc"
+      Hint: Category Name
+      Value: Monthly
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T194451Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5adb671c-371a-4c99-bec2-64c9fbb5ad41"
+      Hint: Highlight Badge
+      Value: Save up to 31%
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "05b3bc49-9353-468f-b7be-6ff50a73e3a1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260922T194745Z

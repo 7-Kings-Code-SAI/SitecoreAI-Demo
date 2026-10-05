@@ -1,0 +1,60 @@
+﻿---
+ID: "b06aa33c-d824-47a3-9a08-0506d2c7e871"
+Parent: "9c887615-27db-41a4-b229-2e223a024947"
+Template: "1454a0f3-e9a4-489b-9778-db6b5ba5bd6d"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Features"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{9784B1A5-6F9B-4032-8685-72E97826390D}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{BF20BF4F-D629-4322-9218-3EDC9EC1E2C2}"
+              p:before="*"
+              s:ds="local:/Data/Hero Banner"
+              s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{6B6F3EC3-3993-4FE5-A67A-205311BEE51F}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/testing"
+              s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7D&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T154501Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Features
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "54833cd0-bf06-4d7a-a492-4514dfd48a92"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261005T122154Z
+    - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
+      Hint: Title
+      Value: Features

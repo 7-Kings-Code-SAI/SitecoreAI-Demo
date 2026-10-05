@@ -1,0 +1,31 @@
+﻿---
+ID: "bb785ae7-ba42-4f97-86fd-ef48a91b440a"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "9916fc53-736e-4032-af70-2f37756f1281"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/h"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260918T191844Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "05e6af18-e0df-4b15-83eb-bc5b0656daf9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260918T191844Z

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "7kc.ai-sales-agent.content",
+  "references": [
+    "7kc.ai-sales-agent.templates"
+  ],
+  "items": {
+    "path": "ai-sales-agent",
+    "includes": [
+      {
+        "name": "content",
+        "path": "/sitecore/content/ai-sales-agent",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      }
+    ]
+  }
+}
