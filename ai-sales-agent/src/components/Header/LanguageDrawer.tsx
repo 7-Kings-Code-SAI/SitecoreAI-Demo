@@ -347,84 +347,115 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   const activeFlagSrc = getFlagSrc(activeRegion);
 
   // ============================================================
-  // RENDER
+  // LANGUAGE DISPLAY HELPERS
+  // ============================================================
+  const getLanguageLabel = (region: any) => {
+    const rawName = getName(region);
+    const code = getLanguageCode(region);
+    const clean = rawName.replace(/\s*\([^)]*\)/g, "").trim();
+    const lower = (code || clean).toLowerCase();
+
+    if (lower.includes("de")) return "Deutsch";
+    if (lower.includes("sv") || lower.includes("se")) return "Svenska";
+    if (lower.includes("en")) return "English";
+    if (lower.includes("fr")) return "Français";
+    if (lower.includes("es")) return "Español";
+    return clean || code.toUpperCase();
+  };
+
+  const renderFlag = (region: any) => {
+    const flagSrc = getFlagSrc(region);
+    const code = getLanguageCode(region).toLowerCase();
+
+    if (flagSrc) {
+      return (
+        <img
+          src={flagSrc}
+          alt={code}
+          className="w-full h-full object-cover"
+        />
+      );
+    }
+
+    if (code.includes("de")) {
+      return (
+        <svg className="w-full h-full" viewBox="0 0 640 480" fill="none">
+          <path fill="#111" d="M0 0h640v160H0z"/>
+          <path fill="#DD0000" d="M0 160h640v160H0z"/>
+          <path fill="#FFCE00" d="M0 320h640v160H0z"/>
+        </svg>
+      );
+    }
+    if (code.includes("sv") || code.includes("se")) {
+      return (
+        <svg className="w-full h-full" viewBox="0 0 640 480" fill="none">
+          <path fill="#006AA7" d="M0 0h640v480H0z"/>
+          <path fill="#FECC00" d="M0 192h640v96H0z"/>
+          <path fill="#FECC00" d="M176 0h96v480h-96z"/>
+        </svg>
+      );
+    }
+    if (code.includes("en") || code.includes("us") || code.includes("gb")) {
+      return (
+        <svg className="w-full h-full" viewBox="0 0 640 480" fill="none">
+          <rect width="640" height="480" fill="#BD3D44"/>
+          <path stroke="#FFF" strokeWidth="37" d="M0 55.4h640M0 129.2h640M0 203h640M0 276.9h640M0 350.8h640M0 424.6h640"/>
+          <rect width="256" height="258" fill="#192F5D"/>
+        </svg>
+      );
+    }
+
+    return (
+      <div className="w-full h-full bg-slate-200 text-slate-700 text-[9px] font-bold flex items-center justify-center uppercase">
+        {code.slice(0, 2)}
+      </div>
+    );
+  };
+
+  // ============================================================
+  // RENDER (SIMPLE CLEAN DROPDOWN)
   // ============================================================
   return (
     <div className="relative inline-block text-left" ref={drawerRef}>
-      {/* Trigger Button */}
+      {/* Clean Trigger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`group flex items-center gap-2.5 px-3 py-2 rounded-full border text-sm font-medium transition-all duration-200 cursor-pointer ${
+        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-semibold tracking-wide transition-colors cursor-pointer ${
           isOpen
-            ? "bg-white border-[#399BEA] shadow-md ring-2 ring-[#399BEA]/20"
-            : "bg-white/80 backdrop-blur-md border-gray-200 hover:border-[#399BEA]/50 hover:bg-white shadow-sm"
+            ? "bg-gray-100 border-gray-300 text-gray-900"
+            : "bg-white hover:bg-gray-50 border-gray-200 text-gray-700 hover:text-gray-900"
         }`}
         aria-label="Select Language"
         type="button"
       >
-        {activeFlagSrc ? (
-          <div className="relative flex items-center justify-center overflow-hidden rounded-sm w-5 h-3.5 shadow-sm ring-1 ring-black/5">
-            <img
-              src={activeFlagSrc}
-              alt="Current Language"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ) : (
-          <svg
-            className="w-4 h-4 text-gray-700 group-hover:text-[#399BEA] transition-colors"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
-            />
-          </svg>
-        )}
+        <div className="relative flex items-center justify-center overflow-hidden rounded-[2px] w-4 h-3 shadow-2xs ring-1 ring-black/10 flex-shrink-0">
+          {renderFlag(activeRegion)}
+        </div>
 
-        <span className="text-xs font-semibold uppercase tracking-wider text-gray-700 group-hover:text-gray-900">
+        <span className="uppercase font-mono font-bold text-gray-800">
           {getLanguageCode(activeRegion)}
         </span>
 
-        {/* Chevron Icon with animated rotate */}
         <svg
-          className={`w-3.5 h-3.5 text-gray-400 transition-transform duration-200 ${
-            isOpen ? "rotate-180 text-[#399BEA]" : "group-hover:text-gray-600"
+          className={`w-3.5 h-3.5 text-gray-400 transition-transform duration-150 ${
+            isOpen ? "rotate-180 text-gray-600" : ""
           }`}
           fill="none"
           stroke="currentColor"
+          strokeWidth="2"
           viewBox="0 0 24 24"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2.5"
-            d="M19 9l-7 7-7-7"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
 
-      {/* Language Selection Drawer Dropdown */}
+      {/* Simple Minimal Dropdown List */}
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2.5 w-[320px] sm:w-[520px] bg-white/95 backdrop-blur-xl border border-gray-100 rounded-2xl shadow-2xl z-50 p-5 ring-1 ring-black/5 transition-all animate-in fade-in slide-in-from-top-2 duration-200">
-          {/* Header Subtitle Accent */}
-          <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-[#399BEA]">
-              Select Region / Language
-            </span>
-            <span className="text-[11px] text-gray-400 font-medium">
-              {regionsList.length} Available
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <div className="absolute right-0 top-full mt-1.5 w-44 bg-white rounded-xl border border-gray-200 shadow-lg p-1 z-50 animate-in fade-in zoom-in-95 duration-100">
+          <div className="py-0.5">
             {regionsList.map((region: any, i: number) => {
-              const flagSrc = getFlagSrc(region);
-              const name = getName(region);
+              const label = getLanguageLabel(region);
+              const code = getLanguageCode(region);
               const isActive = isRegionActive(region);
               const languageUrl = getLanguageUrl(region);
 
@@ -433,62 +464,28 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
                   key={region.id || i}
                   href={languageUrl}
                   onClick={(e) => handleLanguageClick(e, region)}
-                  className={`group relative flex items-center justify-between p-2.5 rounded-xl transition-all duration-150 cursor-pointer ${
+                  className={`flex items-center justify-between px-2.5 py-2 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                     isActive
-                      ? "bg-[#399BEA]/10 border border-[#399BEA]/30 text-[#399BEA]"
-                      : "hover:bg-gray-50 border border-transparent text-gray-700 hover:text-gray-900"
+                      ? "bg-blue-50 text-[#0c7abf] font-semibold"
+                      : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   }`}
                 >
-                  <div className="flex items-center gap-3 min-w-0 pr-2">
-                    {flagSrc ? (
-                      <div className="relative flex-shrink-0 w-6 h-4 rounded-sm overflow-hidden shadow-xs ring-1 ring-black/10">
-                        <img
-                          src={flagSrc}
-                          alt={name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ) : (
-                      <div className="flex-shrink-0 w-6 h-4 bg-gray-200 rounded-sm" />
-                    )}
-                    <span
-                      className={`text-sm truncate transition-colors ${
-                        isActive
-                          ? "font-semibold text-[#399BEA]"
-                          : "font-medium group-hover:text-gray-900"
-                      }`}
-                    >
-                      {name}
-                    </span>
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <div className="relative flex-shrink-0 w-4 h-3 rounded-[2px] overflow-hidden shadow-2xs ring-1 ring-black/10">
+                      {renderFlag(region)}
+                    </div>
+                    <span className="truncate">{label}</span>
                   </div>
 
-                  {isActive ? (
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#399BEA] flex items-center justify-center text-white shadow-xs">
-                      <svg
-                        className="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                    </div>
-                  ) : (
+                  {isActive && (
                     <svg
-                      className="w-4 h-4 text-gray-300 opacity-0 group-hover:opacity-100 group-hover:text-gray-400 transition-all transform group-hover:translate-x-0.5"
+                      className="w-3.5 h-3.5 text-[#0c7abf] flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2.5"
                       viewBox="0 0 24 24"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 5l7 7-7 7"
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   )}
                 </a>

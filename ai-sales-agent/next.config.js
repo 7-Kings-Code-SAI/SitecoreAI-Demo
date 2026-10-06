@@ -15,7 +15,7 @@ const nextConfig = {
 
   i18n: {
     // Supported locales in the application matching Sitecore
-    locales: ['default', 'en', 'sv-SE'],
+    locales: ['default', 'en', 'de-DE', 'sv-SE'],
     defaultLocale: 'default',
     localeDetection: false,
   },
