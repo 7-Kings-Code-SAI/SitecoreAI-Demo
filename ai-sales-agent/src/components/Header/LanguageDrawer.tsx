@@ -146,21 +146,6 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     return codes;
   };
 
-  const getName = (region: any) => {
-    const nameStr =
-      region?.fields?.["Language Name Field"]?.value ||
-      region?.fields?.Name?.value ||
-      region?.name ||
-      "Language";
-
-    const codes = [
-      region?.fields?.["Language Code Field"]?.value,
-      region?.fields?.["Second Language Code Field"]?.value,
-      region?.fields?.["Third Language Code Field"]?.value,
-    ].filter(Boolean);
-
-    return codes.length > 0 ? `${nameStr} (${codes.join(" | ")})` : nameStr;
-  };
 
   const normalizePath = (url: string) => {
     if (!url) return "/en";
@@ -221,16 +206,8 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   const isRegionActive = (region: any): boolean => {
     const codes = getRegionCodes(region);
 
-    // Direct match with currentLocale (e.g. 'en', 'sv-se', 'sv')
-    if (
-      codes.includes(currentLocale) ||
-      codes.some(
-        (c) =>
-          c === currentLocale ||
-          currentLocale.startsWith(`${c}-`) ||
-          c.startsWith(`${currentLocale}-`)
-      )
-    ) {
+    // Direct match with currentLocale (e.g. 'en', 'sv-se', 'en-ie')
+    if (codes.includes(currentLocale)) {
       return true;
     }
 
@@ -349,17 +326,12 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   // LANGUAGE DISPLAY HELPERS
   // ============================================================
   const getLanguageLabel = (region: any) => {
-    const rawName = getName(region);
-    const code = getLanguageCode(region);
-    const clean = rawName.replace(/\s*\([^)]*\)/g, "").trim();
-    const lower = (code || clean).toLowerCase();
-
-    if (lower.includes("de")) return "Deutsch";
-    if (lower.includes("sv") || lower.includes("se")) return "Svenska";
-    if (lower.includes("en")) return "English";
-    if (lower.includes("fr")) return "Français";
-    if (lower.includes("es")) return "Español";
-    return clean || code.toUpperCase();
+    const nameStr =
+      region?.fields?.["Language Name Field"]?.value ||
+      region?.fields?.Name?.value ||
+      region?.name ||
+      getLanguageCode(region).toUpperCase();
+    return nameStr;
   };
 
   const renderFlag = (region: any) => {
