@@ -344,7 +344,6 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     window.location.href = targetUrl;
   };
 
-  const activeFlagSrc = getFlagSrc(activeRegion);
 
   // ============================================================
   // LANGUAGE DISPLAY HELPERS
@@ -455,7 +454,6 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
           <div className="py-0.5">
             {regionsList.map((region: any, i: number) => {
               const label = getLanguageLabel(region);
-              const code = getLanguageCode(region);
               const isActive = isRegionActive(region);
               const languageUrl = getLanguageUrl(region);
 
