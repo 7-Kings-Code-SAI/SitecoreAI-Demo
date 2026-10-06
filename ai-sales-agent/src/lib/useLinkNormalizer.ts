@@ -94,8 +94,8 @@ export function normalizeHref(
   const segments = pathWithoutQuery.split('/').filter(Boolean);
   const firstSegment = segments[0]?.toLowerCase();
 
-  // Already prefixed with supported locales
-  if (firstSegment === 'en' || firstSegment === 'sv-se') {
+  // Already prefixed with a locale code (e.g. /en, /sv-se, /de-de, /fr-fr, etc.)
+  if (firstSegment && /^[a-z]{2}(-[a-z]{2,4})?$/i.test(firstSegment)) {
     return null;
   }
 
