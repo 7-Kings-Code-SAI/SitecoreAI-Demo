@@ -6,6 +6,7 @@ import { useSitecore } from "@sitecore-content-sdk/nextjs";
 
 export const LanguageDrawer = ({ regions }: { regions: any }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hoverIndex, setHoverIndex] = useState<number>(-1);
   const drawerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
@@ -39,57 +40,43 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
       }
     };
 
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleEscape);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
     };
   }, [isOpen]);
 
   // ============================================================
-  // FIELD READERS & UTILITIES
+  // FIELD READERS (Strictly using Sitecore Template fields)
   // ============================================================
   const getFlagSrc = (region: any) => {
-    const flagObj =
-      region?.fields?.Icon?.value ||
-      region?.fields?.icon?.value ||
-      region?.fields?.Flag?.value ||
-      region?.fields?.flag?.value;
-
-    return flagObj?.src || flagObj?.url || "";
+    return region?.fields?.Icon?.value?.src || "";
   };
 
   const getAppendUrl = (region: any): string => {
-    const urlField =
-      region?.fields?.Url ||
-      region?.fields?.url ||
-      region?.fields?.["Append Url"] ||
-      region?.fields?.["append_url"] ||
-      region?.fields?.["AppendUrl"];
-
-    const rawUrl =
-      urlField?.value?.href ||
-      urlField?.href ||
-      (typeof urlField?.value === "string" ? urlField.value : null) ||
-      (typeof urlField === "string" ? urlField : null);
+    const rawUrl = region?.fields?.Url?.value?.href;
 
     if (rawUrl && rawUrl !== "#") {
       let formatted = rawUrl.startsWith("http")
         ? rawUrl
         : rawUrl.startsWith("/")
-        ? rawUrl
-        : `/${rawUrl}`;
+          ? rawUrl
+          : `/${rawUrl}`;
       const lower = formatted.toLowerCase().replace(/\/+$/, "");
       if (lower === "" || lower === "/en") return "/en";
       return formatted;
     }
 
-    const languageCode =
-      region?.fields?.["Language Code Field"]?.value ||
-      region?.fields?.LanguageCode?.value ||
-      region?.fields?.Code?.value;
+    const languageCode = region?.fields?.["Language Code Field"]?.value;
 
     if (typeof languageCode === "string" && languageCode.trim()) {
       const clean = languageCode.trim();
@@ -102,50 +89,26 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   };
 
   const getLanguageCode = (region: any): string => {
-    const code =
-      region?.fields?.["Language Code Field"]?.value ||
-      region?.fields?.LanguageCode?.value ||
-      region?.fields?.Code?.value;
-
+    const code = region?.fields?.["Language Code Field"]?.value;
     if (typeof code === "string" && code.trim()) {
       return code.trim();
     }
-
-    const appendUrl = getAppendUrl(region).replace(/^\/+|\/+$/g, "");
-    if (appendUrl && appendUrl !== "#") {
-      return appendUrl;
-    }
-
-    if (typeof region?.name === "string" && region.name.trim()) {
-      return region.name.trim();
-    }
-
     return "en";
   };
 
   const getRegionCodes = (region: any): string[] => {
     const codes: string[] = [];
-    const add = (val: any) => {
-      if (typeof val === "string" && val.trim()) {
-        const clean = val.trim().toLowerCase().replace(/^\/+|\/+$/g, "");
-        if (clean && clean !== "#" && !codes.includes(clean)) {
-          codes.push(clean);
-        }
-      }
-    };
-
-    add(region?.fields?.["Language Code Field"]?.value);
-    add(region?.fields?.["Second Language Code Field"]?.value);
-    add(region?.fields?.["Third Language Code Field"]?.value);
-    add(region?.fields?.LanguageCode?.value);
-    add(region?.fields?.Code?.value);
-    add(getAppendUrl(region));
-    if (typeof region?.name === "string") {
-      add(region.name);
+    const code = region?.fields?.["Language Code Field"]?.value;
+    if (typeof code === "string" && code.trim()) {
+      const clean = code.trim().toLowerCase().replace(/^\/+|\/+$/g, "");
+      if (clean && clean !== "#") codes.push(clean);
     }
     return codes;
   };
 
+  const getLanguageLabel = (region: any) => {
+    return region?.fields?.["Language Name Field"]?.value || getLanguageCode(region).toUpperCase();
+  };
 
   const normalizePath = (url: string) => {
     if (!url) return "/en";
@@ -157,7 +120,6 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
 
   // ============================================================
   // FETCH TRANSLATED URLS FOR THE CURRENT ITEM
-  // Runs once per item
   // ============================================================
   useEffect(() => {
     if (!itemId || regionsList.length === 0) return;
@@ -236,8 +198,7 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     return false;
   };
 
-  const activeRegion =
-    regionsList.find((r) => isRegionActive(r)) || regionsList[0];
+  const activeRegion = regionsList.find((r) => isRegionActive(r)) || regionsList[0];
 
   // ============================================================
   // BUILD TARGET LANGUAGE URL
@@ -266,9 +227,7 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     const prefix = normalizePath(getAppendUrl(region));
 
     if (translatedPath) {
-      let cleanPath = translatedPath.startsWith("/")
-        ? translatedPath
-        : `/${translatedPath}`;
+      let cleanPath = translatedPath.startsWith("/") ? translatedPath : `/${translatedPath}`;
 
       if (isTargetDefault) {
         if (cleanPath === "/" || cleanPath === "") {
@@ -314,153 +273,112 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     // Set NEXT_LOCALE cookie so Next.js doesn't redirect back
     document.cookie = `NEXT_LOCALE=${targetCode}; path=/; max-age=31536000; SameSite=Lax`;
 
-    setIsOpen(false);
-    const targetUrl = getLanguageUrl(region);
+    // Short delay before closing per specs
+    setTimeout(() => setIsOpen(false), 200);
 
+    const targetUrl = getLanguageUrl(region);
     e.preventDefault();
     window.location.href = targetUrl;
   };
 
-
-  // ============================================================
-  // LANGUAGE DISPLAY HELPERS
-  // ============================================================
-  const getLanguageLabel = (region: any) => {
-    const nameStr =
-      region?.fields?.["Language Name Field"]?.value ||
-      region?.fields?.Name?.value ||
-      region?.name ||
-      getLanguageCode(region).toUpperCase();
-    return nameStr;
-  };
-
   const renderFlag = (region: any) => {
-    const flagSrc = getFlagSrc(region);
-    const code = getLanguageCode(region).toLowerCase();
-
-    if (flagSrc) {
-      return (
-        <img
-          src={flagSrc}
-          alt={code}
-          className="w-full h-full object-cover"
-        />
-      );
+    const src = getFlagSrc(region);
+    if (src) {
+      return <img src={src} alt="" className="w-full h-full object-cover rounded-full" />;
     }
-
-    if (code.includes("de")) {
-      return (
-        <svg className="w-full h-full" viewBox="0 0 640 480" fill="none">
-          <path fill="#111" d="M0 0h640v160H0z"/>
-          <path fill="#DD0000" d="M0 160h640v160H0z"/>
-          <path fill="#FFCE00" d="M0 320h640v160H0z"/>
-        </svg>
-      );
-    }
-    if (code.includes("sv") || code.includes("se")) {
-      return (
-        <svg className="w-full h-full" viewBox="0 0 640 480" fill="none">
-          <path fill="#006AA7" d="M0 0h640v480H0z"/>
-          <path fill="#FECC00" d="M0 192h640v96H0z"/>
-          <path fill="#FECC00" d="M176 0h96v480h-96z"/>
-        </svg>
-      );
-    }
-    if (code.includes("en") || code.includes("us") || code.includes("gb")) {
-      return (
-        <svg className="w-full h-full" viewBox="0 0 640 480" fill="none">
-          <rect width="640" height="480" fill="#BD3D44"/>
-          <path stroke="#FFF" strokeWidth="37" d="M0 55.4h640M0 129.2h640M0 203h640M0 276.9h640M0 350.8h640M0 424.6h640"/>
-          <rect width="256" height="258" fill="#192F5D"/>
-        </svg>
-      );
-    }
-
+    const code = getLanguageCode(region).toUpperCase();
     return (
-      <div className="w-full h-full bg-slate-200 text-slate-700 text-[9px] font-bold flex items-center justify-center uppercase">
+      <div className="w-full h-full bg-slate-200 text-slate-700 text-[9px] font-bold flex items-center justify-center uppercase rounded-full">
         {code.slice(0, 2)}
       </div>
     );
   };
 
+  const hoveredRegion = hoverIndex !== -1 ? regionsList[hoverIndex] : activeRegion;
+
   // ============================================================
-  // RENDER (SIMPLE CLEAN DROPDOWN)
+  // RENDER (4-COLUMN GRID WITH FOOTER)
   // ============================================================
   return (
     <div className="relative inline-block text-left" ref={drawerRef}>
-      {/* Clean Trigger Button */}
+      {/* TRIGGER BUTTON */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-semibold tracking-wide transition-colors cursor-pointer ${
-          isOpen
-            ? "bg-gray-100 border-gray-300 text-gray-900"
-            : "bg-white hover:bg-gray-50 border-gray-200 text-gray-700 hover:text-gray-900"
-        }`}
         aria-label="Select Language"
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
         type="button"
+        className="group flex items-center justify-between gap-1.5 h-[32px] px-2.5 rounded-full bg-[#0EA5E9]/10 hover:bg-[#0EA5E9]/15 active:scale-95 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] outline-none border-none focus-visible:ring-2 focus-visible:ring-[#0EA5E9]"
       >
-        <div className="relative flex items-center justify-center overflow-hidden rounded-[2px] w-4 h-3 shadow-2xs ring-1 ring-black/10 flex-shrink-0">
+        <div className="relative flex items-center justify-center w-[18px] h-[18px] rounded-full overflow-hidden transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110 group-hover:-rotate-6">
           {renderFlag(activeRegion)}
         </div>
-
-        <span className="uppercase font-mono font-bold text-gray-800">
+        <span className="text-[12px] font-bold uppercase tracking-wider text-slate-800">
           {getLanguageCode(activeRegion)}
         </span>
-
         <svg
-          className={`w-3.5 h-3.5 text-gray-400 transition-transform duration-150 ${
-            isOpen ? "rotate-180 text-gray-600" : ""
-          }`}
+          className={`w-3.5 h-3.5 text-[#0EA5E9] transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${isOpen ? "rotate-180" : "rotate-0"
+            }`}
           fill="none"
           stroke="currentColor"
-          strokeWidth="2"
           viewBox="0 0 24 24"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
 
-      {/* Simple Minimal Dropdown List */}
+      {/* DROPDOWN */}
       {isOpen && (
-        <div className="absolute right-0 top-full mt-1.5 w-44 bg-white rounded-xl border border-gray-200 shadow-lg p-1 z-50 animate-in fade-in zoom-in-95 duration-100">
-          <div className="py-0.5">
+        <div
+          className="absolute top-[calc(100%+8px)] right-0 w-[292px] bg-white/90 backdrop-blur-xl border border-white/40 rounded-[18px] flex flex-col shadow-[0_10px_35px_-5px_rgba(0,0,0,0.1),0_8px_15px_-6px_rgba(0,0,0,0.05)] z-50 origin-top-right animate-in fade-in zoom-in-95 duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] overflow-hidden"
+          role="listbox"
+        >
+          {/* Arrow pointing up */}
+          <div className="absolute -top-1.5 right-5 w-3 h-3 bg-white/90 rotate-45 rounded-sm shadow-[-2px_-2px_4px_rgba(0,0,0,0.03)] z-[-1]" />
+
+          {/* Grid Container */}
+          <div className="grid grid-cols-4 gap-1.5 p-3">
             {regionsList.map((region: any, i: number) => {
-              const label = getLanguageLabel(region);
               const isActive = isRegionActive(region);
               const languageUrl = getLanguageUrl(region);
+              const shortCode = getLanguageCode(region).toUpperCase();
 
               return (
                 <a
                   key={region.id || i}
                   href={languageUrl}
                   onClick={(e) => handleLanguageClick(e, region)}
-                  className={`flex items-center justify-between px-2.5 py-2 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
-                    isActive
-                      ? "bg-blue-50 text-[#0c7abf] font-semibold"
-                      : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                  }`}
+                  onMouseEnter={() => setHoverIndex(i)}
+                  onMouseLeave={() => setHoverIndex(-1)}
+                  role="option"
+                  aria-selected={isActive}
+                  className={`group relative flex flex-col items-center justify-center h-[62px] rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-[#0EA5E9]/50 active:scale-95 transition-all animate-in fade-in slide-in-from-top-2 fill-mode-backwards duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] cursor-pointer ${isActive
+                    ? "bg-gradient-to-br from-[#0EA5E9] to-[#38BDF8] shadow-[0_4px_12px_rgba(14,165,233,0.3)]"
+                    : "bg-transparent hover:bg-[#0EA5E9]/10"
+                    }`}
+                  style={{ animationDelay: `${i * 35}ms` }}
                 >
-                  <div className="flex items-center gap-2.5 min-w-0">
-                    <div className="relative flex-shrink-0 w-4 h-3 rounded-[2px] overflow-hidden shadow-2xs ring-1 ring-black/10">
-                      {renderFlag(region)}
-                    </div>
-                    <span className="truncate">{label}</span>
+                  <div className={`w-[26px] h-[26px] rounded-full overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${isActive
+                    ? "shadow-[0_0_0_2px_rgba(255,255,255,0.3)]"
+                    : "group-hover:-translate-y-[2px] group-hover:scale-[1.20] group-hover:-rotate-8 group-hover:shadow-[0_0_0_3px_rgba(14,165,233,0.2)]"
+                    }`}>
+                    {renderFlag(region)}
                   </div>
-
-                  {isActive && (
-                    <svg
-                      className="w-3.5 h-3.5 text-[#0c7abf] flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                  )}
+                  <span
+                    className={`mt-1.5 text-[10.5px] font-bold leading-none transition-colors duration-300 ${isActive ? "text-white" : "text-slate-600 group-hover:text-slate-900"
+                      }`}
+                  >
+                    {shortCode}
+                  </span>
                 </a>
               );
             })}
+          </div>
+
+          {/* Footer Bar */}
+          <div className="w-full h-8 px-4 flex items-center justify-between bg-[#0EA5E9]/10 border-t border-white/50 text-[11px] font-semibold tracking-wide text-slate-700 transition-colors duration-300">
+            <span className="truncate pr-2">{getLanguageLabel(hoveredRegion)}</span>
+            <span className="text-slate-500 font-medium truncate shrink-0">{getLanguageCode(hoveredRegion).toUpperCase()}</span>
           </div>
         </div>
       )}
