@@ -65,18 +65,19 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   const getAppendUrl = (region: any): string => {
     const rawUrl = region?.fields?.Url?.value?.href;
 
-    if (rawUrl && rawUrl !== "#") {
+    if (rawUrl && rawUrl !== "#" && rawUrl !== "/") {
       let formatted = rawUrl.startsWith("http")
         ? rawUrl
         : rawUrl.startsWith("/")
           ? rawUrl
           : `/${rawUrl}`;
       const lower = formatted.toLowerCase().replace(/\/+$/, "");
-      if (lower === "" || lower === "/en") return "/en";
-      return formatted;
+      if (lower === "/en") return "/en";
+      if (lower !== "") return formatted;
     }
 
-    const languageCode = region?.fields?.["Language Code Field"]?.value;
+    const field = region?.fields?.["Language Code Field"];
+    const languageCode = typeof field === "object" ? field?.value : field;
 
     if (typeof languageCode === "string" && languageCode.trim()) {
       const clean = languageCode.trim();
@@ -89,7 +90,8 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   };
 
   const getLanguageCode = (region: any): string => {
-    const code = region?.fields?.["Language Code Field"]?.value;
+    const field = region?.fields?.["Language Code Field"];
+    const code = typeof field === "object" ? field?.value : field;
     if (typeof code === "string" && code.trim()) {
       return code.trim();
     }
@@ -98,7 +100,8 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
 
   const getRegionCodes = (region: any): string[] => {
     const codes: string[] = [];
-    const code = region?.fields?.["Language Code Field"]?.value;
+    const field = region?.fields?.["Language Code Field"];
+    const code = typeof field === "object" ? field?.value : field;
     if (typeof code === "string" && code.trim()) {
       const clean = code.trim().toLowerCase().replace(/^\/+|\/+$/g, "");
       if (clean && clean !== "#") codes.push(clean);
@@ -107,7 +110,9 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   };
 
   const getLanguageLabel = (region: any) => {
-    return region?.fields?.["Language Name Field"]?.value || getLanguageCode(region).toUpperCase();
+    const field = region?.fields?.["Language Name Field"];
+    const name = typeof field === "object" ? field?.value : field;
+    return name || getLanguageCode(region).toUpperCase();
   };
 
   const normalizePath = (url: string) => {
@@ -165,40 +170,56 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   // ============================================================
   // DETERMINE CURRENT LANGUAGE / ACTIVE REGION
   // ============================================================
-  const isRegionActive = (region: any): boolean => {
-    const codes = getRegionCodes(region);
+  const getActiveRegion = () => {
+    if (!regionsList || regionsList.length === 0) return null;
 
-    // Direct match with currentLocale (e.g. 'en', 'sv-se', 'en-ie')
-    if (codes.includes(currentLocale)) {
-      return true;
-    }
+    // 1. Try exact match first
+    let match = regionsList.find((region) => {
+      const codes = getRegionCodes(region);
+      return codes.includes(currentLocale);
+    });
+    if (match) return match;
 
-    // Path prefix match for current route (e.g. /sv-se/... or /en/...)
+    // 2. Try path prefix match
     const currentPath = (router?.asPath || "").toLowerCase();
-    for (const code of codes) {
-      if (code && code !== "/") {
-        if (
-          currentPath === `/${code}` ||
-          currentPath.startsWith(`/${code}/`) ||
-          currentPath.startsWith(`/${code}?`)
-        ) {
-          return true;
-        }
-      }
-    }
+    match = regionsList.find((region) => {
+      const codes = getRegionCodes(region);
+      return codes.some(
+        (code) =>
+          code &&
+          code !== "/" &&
+          (currentPath === `/${code}` ||
+            currentPath.startsWith(`/${code}/`) ||
+            currentPath.startsWith(`/${code}?`))
+      );
+    });
+    if (match) return match;
 
-    // Default English fallback if currentLocale is English or default
-    if (
-      (currentLocale === "en" || currentLocale === "en-us" || currentLocale === "default") &&
-      (codes.includes("en") || codes.includes("en-us") || getAppendUrl(region) === "/en" || getAppendUrl(region) === "/")
-    ) {
-      return true;
-    }
+    // 3. Try fuzzy match (e.g. Next.js 'hr-hr' matches Sitecore 'hr')
+    match = regionsList.find((region) => {
+      const codes = getRegionCodes(region);
+      return codes.some((c) => currentLocale.startsWith(`${c}-`));
+    });
+    if (match) return match;
 
-    return false;
+    // 4. Default english fallback
+    match = regionsList.find((region) => {
+      const codes = getRegionCodes(region);
+      return (
+        (currentLocale === "en" || currentLocale === "en-us" || currentLocale === "default") &&
+        (codes.includes("en") || codes.includes("en-us") || getAppendUrl(region) === "/en" || getAppendUrl(region) === "/")
+      );
+    });
+    if (match) return match;
+
+    return regionsList[0];
   };
 
-  const activeRegion = regionsList.find((r) => isRegionActive(r)) || regionsList[0];
+  const activeRegion = getActiveRegion();
+
+  const isRegionActive = (region: any): boolean => {
+    return region === activeRegion;
+  };
 
   // ============================================================
   // BUILD TARGET LANGUAGE URL
@@ -208,9 +229,7 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     const targetCodes = getRegionCodes(region);
     const isTargetDefault =
       targetCode.toLowerCase() === "en" ||
-      targetCodes.includes("en") ||
-      getAppendUrl(region) === "/en" ||
-      getAppendUrl(region) === "/";
+      targetCodes.includes("en");
 
     // Check if we fetched a translated path for this target language
     let translatedPath: string | null = null;
