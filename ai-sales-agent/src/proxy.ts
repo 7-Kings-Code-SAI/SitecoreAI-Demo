@@ -11,6 +11,19 @@ import sites from '.sitecore/sites.json';
 import scConfig from 'sitecore.config';
 import client from 'lib/sitecore-client';
 
+// ----------------------------------------------------
+// GEO LOCALE CONFIGURATION
+// ----------------------------------------------------
+const SUPPORTED_LOCALES = ['en', 'de-DE', 'sv-SE', 'en-IE', 'hr-HR'];
+const FALLBACK_LOCALE = 'en';
+const COOKIE_NAME = 'NEXT_LOCALE';
+const COUNTRY_LOCALE_MAP: Record<string, string> = {
+  DE: 'de-DE',
+  SE: 'sv-SE',
+  IE: 'en-IE',
+  HR: 'hr-HR',
+};
+
 export default function proxy(req: NextRequest, event: NextFetchEvent) {
   const { pathname } = req.nextUrl;
 
@@ -18,9 +31,9 @@ export default function proxy(req: NextRequest, event: NextFetchEvent) {
   // GEO LOCALE REDIRECT LOGIC
   // ----------------------------------------------------
   if (req.nextUrl.locale === 'default') {
-    const isEditing = 
-      req.nextUrl.searchParams.has('sc_mode') || 
-      req.nextUrl.searchParams.has('sc_site') || 
+    const isEditing =
+      req.nextUrl.searchParams.has('sc_mode') ||
+      req.nextUrl.searchParams.has('sc_site') ||
       req.nextUrl.searchParams.has('sc_lang') ||
       req.cookies.has('__prerender_bypass') ||
       req.cookies.has('__next_preview_data');
@@ -30,26 +43,16 @@ export default function proxy(req: NextRequest, event: NextFetchEvent) {
     if (isEditing) {
       if (isDebug) {
         console.log(`[GeoLocale]
-pathname: ${pathname}
-country: ${req.headers.get('x-vercel-ip-country') || 'Unknown'}
-urlLocale: none
-cookieLocale: ${req.cookies.get('NEXT_LOCALE')?.value || 'none'}
-selectedLocale: default
-reason: sitecore-editing-mode
-action: bypass`);
+        pathname: ${pathname}
+        country: ${req.headers.get('x-vercel-ip-country') || 'Unknown'}
+        urlLocale: none
+        cookieLocale: ${req.cookies.get(COOKIE_NAME)?.value || 'none'}
+        selectedLocale: default
+        reason: sitecore-editing-mode
+        action: bypass`);
       }
       // Continue without redirect to not break Experience Editor / Preview
     } else {
-      const SUPPORTED_LOCALES = ['en', 'de-DE', 'sv-SE', 'en-IE', 'hr-HR'];
-      const FALLBACK_LOCALE = 'en';
-      const COOKIE_NAME = 'NEXT_LOCALE';
-      const COUNTRY_LOCALE_MAP: Record<string, string> = {
-        DE: 'de-DE',
-        SE: 'sv-SE',
-        IE: 'en-IE',
-        HR: 'hr-HR',
-      };
-
       const cookieLocale = req.cookies.get(COOKIE_NAME)?.value;
       const detectedCountry = req.headers.get('x-vercel-ip-country') || 'Unknown';
 
@@ -69,14 +72,14 @@ action: bypass`);
 
       if (isDebug) {
         console.log(`[GeoLocale]
-pathname: ${pathname}
-country: ${detectedCountry}
-urlLocale: none
-cookieLocale: ${cookieLocale || 'none'}
-selectedLocale: ${targetLocale}
-reason: ${reason}
-action: redirect
-destination: ${url.pathname}${url.search}`);
+        pathname: ${pathname}
+        country: ${detectedCountry}
+        urlLocale: none
+        cookieLocale: ${cookieLocale || 'none'}
+        selectedLocale: ${targetLocale}
+        reason: ${reason}
+        action: redirect
+        destination: ${url.pathname}${url.search}`);
       }
 
       return NextResponse.redirect(url, 307);
@@ -85,13 +88,13 @@ destination: ${url.pathname}${url.search}`);
     // Explicit locale already in URL
     if (process.env.GEO_LOCALE_DEBUG === 'true') {
       console.log(`[GeoLocale]
-pathname: ${pathname}
-country: ${req.headers.get('x-vercel-ip-country') || 'Unknown'}
-urlLocale: ${req.nextUrl.locale}
-cookieLocale: ${req.cookies.get('NEXT_LOCALE')?.value || 'none'}
-selectedLocale: ${req.nextUrl.locale}
-reason: explicit-url-locale
-action: bypass`);
+      pathname: ${pathname}
+      country: ${req.headers.get('x-vercel-ip-country') || 'Unknown'}
+      urlLocale: ${req.nextUrl.locale}
+      cookieLocale: ${req.cookies.get(COOKIE_NAME)?.value || 'none'}
+      selectedLocale: ${req.nextUrl.locale}
+      reason: explicit-url-locale
+      action: bypass`);
     }
   }
 
