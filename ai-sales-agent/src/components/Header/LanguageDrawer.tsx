@@ -66,7 +66,7 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     const rawUrl = region?.fields?.Url?.value?.href;
 
     if (rawUrl && rawUrl !== "#" && rawUrl !== "/") {
-      let formatted = rawUrl.startsWith("http")
+      const formatted = rawUrl.startsWith("http")
         ? rawUrl
         : rawUrl.startsWith("/")
           ? rawUrl
@@ -129,23 +129,12 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
   useEffect(() => {
     if (!itemId || regionsList.length === 0) return;
 
-    const languages = Array.from(
-      new Set(
-        regionsList.flatMap((r) => [
-          getLanguageCode(r),
-          ...getRegionCodes(r),
-        ]).filter(Boolean)
-      )
-    );
-
-    if (languages.length === 0) return;
-
     let cancelled = false;
 
     fetch("/api/language-urls", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ itemId, languages }),
+      body: JSON.stringify({ itemId }),
     })
       .then((res) => res.json())
       .then((result) => {
@@ -246,7 +235,7 @@ export const LanguageDrawer = ({ regions }: { regions: any }) => {
     const prefix = normalizePath(getAppendUrl(region));
 
     if (translatedPath) {
-      let cleanPath = translatedPath.startsWith("/") ? translatedPath : `/${translatedPath}`;
+      const cleanPath = translatedPath.startsWith("/") ? translatedPath : `/${translatedPath}`;
 
       if (isTargetDefault) {
         if (cleanPath === "/" || cleanPath === "") {
