@@ -95,7 +95,7 @@ export const Default = (props: any) => {
           animation-play-state: paused;
         }
       `}</style>
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           
@@ -169,7 +169,7 @@ export const Default = (props: any) => {
                       const badges = card['Widget Badges']?.value?.split(',').filter(Boolean) || [];
 
                       return (
-                        <div key={`${card.id}-${index}`} className="group relative overflow-hidden rounded-[24px] border border-[#30A3FF]/10 bg-white p-7 shadow-[0_8px_30px_rgb(48,163,255,0.02)] transition-all duration-300 hover:shadow-[0_20px_40px_rgba(48,163,255,0.08)] hover:border-[#30A3FF]/20 shrink-0">
+                        <div key={`${card.id}-${index}`} className="group cursor-pointer relative overflow-hidden rounded-[24px] border border-[#30A3FF]/10 bg-white p-7 shadow-[0_8px_30px_rgb(48,163,255,0.02)] transition-all duration-300 hover:shadow-[0_20px_40px_rgba(48,163,255,0.08)] hover:border-[#30A3FF]/20 shrink-0">
                           <h3 className="text-[20px] font-bold text-[#1d1d1f] mb-3 group-hover:text-[#30A3FF] transition-colors">
                             <Text field={card['Card Title']} />
                           </h3>
@@ -288,6 +288,9 @@ export const Default = (props: any) => {
                           {layout === 'Agent Profile' && (
                             <div className="relative w-full h-[160px] rounded-xl bg-gradient-to-br from-blue-50/50 to-indigo-50/30 border border-blue-100/40 overflow-hidden p-4 flex flex-col justify-between group-hover:border-blue-200 transition-colors">
                               <div className="flex items-center gap-3">
+                                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#30A3FF] to-indigo-500 flex items-center justify-center text-white font-bold text-[12px] shrink-0 shadow-sm">
+                                  {card['Widget Primary Highlight']?.value?.substring(0, 2).toUpperCase() || ''}
+                                </div>
                                 <div className="flex flex-col">
                                   <span className="text-[13px] font-bold text-slate-800">
                                     <Text field={card['Widget Primary Highlight']} />
@@ -347,7 +350,7 @@ export const Default = (props: any) => {
                             <div className="relative w-full h-[160px] rounded-xl bg-gradient-to-br from-blue-50/50 to-indigo-50/30 border border-blue-100/40 overflow-hidden p-3.5 flex flex-col justify-between group-hover:border-blue-200 transition-colors">
                               <div className="grid grid-cols-1 min-[360px]:grid-cols-3 gap-2.5 h-full items-center">
                                 {badges.map((badge: string, i: number) => (
-                                  <div key={i} className="rounded-xl bg-white border border-blue-100/20 p-2.5 flex flex-col justify-between shadow-sm h-full min-w-0 hover:border-[#30A3FF]/40 transition-colors">
+                                  <div key={i} className="cursor-pointer rounded-xl bg-white border border-blue-100/20 p-2.5 flex flex-col justify-between shadow-sm h-full min-w-0 hover:border-[#30A3FF]/40 transition-colors">
                                     <span className="text-[9px] text-slate-400 font-bold uppercase tracking-tight break-words">{badge.trim()}</span>
                                     {card['Widget Label 1']?.value && (
                                       <span className="text-[11px] font-extrabold text-slate-800">
@@ -370,14 +373,14 @@ export const Default = (props: any) => {
             </div>
 
             {/* --- BOTTOM BANNER (Workflow) - Restored with layout and hover styling --- */}
-            <div className="group bg-white rounded-[32px] p-8 md:p-10 shadow-sm border border-gray-100 w-full relative z-20 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(48,163,255,0.08)] hover:border-[#30A3FF]/20">
+            <div className="group cursor-pointer bg-white rounded-[32px] p-8 md:p-10 shadow-sm border border-gray-100 w-full relative z-20 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(48,163,255,0.08)] hover:border-[#30A3FF]/20">
               <div className="mb-8 text-left">
                 <h3 className="text-[22px] md:text-[26px] font-extrabold text-[#1d1d1f] group-hover:text-[#30A3FF] transition-colors duration-300 mb-3 tracking-tight [&_p]:m-0">
                   <RichText field={data['Banner Title']} />
                 </h3>
-                <p className="text-[14px] text-gray-500 leading-relaxed">
+                <div className="text-[14px] text-gray-500 leading-relaxed">
                   <RichText field={data['Banner Description']} />
-                </p>
+                </div>
               </div>
 
               <div className="flex flex-col xl:flex-row items-stretch xl:items-center gap-4 xl:gap-0 bg-[#f8fafc] p-6 rounded-[24px] border border-gray-100 relative overflow-hidden">
@@ -386,7 +389,7 @@ export const Default = (props: any) => {
                    const isBlue = idx === 1; // Second step is blue
                    return (
                      <React.Fragment key={`v-${idx}`}>
-                       <div className={`relative z-10 flex flex-col items-center text-center p-5 rounded-2xl w-full flex-1 shadow-sm transition-transform hover:-translate-y-1 ${isBlue ? 'bg-[#30A3FF] text-white border-transparent shadow-blue-200' : 'bg-white border border-gray-100 text-gray-900'}`}>
+                       <div className={`cursor-pointer relative z-10 flex flex-col items-center text-center p-5 rounded-2xl w-full flex-1 shadow-sm transition-transform hover:-translate-y-1 ${isBlue ? 'bg-[#30A3FF] text-white border-transparent shadow-blue-200' : 'bg-white border border-gray-100 text-gray-900'}`}>
                          <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 ${isBlue ? 'bg-white/20' : 'bg-[#fef2f2] text-red-500'}`}>
                            {step.icon?.value?.src ? (
                              <JssImage field={step.icon} className={`w-5 h-5 object-contain ${isBlue ? 'brightness-0 invert' : ''}`} />
@@ -418,7 +421,7 @@ export const Default = (props: any) => {
                        const colors = getAvatarColor(textVal);
 
                        return (
-                         <div key={`h-${idx}`} className="flex flex-row items-center bg-white p-3 rounded-xl shadow-sm border border-gray-100 gap-3 transition-transform hover:-translate-y-0.5">
+                         <div key={`h-${idx}`} className="cursor-pointer flex flex-row items-center bg-white p-3 rounded-xl shadow-sm border border-gray-100 gap-3 transition-transform hover:-translate-y-0.5">
                            <div className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center border ${step.icon?.value?.src ? 'bg-[#f8fafc] border-gray-100' : `${colors.bg} ${colors.border}`}`}>
                              {step.icon?.value?.src ? (
                                <JssImage field={step.icon} className="w-4 h-4 object-contain" />
@@ -429,7 +432,6 @@ export const Default = (props: any) => {
                            <div className="flex flex-col text-left">
                              <h5 className="text-[12px] font-bold text-gray-900 mb-0.5"><Text field={step.title} /></h5>
                              <p className="text-[10px] text-[#10b981] font-semibold flex items-center gap-1">
-                               <svg className="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
                                <Text field={step.desc} />
                              </p>
                            </div>
