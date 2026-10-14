@@ -11,6 +11,54 @@ SharedFields:
   Hint: __Shared revision
   Value: "71125ded-a616-4ad2-9e30-51886ad0233d"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T164201Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="461552d0-a487-442c-80f3-8fbf7ec08215" alt="hubspot" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "163119d4-9a50-4094-8220-8e0b576d5a05"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: HubSpot   
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Zwei-Wege-Kontakt- und Deal-Synchronisierung mit Ihren HubSpot-Pipelines und Lifecycle-Phasen.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103816Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrierte 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: Sprachinfrastruktur
 - Language: en
   Versions:
   - Version: 1
@@ -56,3 +104,147 @@ Languages:
     - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
       Hint: Category
       Value: Voice Infrastructure
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T164201Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="461552d0-a487-442c-80f3-8fbf7ec08215" alt="HubSpot" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "54bad09a-f8ce-43a1-a93c-7a2d41e01484"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: HubSpot   
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Two-way contact and deal sync with your HubSpot pipelines and lifecycle stages.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194244Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrated 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: Voice Infrastructure
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T164201Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="461552d0-a487-442c-80f3-8fbf7ec08215" alt="hubspot" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "022b7e9e-17ca-4aef-8adb-ed39fa26274a"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: HubSpot   
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Dvosmjerna sinkronizacija kontakata i poslova s vašim HubSpot kanalima prodaje i fazama životnog ciklusa.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145307Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrirana 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: Glasovna infrastruktura
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T164201Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="461552d0-a487-442c-80f3-8fbf7ec08215" alt="hubspot" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "46836670-1948-46b8-918d-92485cb24c2f"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: HubSpot   
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Tvåvägssynkronisering av kontakter och affärer med dina HubSpot-pipelines och livscykelstadier.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105615Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrerad 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: Röstinfrastruktur

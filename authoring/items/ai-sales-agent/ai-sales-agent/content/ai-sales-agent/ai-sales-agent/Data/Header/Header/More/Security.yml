@@ -4,6 +4,44 @@ Parent: "8af967f7-e238-44d8-b4d9-d65bc2e6e5b4"
 Template: "ee36006f-c618-41eb-b306-7347b6e068e4"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Header/Header/More/Security"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "072b857f-7669-4d28-8adf-e7025f4bf34c"
+      Hint: Navigation Title
+      Value: Sicherheit
+    - ID: "0c7e9ac5-8189-4735-ac05-eed80d4e833c"
+      Hint: Show in Navigation
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T151627Z
+    - ID: "31051e7f-cdb9-4668-8cf6-2cbd971e2050"
+      Hint: Link
+      Value: |
+        <link text="#" linktype="external" url="http://Security" anchor="" target="" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "68320dce-98ec-426d-8865-bc15d19e8d76"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103827Z
 - Language: en
   Versions:
   - Version: 1
@@ -39,3 +77,117 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20260916T151959Z
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "072b857f-7669-4d28-8adf-e7025f4bf34c"
+      Hint: Navigation Title
+      Value: Security
+    - ID: "0c7e9ac5-8189-4735-ac05-eed80d4e833c"
+      Hint: Show in Navigation
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T151627Z
+    - ID: "31051e7f-cdb9-4668-8cf6-2cbd971e2050"
+      Hint: Link
+      Value: |
+        <link text="#" linktype="external" url="http://Security" anchor="" target="" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c402e24b-e49f-462e-b45a-c3950973dd5d"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194254Z
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "072b857f-7669-4d28-8adf-e7025f4bf34c"
+      Hint: Navigation Title
+      Value: Sigurnost
+    - ID: "0c7e9ac5-8189-4735-ac05-eed80d4e833c"
+      Hint: Show in Navigation
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T151627Z
+    - ID: "31051e7f-cdb9-4668-8cf6-2cbd971e2050"
+      Hint: Link
+      Value: |
+        <link text="#" linktype="external" url="http://Security" anchor="" target="" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "82e3fdb0-2f03-4d03-b6b2-5036c6abf94e"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145318Z
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "072b857f-7669-4d28-8adf-e7025f4bf34c"
+      Hint: Navigation Title
+      Value: Säkerhet
+    - ID: "0c7e9ac5-8189-4735-ac05-eed80d4e833c"
+      Hint: Show in Navigation
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260916T151627Z
+    - ID: "31051e7f-cdb9-4668-8cf6-2cbd971e2050"
+      Hint: Link
+      Value: |
+        <link text="#" linktype="external" url="http://Security" anchor="" target="" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9c28ceae-6867-4f61-a74c-2dd8648983d1"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105632Z

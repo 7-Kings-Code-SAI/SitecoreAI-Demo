@@ -4,6 +4,63 @@ Parent: "80faa4c5-92b6-4cdc-8b18-35a2aabef1a8"
 Template: "9916fc53-736e-4032-af70-2f37756f1281"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Features/Data/Hero Banner"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T154633Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;"><span style="background-color:rgb(255,255,255);color:rgb(107,114,128);"><span style="-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:&quot;SF Pro Text&quot;, &quot;SF Pro Display&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:-0.176px;orphans:2;text-align:center;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Setzen Sie KI-Vertriebsagenten ein, die menschlich klingen, Ihre Marke repräsentieren und echte Gespräche in einem Umfang führen, den kein Einstellungsplan erreichen kann. Importieren Sie Leads aus Ihrem CRM, einer Tabelle oder einer manuellen Liste. Starten Sie so viele Agenten, wie Sie benötigen, jeder mit eigener Stimme, eigenem Akzent, eigener Persönlichkeit und eigenem Playbook. Jedes Gespräch qualifiziert Leads, behandelt Einwände und aktualisiert Ihr CRM automatisch. Kein Admin-Aufwand. Keine manuelle Dateneingabe. Keine verpassten Nachfassaktionen.</span></span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "59a13787-9218-4f45-9c66-82aadf8e4c84"
+    - ID: "8f73ba64-1ae8-43e5-b2dd-4ea5c6b12fa2"
+      Hint: Secondary CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="KI in Aktion ansehen" url="#" />
+    - ID: "938e3ffc-d468-42a5-b361-93d17ba22a22"
+      Hint: Territory CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Starten Sie Ihre 7-tägige kostenlose Testversion" url="#" />
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: "Die KI-Vertriebsplattform für moderne Revenue-Teams"
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="external" text="Live-Demo buchen" url="#" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p><span style="color:#30A3FF;">KI-Vertriebsagent</span>, der Ihr Vertriebsteam skaliert. Nicht Ihre Personalkosten.</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103750Z
+    - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
+      Hint: footnote
+      Value: Unternehmenstauglich · In wenigen Minuten einsatzbereit · Funktioniert mit dem CRM und Telefonsystem, das Sie bereits nutzen
 - Language: en
   Versions:
   - Version: 1
@@ -58,6 +115,120 @@ Languages:
     - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
       Hint: footnote
       Value: "Enterprise-ready · Deploy in minutes · Works with the CRM and phone system you already run"
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T154633Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;"><span style="background-color:rgb(255,255,255);color:rgb(107,114,128);"><span style="-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:&quot;SF Pro Text&quot;, &quot;SF Pro Display&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:-0.176px;orphans:2;text-align:center;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Deploy AI Sales Agents that sound human, represent your brand, and hold real conversations at a scale no hiring plan can match. Import leads from your CRM, a spreadsheet, or a manual list. Launch as many agents as you need, each with its own voice, accent, personality, and playbook. Every conversation qualifies leads, handles objections, and updates your CRM automatically. No admin. No manual data entry. No missed follow-ups.</span></span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e9488358-25fd-42a4-96c7-920ee0f0b603"
+    - ID: "8f73ba64-1ae8-43e5-b2dd-4ea5c6b12fa2"
+      Hint: Secondary CTA
+      Value: |
+        <link linktype="external" url="#" target="" text="Watch AI in Action" title="" class=""/>
+    - ID: "938e3ffc-d468-42a5-b361-93d17ba22a22"
+      Hint: Territory CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Start Your 7-Day Free Trial" url="#" />
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: The AI Sales Platform for Modern Revenue Teams
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="external" url="#" text="Book a Live Demo"/>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p><span style="color:#30A3FF;">AI Sales Agent</span> That Scales Your Sales Team, Not Your Payroll.</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194215Z
+    - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
+      Hint: footnote
+      Value: "Enterprise-ready · Deploy in minutes · Works with the CRM and phone system you already use"
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T154633Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;"><span style="background-color:rgb(255,255,255);color:rgb(107,114,128);"><span style="-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:&quot;SF Pro Text&quot;, &quot;SF Pro Display&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:-0.176px;orphans:2;text-align:center;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Pokrenite AI prodajne agente koji zvuče ljudski, predstavljaju vaš brend i vode stvarne razgovore u opsegu koji nijedan plan zapošljavanja ne može dosegnuti. Uvezite leadove iz svog CRM-a, proračunske tablice ili ručnog popisa. Pokrenite koliko god agenata trebate, svaki sa svojim glasom, naglaskom, osobnošću i priručnikom. Svaki razgovor kvalificira leadove, rješava prigovore i automatski ažurira vaš CRM. Bez administracije. Bez ručnog unosa podataka. Bez propuštenih praćenja.</span></span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a09ca795-a816-4307-be4b-d3b187e39db9"
+    - ID: "8f73ba64-1ae8-43e5-b2dd-4ea5c6b12fa2"
+      Hint: Secondary CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Pogledajte AI na djelu" url="#" />
+    - ID: "938e3ffc-d468-42a5-b361-93d17ba22a22"
+      Hint: Territory CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Započnite svoju 7-dnevnu besplatnu probu" url="#" />
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: AI prodajna platforma za moderne timove prihoda
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="external" text="Rezervirajte demo uživo" url="#" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p><span style="color:#30A3FF;">AI prodajni agent</span> koji širi vaš prodajni tim. Ne vaš platni spisak.</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145240Z
+    - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
+      Hint: footnote
+      Value: "Spremno za poduzeća · Implementacija u nekoliko minuta · Radi s CRM-om i telefonskim sustavom koji već koristite"
 - Language: "sv-SE"
   Versions:
   - Version: 1
@@ -107,3 +278,61 @@ Languages:
     - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
       Hint: footnote
       Value: Sweden
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260922T154633Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;"><span style="background-color:rgb(255,255,255);color:rgb(107,114,128);"><span style="-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:&quot;SF Pro Text&quot;, &quot;SF Pro Display&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:-0.176px;orphans:2;text-align:center;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Distribuera AI-säljagenter som låter mänskliga, representerar ditt varumärke och för riktiga samtal i en skala som ingen rekryteringsplan kan matcha. Importera leads från ditt CRM, ett kalkylblad eller en manuell lista. Starta så många agenter du behöver, var och en med egen röst, accent, personlighet och playbook. Varje samtal kvalificerar leads, hanterar invändningar och uppdaterar ditt CRM automatiskt. Ingen administration. Ingen manuell datainmatning. Inga missade uppföljningar.</span></span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fe35041c-74e5-45de-ba7a-2ab7fee5509b"
+    - ID: "8f73ba64-1ae8-43e5-b2dd-4ea5c6b12fa2"
+      Hint: Secondary CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Se AI i praktiken" url="#" />
+    - ID: "938e3ffc-d468-42a5-b361-93d17ba22a22"
+      Hint: Territory CTA
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Starta din 7-dagars kostnadsfria provperiod" url="#" />
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: "AI-säljplattformen för moderna intäktsteam"
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="external" text="Boka en livedemo" url="#" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p><span style="color:#30A3FF;">AI-säljagent</span> som skalar ditt säljteam. Inte din personalstyrka.</p></div>
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20261006T105540Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105547Z
+    - ID: "f4e64605-89cf-4fc5-9fd4-06572f7c39af"
+      Hint: footnote
+      Value: "Redo för enterprise · Driftsätt på några minuter · Fungerar med CRM-systemet och telefonsystemet som du redan använder"

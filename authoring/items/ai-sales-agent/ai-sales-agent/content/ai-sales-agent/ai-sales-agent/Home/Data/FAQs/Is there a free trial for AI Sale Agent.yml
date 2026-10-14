@@ -11,6 +11,47 @@ SharedFields:
   Hint: __Shared revision
   Value: "25e3c73f-75f8-42c6-8a91-12e8506368a9"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161236Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "806e9211-2730-4b18-bec0-185ed55201da"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Erste Schritte & So funktioniert es
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Gibt es eine kostenlose Testversion für AI Sale Agent?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103736Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Ja. AI Sale Agent bietet eine 7-tägige kostenlose Testversion mit 3 Stunden Anrufminuten, 3 benutzerdefinierten Agenten, 3 Vertriebskampagnen, bis zu 100 Leads sowie 1 aktiven CRM-Integration und 1 aktiven VoIP-Integration. Das reicht aus, um einen echten Agenten zu erstellen, eine reale Kampagne durchzuführen und zu sehen, wie qualifizierte Leads in Ihrem CRM landen, bevor Sie sich für einen kostenpflichtigen Tarif entscheiden.&nbsp;</span></p></div>
 - Language: en
   Versions:
   - Version: 1
@@ -49,3 +90,126 @@ Languages:
       Hint: Answer
       Value: |
         <div class="ck-content"><p><span>Yes. AI Sale Agent offers a 7 day free trial that includes 3 hours of calling minutes, 3 custom agents, 3 sales campaigns, up to 100 leads, and 1 active CRM integration plus 1 active VoIP integration. It’s enough to build a real agent, run an actual campaign, and see qualified leads land in your CRM before you commit to a paid plan.&nbsp;</span></p></div>
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161236Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a28f1828-8be1-4d23-b4a8-cd6006522999"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Getting Started & How It Works
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Is there a free trial for AI Sale Agent?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194202Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Yes. AI Sale Agent offers a 7-day free trial that includes 3 hours of calling minutes, 3 custom agents, 3 sales campaigns, up to 100 leads, and 1 active CRM integration plus 1 active VoIP integration. It’s enough to build a real agent, run an actual campaign, and see qualified leads land in your CRM before you commit to a paid plan.&nbsp;</span></p></div>
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161236Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "32900d7b-0c7f-43b8-8842-5b9bc39c72c0"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Početak i kako funkcionira
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Postoji li besplatno probno razdoblje za AI Sale Agent?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145224Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Da. AI Sale Agent nudi 7-dnevno besplatno probno razdoblje koje uključuje 3 sata minuta poziva, 3 prilagođena agenta, 3 prodajne kampanje, do 100 leadova te 1 aktivnu CRM integraciju i 1 aktivnu VoIP integraciju. To je dovoljno da izradite stvarnog agenta, pokrenete stvarnu kampanju i vidite kako kvalificirani leadovi stižu u vaš CRM prije nego što se obvežete na plaćeni plan.&nbsp;</span></p></div>
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161236Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cc10f2f7-aad8-4223-bc16-352516e269f4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Komma igång och så fungerar det
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Finns det en kostnadsfri provperiod för AI Sale Agent?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105532Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Ja. AI Sale Agent erbjuder en 7 dagars kostnadsfri provperiod som inkluderar 3 timmars samtalsminuter, 3 anpassade agenter, 3 säljkampanjer, upp till 100 leads samt 1 aktiv CRM-integration och 1 aktiv VoIP-integration. Det räcker för att bygga en riktig agent, köra en verklig kampanj och se kvalificerade leads hamna i ditt CRM innan du bestämmer dig för en betald plan.&nbsp;</span></p></div>

@@ -11,6 +11,47 @@ SharedFields:
   Hint: __Shared revision
   Value: "c709b001-9127-414e-8518-364054fe066b"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161331Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3d0d81d3-79c3-4721-b670-f4b487f458d1"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Preise & Tarife
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Was ist der Unterschied zwischen den Tarifen Silver, Gold und Platinum?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103736Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Der Hauptunterschied liegt im Umfang und im Supportniveau. Silver umfasst 5 benutzerdefinierte Agenten, 10 Kampagnen und 15 Tage Speicherung von Anrufdaten. Gold erhöht dies auf 10 Agenten, 15 Kampagnen, 60 Tage Speicherung und ergänzt einen 24/7-Online- und Telefonsupport. Platinum hebt die Begrenzungen auf (unbegrenzte Agenten, unbegrenzte Kampagnen, unbegrenzte Speicherung) mit benutzerdefinierter API-Integration, einem dedizierten Account Manager und privatem Speicher. Enterprise-Tarife gehen noch weiter mit benutzerdefinierter Infrastruktur, dedizierten Telefonnummern und einem SLA.&nbsp;</span></p></div>
 - Language: en
   Versions:
   - Version: 1
@@ -49,3 +90,126 @@ Languages:
       Hint: Answer
       Value: |
         <div class="ck-content"><p><span>The core difference is scale and support level. Silver includes 5 custom agents, 10 campaigns, and 15 days of call data storage. Gold steps up to 10 agents, 15 campaigns, 60 days of storage, and adds 24/7 online &amp; phone support. Platinum removes the caps (Unlimited agents, Unlimited campaigns, unlimited storage) with custom API integration, a dedicated account manager, and private storage. Enterprise plans go further with custom infrastructure, dedicated phone numbers, and an SLA.&nbsp;</span></p></div>
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161331Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f083987b-6f9e-41d4-8e7e-d3d82a76b6c4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Pricing & Plans
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "What's the difference between the Silver, Gold and Platinum plans?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194202Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>The main difference is scale and level of support. Silver includes 5 custom agents, 10 campaigns and 15 days of call data storage. Gold increases this to 10 agents, 15 campaigns, 60 days of storage, and adds 24/7 online and phone support. Platinum removes the limits (unlimited agents, unlimited campaigns, unlimited storage) with custom API integration, a dedicated account manager and private storage. Enterprise plans go further with custom infrastructure, dedicated phone numbers and an SLA.&nbsp;</span></p></div>
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161331Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "820165ed-2cee-4ec7-a81d-b339d1e38ec5"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Cijene i planovi
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Koja je razlika između paketa Silver, Gold i Platinum?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145224Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Osnovna razlika je u opsegu i razini podrške. Silver uključuje 5 prilagođenih agenata, 10 kampanja i 15 dana pohrane podataka o pozivima. Gold povećava to na 10 agenata, 15 kampanja, 60 dana pohrane te dodaje 24/7 internetsku i telefonsku podršku. Platinum uklanja ograničenja (neograničen broj agenata, neograničen broj kampanja, neograničena pohrana) uz prilagođenu API integraciju, namjenskog voditelja računa i privatnu pohranu. Enterprise paketi idu i korak dalje uz prilagođenu infrastrukturu, namjenske telefonske brojeve i SLA.&nbsp;</span></p></div>
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161331Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5efa1c2b-5405-454c-99f7-eaf324716b89"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Priser och planer
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Vad är skillnaden mellan planerna Silver, Gold och Platinum?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105532Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Den grundläggande skillnaden är omfattningen och nivån på supporten. Silver inkluderar 5 anpassade agenter, 10 kampanjer och 15 dagars lagring av samtalsdata. Gold ökar till 10 agenter, 15 kampanjer, 60 dagars lagring och lägger till online- och telefonsupport dygnet runt. Platinum tar bort begränsningarna (obegränsat antal agenter, obegränsat antal kampanjer, obegränsad lagring) med anpassad API-integration, en dedikerad kundansvarig och privat lagring. Enterprise-planer går ännu längre med anpassad infrastruktur, dedikerade telefonnummer och ett SLA.&nbsp;</span></p></div>

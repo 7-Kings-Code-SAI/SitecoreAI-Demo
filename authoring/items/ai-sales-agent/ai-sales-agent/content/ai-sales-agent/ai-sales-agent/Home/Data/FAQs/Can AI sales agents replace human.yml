@@ -11,6 +11,47 @@ SharedFields:
   Hint: __Shared revision
   Value: "009808f0-985b-4460-b688-30db5664f174"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161218Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "01cf3955-db36-4c0a-8e83-82e5162bf429"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Erste Schritte & So funktioniert es
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Können KI-Vertriebsagenten menschliche Vertriebsmitarbeitende ersetzen?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103736Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Nicht vollständig, und das ist so beabsichtigt. Der AI Sale Agent wurde entwickelt, um sich wiederholende Aufgaben wie Kaltakquise, erste Qualifizierung, Nachfassaktionen und Vertragsverlängerungen zu übernehmen, damit sich Ihre menschlichen Vertriebsmitarbeitenden auf wertvolle Gespräche und Abschlüsse statt auf Administration konzentrieren können. Die meisten Kunden nutzen ihn, um das Anrufvolumen zu skalieren, ohne die Mitarbeiterzahl zu erhöhen, und behalten gleichzeitig Menschen für den Beziehungsaufbau und komplexe Abschlüsse im Prozess.&nbsp;</span></p></div>
 - Language: en
   Versions:
   - Version: 1
@@ -49,3 +90,126 @@ Languages:
       Hint: Answer
       Value: |
         <div class="ck-content"><p><span>Not entirely, and that’s by design. AI Sale Agent is built to absorb repetitive work like cold outreach, initial qualification, follow ups, and renewals, so your human reps spend their time on high value conversations and closing instead of admin. Most customers use it to scale call volume without scaling headcount, while keeping people in the loop for relationship building and complex deals.&nbsp;</span></p></div>
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161218Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e913a9aa-ca8f-491d-96ca-4926615e849a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Getting Started & How It Works
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Can AI sales agents replace human sales reps?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194201Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Not entirely, and that’s by design. AI Sale Agent is built to absorb repetitive work like cold outreach, initial qualification, follow-ups, and renewals, so your human reps spend their time on high-value conversations and closing instead of admin. Most customers use it to scale call volume without scaling headcount, while keeping people in the loop for relationship-building and complex deals.&nbsp;</span></p></div>
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161218Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d271c285-a5dd-4390-b8a0-e03c14c89729"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Početak rada i kako funkcionira
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Mogu li AI prodajni agenti zamijeniti ljudske prodajne predstavnike?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145224Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Ne u potpunosti, i to namjerno. AI Sale Agent osmišljen je da preuzme repetitivne zadatke poput hladnog kontakta, početne kvalifikacije, naknadnih praćenja i obnova, kako bi vaši ljudski predstavnici mogli svoje vrijeme posvetiti razgovorima visoke vrijednosti i zaključivanju prodaje umjesto administraciji. Većina korisnika koristi ga za povećanje broja poziva bez povećanja broja zaposlenih, uz zadržavanje ljudi u procesu za izgradnju odnosa i složene poslove.&nbsp;</span></p></div>
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161218Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d3666086-217c-4e12-aed7-7b32bde07ad2"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Komma igång och så fungerar det
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Kan AI sales agents ersätta mänskliga säljrepresentanter?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105532Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Inte helt, och det är avsiktligt. AI Sale Agent är byggd för att ta hand om repetitivt arbete som kall outreach, initial kvalificering, uppföljningar och förnyelser, så att era mänskliga säljrepresentanter kan lägga sin tid på värdeskapande samtal och avslut i stället för administration. De flesta kunder använder den för att skala samtalsvolymen utan att skala personalstyrkan, samtidigt som människor finns kvar i processen för relationsbyggande och komplexa affärer.&nbsp;</span></p></div>

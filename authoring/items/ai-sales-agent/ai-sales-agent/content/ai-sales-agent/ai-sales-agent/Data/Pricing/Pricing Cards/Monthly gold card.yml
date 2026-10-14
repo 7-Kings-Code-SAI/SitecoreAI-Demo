@@ -4,6 +4,73 @@ Parent: "2dda2003-6935-48ea-933b-d4b0c785f1d4"
 Template: "7361361b-8b60-42a8-9734-d14d5925c077"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Pricing/Pricing Cards/Monthly gold card"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: Min.
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 17 ¢
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{D6466643-7DE0-46A8-B721-F1D518091397}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T171420Z
+    - ID: "34f90bcf-139d-4f73-8bdc-5c5d892c46c6"
+      Hint: Popular Badge
+      Value: AM BELIEBTESTEN
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Gold-Tarif wählen" />
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <ul>
+          <li>Alles aus Silber</li>
+          <li>24/7 Online- & Telefonsupport</li>
+        </ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "437f3e93-c700-4eec-8078-5fb74c44c931"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=10&Sales campaigns=15&Call data storage=%2060%20days
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{90FBADFE-1CFC-4316-9CFD-ED640B05F112}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + 9,99 $ pro Nutzer / Monat
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: "GOLD-TARIF"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103800Z
 - Language: en
   Versions:
   - Version: 1
@@ -68,6 +135,140 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20261002T190704Z
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: min
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 17c
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{D6466643-7DE0-46A8-B721-F1D518091397}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T171420Z
+    - ID: "34f90bcf-139d-4f73-8bdc-5c5d892c46c6"
+      Hint: Popular Badge
+      Value: MOST POPULAR
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link linktype="internal" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" querystring="" target="" class="" text="Choose Gold plan" title=""/>
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <ul>
+          <li>Everything in Silver</li>
+          <li>24/7 online & phone support</li>
+        </ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d2a03ae0-aacc-48f5-844c-b5f63248e612"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=10&Sales campaigns=15&Call data storage=%2060%20days
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{90FBADFE-1CFC-4316-9CFD-ED640B05F112}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + $9.99 per user / month
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: GOLD PLAN
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194224Z
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: min
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 17 ¢
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{D6466643-7DE0-46A8-B721-F1D518091397}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T171420Z
+    - ID: "34f90bcf-139d-4f73-8bdc-5c5d892c46c6"
+      Hint: Popular Badge
+      Value: NAJPOPULARNIJI
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Odaberite Zlatni plan" />
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <ul>
+          <li>Sve iz Silver paketa</li>
+          <li>24/7 online i telefonska podrška</li>
+        </ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2f141aaf-5d26-478a-86a9-132a2bf9ec61"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=10&Sales campaigns=15&Call data storage=%2060%20days
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{90FBADFE-1CFC-4316-9CFD-ED640B05F112}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + 9,99 $ po korisniku / mjesečno
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: ZLATNI PLAN
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145249Z
 - Language: "sv-SE"
   Versions:
   - Version: 1
@@ -129,3 +330,71 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20260930T171757Z
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: min
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 17 öre
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{D6466643-7DE0-46A8-B721-F1D518091397}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T171420Z
+    - ID: "34f90bcf-139d-4f73-8bdc-5c5d892c46c6"
+      Hint: Popular Badge
+      Value: POPULÄRAST
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Välj Guldplan" />
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <ul>
+          <li>Allt i Silver</li>
+          <li>Support online och via telefon dygnet runt</li>
+        </ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3609c37f-4f71-42b7-82fc-a807d6d491b6"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=10&Sales campaigns=15&Call data storage=%2060%20days
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{90FBADFE-1CFC-4316-9CFD-ED640B05F112}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + 9,99 $ per användare / månad
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20261006T105552Z
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: GULDPLAN
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105557Z

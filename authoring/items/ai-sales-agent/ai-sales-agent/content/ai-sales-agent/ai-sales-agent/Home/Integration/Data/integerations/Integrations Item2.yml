@@ -11,6 +11,54 @@ SharedFields:
   Hint: __Shared revision
   Value: "6accc8e3-c1f3-49da-bdda-1d0b7d2e2fdf"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165819Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="2482d0fc-676e-477c-a44e-78f39183174d" alt="salesforce" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "091a9fc1-4876-4637-91e6-d26d32945d87"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Salesforce
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Synchronisierung von Leads, Opportunities und Anrufprotokollen mit Salesforce auf Enterprise-Niveau.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103816Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrierte 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: Sprachinfrastruktur
 - Language: en
   Versions:
   - Version: 1
@@ -56,3 +104,147 @@ Languages:
     - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
       Hint: Category
       Value: Voice Infrastructure
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165819Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="2482d0fc-676e-477c-a44e-78f39183174d" alt="salesforce" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b3c887ad-37fd-4f81-8f31-9a7b07a8c059"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Salesforce
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Enterprise-grade sync of leads, opportunities, and call logs with Salesforce.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194247Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrated
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: Voice Infrastructure
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165819Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="2482d0fc-676e-477c-a44e-78f39183174d" alt="salesforce" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2cf2a5a6-9a81-4872-a6c3-5a40148ed1a9"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Salesforce
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Sinkronizacija potencijalnih klijenata, prilika i zapisnika poziva sa Salesforceom na razini poduzeća.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145310Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrirana 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: Glasovna infrastruktura
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165819Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="2482d0fc-676e-477c-a44e-78f39183174d" alt="salesforce" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9fe336f6-0a46-4442-9fa2-b875a77efd7f"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Salesforce
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Synkronisering av leads, affärsmöjligheter och samtalsloggar med Salesforce i företagsklass.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105615Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrerad 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: Röstinfrastruktur

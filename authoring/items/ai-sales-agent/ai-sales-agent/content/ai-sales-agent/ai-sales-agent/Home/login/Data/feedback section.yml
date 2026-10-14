@@ -1,0 +1,43 @@
+﻿---
+ID: "ce0abeb6-f6a8-49ff-b2b6-7ea3c531abba"
+Parent: "4c52bd24-6ab3-4136-af7f-cbd00a857c0f"
+Template: "bba6e1da-ad5b-44fd-844a-6d2d4d0a3eba"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/login/Data/feedback section"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261012T212736Z
+    - ID: "50bc2b97-2678-4f39-bfb7-e7bb43257371"
+      Hint: Subheading
+      Value: |
+        <div class="ck-content"><p>Our autonomous AI voice agents help you qualify leads and deliver sales-ready hand-offs directly to your CRM at scale.</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f0dc64cc-311d-40ef-ae1c-3290ff33bdc5"
+    - ID: "9787cee7-ed7d-48bc-a05b-4b61dbfe0187"
+      Hint: Heading
+      Value: "Start your remarkable journey with us!"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261013T135545Z
+    - ID: "dc4894aa-8664-41c6-af0a-918b8f88927d"
+      Hint: Center Logo
+      Value: |
+        <image mediaid="9b1ddeb9-dc74-4f69-8787-13b101a77dc6" />
+    - ID: "ec9ed60a-9d4e-49e0-9655-cc59b24b165b"
+      Hint: Feedback Cards
+      Value: |
+        {F75C106F-84C2-49EC-81BC-D741D8D72F46}
+        {9CFFB289-2F4E-48D8-AB02-34523578574F}
+        {F9572A34-83B0-4695-9B50-8868497FE19A}

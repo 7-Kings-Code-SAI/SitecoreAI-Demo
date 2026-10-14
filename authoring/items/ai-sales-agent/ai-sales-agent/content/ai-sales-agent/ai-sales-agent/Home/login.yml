@@ -1,0 +1,80 @@
+﻿---
+ID: "d156b6d6-359b-4267-8fbb-a0cf6e655315"
+Parent: "9c887615-27db-41a4-b229-2e223a024947"
+Template: "1454a0f3-e9a4-489b-9778-db6b5ba5bd6d"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/login"
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{FB557E20-6ADE-4A12-8C2B-EDB79819C363}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{C1205CC2-9F52-4DB0-8F1D-4C6F426D4168}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "1332f3a2-8d71-4ce5-8613-a94079d841dd"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{460B84BB-5506-4DDB-B219-56AC3F30DE5F}"
+              p:before="*"
+              s:ds="local:/Data/column splitter"
+              s:id="{D2FCC4BC-4B12-4224-9A29-23CDA72FB3D2}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{543FBC80-E3D5-46BC-B405-DE66D82226F3}"
+              p:after="r[@uid='{460B84BB-5506-4DDB-B219-56AC3F30DE5F}']"
+              s:ds="local:/Data/feedback section"
+              s:id="{0A0389D8-0931-409A-BAFB-555DBFFFEF8E}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="/headless-main/container-content-1-{*}-{460B84BB-5506-4DDB-B219-56AC3F30DE5F}-0" />
+            <r
+              uid="{BB686BA6-1799-4366-9017-E93E34062C38}"
+              p:after="*[1=2]"
+              s:id="{62DD1639-9F28-4040-8738-C886480B2127}"
+              s:par="FormId=9266641d89384a79b61fc6c6dd9fe9ba-use&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+              s:ph="/headless-main/container-content-2-{*}-{460B84BB-5506-4DDB-B219-56AC3F30DE5F}-0" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261012T170116Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: login
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "22a85239-d98c-4744-bcdf-84fa8b0a80e3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261013T143258Z
+    - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
+      Hint: Title
+      Value: login

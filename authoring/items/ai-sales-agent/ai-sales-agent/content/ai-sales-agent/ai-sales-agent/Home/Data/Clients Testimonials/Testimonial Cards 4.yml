@@ -11,6 +11,54 @@ SharedFields:
   Hint: __Shared revision
   Value: "43a27cc1-810a-4838-b915-b216781b5787"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="740de97a-ab3d-4d3f-b01f-dcc6fcf80e75" alt="linkdin.svg" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155412Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: LinkedIn
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4d979a80-ada5-402a-a7c0-ee28723333a9"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Für Arbeitssuchende entwickelt, verursacht jedoch tiefe existenzielle Krisen und Depressionen</p><p>&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Jobbörse
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103732Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 1
 - Language: en
   Versions:
   - Version: 1
@@ -53,6 +101,150 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20260921T163736Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 1
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="740de97a-ab3d-4d3f-b01f-dcc6fcf80e75" alt="linkedin.svg" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155412Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: LinkedIn
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "537ea518-095e-46b3-b0a9-d6854cc82248"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Created for job seekers but causes deep existential crises and depression</p><p>&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Job Board
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194157Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 1
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="740de97a-ab3d-4d3f-b01f-dcc6fcf80e75" alt="linkdin.svg" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155412Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: LinkedIn
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8e01cd6c-d2ba-470b-8710-9efb0c6775d8"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Stvoreno za tražitelje posla, ali uzrokuje duboke egzistencijalne krize i depresiju</p><p>&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Ploča za posao
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145219Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 1
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="740de97a-ab3d-4d3f-b01f-dcc6fcf80e75" alt="linkdin.svg" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155412Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: LinkedIn
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "99e7e589-242b-4226-a190-93fd4d2a47fe"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Skapad för jobbsökande men orsakar djupa existentiella kriser och depressioner</p><p>&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Jobbportal
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105528Z
     - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
       Hint: Rating Stars
       Value: 1

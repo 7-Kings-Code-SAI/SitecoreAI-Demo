@@ -4,6 +4,52 @@ Parent: "ef7d4934-a7a4-4090-babd-f51ef826db38"
 Template: "9916fc53-736e-4032-af70-2f37756f1281"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/404 page/Data/page not found banner"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261005T161245Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><span>Die Seite, die Sie suchen, existiert nicht, wurde entfernt oder ist vorübergehend nicht verfügbar. Kehren Sie zu unserer Startseite zurück, um wieder den richtigen Weg zu finden.&nbsp;</span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b187534f-45bf-45d8-882b-ca70dd0f5be1"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: "404-FEHLER"
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Zur Startseite" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p>Seite nicht gefunden</p><p>&nbsp;</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103727Z
 - Language: en
   Versions:
   - Version: 1
@@ -47,3 +93,141 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20261005T162053Z
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261005T161245Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><span>The page you are looking for doesn’t exist, has been removed, or is temporarily unavailable. Return to our main page to get back on track.&nbsp;</span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "071b08c4-20ef-48b5-bdc8-a5d75c6a856a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: 404 ERROR 
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link linktype="internal" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" querystring="" target="" class="" text="Go to Homepage" title=""/>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p>Page Not Found</p><p>&nbsp;</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194152Z
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261005T161245Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><span>Stranica koju tražite ne postoji, uklonjena je ili je privremeno nedostupna. Vratite se na našu glavnu stranicu kako biste nastavili.</span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "39a86f2e-cde7-4614-9573-07f90ae4180e"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: POGREŠKA 404
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Idi na početnu stranicu" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p>Stranica nije pronađena</p><p>&nbsp;</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145214Z
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261005T161245Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "779ee428-d5fa-4962-87bd-a385aff4d039"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><span>Sidan du letar efter finns inte, har tagits bort eller är tillfälligt otillgänglig. Gå tillbaka till vår startsida för att komma rätt igen.&nbsp;</span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d184f5e8-991c-43e8-b0ba-0cb2382d1222"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9bf2a659-0da3-4b93-99b1-21cf5b9444e9"
+      Hint: Label Text
+      Value: "404-FEL "
+    - ID: "b951b0e0-eefd-41c8-b5a4-7f0d42d1fc4f"
+      Hint: Primary CTA
+      Value: |
+        <link class="" querystring="" id="9c887615-27db-41a4-b229-2e223a024947" anchor="" target="" title="" linktype="internal" text="Gå till startsidan" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c031a841-d176-4d2c-ab17-cbfd74e957e9"
+      Hint: Title
+      Value: |
+        <div class="ck-content"><p>Sidan hittades inte</p><p>&nbsp;</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105523Z

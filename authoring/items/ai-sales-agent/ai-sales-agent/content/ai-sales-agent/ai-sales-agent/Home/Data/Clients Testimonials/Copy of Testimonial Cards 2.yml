@@ -11,6 +11,51 @@ SharedFields:
   Hint: __Shared revision
   Value: "731e390a-ca27-4178-b216-b575974d78be"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="709f78dc-e5b4-4361-b8c7-d80af8808b6d" alt="Symbol für kabellose Verbindung" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155408Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: WLAN
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bf16893c-3829-4855-b784-4d5c5f215ab2"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Nichts Besonderes.&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Kabellos
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103731Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 5
 - Language: en
   Versions:
   - Version: 1
@@ -50,6 +95,141 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20260921T163610Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 5
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="709f78dc-e5b4-4361-b8c7-d80af8808b6d" alt="Wireless Icon" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155408Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: Wi‑Fi
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1c4739df-23a1-47ba-b2a6-e9cd603750dd"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Nothing in particular.&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Wireless
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194157Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 5
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="709f78dc-e5b4-4361-b8c7-d80af8808b6d" alt="Ikona bežične veze" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155408Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: Wi‑Fi
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ba04893f-8112-44c9-a593-a844290c6733"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Ništa posebno.&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Bežično
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145218Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 5
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="709f78dc-e5b4-4361-b8c7-d80af8808b6d" alt="Trådlös ikon" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155408Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: "Wi-fi"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d9341e82-fd51-4b9f-b67a-3985e06f2fa1"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Inget särskilt.&nbsp;</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Trådlös
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105527Z
     - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
       Hint: Rating Stars
       Value: 5
