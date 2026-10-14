@@ -4,6 +4,75 @@ Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
 Template: "4fa713fd-50d0-4559-80f7-b31db9082897"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/new Integration Logos"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T201842Z
+    - ID: "2ed1ccfd-c74e-4390-ba10-e543e0cd459d"
+      Hint: Secondary Logos
+      Value: |
+        {3D640186-9FF0-44F8-AF92-F70BA9B16935}
+        {C8CA1AB9-0E7B-4E7C-8985-3732A177398F}
+    - ID: "4422eaa5-f2f0-4272-9996-65f2482a1092"
+      Hint: Primary Category Description
+      Value: |
+        <div class="ck-content"><p>HubSpot, Salesforce, Monday.com, Zoho CRM, Pipedrive, Freshworks CRM, Insightly, Nimble, Copper, Close. Benötigen Sie ein anderes CRM? Wir entwickeln es.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "667af96d-453c-4b41-8330-5c79b7c45f5b"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Ein Plattformwechsel sollte nicht bedeuten, Ihr Unternehmen neu aufbauen zu müssen. AI Sale Agent verbindet sich direkt mit den CRM- und Telefonie-Anbietern, auf die Ihr Team bereits setzt.</p></div>
+    - ID: "6bf618b8-2ae1-4204-9377-e46587a9c070"
+      Hint: CTA Link
+      Value: |
+        <link anchor="" target="" linktype="external" text="Alle Integrationen anzeigen" url="http://#" />
+    - ID: "77d0e7fa-890f-4bfb-ad19-1a61863d18ee"
+      Hint: Secondary Category Title
+      Value: Sprachinfrastruktur
+    - ID: "7c5a9fb2-0af5-4ccd-85eb-971dc8678ff5"
+      Hint: Primary Category Title
+      Value: "CRM-Plattformen"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "041a9fda-f87c-49b9-b581-509ac3166130"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a2d4e178-ff3b-4652-ad1c-c4f17af687b5"
+      Hint: Secondary Category Description
+      Value: |
+        <div class="ck-content"><p>RingCentral, Twilio, SignalWire, Telnyx, Vonage, Zoom Phone; kundenspezifische Carrier- und SIP-Integrationen sind auf Anfrage verfügbar.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cc172814-d5c4-4ae8-a2cf-a8b5c89a9753"
+      Hint: Heading
+      Value: "Auf Ihren bestehenden Sales-Stack abgestimmt."
+    - ID: "d3c34c85-2377-4cdb-a307-7052ddcb9a49"
+      Hint: Label Text
+      Value: Integrationen
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103708Z
+    - ID: "eccf8923-a714-43e3-a168-dd809b058227"
+      Hint: Primary Logos
+      Value: |
+        {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
+        {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
 - Language: en
   Versions:
   - Version: 1
@@ -73,6 +142,144 @@ Languages:
       Value: |
         {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
         {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T201842Z
+    - ID: "2ed1ccfd-c74e-4390-ba10-e543e0cd459d"
+      Hint: Secondary Logos
+      Value: |
+        {3D640186-9FF0-44F8-AF92-F70BA9B16935}
+        {C8CA1AB9-0E7B-4E7C-8985-3732A177398F}
+    - ID: "4422eaa5-f2f0-4272-9996-65f2482a1092"
+      Hint: Primary Category Description
+      Value: |
+        <div class="ck-content"><p>HubSpot, Salesforce, Monday.com, Zoho CRM, Pipedrive, Freshworks CRM, Insightly, Nimble, Copper, Close, Need another CRM? We'll build it.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "667af96d-453c-4b41-8330-5c79b7c45f5b"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Switching platforms shouldn't mean rebuilding your business. AI Sale Agent connects directly to the CRM and telephony providers your team already relies on.</p></div>
+    - ID: "6bf618b8-2ae1-4204-9377-e46587a9c070"
+      Hint: CTA Link
+      Value: |
+        <link anchor="" target="" linktype="external" text="View all integrations" url="http://#" />
+    - ID: "77d0e7fa-890f-4bfb-ad19-1a61863d18ee"
+      Hint: Secondary Category Title
+      Value: Voice Infrastructure
+    - ID: "7c5a9fb2-0af5-4ccd-85eb-971dc8678ff5"
+      Hint: Primary Category Title
+      Value: CRM Platforms
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e06b5d47-f512-4e7d-b4f7-d89fe42ac1f4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a2d4e178-ff3b-4652-ad1c-c4f17af687b5"
+      Hint: Secondary Category Description
+      Value: |
+        <div class="ck-content"><p>RingCentral, Twilio, SignalWire, Telnyx, Vonage, Zoom Phone; custom carrier and SIP integrations available on request.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cc172814-d5c4-4ae8-a2cf-a8b5c89a9753"
+      Hint: Heading
+      Value: Built Around Your Existing Sales Stack.
+    - ID: "d3c34c85-2377-4cdb-a307-7052ddcb9a49"
+      Hint: Label Text
+      Value: Integrations
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194133Z
+    - ID: "eccf8923-a714-43e3-a168-dd809b058227"
+      Hint: Primary Logos
+      Value: |
+        {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
+        {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T201842Z
+    - ID: "2ed1ccfd-c74e-4390-ba10-e543e0cd459d"
+      Hint: Secondary Logos
+      Value: |
+        {3D640186-9FF0-44F8-AF92-F70BA9B16935}
+        {C8CA1AB9-0E7B-4E7C-8985-3732A177398F}
+    - ID: "4422eaa5-f2f0-4272-9996-65f2482a1092"
+      Hint: Primary Category Description
+      Value: |
+        <div class="ck-content"><p>HubSpot, Salesforce, Monday.com, Zoho CRM, Pipedrive, Freshworks CRM, Insightly, Nimble, Copper, Close, trebate li drugi CRM? Izradit ćemo ga.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "667af96d-453c-4b41-8330-5c79b7c45f5b"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Promjena platforme ne bi trebala značiti ponovno izgrađivanje vašeg poslovanja. AI Sale Agent izravno se povezuje s CRM-om i pružateljima telefonije na koje se vaš tim već oslanja.</p></div>
+    - ID: "6bf618b8-2ae1-4204-9377-e46587a9c070"
+      Hint: CTA Link
+      Value: |
+        <link anchor="" target="" linktype="external" text="Pogledajte sve integracije" url="http://#" />
+    - ID: "77d0e7fa-890f-4bfb-ad19-1a61863d18ee"
+      Hint: Secondary Category Title
+      Value: Glasovna infrastruktura
+    - ID: "7c5a9fb2-0af5-4ccd-85eb-971dc8678ff5"
+      Hint: Primary Category Title
+      Value: CRM platforme
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b87756ec-c701-4b7f-9439-ea9840bb94c6"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a2d4e178-ff3b-4652-ad1c-c4f17af687b5"
+      Hint: Secondary Category Description
+      Value: |
+        <div class="ck-content"><p>RingCentral, Twilio, SignalWire, Telnyx, Vonage, Zoom Phone; prilagođene integracije operatera i SIP-a dostupne su na zahtjev.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cc172814-d5c4-4ae8-a2cf-a8b5c89a9753"
+      Hint: Heading
+      Value: Izgrađeno oko vašeg postojećeg prodajnog sustava.
+    - ID: "d3c34c85-2377-4cdb-a307-7052ddcb9a49"
+      Hint: Label Text
+      Value: Integracije
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145157Z
+    - ID: "eccf8923-a714-43e3-a168-dd809b058227"
+      Hint: Primary Logos
+      Value: |
+        {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
+        {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
 - Language: "sv-SE"
   Versions:
   - Version: 1
@@ -137,6 +344,76 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20261002T181012Z
+    - ID: "eccf8923-a714-43e3-a168-dd809b058227"
+      Hint: Primary Logos
+      Value: |
+        {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
+        {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261006T105457Z
+    - ID: "2ed1ccfd-c74e-4390-ba10-e543e0cd459d"
+      Hint: Secondary Logos
+      Value: |
+        {3D640186-9FF0-44F8-AF92-F70BA9B16935}
+        {C8CA1AB9-0E7B-4E7C-8985-3732A177398F}
+    - ID: "4422eaa5-f2f0-4272-9996-65f2482a1092"
+      Hint: Primary Category Description
+      Value: |
+        <div class="ck-content"><p>HubSpot, Salesforce, Monday.com, Zoho CRM, Pipedrive, Freshworks CRM, Insightly, Nimble, Copper, Close. Behöver du ett annat CRM? Vi bygger det.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "667af96d-453c-4b41-8330-5c79b7c45f5b"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Att byta plattform ska inte innebära att du behöver bygga om hela verksamheten. AI Sale Agent ansluter direkt till de CRM- och telefonileverantörer som ditt team redan förlitar sig på.</p></div>
+    - ID: "6bf618b8-2ae1-4204-9377-e46587a9c070"
+      Hint: CTA Link
+      Value: |
+        <link anchor="" target="" linktype="external" text="Visa alla integrationer" url="http://#" />
+    - ID: "77d0e7fa-890f-4bfb-ad19-1a61863d18ee"
+      Hint: Secondary Category Title
+      Value: Röstinfrastruktur
+    - ID: "7c5a9fb2-0af5-4ccd-85eb-971dc8678ff5"
+      Hint: Primary Category Title
+      Value: "CRM-plattformar"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c193c1cd-ded5-41e2-9c31-d4a0e6f6a2c9"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a2d4e178-ff3b-4652-ad1c-c4f17af687b5"
+      Hint: Secondary Category Description
+      Value: |
+        <div class="ck-content"><p>RingCentral, Twilio, SignalWire, Telnyx, Vonage, Zoom Phone; anpassade operatörs- och SIP-integrationer erbjuds på begäran.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20261006T105457Z
+    - ID: "cc172814-d5c4-4ae8-a2cf-a8b5c89a9753"
+      Hint: Heading
+      Value: Byggt kring din befintliga säljstack.
+    - ID: "d3c34c85-2377-4cdb-a307-7052ddcb9a49"
+      Hint: Label Text
+      Value: Integrationer
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105504Z
     - ID: "eccf8923-a714-43e3-a168-dd809b058227"
       Hint: Primary Logos
       Value: |

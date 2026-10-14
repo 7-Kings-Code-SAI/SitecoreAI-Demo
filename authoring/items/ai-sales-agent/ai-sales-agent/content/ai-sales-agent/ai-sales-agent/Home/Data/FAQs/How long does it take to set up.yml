@@ -11,6 +11,47 @@ SharedFields:
   Hint: __Shared revision
   Value: "975e3228-a02a-492c-b509-3d489780a25b"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161210Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "31f0940c-fa44-4adb-b242-59cfc02f237a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Erste Schritte & So funktioniert es
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Wie lange dauert es, einen AI-Vertriebsagenten einzurichten und zu starten?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103736Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Die meisten Teams sind mit Silver-, Gold- oder Platinum-Tarifen in weniger als 12 Minuten live. Erstellen Sie Ihren Agenten (Stimme, Akzent, Persönlichkeit und Playbook), erstellen Sie eine Kampagne (Outbound, Qualifizierung, Kundenbindung usw.), importieren Sie Ihre Leads (CRM-Synchronisierung, CSV-Upload oder manuelle Eingabe) und starten Sie. Kein Code, kein langwieriges Onboarding. Enterprise-Kunden erhalten die Einrichtung noch am selben Tag; kundenspezifische Integrationen sind auf Anfrage für Teams verfügbar, die ein CRM, einen Telefondienstanbieter oder einen Workflow benötigen, der nicht standardmäßig abgedeckt ist.&nbsp;</span></p></div>
 - Language: en
   Versions:
   - Version: 1
@@ -49,3 +90,126 @@ Languages:
       Hint: Answer
       Value: |
         <div class="ck-content"><p><span>Most teams live in under 12 minutes on Silver, Gold, or Platinum plans. Build your agent (voice, accent, personality, and playbook), create a campaign (outbound, qualification, retention, etc.), import your leads (CRM sync, CSV upload, or manual entry), and launch. No code, no lengthy onboarding. Enterprise customers get same day setup, with custom integrations available on request for teams that need a CRM, telephony provider, or workflow not covered out of the box.&nbsp;</span></p></div>
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161210Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "938b8fb5-08c8-4d1f-a7f9-4731809ebb4d"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Getting Started & How It Works
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "How long does it take to set up and launch an AI sales agent?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194201Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Most teams live in under 12 minutes on Silver, Gold, or Platinum plans. Build your agent (voice, accent, personality, and playbook), create a campaign (outbound, qualification, retention, etc.), import your leads (CRM sync, CSV upload, or manual entry), and launch. No code, no lengthy onboarding. Enterprise customers get same day setup, with custom integrations available on request for teams that need a CRM, telephony provider, or workflow not covered out of the box.&nbsp;</span></p></div>
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161210Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "66664479-a7d7-414c-ad1c-f88f97cbe222"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Početak rada i kako funkcionira
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Koliko dugo traje postavljanje i pokretanje AI prodajnog agenta?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145224Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Većina timova kreće uživo za manje od 12 minuta uz pakete Silver, Gold ili Platinum. Izradite svog agenta (glas, naglasak, osobnost i priručnik), izradite kampanju (odlazna prodaja, kvalifikacija, zadržavanje itd.), uvezite svoje leadove (CRM sinkronizacija, prijenos CSV datoteke ili ručni unos) i pokrenite. Bez koda i bez dugotrajnog uvođenja. Enterprise korisnici dobivaju postavljanje isti dan, a prilagođene integracije dostupne su na zahtjev za timove kojima je potreban CRM, telekomunikacijski pružatelj ili radni tijek koji nije obuhvaćen standardnom ponudom.&nbsp;</span></p></div>
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161210Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "913673bf-c62a-44fc-b7a4-1d6a854d6842"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Komma igång och hur det fungerar
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Hur lång tid tar det att konfigurera och lansera en AI-säljagent?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105532Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>De flesta team är live på under 12 minuter med planerna Silver, Gold eller Platinum. Bygg din agent (röst, accent, personlighet och spelbok), skapa en kampanj (utgående, kvalificering, retention etc.), importera dina leads (CRM-synkronisering, CSV-uppladdning eller manuell inmatning) och lansera. Ingen kod, ingen lång onboarding. Företagskunder får konfiguration samma dag, med anpassade integrationer tillgängliga på begäran för team som behöver ett CRM, en telefonileverantör eller ett arbetsflöde som inte täcks direkt från start.&nbsp;</span></p></div>

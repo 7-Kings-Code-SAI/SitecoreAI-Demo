@@ -1,0 +1,139 @@
+﻿---
+ID: "b8d01fb4-4a41-4a0a-82ca-f9ac37005ba8"
+Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
+Template: "f7497e7a-fa54-4541-8d09-8c953747c3a8"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/feature section"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "14019a8b-991e-43e3-9f93-808984bc67f8"
+      Hint: Feature cards
+      Value: |
+        {554FE306-41EA-4636-848B-19763BA3F4E5}
+        {D82A93D5-50B3-44DD-B272-1DC7CEFDF520}
+        {FBF1B185-7301-434C-BAFF-B56CB3210129}
+        {282CE372-7C52-452E-AFB1-35F82497BB8A}
+        {6874D2A1-D649-4E30-9F70-CE207C124A5C}
+        {A25C64CA-BEA2-4EDE-A9F5-B9D2FE0518BA}
+    - ID: "18d8bb1d-3f66-4e79-8e7c-49bc33b3cb26"
+      Hint: Label Text
+      Value: Features
+    - ID: "19602882-0975-4939-9d22-6dc9aa7b64c9"
+      Hint: Card 4 Title
+      Value: "Compliance-Aware"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261008T190945Z
+    - ID: "276d81af-c97a-48ea-9934-d9f64c1e00f0"
+      Hint: Step 3 Horizontal Align
+      Value: 1
+    - ID: "283f161e-6113-4ed8-bb11-8bd5087f0bca"
+      Hint: Card 2 Icon
+      Value: |
+        <image mediaid="{01D00FFD-41B8-4E7C-89C8-0D9DE7F45CAF}" />
+    - ID: "2a68dbec-a5ee-4642-9940-c80db032bab3"
+      Hint: Card 1 Icon
+      Value: |
+        <image mediaid="{15E279BD-ED80-4E50-A7E9-C2B507A9567C}" />
+    - ID: "327ff6aa-27ab-459f-81c5-27926181300c"
+      Hint: Banner Description
+      Value: "AI Sales Agent doesn't just complete a call, it captures everything that happens next: transcript, executive summary, qualification outcome, sentiment, and CRM update. Instead of asking your team what happened on a call, you already know."
+    - ID: "4cf0da24-bf5c-4b74-ab2f-f0ad2708faaf"
+      Hint: Main Title
+      Value: |
+        <div class="ck-content"><p><strong>One </strong><span style="color:hsl(0, 0%, 0%);">Platform.</span></p><p><span style="color:hsl(210,75%,60%);"><strong>Unlimited AI Sale Agents.</strong></span></p></div>
+    - ID: "53a8e263-e828-4e07-8be9-be6e7f67dfca"
+      Hint: Step 1 Title
+      Value: Call Completed
+    - ID: "55ed1246-8e8c-455b-a786-8c1e1dfdbdd9"
+      Hint: CTA Button
+      Value: |
+        <link text="Start Automating Now" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9C887615-27DB-41A4-B229-2E223A024947}" />
+    - ID: "64098b6f-e7cd-4d57-8f2a-3acfa6a29a56"
+      Hint: Step 2 Description
+      Value: Syncing Pipline
+    - ID: "66eeef7f-618b-4d64-b7c2-fc8de6a2e460"
+      Hint: Step 2 Title
+      Value: AI Workflow Core
+    - ID: "6740c6b7-2469-43b7-948b-ade745c4d015"
+      Hint: Card 3 Description
+      Value: Every call logs itself, automatically.
+    - ID: "6e75226f-9c76-4857-9efc-57655360cc4b"
+      Hint: Card 4 Description
+      Value: Every call logs itself, automatically.
+    - ID: "83771795-94f2-4a97-9350-0820650d3dff"
+      Hint: Main Description
+      Value: "Every business sells differently, so why should every AI sound the same? Create a dedicated agent for every campaign, customer segment, or product line, each with its own voice, personality, and qualification criteria. It's a smarter way to create the best AI sales agent for every sales objective, without writing code or expanding your team."
+    - ID: "85aee319-b2f2-4679-bf6f-34a8806b7124"
+      Hint: Card 3 Title
+      Value: "Self-Updating CRM"
+    - ID: "86d71a56-f4fa-4656-96d2-a4b2fbb007a4"
+      Hint: Card 2 Description
+      Value: Reads intent and emotion as the conversation happens.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "784e0d3f-1c35-4cc5-b9f4-a4ab32387862"
+    - ID: "8d8e49cf-5160-496f-be31-13b7b7d2b4fa"
+      Hint: Step 3 Title
+      Value:  Salesforce
+    - ID: "92c491b4-d93b-4508-b389-f7b5b037e67c"
+      Hint: Workflow Step 1 Icon
+      Value: |
+        <image mediaid="{A2EB6C14-1C9F-437E-9121-4356EE91C7D5}" />
+    - ID: "95fef334-77c7-4d89-8e4e-a9f6c25577cc"
+      Hint: Step 4 Text Avatar
+      Value: HS
+    - ID: "967fbf66-eff6-4581-ab51-9956d34eb875"
+      Hint: Banner Title
+      Value: Every Conversation Creates Business Intelligence
+    - ID: "9d4d1bec-7f86-4493-9dc3-5d67bc34a920"
+      Hint: Step 4 Description
+      Value: ✓ Deal Logged
+    - ID: "9fcd8f55-5dc8-4b9c-a171-694050facbb9"
+      Hint: Step 4 Title
+      Value: HubSpot
+    - ID: "afe6a0e9-9889-4f95-8052-9e9b634e59ac"
+      Hint: Card 4 Icon
+      Value: |
+        <image mediaid="{B62570CA-8394-438B-943B-4613396EA5EA}" />
+    - ID: "b271fa1a-3546-4b97-87be-74339b6c377b"
+      Hint: Step 3 Description
+      Value: ✓ Account Sync
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "bb6fa0ff-89bb-419f-93be-59765c43ea16"
+      Hint: Card 3 Icon
+      Value: |
+        <image mediaid="{7BAAF286-E96D-4B30-BAA3-D2B8EBF09621}" />
+    - ID: "c0594050-48e3-4675-a2a8-0bed62911643"
+      Hint: Workflow Step 2 Icon
+      Value: |
+        <image mediaid="{087E3F0B-A715-43FC-80E6-CE8542DF4658}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261008T211838Z
+    - ID: "dcd2ae62-ffd7-4500-b6d4-a60e7f898f35"
+      Hint: Step 1 Description
+      Value: "Duration: 4m 12s"
+    - ID: "e0d66674-a125-45d9-9ccd-cc5b2ba9b988"
+      Hint: Card 2 Title
+      Value: Live Sentiment
+    - ID: "e752073f-3ede-4082-b847-67d3b9ff585d"
+      Hint: Step 3 Text Avatar
+      Value: SF
+    - ID: "e9e0fd03-bac7-4813-982e-0186ed691c72"
+      Hint: Card 1 Title
+      Value: Natural Conversation
+    - ID: "f4989702-3af4-4db6-821f-7b86bc03fe7c"
+      Hint: Step 4 Horizontal Align
+      Value: 1
+    - ID: "ffc61032-16da-4aee-b3f6-ba182e36d8a1"
+      Hint: Card 1 Description
+      Value: Trained to handle real objections, not just read a script.

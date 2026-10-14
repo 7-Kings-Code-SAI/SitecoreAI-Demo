@@ -4,6 +4,58 @@ Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
 Template: "aa08619c-4246-4928-8527-6e90564bd06c"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Industry Grid"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260918T185624Z
+    - ID: "3eff11b8-a7d3-422e-8685-8d443ea88d90"
+      Hint: Tag Label
+      Value:  Sicherheit 
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "604ef910-0d7b-4eb3-89da-7126b281cc77"
+      Hint: Heading
+      Value: Unternehmenssicherheit ohne Unternehmenskomplexität.
+    - ID: "61711b59-8089-46cc-9504-f737b1e572d7"
+      Hint: CTA
+      Value: |
+        <link linktype="external" text="Mit der Sicherheitsabteilung sprechen" url="#" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "25ce6ec1-eeed-430c-8afa-4b4561fd44c7"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a2304e0a-82ac-4009-b4ed-d59578b78cfb"
+      Hint: Industry Cards
+      Value: |
+        {D09DE2CA-B02D-4E17-88AD-90DDE675B6AF}
+        {14AB07BF-F2B7-4DAE-85F3-27C40E9F2240}
+        {634499BB-794D-4911-8CE7-3241A4D1E406}
+        {ADB6B92F-1797-4B31-9E59-FE5A84C8A035}
+    - ID: "a9eb9b73-bd2e-4c30-9b83-6fd874b66076"
+      Hint: Sub Heading
+      Value: |
+        <div class="ck-content"><p>Geschäftsgespräche verdienen ernsthaften Schutz. AI Sales Agent ist mit Sicherheit und Compliance als Grundlage konzipiert und darauf ausgelegt, die Standards zu unterstützen, die regulierte Branchen erfordern.</p><p>&nbsp;</p><ul style="list-style-type:disc;"><li>Verschlüsselte Kommunikation</li><li>Rollenbasierte Zugriffskontrollen</li><li>Auditfähige Berichterstattung</li></ul></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103701Z
 - Language: en
   Versions:
   - Version: 1
@@ -45,6 +97,110 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20261002T211511Z
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260918T185624Z
+    - ID: "3eff11b8-a7d3-422e-8685-8d443ea88d90"
+      Hint: Tag Label
+      Value:  Security 
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "604ef910-0d7b-4eb3-89da-7126b281cc77"
+      Hint: Heading
+      Value: Enterprise Security Without Enterprise Complexity.
+    - ID: "61711b59-8089-46cc-9504-f737b1e572d7"
+      Hint: CTA
+      Value: |
+        <link linktype="external" url="#" text="Talk to Security"/>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "56103bca-8a15-46a0-8133-5ed47996a518"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a2304e0a-82ac-4009-b4ed-d59578b78cfb"
+      Hint: Industry Cards
+      Value: |
+        {D09DE2CA-B02D-4E17-88AD-90DDE675B6AF}
+        {14AB07BF-F2B7-4DAE-85F3-27C40E9F2240}
+        {634499BB-794D-4911-8CE7-3241A4D1E406}
+        {ADB6B92F-1797-4B31-9E59-FE5A84C8A035}
+    - ID: "a9eb9b73-bd2e-4c30-9b83-6fd874b66076"
+      Hint: Sub Heading
+      Value: |
+        <div class="ck-content"><p>Business conversations deserve serious protection. AI Sales Agent is architected with security and compliance as a foundation, built to support the standards regulated industries require.</p><p>&nbsp;</p><ul style="list-style-type:disc;"><li>Encrypted communications</li><li>Role-based access controls</li><li>Audit-ready reporting</li></ul></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194125Z
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260918T185624Z
+    - ID: "3eff11b8-a7d3-422e-8685-8d443ea88d90"
+      Hint: Tag Label
+      Value:  Sigurnost 
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "604ef910-0d7b-4eb3-89da-7126b281cc77"
+      Hint: Heading
+      Value: Sigurnost za poduzeća bez složenosti poduzeća.
+    - ID: "61711b59-8089-46cc-9504-f737b1e572d7"
+      Hint: CTA
+      Value: |
+        <link linktype="external" text="Obratite se sigurnosnom timu" url="#" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "02d027f9-3977-4eee-9348-faf215745ace"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a2304e0a-82ac-4009-b4ed-d59578b78cfb"
+      Hint: Industry Cards
+      Value: |
+        {D09DE2CA-B02D-4E17-88AD-90DDE675B6AF}
+        {14AB07BF-F2B7-4DAE-85F3-27C40E9F2240}
+        {634499BB-794D-4911-8CE7-3241A4D1E406}
+        {ADB6B92F-1797-4B31-9E59-FE5A84C8A035}
+    - ID: "a9eb9b73-bd2e-4c30-9b83-6fd874b66076"
+      Hint: Sub Heading
+      Value: |
+        <div class="ck-content"><p>Poslovni razgovori zaslužuju ozbiljnu zaštitu. AI Sales Agent osmišljen je sa sigurnošću i usklađenošću kao temeljima te izrađen kako bi podržao standarde koje zahtijevaju regulirane industrije.</p><p>&nbsp;</p><ul style="list-style-type:disc;"><li>Šifrirana komunikacija</li><li>Kontrole pristupa temeljene na ulogama</li><li>Izvještavanje spremno za reviziju</li></ul></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145148Z
 - Language: "sv-SE"
   Versions:
   - Version: 1
@@ -91,3 +247,56 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20261002T181012Z
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261006T105449Z
+    - ID: "3eff11b8-a7d3-422e-8685-8d443ea88d90"
+      Hint: Tag Label
+      Value:  Säkerhet 
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "604ef910-0d7b-4eb3-89da-7126b281cc77"
+      Hint: Heading
+      Value: Säkerhet på företagsnivå utan komplexitet på företagsnivå.
+    - ID: "61711b59-8089-46cc-9504-f737b1e572d7"
+      Hint: CTA
+      Value: |
+        <link linktype="external" text="Prata med säkerhet" url="#" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ef259fdf-7788-438b-9293-a24500382815"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a2304e0a-82ac-4009-b4ed-d59578b78cfb"
+      Hint: Industry Cards
+      Value: |
+        {D09DE2CA-B02D-4E17-88AD-90DDE675B6AF}
+        {14AB07BF-F2B7-4DAE-85F3-27C40E9F2240}
+        {634499BB-794D-4911-8CE7-3241A4D1E406}
+        {ADB6B92F-1797-4B31-9E59-FE5A84C8A035}
+    - ID: "a9eb9b73-bd2e-4c30-9b83-6fd874b66076"
+      Hint: Sub Heading
+      Value: |
+        <div class="ck-content"><p>Affärssamtal förtjänar ett starkt skydd. AI Sales Agent är utformad med säkerhet och efterlevnad som grund och byggd för att stödja de standarder som reglerade branscher kräver.</p><p>&nbsp;</p><ul style="list-style-type:disc;"><li>Krypterad kommunikation</li><li>Rollbaserade åtkomstkontroller</li><li>Rapportering redo för revision</li></ul></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20261006T105449Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105457Z

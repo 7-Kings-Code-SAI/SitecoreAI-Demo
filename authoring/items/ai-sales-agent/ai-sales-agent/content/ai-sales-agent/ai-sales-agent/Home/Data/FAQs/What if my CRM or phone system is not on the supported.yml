@@ -11,6 +11,47 @@ SharedFields:
   Hint: __Shared revision
   Value: "e868cef3-1a49-4511-8c98-f2555d93ac40"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161444Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "23452e5f-6864-4e20-be9e-170b1c0d182b"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Integrationen & Kompatibilität
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Was ist, wenn mein CRM- oder Telefonsystem nicht auf der Liste der unterstützten Systeme steht?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103739Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>AI Sale Agent erstellt eine benutzerdefinierte Integration für CRMs, die noch nicht unterstützt werden, und benutzerdefinierte Carrier- oder SIP-Integrationen für die Telefonie sind auf Anfrage verfügbar. Es lohnt sich, dies direkt mit dem Team über eine Demo- oder Kontaktanfrage zu besprechen, da die Verfügbarkeit von Ihrem spezifischen Stack abhängt.&nbsp;</span></p></div>
 - Language: en
   Versions:
   - Version: 1
@@ -49,3 +90,126 @@ Languages:
       Hint: Answer
       Value: |
         <div class="ck-content"><p><span>AI Sale Agent will build a custom integration for CRMs that aren’t already supported, and custom carrier or SIP integrations are available on request for telephony. It’s worth raising directly with the team via a demo or contact request, since availability depends on your specific stack.&nbsp;</span></p></div>
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161444Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b2309c3-da35-4a6c-9efc-91320fc97168"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Integrations & Compatibility
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "What if my CRM or phone system isn't on the supported list?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194205Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>AI Sale Agent will build a custom integration for CRMs that aren’t already supported, and custom carrier or SIP integrations are available on request for telephony. It’s worth raising directly with the team via a demo or contact request, since availability depends on your specific stack.&nbsp;</span></p></div>
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161444Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8b1cdefe-059f-49aa-ac53-bf22c716ca35"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Integracije i kompatibilnost
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Što ako moj CRM ili telefonski sustav nije na popisu podržanih?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145227Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>AI Sale Agent izradit će prilagođenu integraciju za CRM-ove koji još nisu podržani, a prilagođene integracije operatera ili SIP integracije dostupne su na zahtjev za telefoniju. Vrijedi to izravno provjeriti s timom putem demonstracije ili upita za kontakt, budući da dostupnost ovisi o vašem specifičnom tehnološkom okruženju.&nbsp;</span></p></div>
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161444Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bc41e8bf-3194-490a-a809-bbc433c3fb9a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Integrationer och kompatibilitet
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Vad händer om mitt CRM- eller telefonsystem inte finns med på listan över stödda system?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105536Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>AI Sale Agent bygger en anpassad integration för CRM-system som ännu inte stöds, och anpassade operatörs- eller SIP-integrationer för telefoni erbjuds på begäran. Det är värt att ta upp detta direkt med teamet via en demo- eller kontaktförfrågan, eftersom tillgängligheten beror på er specifika tekniska miljö.&nbsp;</span></p></div>

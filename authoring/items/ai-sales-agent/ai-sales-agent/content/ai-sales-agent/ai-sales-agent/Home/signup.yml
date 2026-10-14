@@ -1,0 +1,42 @@
+﻿---
+ID: "e3049887-8b76-4cc5-b4ec-b90b51212db3"
+Parent: "9c887615-27db-41a4-b229-2e223a024947"
+Template: "1454a0f3-e9a4-489b-9778-db6b5ba5bd6d"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/signup"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{0618541D-8ABB-4368-B4AC-1E8C7FB34371}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261012T170151Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: signup
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7c16a39e-b8b4-4e88-bb16-e698276d781b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261012T170151Z
+    - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
+      Hint: Title
+      Value: signup

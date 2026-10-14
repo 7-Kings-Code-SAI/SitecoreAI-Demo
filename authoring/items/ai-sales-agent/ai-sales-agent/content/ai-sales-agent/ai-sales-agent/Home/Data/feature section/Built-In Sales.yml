@@ -1,0 +1,49 @@
+﻿---
+ID: "554fe306-41ea-4636-848b-19763ba3f4e5"
+Parent: "b8d01fb4-4a41-4a0a-82ca-f9ac37005ba8"
+Template: "9622f101-e908-4842-9d45-98b6932aa5b0"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/feature section/Built-In Sales"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261008T193745Z
+    - ID: "3d2b4976-eca6-457d-8443-4564e5567652"
+      Hint: Card Title
+      Value: "Built-In Sales Intelligence"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6dbeaed8-c6fa-4a66-853e-4f5d5845fb94"
+      Hint: Widget Label 1
+      Value: Conversion
+    - ID: "8941cc71-eade-4532-9acf-15d7eeee1925"
+      Hint: Widget UI Layout
+      Value: Conversion Graph
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7bdd6c74-dbf6-4cff-be47-c61ad84c0ddb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cee9800d-7f77-4364-b5d1-0cd2c8b76788"
+      Hint: Widget Secondary Highlight
+      Value: Weekly Goal Met
+    - ID: "d04b932b-1276-4caa-ae36-f5458d488d69"
+      Hint: Card Description
+      Value: "Every interaction becomes data: buying signals, objections, campaign performance, and qualification outcomes, all visible from one dashboard."
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261008T213334Z
+    - ID: "e2a40387-d99f-441d-8ce6-2539ae3cb0c8"
+      Hint: Widget Primary Highlight
+      Value: +18.4%

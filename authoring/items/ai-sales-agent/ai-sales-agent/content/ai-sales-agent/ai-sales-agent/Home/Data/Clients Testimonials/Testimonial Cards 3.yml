@@ -11,6 +11,54 @@ SharedFields:
   Hint: __Shared revision
   Value: "8ba6be1e-8086-45ed-a78e-5a8af2e4ac9f"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="eee76446-9481-4800-90fe-45094f0a26ac" alt="Telefon-Symbol" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155415Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: Telefon
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "610fb791-fdf0-4db1-af5d-f1cf1cf13a68"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Zum Telefonieren. Das nutzt heute niemand mehr</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: Anrufe
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103731Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 2
 - Language: en
   Versions:
   - Version: 1
@@ -53,6 +101,150 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20260921T163652Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 2
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="eee76446-9481-4800-90fe-45094f0a26ac" alt="Phone icon" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155415Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: Phone
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "283c01ea-e630-4375-810d-94c4a2c37773"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>To make phone calls. Nobody uses now</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: calls
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194157Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 2
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="eee76446-9481-4800-90fe-45094f0a26ac" alt="Ikona telefona" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155415Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: Telefon
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "67d12282-eff0-4734-9823-99e528bc1e31"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>Za upućivanje telefonskih poziva. Danas to gotovo nitko ne koristi</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: pozivi
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145219Z
+    - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
+      Hint: Rating Stars
+      Value: 2
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "12f7a5a5-9e09-4371-b626-2eb3509ac6df"
+      Hint: Author Avatar
+      Value: |
+        <image mediaid="eee76446-9481-4800-90fe-45094f0a26ac" alt="Telefonikon" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T155415Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8058759c-d689-46aa-a5c6-6e5bc06055c7"
+      Hint: Author Name
+      Value: Telefon
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d72c7a2-5997-4c7b-a88c-6a3e7d49c29e"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "ac3d0835-163c-4c79-b597-0d72198deaae"
+      Hint: Quote Text
+      Value: |
+        <div class="ck-content"><p>För att ringa telefonsamtal. Ingen använder det nu</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cca914b2-3f7a-4d55-a1c3-4e11a3f699f4"
+      Hint: Author Role
+      Value: samtal
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105528Z
     - ID: "e501b8af-1b2a-4930-8b2e-ca292d7c9bbd"
       Hint: Rating Stars
       Value: 2

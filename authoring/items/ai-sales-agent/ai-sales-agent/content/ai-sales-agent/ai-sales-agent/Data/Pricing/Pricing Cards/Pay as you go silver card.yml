@@ -11,6 +11,67 @@ SharedFields:
   Hint: __Shared revision
   Value: "77e65519-67bc-4b90-b36f-4c55efd1b7d8"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: Min.
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 15 ¢
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{42F60B1F-D35F-4E9E-A25A-E71F06FA887F}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T170755Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link class="" id="{9C887615-27DB-41A4-B229-2E223A024947}" querystring="" anchor="" target="" title="" linktype="internal" text="Silberplan wählen" />
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <div class="ck-content"><ul><li>Benutzerdefinierte VoIP-Integration</li><li>Benutzerdefinierte CRM-Integration</li><li>Schulung &amp; Support</li><li>LLM-Nutzung — keine Token-Gebühren</li></ul></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "649eb6c8-9e3d-4cae-851c-1957ab853565"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=5&Sales campaigns=10&Call data storage=15%20days
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{95939499-96FF-4B8E-833C-0E82EFF0DF3E}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + 9,99 $ pro Nutzer / Monat
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: SILBERPLAN
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103759Z
 - Language: en
   Versions:
   - Version: 1
@@ -69,6 +130,128 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20261002T191248Z
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: min
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 15c
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{42F60B1F-D35F-4E9E-A25A-E71F06FA887F}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T170755Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link text="Choose Silver plan" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9C887615-27DB-41A4-B229-2E223A024947}" />
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <div class="ck-content"><ul><li>Custom VoIP integration</li><li>Custom CRM integration</li><li>Training &amp; support</li><li>LLM usage — no token charges</li></ul></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "29c8bb94-7287-46a8-84d9-c174a47d656c"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=5&Sales campaigns=10&Call data storage=15%20days
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{95939499-96FF-4B8E-833C-0E82EFF0DF3E}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + €9.99 per user / month
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: SILVER PLAN
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194224Z
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: min
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 15 ¢
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{42F60B1F-D35F-4E9E-A25A-E71F06FA887F}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T170755Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link class="" id="{9C887615-27DB-41A4-B229-2E223A024947}" querystring="" anchor="" target="" title="" linktype="internal" text="Odaberite Srebrni plan" />
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <div class="ck-content"><ul><li>Prilagođena VoIP integracija</li><li>Prilagođena CRM integracija</li><li>Obuka i podrška</li><li>Korištenje LLM-a — bez naknada za tokene</li></ul></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "82b539a7-8dde-4224-b46f-8700f1eda291"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=5&Sales campaigns=10&Call data storage=15%20days
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{95939499-96FF-4B8E-833C-0E82EFF0DF3E}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + 9,99 $ po korisniku / mjesec
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: SREBRNI PLAN
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145249Z
 - Language: "sv-SE"
   Versions:
   - Version: 1
@@ -129,3 +312,65 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20260930T165815Z
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0dd27a09-a195-4e8a-b552-327d7ef2efe2"
+      Hint: Price Unit
+      Value: min
+    - ID: "14ea15c8-2b5e-484a-8e60-cb0182ba9df2"
+      Hint: Price Value
+      Value: 15 öre
+    - ID: "248bb8a4-4919-43a0-a61b-b0432b34b602"
+      Hint: Linked Category
+      Value: "{42F60B1F-D35F-4E9E-A25A-E71F06FA887F}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260930T170755Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "6f13d5d5-6bea-45b7-9514-e65c77ff386b"
+      Hint: CTA Button
+      Value: |
+        <link class="" id="{9C887615-27DB-41A4-B229-2E223A024947}" querystring="" anchor="" target="" title="" linktype="internal" text="Välj Silver-plan" />
+    - ID: "8664287b-3fab-4823-ba52-a6a0e2dfce92"
+      Hint: Included Features
+      Value: |
+        <div class="ck-content"><ul><li>Anpassad VoIP-integration</li><li>Anpassad CRM-integration</li><li>Utbildning och support</li><li>LLM-användning — inga tokenavgifter</li></ul></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "267242e2-f0cb-4212-bf91-4a17eca9df75"
+    - ID: "9158ead6-d246-4a53-ba09-649966fe8ab3"
+      Hint: Metric Features
+      Value: Custom agents=5&Sales campaigns=10&Call data storage=15%20days
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a00a644a-a587-4733-81b1-0d5291777acf"
+      Hint: Tier Icon
+      Value: |
+        <image mediaid="{95939499-96FF-4B8E-833C-0E82EFF0DF3E}" />
+    - ID: "ba9f4c29-1d4c-4aae-8fd3-528642c0c56c"
+      Hint: Price Subtext
+      Value: + 9,99 $ per användare / månad
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20261006T105551Z
+    - ID: "d16f32fe-446a-4a04-ae04-324185280c3c"
+      Hint: Tier Name
+      Value: "SILVER-PLAN"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105557Z

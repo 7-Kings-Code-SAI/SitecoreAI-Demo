@@ -1,0 +1,23 @@
+﻿---
+ID: "c9cc86ed-0e0a-4d7c-a62d-fc732f80905e"
+Parent: "477a7328-6531-4e0c-9340-9183da6d9212"
+Template: "d08758a9-ccd3-4db8-b6a3-29a2d0d204c3"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Widget Layout Options/Security Integration"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261008T200014Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bdf5d920-9c03-4db0-88f9-16eda559e316"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261008T200014Z

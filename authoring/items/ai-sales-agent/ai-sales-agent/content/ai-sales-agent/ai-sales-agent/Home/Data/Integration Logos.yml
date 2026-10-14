@@ -4,6 +4,56 @@ Parent: "7b98b033-8ecd-4d0b-ada2-4cf5de540aa4"
 Template: "4fa713fd-50d0-4559-80f7-b31db9082897"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Integration Logos"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "00c5f7e4-2a41-4280-9606-70cade1daa58"
+      Hint: "CTA Lead-in Text"
+      Value: Lassen Sie uns starten
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T201842Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "667af96d-453c-4b41-8330-5c79b7c45f5b"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>AI Sale Agent wurde entwickelt, um Ihren bestehenden Vertriebsprozess zu unterstützen. Von der Lead-Qualifizierung und Kunden-Nachfassaktionen bis hin zu Outreach-Kampagnen und CRM-Aktualisierungen integriert es sich nahtlos in Ihre vorhandenen Systeme und hilft Ihrem Team, Zeit zu sparen und produktiv zu bleiben.</p></div>
+    - ID: "6bf618b8-2ae1-4204-9377-e46587a9c070"
+      Hint: CTA Link
+      Value: |
+        <link anchor="" target="" linktype="external" text="Jetzt registrieren" url="http://#" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4b2f7e6f-4b9d-446c-a5a8-322d71a5ea49"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d3c34c85-2377-4cdb-a307-7052ddcb9a49"
+      Hint: Label Text
+      Value: VERTRAUEN VON UMSATZTEAMS, DIE MIT
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103708Z
+    - ID: "eccf8923-a714-43e3-a168-dd809b058227"
+      Hint: Primary Logos
+      Value: |
+        {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
+        {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
 - Language: en
   Versions:
   - Version: 1
@@ -63,6 +113,106 @@ Languages:
       Value: |
         {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
         {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "00c5f7e4-2a41-4280-9606-70cade1daa58"
+      Hint: "CTA Lead-in Text"
+      Value: Let's Get Started
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T201842Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "667af96d-453c-4b41-8330-5c79b7c45f5b"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>AI Sale Agent is designed to support the sales process you already have. From lead qualification and customer follow-ups to outreach campaigns and CRM updates, it integrates seamlessly with your existing systems, helping your team save time and stay productive.</p></div>
+    - ID: "6bf618b8-2ae1-4204-9377-e46587a9c070"
+      Hint: CTA Link
+      Value: |
+        <link anchor="" target="" linktype="external" text="Sign Up Now" url="http://#" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7906ef69-99f1-4951-8187-edcdc2f0e4c7"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d3c34c85-2377-4cdb-a307-7052ddcb9a49"
+      Hint: Label Text
+      Value: TRUSTED BY REVENUE TEAMS RUNNING ON
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194133Z
+    - ID: "eccf8923-a714-43e3-a168-dd809b058227"
+      Hint: Primary Logos
+      Value: |
+        {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
+        {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "00c5f7e4-2a41-4280-9606-70cade1daa58"
+      Hint: "CTA Lead-in Text"
+      Value: Započnimo
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T201842Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "667af96d-453c-4b41-8330-5c79b7c45f5b"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>AI Sale Agent osmišljen je kako bi podržao prodajni proces koji već imate. Od kvalifikacije leadova i praćenja kupaca do kampanja za dosezanje i ažuriranja CRM-a, besprijekorno se integrira s vašim postojećim sustavima, pomažući vašem timu uštedjeti vrijeme i ostati produktivan.</p></div>
+    - ID: "6bf618b8-2ae1-4204-9377-e46587a9c070"
+      Hint: CTA Link
+      Value: |
+        <link anchor="" target="" linktype="external" text="Prijavite se sada" url="http://#" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5154a8f9-4bd1-41ea-a37d-d5f5b82afc90"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d3c34c85-2377-4cdb-a307-7052ddcb9a49"
+      Hint: Label Text
+      Value: UZ PRIHODOVNE TIMOVE KOJI RADE NA
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145157Z
+    - ID: "eccf8923-a714-43e3-a168-dd809b058227"
+      Hint: Primary Logos
+      Value: |
+        {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
+        {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
 - Language: "sv-SE"
   Versions:
   - Version: 1
@@ -108,6 +258,57 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20261002T181012Z
+    - ID: "eccf8923-a714-43e3-a168-dd809b058227"
+      Hint: Primary Logos
+      Value: |
+        {A4FD0862-D1DF-44CB-9AD2-C6A24BC20756}
+        {4BA0B142-0A41-458B-B9C1-A13C1E3425B5}
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "00c5f7e4-2a41-4280-9606-70cade1daa58"
+      Hint: "CTA Lead-in Text"
+      Value: Låt oss komma igång
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261006T105457Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "667af96d-453c-4b41-8330-5c79b7c45f5b"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>AI Sale Agent är utformad för att stödja den säljprocess du redan har. Från kvalificering av leads och kunduppföljningar till outreach-kampanjer och CRM-uppdateringar integreras den sömlöst med dina befintliga system och hjälper ditt team att spara tid och förbli produktivt.</p></div>
+    - ID: "6bf618b8-2ae1-4204-9377-e46587a9c070"
+      Hint: CTA Link
+      Value: |
+        <link anchor="" target="" linktype="external" text="Registrera dig nu" url="http://#" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "262011cf-38f2-4ccc-9c19-1ef69a7c13a0"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20261006T105457Z
+    - ID: "d3c34c85-2377-4cdb-a307-7052ddcb9a49"
+      Hint: Label Text
+      Value: BETRODD AV INTÄKTSTEAM SOM KÖR PÅ
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105504Z
     - ID: "eccf8923-a714-43e3-a168-dd809b058227"
       Hint: Primary Logos
       Value: |

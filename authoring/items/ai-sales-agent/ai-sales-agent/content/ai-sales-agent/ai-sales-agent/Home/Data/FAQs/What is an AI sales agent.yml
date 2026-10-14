@@ -4,6 +4,47 @@ Parent: "8d3bcac9-e14e-4625-981c-5a3685a07b5c"
 Template: "736cf16f-a306-462d-8ed3-72a061aa2eb6"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/FAQs/What is an AI sales agent"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T160356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3e36201e-9e0f-4bee-8b3b-f9db9a2a59b5"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Erste Schritte & So funktioniert es
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Was ist ein KI-Vertriebsagent und wie funktioniert er?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103736Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Ein KI-Vertriebsagent ist ein sprachbasierter KI-System, das in Ihrem Auftrag Verkaufsgespräche führt und entgegennimmt. Es übernimmt die Kontaktaufnahme, Nachfassaktionen und Lead-Qualifizierung genauso wie ein menschlicher Vertriebsmitarbeiter. AI Sale Agent erstellt einen individuellen Agenten für Ihr Unternehmen, komplett mit eigener Stimme, eigenem Akzent und eigener Persönlichkeit, und verbindet ihn dann mit Ihrer Lead-Liste und Ihrem CRM. Der Agent ruft Interessenten an, führt ein natürliches Gespräch, behandelt Einwände, qualifiziert den Lead anhand Ihrer Kriterien und protokolliert nach Gesprächsende automatisch ein Transkript, eine Zusammenfassung und ein CRM-Update.&nbsp;</span></p></div>
 - Language: en
   Versions:
   - Version: 1
@@ -42,3 +83,126 @@ Languages:
       Hint: Answer
       Value: |
         <div class="ck-content"><p><span>An AI sales agent is a voice based AI system that makes and takes sales calls on your behalf. It handles outreach, follow ups, and lead qualification the same way a human rep would. AI Sale Agent builds a custom agent for your business, complete with its own voice, accent, and personality, then connects it to your lead list and CRM. The agent calls prospects, holds a natural conversation, handles objections, qualifies the lead against your criteria, and logs a transcript, summary, and CRM update automatically once the call ends.&nbsp;</span></p></div>
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T160356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3ee3efee-f8c1-4205-9336-88554843ca4a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Getting Started & How It Works
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "What is an AI sales agent and how does it work?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194201Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>An AI sales agent is a voice-based AI system that makes and takes sales calls on your behalf. It handles outreach, follow-ups, and lead qualification the same way a human rep would. AI Sale Agent builds a custom agent for your business, complete with its own voice, accent, and personality, then connects it to your lead list and CRM. The agent calls prospects, holds a natural conversation, handles objections, qualifies the lead against your criteria, and logs a transcript, summary, and CRM update automatically once the call ends.&nbsp;</span></p></div>
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T160356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4072c234-4126-4605-aad4-c2f7e7d7e104"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Početak rada i kako funkcionira
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Što je AI prodajni agent i kako funkcionira?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145224Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>AI prodajni agent je glasovni AI sustav koji u vaše ime obavlja i prima prodajne pozive. Obavlja kontaktiranje, naknadne pozive i kvalifikaciju leadova na isti način kao ljudski prodajni predstavnik. AI Sale Agent izrađuje prilagođenog agenta za vaše poslovanje, s vlastitim glasom, naglaskom i osobnošću, a zatim ga povezuje s vašim popisom leadova i CRM-om. Agent zove potencijalne klijente, vodi prirodan razgovor, rješava prigovore, kvalificira lead prema vašim kriterijima te automatski bilježi transkript, sažetak i ažuriranje u CRM-u nakon završetka poziva.&nbsp;</span></p></div>
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T160356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8f125d5f-6ef6-44d8-b510-2346ae212db9"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Komma igång och så fungerar det
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Vad är en AI-säljagent och hur fungerar den?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105532Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>En AI-säljagent är ett röstbaserat AI-system som ringer och tar emot säljsamtal för din räkning. Det hanterar uppsökande kontakt, uppföljningar och kvalificering av leads på samma sätt som en mänsklig säljare skulle göra. AI Sale Agent bygger en anpassad agent för ditt företag, komplett med egen röst, accent och personlighet, och kopplar den sedan till din leadlista och ditt CRM. Agenten ringer prospekt, för naturliga samtal, hanterar invändningar, kvalificerar leadet utifrån dina kriterier och loggar automatiskt ett transkript, en sammanfattning och en CRM-uppdatering när samtalet avslutas.&nbsp;</span></p></div>

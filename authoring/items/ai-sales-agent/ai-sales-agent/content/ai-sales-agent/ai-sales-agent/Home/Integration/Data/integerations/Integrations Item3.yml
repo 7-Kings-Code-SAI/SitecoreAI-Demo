@@ -11,6 +11,54 @@ SharedFields:
   Hint: __Shared revision
   Value: "7f4f5708-3757-41ce-908f-40875532be34"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165842Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="c7a7a2b0-5ccb-414a-8ad1-d433ce23c56e" alt="monday" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "23bb2599-dbd4-4e69-891f-58941d271dac"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Monday.com 
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Verwandeln Sie KI-Anrufergebnisse in nachverfolgte Elemente auf Ihren Monday.com-Boards.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103816Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrierte 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: "CRM-Plattformen"
 - Language: en
   Versions:
   - Version: 1
@@ -56,3 +104,147 @@ Languages:
     - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
       Hint: Category
       Value: CRM Platforms
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165842Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="c7a7a2b0-5ccb-414a-8ad1-d433ce23c56e" alt="monday" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62d526b6-cf95-4a8a-9706-c0ffaa88be51"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Monday.com 
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Turn AI call outcomes into tracked items on your Monday.com boards.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194247Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrated 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: CRM Platforms
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165842Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="c7a7a2b0-5ccb-414a-8ad1-d433ce23c56e" alt="monday" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8f6103ee-742f-4750-b54e-adfd17b48b25"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Monday.com 
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Pretvorite ishode AI poziva u praćene stavke na svojim Monday.com pločama.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145310Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrirano 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: CRM platforme
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261002T165842Z
+    - ID: "3472dfec-6ed5-4e27-a987-30d157de980d"
+      Hint: Logo
+      Value: |
+        <image mediaid="c7a7a2b0-5ccb-414a-8ad1-d433ce23c56e" alt="monday" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3fde9cc8-10a5-484f-b8d1-42075f1b8090"
+    - ID: "8df7143a-c3aa-4321-bed9-8045bc37d089"
+      Hint: Title
+      Value: Monday.com 
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a8ab48c7-1bba-42d4-8e19-b29d7dc8b1f2"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Omvandla AI-samtalsresultat till spårade objekt på dina Monday.com-tavlor.</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105618Z
+    - ID: "e5419663-1475-4780-aa35-fdc29f156e94"
+      Hint: Label
+      Value: Integrerade 
+    - ID: "ee34d9e6-b012-4387-91c2-670fa2875df9"
+      Hint: Category
+      Value: "CRM-plattformar"

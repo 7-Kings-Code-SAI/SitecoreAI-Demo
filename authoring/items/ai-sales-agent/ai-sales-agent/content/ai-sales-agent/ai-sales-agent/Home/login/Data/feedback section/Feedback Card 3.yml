@@ -1,0 +1,59 @@
+﻿---
+ID: "f9572a34-83b0-4695-9b50-8868497fe19a"
+Parent: "ce0abeb6-f6a8-49ff-b2b6-7ea3c531abba"
+Template: "1d7099b3-30c5-4c7e-9824-09313eacb8f7"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/login/Data/feedback section/Feedback Card 3"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 75
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0d7212fc-2a59-45af-a6eb-242c2e4ad100"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261013T135529Z
+    - ID: "37807ce1-d070-48af-946f-b80cda626fb7"
+      Hint: Badge Text
+      Value: Verified Customer
+    - ID: "4514058e-9cfa-457e-a198-949a537560ef"
+      Hint: Avatar
+      Value: |
+        <image mediaid="dd4d2fb9-7e2d-41ac-a718-d173c23e79d8" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "63665b74-ad0f-44c1-bcb5-86c7cde81b14"
+      Hint: Role
+      Value: VP of Sales
+    - ID: "6c02ad97-8b48-462d-a895-f83ca6cca519"
+      Hint: Quote Text
+      Value: |
+        The biggest surprise wasn't how human the conversations sounded - it was how quickly our team trusted the platform enough to make it part of the daily sales process.
+        
+    - ID: "8969dfc2-9660-457b-986d-6d439b87ee05"
+      Hint: Company
+      Value: Technology Company
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "57bae8a7-ab71-4f7f-bcfd-224d889577ba"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261013T140838Z

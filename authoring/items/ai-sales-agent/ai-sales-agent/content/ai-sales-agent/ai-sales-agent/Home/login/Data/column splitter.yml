@@ -1,0 +1,40 @@
+﻿---
+ID: "dd434c9a-4620-4120-9698-54164fc0b036"
+Parent: "4c52bd24-6ab3-4136-af7f-cbd00a857c0f"
+Template: "d86f61d5-7310-4ad5-93bd-a09ecf100182"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/login/Data/column splitter"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261012T172549Z
+    - ID: "3364a715-7dcd-4473-aa25-7dc7bf5b4055"
+      Hint: Left Column Width
+      Value: 70
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "987e76d2-dae0-47d3-9e8e-fd24db635f30"
+    - ID: "b1059150-e09e-4b84-9dc9-05e5d6e2c4ff"
+      Hint: Right Column Width
+      Value: 30
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261014T171924Z

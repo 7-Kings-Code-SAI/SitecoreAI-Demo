@@ -11,6 +11,47 @@ SharedFields:
   Hint: __Shared revision
   Value: "4c5da2a8-5aca-4154-8035-8a05deaf623f"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "706a9b76-1ded-4bc4-ad6c-5c8181c292d7"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Preise & Pläne
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Gibt es eine günstigere Option für Teams mit geringerem Anrufvolumen?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T103736Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Ja. Sie können mit der 7-tägigen kostenlosen Testversion beginnen (3 Stunden Anrufe, 3 Agenten, 3 Kampagnen, bis zu 100 Leads, 1 CRM- plus 1 VoIP-Integration), um die Plattform kostenlos zu testen. Danach erfolgt die Preisgestaltung standardmäßig nach dem Pay-as-you-go-Prinzip, abgerechnet pro Minute ohne erforderliches Prepaid-Guthaben, sodass die Kosten direkt mit der tatsächlichen Nutzung skalieren. Eine monatliche Abrechnung ist ebenfalls verfügbar für Teams, die planbare Kosten und einen Rabatt von bis zu 31 % wünschen.&nbsp;</span></p></div>
 - Language: en
   Versions:
   - Version: 1
@@ -49,3 +90,126 @@ Languages:
       Hint: Answer
       Value: |
         <div class="ck-content"><p><span>Yes. You can start with the 7 day free trial (3 hours of calling, 3 agents, 3 campaigns, up to 100 leads, 1 CRM plus 1 VoIP integration) to test the platform at no cost. After that, pricing is pay as you go by default, billed per minute with no prepaid balance required, so cost scales directly with actual usage. Monthly billing is also available for teams that want predictable costs and a discount of up to 31%.&nbsp;</span></p></div>
+- Language: "en-IE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8eb798dd-4ba9-4790-bd62-5be0f35fe9aa"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Pricing & Plans
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Is there a cheaper option for teams with lower call volume?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T194202Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Yes. You can start with the 7 day free trial (3 hours of calling, 3 agents, 3 campaigns, up to 100 leads, 1 CRM plus 1 VoIP integration) to test the platform at no cost. After that, pricing is pay as you go by default, billed per minute with no prepaid balance required, so cost scales directly with actual usage. Monthly billing is also available for teams that want predictable costs and a discount of up to 31%.&nbsp;</span></p></div>
+- Language: "hr-HR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3a95e980-aaf6-4b65-9e33-f5d5d2938e0b"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Cijene i planovi
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Postoji li jeftinija opcija za timove s manjim brojem poziva?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261007T145224Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Da. Možete započeti sa 7-dnevnim besplatnim probnim razdobljem (3 sata poziva, 3 agenta, 3 kampanje, do 100 leadova, 1 CRM plus 1 VoIP integracija) kako biste testirali platformu bez ikakvih troškova. Nakon toga, cijena se prema zadanim postavkama obračunava po modelu plaćanja prema potrošnji, naplata je po minuti i nije potreban unaprijed uplaćen saldo, tako da trošak izravno prati stvarnu upotrebu. Mjesečna naplata također je dostupna za timove koji žele predvidljive troškove i popust do 31 %.&nbsp;</span></p></div>
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260921T161356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b51525bc-7c1a-4dd0-ae72-ad2e603a7490"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a6707ede-1a04-4aca-a48f-c2fe27612402"
+      Hint: Category Name
+      Value: Priser och planer
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "cab9ac37-5565-41a7-ad7c-6b5a21b917c0"
+      Hint: Question
+      Value: "Finns det ett billigare alternativ för team med lägre samtalsvolym?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261006T105532Z
+    - ID: "debd65ae-b150-4903-8a34-465eb240d37b"
+      Hint: Answer
+      Value: |
+        <div class="ck-content"><p><span>Ja. Du kan börja med den 7 dagar långa kostnadsfria provperioden (3 timmars samtal, 3 agenter, 3 kampanjer, upp till 100 leads, 1 CRM- samt 1 VoIP-integration) för att testa plattformen utan kostnad. Därefter är prissättningen som standard pay-as-you-go, debiterad per minut utan krav på förbetalt saldo, så kostnaden skalar direkt med den faktiska användningen. Månadsfakturering är också tillgänglig för team som vill ha förutsägbara kostnader och en rabatt på upp till 31 %.&nbsp;</span></p></div>
