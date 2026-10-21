@@ -1,0 +1,658 @@
+/* ==========================================================================
+   Sitecore Form – Login Page (common.css)
+   Target: light grey page, 382px form centred in the right column,
+   12px-rounded inputs, solid sky-blue pill button, "Back to home" pinned
+   to the top-left of the right column.
+
+   NOTE: no hashed Sitecore IDs are used, so re-publishing the form does not
+   break the styling (text blocks are matched by position/content instead).
+
+   Requires in ColumnSplitter.tsx (root div):
+     style={{ ['--left-col-width' as any]: `${leftPercentage}%` }}
+
+   Palette
+   --lp-primary  #30a4ff   (hover #1d93f0)
+   --lp-heading  #1a1a1a
+   --lp-label    #334155
+   --lp-muted    #64748b
+   --lp-border   #e2e8f0
+   --lp-placeholder #94a3b8
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ── 0. Tokens ──────────────────────────────────────────────────────────── */
+form[data-formid] {
+  --lp-font: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --lp-primary: #30a4ff;
+  --lp-primary-hover: #1d93f0;
+  --lp-heading: #1a1a1a;
+  --lp-label: #334155;
+  --lp-muted: #64748b;
+  --lp-border: #e2e8f0;
+  --lp-placeholder: #94a3b8;
+  --lp-error: #e5484d;
+}
+
+/* Apply the font to every text element inside the form */
+form[data-formid] p,
+form[data-formid] a,
+form[data-formid] label,
+form[data-formid] span,
+form[data-formid] input,
+form[data-formid] button {
+  font-family: var(--lp-font) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── 0b. Page background (light grey) ───────────────────────────────────────
+   Only the background colour is set – layout is left alone.
+   If the page is still white, also set the section/container background to
+   #f8fafc in the Sitecore page designer.                                    */
+html:has(form[data-formid]),
+body:has(form[data-formid]) {
+  background-color: #f8fafc !important;
+}
+
+/* ── 1. Form outer wrapper – 382px, centred horizontally AND vertically ── */
+form.content.lp-flex-container,
+form[data-formid] {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;   /* vertical centering */
+  width: 100% !important;
+  max-width: 382px !important;
+  min-height: 100vh !important;         /* same height as the column (min-h-screen) */
+  flex: 0 0 auto !important;
+  align-self: center !important;
+  margin: 0 auto !important;
+  padding: 24px 0 !important;
+  box-sizing: border-box !important;
+  background: transparent !important;
+}
+
+/* In Page Builder / Editing Mode, do not force 100vh centering so form appears right under the banner */
+.editing-mode form[data-formid],
+body:has(.editing-mode) form[data-formid],
+form[data-formid]:not(.content) {
+  min-height: auto !important;
+  justify-content: flex-start !important;
+}
+
+form.lp-flex-1,
+form.lp-flex-container {
+  flex: 0 0 auto !important;
+  flex-grow: 0 !important;
+  flex-shrink: 1 !important;
+}
+
+form[data-formid] .slot-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* ── 2. Structural rows: clean vertical stacking ───────────────────────── */
+form[data-formid] .form-page,
+form[data-formid] .landing-page-row,
+form[data-formid] .inner-row-div,
+form[data-formid] .border-wrapper,
+form[data-formid] .row-slot-wrapper,
+form[data-formid] .landing-page-slot,
+form[data-formid] .slot-container {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-sizing: border-box !important;
+}
+
+/* Sitecore's default text/spacer padding (10px) was adding stray gaps */
+form[data-formid] .global-text,
+form[data-formid] .global-spacer,
+form[data-formid] .global-image {
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* ── 3. "Back to home" – top-left of the right column ───────────────────────
+   The link is taken out of the flow (fixed) and offset by the left column
+   width, so it sits 44px inside the right column's left edge.               */
+form[data-formid] .landing-page-row:has(.back-home),
+form[data-formid] div:has(> p > .back-home),
+form[data-formid] .component:has(.back-home) {
+  position: static !important;
+  display: block !important;
+  width: 100% !important;
+  height: 0 !important;          /* link is out of flow, so this row takes no space */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+form[data-formid] a.back-home {
+  position: fixed !important;
+  top: 28px !important;
+  left: calc(var(--left-col-width, 0%) + 44px) !important;
+  z-index: 10 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px !important;
+  color: #475569 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  transition: color 0.15s ease !important;
+}
+
+form[data-formid] a.back-home:hover {
+  color: var(--lp-heading) !important;
+}
+
+/* Arrow icon */
+form[data-formid] a.back-home::before {
+  content: "" !important;
+  width: 16px !important;
+  height: 16px !important;
+  background-color: currentColor !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 12H5'/%3E%3Cpath d='m12 19-7-7 7-7'/%3E%3C/svg%3E") center / contain no-repeat !important;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 12H5'/%3E%3Cpath d='m12 19-7-7 7-7'/%3E%3C/svg%3E") center / contain no-repeat !important;
+}
+
+/* Mobile: columns stack, so pin to the top-left of the screen */
+@media (max-width: 767px) {
+  form[data-formid] a.back-home {
+    top: 16px !important;
+    left: 16px !important;
+  }
+}
+
+/* ── 4. Logo row (centered image) ──────────────────────────────────────── */
+form[data-formid] .image-component,
+form[data-formid] .landing-page-row:has(.content-image) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin-bottom: 26px !important;
+}
+
+form[data-formid] .content-image {
+  width: auto !important;
+  max-width: 140px !important;
+  height: 32px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+  background: transparent !important;
+  mix-blend-mode: multiply !important;   /* white JPG background takes on the page colour */
+}
+
+/* Keep every wrapper around the logo transparent so the blend sees the page */
+form[data-formid] .image-component > div,
+form[data-formid] .image-component a {
+  background: transparent !important;
+}
+
+/* ── 5. "Welcome Back" heading ─────────────────────────────────────────── */
+form[data-formid] .image-component + .text-component {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 14px !important;
+  text-align: center !important;
+}
+
+form[data-formid] .image-component + .text-component p {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: var(--lp-heading) !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+/* ── 6. Subtitle "Enter your credentials…" ─────────────────────────────── */
+form[data-formid] .image-component + .text-component + .text-component {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 36px !important;
+  text-align: center !important;
+}
+
+form[data-formid] .image-component + .text-component + .text-component p {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: var(--lp-muted) !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+/* ── 7. Input fields (Email & Password) ────────────────────────────────── */
+/* NOTE: no "display" here on purpose – Sitecore's "Hidden" field setting hides
+   the field with display:none, and a forced display value would override it. */
+form[data-formid] .shared-input-field {
+  width: 100% !important;
+  margin: 0 0 20px !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+form[data-formid] .form-input-wrapper-element {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+}
+
+form[data-formid] .global-input-label,
+form[data-formid] .form-field-label {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 0 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  color: var(--lp-label) !important;
+  margin: 0 0 8px !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+}
+
+form[data-formid] .global-field-required,
+form[data-formid] .form-field-required {
+  color: var(--lp-label) !important;
+  font-weight: 600 !important;
+  margin-left: 1px !important;
+}
+
+/* The visible rounded box is the WRAPPER; the input inside is transparent */
+form[data-formid] .shared-input-field .global-input-wrapper,
+form[data-formid] .shared-input-field .form-input-wrapper-div {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 38px !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+  border: 1px solid var(--lp-border) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+form[data-formid] .shared-input-field .global-input-wrapper:focus-within,
+form[data-formid] .shared-input-field .form-input-wrapper-div:focus-within {
+  border-color: var(--lp-primary) !important;
+  box-shadow: 0 0 0 3px rgba(48, 164, 255, 0.18) !important;
+}
+
+form[data-formid] .shared-input-field input[type="text"],
+form[data-formid] .shared-input-field input[type="email"],
+form[data-formid] .shared-input-field input[type="password"] {
+  display: block !important;
+  flex: 1 1 auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 16px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: var(--lp-heading) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Password field (rendered as text by Sitecore, switched to password by the
+   toggle script) – leave room for the eye icon */
+form[data-formid] .shared-input-field input[type="password"],
+form[data-formid] .shared-input-field input[name="password"] {
+  padding-right: 44px !important;
+}
+
+form[data-formid] .shared-input-field input::placeholder {
+  color: var(--lp-placeholder) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+}
+
+/* Show/hide-password eye (button is injected by sitecore-password-toggle.js) */
+form[data-formid] .global-input-wrapper button[type="button"],
+form[data-formid] .form-input-wrapper-div button[type="button"],
+form[data-formid] .lp-pw-toggle {
+  position: absolute !important;
+  right: 14px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  color: var(--lp-placeholder) !important;
+  cursor: pointer !important;
+}
+
+form[data-formid] .lp-pw-toggle:hover {
+  color: var(--lp-muted) !important;
+}
+
+form[data-formid] .lp-pw-toggle svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* Validation messages – in normal flow so the field grows and the next
+   label / Remember me row is pushed down instead of being overlapped */
+form[data-formid] .global-input-error-message,
+form[data-formid] .form-input-error-message,
+form[data-formid] [class*="error-message"] {
+  position: static !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  width: 100% !important;
+  margin: 8px 0 0 !important;
+  padding: 0 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px !important;
+  text-align: left !important;
+  color: var(--lp-error) !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+/* The little "!" icon in front of the message */
+form[data-formid] .global-input-error-message svg,
+form[data-formid] .global-input-error-message img,
+form[data-formid] .global-input-error-message .mdi,
+form[data-formid] .global-input-error-message i {
+  flex: 0 0 auto !important;
+  width: 14px !important;
+  height: 14px !important;
+  font-size: 14px !important;
+  line-height: 14px !important;
+  color: var(--lp-error) !important;
+  fill: currentColor !important;
+}
+
+/* Red border + red focus ring on the invalid field */
+form[data-formid] .shared-input-field:has(.global-input-error-message:not(:empty)) .global-input-wrapper,
+form[data-formid] .shared-input-field:has(.global-input-error-message:not(:empty)) .form-input-wrapper-div {
+  border-color: var(--lp-error) !important;
+}
+
+form[data-formid] .shared-input-field:has(.global-input-error-message:not(:empty)) .global-input-wrapper:focus-within,
+form[data-formid] .shared-input-field:has(.global-input-error-message:not(:empty)) .form-input-wrapper-div:focus-within {
+  box-shadow: 0 0 0 3px rgba(229, 72, 77, 0.18) !important;
+}
+
+/* Help text */
+form[data-formid] .global-input-description {
+  margin: 6px 0 0 !important;
+  font-size: 12px !important;
+  color: var(--lp-muted) !important;
+}
+
+/* ── 8. Remember me + Forgot password on the SAME line ─────────────────── */
+form[data-formid] .checkbox-field {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 16px !important;
+  margin: -6px 0 0 !important;             /* 20px field gap – 6px = 14px */
+  padding: 0 !important;
+}
+
+form[data-formid] .checkbox-field label.form-input-wrapper-element {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 8px !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+
+form[data-formid] .checkbox-field .form-input-wrapper-div {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Custom checkbox: 14px, 3px radius, fills blue with a white tick */
+form[data-formid] input[type="checkbox"].global-checkbox-element {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  position: relative !important;
+  flex: 0 0 auto !important;
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+}
+
+form[data-formid] input[type="checkbox"].global-checkbox-element:checked {
+  background: var(--lp-primary) !important;
+  border-color: var(--lp-primary) !important;
+}
+
+form[data-formid] input[type="checkbox"].global-checkbox-element:checked::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 4px !important;
+  top: 1px !important;
+  width: 3px !important;
+  height: 7px !important;
+  border: solid #ffffff !important;
+  border-width: 0 1.5px 1.5px 0 !important;
+  transform: rotate(45deg) !important;
+}
+
+form[data-formid] input[type="checkbox"].global-checkbox-element:focus-visible {
+  outline: 2px solid var(--lp-primary) !important;
+  outline-offset: 2px !important;
+}
+
+form[data-formid] .checkbox-check-marker {
+  display: none !important;
+}
+
+form[data-formid] .checkbox-field span.global-input-label {
+  display: inline-block !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: var(--lp-label) !important;
+  margin: 0 !important;
+  line-height: 16px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+}
+
+/* "remember me" → "Remember me" without touching the builder text */
+form[data-formid] .checkbox-field span.global-input-label::first-letter {
+  text-transform: uppercase !important;
+}
+
+form[data-formid] .checkbox-field .form-field-required {
+  display: none !important;
+}
+
+/* Forgot password – pulled up onto the Remember me line, right-aligned */
+form[data-formid] .checkbox-field + .text-component {
+  position: relative !important;
+  z-index: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  width: 100% !important;
+  height: 16px !important;
+  margin: -16px 0 0 !important;            /* = height of the Remember me row */
+  padding: 0 !important;
+  text-align: right !important;
+  pointer-events: none !important;         /* never blocks the checkbox label */
+}
+
+form[data-formid] .checkbox-field + .text-component p {
+  display: inline-block !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: var(--lp-primary) !important;
+  margin: 0 !important;
+  line-height: 16px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  pointer-events: auto !important;
+  transition: color 0.15s ease !important;
+}
+
+form[data-formid] .checkbox-field + .text-component a {
+  color: inherit !important;
+  font-weight: inherit !important;
+  text-decoration: none !important;
+}
+
+form[data-formid] .checkbox-field + .text-component p:hover {
+  color: var(--lp-primary-hover) !important;
+  text-decoration: underline !important;
+}
+
+/* ── 9. "Log In" pill button ───────────────────────────────────────────── */
+form[data-formid] .global-button-wrapper,
+form[data-formid] .button-component {
+  display: block !important;
+  width: 100% !important;
+  margin: 28px 0 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+form[data-formid] button.submit-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 42px !important;
+  margin: 0 !important;
+  padding: 0 24px !important;
+  background: var(--lp-primary) !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  border: none !important;
+  border-radius: 9999px !important;
+  cursor: pointer !important;
+  box-shadow: 0 10px 22px -8px rgba(48, 164, 255, 0.5) !important;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+form[data-formid] button.submit-button:hover {
+  background: var(--lp-primary-hover) !important;
+}
+
+form[data-formid] button.submit-button:active {
+  transform: translateY(1px) !important;
+  box-shadow: 0 4px 12px -6px rgba(48, 164, 255, 0.5) !important;
+}
+
+form[data-formid] button.submit-button:focus-visible {
+  outline: 3px solid rgba(48, 164, 255, 0.4) !important;
+  outline-offset: 2px !important;
+}
+
+form[data-formid] .message-popup {
+  display: none !important;
+}
+
+/* ── 10. "Don't have an account? Sign up" ──────────────────────────────── */
+form[data-formid] .text-component:has(a:not(.back-home)) {
+  display: block !important;
+  width: 100% !important;
+  margin: 28px 0 0 !important;
+  text-align: center !important;
+}
+
+form[data-formid] .text-component:has(a:not(.back-home)) p {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+  color: var(--lp-label) !important;
+  margin: 0 !important;
+  text-align: center !important;
+  white-space: normal !important;
+}
+
+form[data-formid] .text-component:has(a:not(.back-home)) a {
+  color: var(--lp-primary) !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease !important;
+}
+
+form[data-formid] .text-component:has(a:not(.back-home)) a:hover {
+  color: var(--lp-primary-hover) !important;
+  text-decoration: underline !important;
+}
+
+/* ── 11. Hide counter & screen-reader artifacts ────────────────────────── */
+form[data-formid] .limit-counter,
+form[data-formid] .a11y-visible,
+form[data-formid] #errors-live-region,
+form[data-formid] .shared-input-field:has(input[name="form_name"]) {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+
+/* ── 12. Small screens ─────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  form.content.lp-flex-container,
+  form[data-formid] {
+    padding: 24px 20px !important;
+  }
+
+  form[data-formid] .image-component + .text-component p {
+    font-size: 24px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  form[data-formid] * {
+    transition: none !important;
+  }
+}

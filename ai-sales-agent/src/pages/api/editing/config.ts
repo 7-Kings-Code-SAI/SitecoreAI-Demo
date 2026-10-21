@@ -8,7 +8,7 @@ import metadata from '.sitecore/metadata.json';
  */
 
 const handler = new EditingConfigMiddleware({
-  components,
+  components: components || new Map(),
   metadata,
 }).getHandler();
 

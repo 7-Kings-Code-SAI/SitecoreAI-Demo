@@ -75,6 +75,12 @@
     <Folder Include="App_Config\Include\Project\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\FormNameAutoPopulateHandler.cs" />
+    <Compile Include="Pipelines\InitializeFormNameMigration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Project\Project.AiSalesAgent.FormAutoPopulate.config" />
     <Content Include="App_Config\Include\Project\Project.AiSalesAgent.LinkManager.DisplayName.config" />
   </ItemGroup>
   <PropertyGroup>
