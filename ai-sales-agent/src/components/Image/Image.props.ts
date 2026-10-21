@@ -15,14 +15,16 @@ export interface LabelPositionItem {
   url?: string;
   name?: string;
   displayName?: string;
+  fields?: {
+    Position?: Field<string>;
+  };
 }
 
 export interface ImageFields {
   Image?: ImageField;
   'AI Generated'?: Field<boolean | string>;
   'AI generated label'?: AILabelItem | null;
-  // Droplink returns the selected item; Droplist returns { value: string }.
-  'Label Position'?: LabelPositionItem | Field<string> | null;
+  'Label Position'?: LabelPositionItem | null;
 }
 
 export interface ImageProps {

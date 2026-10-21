@@ -1,6 +1,6 @@
 import { Image as SitecoreImage, ImageField, useSitecore } from '@sitecore-content-sdk/nextjs';
 import type { CSSProperties } from 'react';
-import type { ImageFields, ImageProps } from './Image.props';
+import type { ImageProps } from './Image.props';
 
 // Full class strings so Tailwind can detect them at build time.
 const POSITION_CLASSES: Record<string, string> = {
@@ -10,13 +10,6 @@ const POSITION_CLASSES: Record<string, string> = {
   'bottom-right': 'bottom-2 right-2 sm:bottom-4 sm:right-4 lg:bottom-6 lg:right-6',
 };
 const DEFAULT_POSITION = 'bottom-left';
-
-// Works for both a Droplink (item with name/displayName) and a Droplist ({ value }).
-const getPositionText = (field: ImageFields['Label Position']): string => {
-  if (!field) return '';
-  const f = field as { value?: string; displayName?: string; name?: string };
-  return f.value ?? f.displayName ?? f.name ?? '';
-};
 
 const normalizePosition = (value?: string): string => {
   const key = (value ?? '').trim().toLowerCase().replace(/[\s_]+/g, '-');
@@ -28,7 +21,7 @@ const clamp = (n: number, min: number, max: number) => Math.min(Math.max(n, min)
 export const Image = ({ fields }: ImageProps) => {
   const { page } = useSitecore();
   const isEditing = page?.mode?.isEditing ?? false;
-
+  console.log(fields)
   const imageField = fields?.Image;
   const hasImage = Boolean(imageField?.value?.src);
 
@@ -37,8 +30,11 @@ export const Image = ({ fields }: ImageProps) => {
 
   const labelImage = fields?.['AI generated label']?.fields?.['Label Image'];
   const labelSrc = labelImage?.value?.src;
-  const positionClasses =
-    POSITION_CLASSES[normalizePosition(getPositionText(fields?.['Label Position']))];
+
+  // Value of the "Position" field on the selected position item (e.g. "bottom-left").
+  const positionItem = fields?.['Label Position'];
+  const positionValue = positionItem?.fields?.Position?.value ?? positionItem?.name;
+  const positionClasses = POSITION_CLASSES[normalizePosition(positionValue)];
 
   // Outside editing, render nothing when there is no image.
   if (!hasImage && !isEditing) return null;
