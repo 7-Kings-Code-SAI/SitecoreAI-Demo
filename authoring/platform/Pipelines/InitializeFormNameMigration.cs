@@ -21,7 +21,7 @@ namespace XmCloudNextJsStarter.Pipelines
         public void Process(PipelineArgs args)
         {
             // Launch asynchronously so CM startup is completely uninterrupted
-            Task.Run(() => ExecuteMigration());
+            Task.Run(new Action(ExecuteMigration));
         }
 
         private void ExecuteMigration()
@@ -60,11 +60,11 @@ namespace XmCloudNextJsStarter.Pipelines
                     TraverseAndUpdate(contentRoot, ref scannedCount, ref updatedCount);
                 }
 
-                Log.Info($"[FormNameMigration] Completed backfill! Scanned {scannedCount} items, updated {updatedCount} pages with FormName.", this);
+                Log.Info(string.Format("[FormNameMigration] Completed backfill! Scanned {0} items, updated {1} pages with FormName.", scannedCount, updatedCount), this);
             }
             catch (Exception ex)
             {
-                Log.Error($"[FormNameMigration] Error during background FormName migration: {ex.Message}", ex, this);
+                Log.Error(string.Format("[FormNameMigration] Error during background FormName migration: {0}", ex.Message), ex, this);
             }
             finally
             {
