@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Concurrent;
 using System.Net;
+using System.Text;
 using System.Text.RegularExpressions;
-using Sitecore;
+using System.Web;
 using Sitecore.Configuration;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
@@ -21,6 +22,7 @@ namespace XmCloudNextJsStarter.Events
     public class FormNameAutoPopulateHandler
     {
         public static readonly string FormRenderingId = "{D15632E6-B944-4861-A79B-F4E5A8DE14EA}";
+        private static readonly string DefaultDeviceId = "{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}";
 
         // Dynamic runtime cache populated on-the-fly.
         public static readonly ConcurrentDictionary<string, string> FormNameCache = CreateInitialCache();
@@ -38,8 +40,8 @@ namespace XmCloudNextJsStarter.Events
             if (item == null || item.Database == null || item.Database.Name != "master" || !item.Paths.IsContentItem)
                 return;
 
-            SyncFormNameInLayout(item, FieldIDs.FinalLayoutField);
-            SyncFormNameInLayout(item, FieldIDs.LayoutField);
+            SyncFormNameInLayout(item, Sitecore.FieldIDs.FinalLayoutField);
+            SyncFormNameInLayout(item, Sitecore.FieldIDs.LayoutField);
         }
 
         public static bool SyncFormNameInLayout(Item item, Sitecore.Data.ID fieldId)
@@ -52,8 +54,16 @@ namespace XmCloudNextJsStarter.Events
                 return false;
 
             var layoutDef = LayoutDefinition.Parse(layoutFieldValue);
-            var device = layoutDef.GetDevice(Constants.DefaultDeviceID.ToString());
+            DeviceDefinition device = null;
+            if (layoutDef.Devices != null && layoutDef.Devices.Count > 0)
+            {
+                device = layoutDef.Devices[0] as DeviceDefinition;
+            }
             if (device == null)
+            {
+                device = layoutDef.GetDevice(DefaultDeviceId);
+            }
+            if (device == null || device.Renderings == null)
                 return false;
 
             bool isModified = false;
@@ -72,7 +82,16 @@ namespace XmCloudNextJsStarter.Events
                         if (!string.IsNullOrEmpty(resolvedName) && parameters["FormName"] != resolvedName)
                         {
                             parameters["FormName"] = resolvedName;
-                            rendering.Parameters = WebUtil.BuildQueryString(parameters, false);
+
+                            var sb = new StringBuilder();
+                            foreach (string key in parameters.AllKeys)
+                            {
+                                if (string.IsNullOrEmpty(key)) continue;
+                                if (sb.Length > 0) sb.Append("&");
+                                sb.Append(key).Append("=").Append(HttpUtility.UrlEncode(parameters[key] ?? string.Empty));
+                            }
+                            rendering.Parameters = sb.ToString();
+
                             isModified = true;
                             Log.Info(string.Format("[FormNameAutoPopulate] Page '{0}' updated FormName to '{1}' for FormId '{2}'", item.Paths.FullPath, resolvedName, formId), typeof(FormNameAutoPopulateHandler));
                         }
