@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Concurrent;
-using System.Configuration;
 using System.Net;
 using System.Text.RegularExpressions;
 using Sitecore;
+using Sitecore.Configuration;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
@@ -96,9 +96,8 @@ namespace XmCloudNextJsStarter.Events
             // 2. Dynamic lookup: Query XM Cloud Edge Forms API and inspect the hidden [name="form_name"] input tag
             try
             {
-                var edgeContextId = ConfigurationManager.AppSettings["Sitecore:Edge:ContextId"]
-                    ?? Environment.GetEnvironmentVariable("SITECORE_EDGE_CONTEXT_ID")
-                    ?? "7eCSMBWHMDqBbBuHi1sIYo";
+                var edgeContextId = Settings.GetSetting("Sitecore.Edge.ContextId",
+                    Environment.GetEnvironmentVariable("SITECORE_EDGE_CONTEXT_ID") ?? "7eCSMBWHMDqBbBuHi1sIYo");
 
                 if (!string.IsNullOrEmpty(edgeContextId))
                 {

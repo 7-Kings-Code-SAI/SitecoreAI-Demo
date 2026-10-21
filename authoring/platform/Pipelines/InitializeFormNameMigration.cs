@@ -1,7 +1,6 @@
 using System;
 using System.Threading.Tasks;
 using Sitecore.Configuration;
-using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines;
@@ -58,45 +57,7 @@ namespace XmCloudNextJsStarter.Pipelines
 
                 using (new SecurityDisabler())
                 {
-                    var items = contentRoot.Axes.GetDescendants();
-                    foreach (var item in items)
-                    {
-                        scannedCount++;
-
-                        var finalLayoutField = item.Fields[Sitecore.FieldIDs.FinalLayoutField];
-                        var sharedLayoutField = item.Fields[Sitecore.FieldIDs.LayoutField];
-
-                        bool needsUpdate = false;
-
-                        // Check if item contains FormId
-                        if ((finalLayoutField != null && finalLayoutField.Value.Contains("FormId")) ||
-                            (sharedLayoutField != null && sharedLayoutField.Value.Contains("FormId")))
-                        {
-                            item.Editing.BeginEdit();
-                            try
-                            {
-                                bool finalUpdated = FormNameAutoPopulateHandler.SyncFormNameInLayout(item, Sitecore.FieldIDs.FinalLayoutField);
-                                bool sharedUpdated = FormNameAutoPopulateHandler.SyncFormNameInLayout(item, Sitecore.FieldIDs.LayoutField);
-
-                                if (finalUpdated || sharedUpdated)
-                                {
-                                    needsUpdate = true;
-                                    updatedCount++;
-                                }
-                            }
-                            finally
-                            {
-                                if (needsUpdate)
-                                {
-                                    item.Editing.EndEdit();
-                                }
-                                else
-                                {
-                                    item.Editing.CancelEdit();
-                                }
-                            }
-                        }
-                    }
+                    TraverseAndUpdate(contentRoot, ref scannedCount, ref updatedCount);
                 }
 
                 Log.Info($"[FormNameMigration] Completed backfill! Scanned {scannedCount} items, updated {updatedCount} pages with FormName.", this);
@@ -108,6 +69,52 @@ namespace XmCloudNextJsStarter.Pipelines
             finally
             {
                 _migrationRunning = false;
+            }
+        }
+
+        private void TraverseAndUpdate(Item item, ref int scannedCount, ref int updatedCount)
+        {
+            if (item == null) return;
+
+            scannedCount++;
+
+            var finalLayoutField = item.Fields[Sitecore.FieldIDs.FinalLayoutField];
+            var sharedLayoutField = item.Fields[Sitecore.FieldIDs.LayoutField];
+
+            bool needsUpdate = false;
+
+            if ((finalLayoutField != null && !string.IsNullOrEmpty(finalLayoutField.Value) && finalLayoutField.Value.Contains("FormId")) ||
+                (sharedLayoutField != null && !string.IsNullOrEmpty(sharedLayoutField.Value) && sharedLayoutField.Value.Contains("FormId")))
+            {
+                item.Editing.BeginEdit();
+                try
+                {
+                    bool finalUpdated = FormNameAutoPopulateHandler.SyncFormNameInLayout(item, Sitecore.FieldIDs.FinalLayoutField);
+                    bool sharedUpdated = FormNameAutoPopulateHandler.SyncFormNameInLayout(item, Sitecore.FieldIDs.LayoutField);
+
+                    if (finalUpdated || sharedUpdated)
+                    {
+                        needsUpdate = true;
+                        updatedCount++;
+                    }
+                }
+                finally
+                {
+                    if (needsUpdate)
+                    {
+                        item.Editing.EndEdit();
+                    }
+                    else
+                    {
+                        item.Editing.CancelEdit();
+                    }
+                }
+            }
+
+            // Recursively process children
+            foreach (Item child in item.GetChildren())
+            {
+                TraverseAndUpdate(child, ref scannedCount, ref updatedCount);
             }
         }
     }
