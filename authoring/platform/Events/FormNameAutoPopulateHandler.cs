@@ -1,0 +1,163 @@
+using System;
+using System.Collections.Concurrent;
+using System.Configuration;
+using System.Net;
+using System.Text.RegularExpressions;
+using Sitecore;
+using Sitecore.Data.Fields;
+using Sitecore.Data.Items;
+using Sitecore.Diagnostics;
+using Sitecore.Events;
+using Sitecore.Layouts;
+using Sitecore.Web;
+
+namespace XmCloudNextJsStarter.Events
+{
+    /// <summary>
+    /// Sitecore item:saving event handler.
+    /// Automatically inspects any Form attached to a page and resolves the form name
+    /// by dynamically reading the form's hidden input [name="form_name"].
+    /// </summary>
+    public class FormNameAutoPopulateHandler
+    {
+        public static readonly string FormRenderingId = "{D15632E6-B944-4861-A79B-F4E5A8DE14EA}";
+
+        // Dynamic runtime cache populated on-the-fly.
+        // Example reference entry only:
+        public static readonly ConcurrentDictionary<string, string> FormNameCache = new ConcurrentDictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["86efc930a7be4746983cc5f0b8b4b4f8-use"] = "Log In Form" // Example
+        };
+
+        public void OnItemSaving(object sender, EventArgs args)
+        {
+            var item = Event.ExtractParameter(args, 0) as Item;
+            if (item == null || item.Database == null || item.Database.Name != "master" || !item.Paths.IsContentItem)
+                return;
+
+            SyncFormNameInLayout(item, FieldIDs.FinalLayoutField);
+            SyncFormNameInLayout(item, FieldIDs.LayoutField);
+        }
+
+        public static bool SyncFormNameInLayout(Item item, Sitecore.Data.ID fieldId)
+        {
+            var layoutFieldValue = item[fieldId];
+            if (string.IsNullOrWhiteSpace(layoutFieldValue))
+                return false;
+
+            if (!layoutFieldValue.Contains("FormId"))
+                return false;
+
+            var layoutDef = LayoutDefinition.Parse(layoutFieldValue);
+            var device = layoutDef.GetDevice(Constants.DefaultDeviceID.ToString());
+            if (device == null)
+                return false;
+
+            bool isModified = false;
+
+            for (int i = 0; i < device.Renderings.Count; i++)
+            {
+                if (device.Renderings[i] is RenderingDefinition rendering)
+                {
+                    var parameters = WebUtil.ParseUrlParameters(rendering.Parameters);
+                    var formId = parameters["FormId"];
+
+                    if (!string.IsNullOrEmpty(formId))
+                    {
+                        var resolvedName = ResolveFormName(item.Database, formId);
+                        if (!string.IsNullOrEmpty(resolvedName) && parameters["FormName"] != resolvedName)
+                        {
+                            parameters["FormName"] = resolvedName;
+                            rendering.Parameters = WebUtil.BuildQueryString(parameters, false);
+                            isModified = true;
+                            Log.Info($"[FormNameAutoPopulate] Page '{item.Paths.FullPath}' updated FormName to '{resolvedName}' for FormId '{formId}'", typeof(FormNameAutoPopulateHandler));
+                        }
+                    }
+                }
+            }
+
+            if (isModified)
+            {
+                item[fieldId] = layoutDef.ToXml();
+            }
+
+            return isModified;
+        }
+
+        public static string ResolveFormName(Sitecore.Data.Database db, string formId)
+        {
+            if (string.IsNullOrWhiteSpace(formId))
+                return string.Empty;
+
+            // 1. Check in-memory runtime cache
+            if (FormNameCache.TryGetValue(formId, out var cachedName) && !string.IsNullOrEmpty(cachedName))
+                return cachedName;
+
+            // 2. Dynamic lookup: Query XM Cloud Edge Forms API and inspect the hidden [name="form_name"] input tag
+            try
+            {
+                var edgeContextId = ConfigurationManager.AppSettings["Sitecore:Edge:ContextId"]
+                    ?? Environment.GetEnvironmentVariable("SITECORE_EDGE_CONTEXT_ID")
+                    ?? "7eCSMBWHMDqBbBuHi1sIYo";
+
+                if (!string.IsNullOrEmpty(edgeContextId))
+                {
+                    var url = $"https://edge-platform.sitecorecloud.io/v1/forms/publisher/{formId}?sitecoreContextId={edgeContextId}";
+                    using (var webClient = new WebClient())
+                    {
+                        webClient.Headers.Add("User-Agent", "Sitecore-Authoring");
+                        var html = webClient.DownloadString(url);
+
+                        if (!string.IsNullOrEmpty(html))
+                        {
+                            var inputMatch = Regex.Match(html, @"<input[^>]*name=[""']form_name[""'][^>]*>", RegexOptions.IgnoreCase);
+                            if (inputMatch.Success)
+                            {
+                                var valMatch = Regex.Match(inputMatch.Value, @"(?:value|data-prefill)=[""']([^""']+)[""']", RegexOptions.IgnoreCase);
+                                if (valMatch.Success && !string.IsNullOrWhiteSpace(valMatch.Groups[1].Value))
+                                {
+                                    var extracted = valMatch.Groups[1].Value.Trim();
+                                    FormNameCache[formId] = extracted;
+                                    Log.Info($"[FormNameAutoPopulate] Dynamically extracted FormName '{extracted}' for Form '{formId}' from Edge API", typeof(FormNameAutoPopulateHandler));
+                                    return extracted;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Warn($"[FormNameAutoPopulate] Could not fetch form '{formId}' from Edge API: {ex.Message}", typeof(FormNameAutoPopulateHandler));
+            }
+
+            // 3. Fallback: Check traditional Sitecore Forms under /sitecore/Forms in Master DB
+            if (db != null)
+            {
+                var formItem = db.GetItem($"/sitecore/Forms/{formId}");
+                if (formItem != null)
+                {
+                    foreach (Item child in formItem.Axes.GetDescendants())
+                    {
+                        if (child.Name.Equals("form_name", StringComparison.OrdinalIgnoreCase) ||
+                            (child.Fields["Field Name"] != null && child.Fields["Field Name"].Value.Equals("form_name", StringComparison.OrdinalIgnoreCase)))
+                        {
+                            var val = child.Fields["Value"]?.Value;
+                            if (!string.IsNullOrWhiteSpace(val))
+                            {
+                                FormNameCache[formId] = val.Trim();
+                                return val.Trim();
+                            }
+                        }
+                    }
+
+                    var displayName = !string.IsNullOrEmpty(formItem.DisplayName) ? formItem.DisplayName : formItem.Name;
+                    FormNameCache[formId] = displayName;
+                    return displayName;
+                }
+            }
+
+            return formId;
+        }
+    }
+}

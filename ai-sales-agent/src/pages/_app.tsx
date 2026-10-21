@@ -6,6 +6,7 @@ import { SitecorePageProps } from '@sitecore-content-sdk/nextjs';
 import scConfig from 'sitecore.config';
 import { useGlobalLinkNormalizer } from 'src/lib/useLinkNormalizer';
 import 'src/styles/global.css';
+import 'src/styles/common.css';
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
