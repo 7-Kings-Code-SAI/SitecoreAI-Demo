@@ -16,30 +16,25 @@ namespace XmCloudNextJsStarter.Events
 {
     /// <summary>
     /// Sitecore item:saving event handler.
-    /// Automatically inspects any Form attached to a page and resolves the form name
-    /// by dynamically reading the form's hidden input [name="form_name"].
+    /// Triggers ONLY when an author saves a page in Content Editor.
+    /// Dynamically extracts the form name from the form's hidden input [name="form_name"]
+    /// and populates the FormName rendering parameter for that specific saved page.
     /// </summary>
     public class FormNameAutoPopulateHandler
     {
-        public static readonly string FormRenderingId = "{D15632E6-B944-4861-A79B-F4E5A8DE14EA}";
-        private static readonly string DefaultDeviceId = "{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}";
-
-        // Dynamic runtime cache populated on-the-fly.
-        public static readonly ConcurrentDictionary<string, string> FormNameCache = CreateInitialCache();
-
-        private static ConcurrentDictionary<string, string> CreateInitialCache()
-        {
-            var cache = new ConcurrentDictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            cache["86efc930a7be4746983cc5f0b8b4b4f8-use"] = "Log In Form"; // Reference example
-            return cache;
-        }
+        // Runtime in-memory cache to avoid repeated HTTP calls for the same FormId during authoring sessions
+        public static readonly ConcurrentDictionary<string, string> FormNameCache = new ConcurrentDictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
         public void OnItemSaving(object sender, EventArgs args)
         {
             var item = Event.ExtractParameter(args, 0) as Item;
-            if (item == null || item.Database == null || item.Database.Name != "master" || !item.Paths.IsContentItem)
+            if (item == null || item.Database == null || !string.Equals(item.Database.Name, "master", StringComparison.OrdinalIgnoreCase))
                 return;
 
+            if (!item.Paths.FullPath.StartsWith("/sitecore/content", StringComparison.OrdinalIgnoreCase))
+                return;
+
+            // Trigger on the single saved page only - updates Final Layout and Shared Layout
             SyncFormNameInLayout(item, Sitecore.FieldIDs.FinalLayoutField);
             SyncFormNameInLayout(item, Sitecore.FieldIDs.LayoutField);
         }
@@ -54,46 +49,52 @@ namespace XmCloudNextJsStarter.Events
                 return false;
 
             var layoutDef = LayoutDefinition.Parse(layoutFieldValue);
-            DeviceDefinition device = null;
-            if (layoutDef.Devices != null && layoutDef.Devices.Count > 0)
-            {
-                device = layoutDef.Devices[0] as DeviceDefinition;
-            }
-            if (device == null)
-            {
-                device = layoutDef.GetDevice(DefaultDeviceId);
-            }
-            if (device == null || device.Renderings == null)
+            if (layoutDef == null || layoutDef.Devices == null || layoutDef.Devices.Count == 0)
                 return false;
 
             bool isModified = false;
 
-            for (int i = 0; i < device.Renderings.Count; i++)
+            // Inspect all devices on the item layout
+            for (int d = 0; d < layoutDef.Devices.Count; d++)
             {
-                var rendering = device.Renderings[i] as RenderingDefinition;
-                if (rendering != null)
+                var device = layoutDef.Devices[d] as DeviceDefinition;
+                if (device == null || device.Renderings == null) continue;
+
+                for (int i = 0; i < device.Renderings.Count; i++)
                 {
-                    var parameters = WebUtil.ParseUrlParameters(rendering.Parameters);
-                    var formId = parameters["FormId"];
-
-                    if (!string.IsNullOrEmpty(formId))
+                    var rendering = device.Renderings[i] as RenderingDefinition;
+                    if (rendering != null && !string.IsNullOrEmpty(rendering.Parameters) && rendering.Parameters.Contains("FormId"))
                     {
-                        var resolvedName = ResolveFormName(item.Database, formId);
-                        if (!string.IsNullOrEmpty(resolvedName) && parameters["FormName"] != resolvedName)
+                        var parameters = WebUtil.ParseUrlParameters(rendering.Parameters);
+                        var formId = parameters["FormId"];
+
+                        if (!string.IsNullOrEmpty(formId))
                         {
-                            parameters["FormName"] = resolvedName;
-
-                            var sb = new StringBuilder();
-                            foreach (string key in parameters.AllKeys)
+                            var resolvedName = ResolveFormName(item.Database, formId);
+                            if (!string.IsNullOrEmpty(resolvedName) && parameters["FormName"] != resolvedName)
                             {
-                                if (string.IsNullOrEmpty(key)) continue;
-                                if (sb.Length > 0) sb.Append("&");
-                                sb.Append(key).Append("=").Append(HttpUtility.UrlEncode(parameters[key] ?? string.Empty));
-                            }
-                            rendering.Parameters = sb.ToString();
+                                parameters["FormName"] = resolvedName;
 
-                            isModified = true;
-                            Log.Info(string.Format("[FormNameAutoPopulate] Page '{0}' updated FormName to '{1}' for FormId '{2}'", item.Paths.FullPath, resolvedName, formId), typeof(FormNameAutoPopulateHandler));
+                                var sb = new StringBuilder();
+                                foreach (string key in parameters.AllKeys)
+                                {
+                                    if (string.IsNullOrEmpty(key)) continue;
+                                    if (sb.Length > 0) sb.Append("&");
+                                    var val = parameters[key];
+                                    if (string.IsNullOrEmpty(val))
+                                    {
+                                        sb.Append(key);
+                                    }
+                                    else
+                                    {
+                                        sb.Append(key).Append("=").Append(HttpUtility.UrlEncode(val));
+                                    }
+                                }
+                                rendering.Parameters = sb.ToString();
+
+                                isModified = true;
+                                Log.Info(string.Format("[FormNameAutoPopulate] Page '{0}' automatically saved FormName '{1}' for FormId '{2}'", item.Paths.FullPath, resolvedName, formId), typeof(FormNameAutoPopulateHandler));
+                            }
                         }
                     }
                 }
@@ -125,6 +126,12 @@ namespace XmCloudNextJsStarter.Events
 
                 if (!string.IsNullOrEmpty(edgeContextId))
                 {
+                    try
+                    {
+                        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
+                    }
+                    catch { }
+
                     var url = string.Format("https://edge-platform.sitecorecloud.io/v1/forms/publisher/{0}?sitecoreContextId={1}", formId, edgeContextId);
                     using (var webClient = new WebClient())
                     {
