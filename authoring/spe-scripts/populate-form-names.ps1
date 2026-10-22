@@ -29,7 +29,17 @@ if ([string]::IsNullOrWhiteSpace($edgeContextId)) {
 # 2. Dynamic Runtime Cache
 $formCache = @{}
 
+function Sanitize-FormId([string]$id) {
+    if ([string]::IsNullOrWhiteSpace($id)) { return $null }
+    $clean = $id.Trim('{', '}', ' ', '"', "'").Replace('%7B','').Replace('%7b','').Replace('%7D','').Replace('%7d','')
+    if ($clean.StartsWith("7B", [System.StringComparison]::OrdinalIgnoreCase) -and $clean.Length -gt 30) {
+        $clean = $clean.Substring(2)
+    }
+    return $clean.Trim()
+}
+
 function Resolve-FormName([string]$formId) {
+    $formId = Sanitize-FormId -id $formId
     if ([string]::IsNullOrWhiteSpace($formId)) { return $null }
     
     if ($formCache.ContainsKey($formId) -and -not [string]::IsNullOrEmpty($formCache[$formId])) {

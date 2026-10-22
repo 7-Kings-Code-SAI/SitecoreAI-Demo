@@ -45,7 +45,7 @@ namespace XmCloudNextJsStarter.Events
             if (string.IsNullOrWhiteSpace(layoutFieldValue))
                 return false;
 
-            if (!layoutFieldValue.Contains("FormId"))
+            if (layoutFieldValue.IndexOf("FormId", StringComparison.OrdinalIgnoreCase) < 0)
                 return false;
 
             var layoutDef = LayoutDefinition.Parse(layoutFieldValue);
@@ -63,17 +63,55 @@ namespace XmCloudNextJsStarter.Events
                 for (int i = 0; i < device.Renderings.Count; i++)
                 {
                     var rendering = device.Renderings[i] as RenderingDefinition;
-                    if (rendering != null && !string.IsNullOrEmpty(rendering.Parameters) && rendering.Parameters.Contains("FormId"))
+                    if (rendering != null && !string.IsNullOrEmpty(rendering.Parameters) && rendering.Parameters.IndexOf("FormId", StringComparison.OrdinalIgnoreCase) >= 0)
                     {
                         var parameters = WebUtil.ParseUrlParameters(rendering.Parameters);
-                        var formId = parameters["FormId"];
-
-                        if (!string.IsNullOrEmpty(formId))
+                        
+                        // Case-insensitive FormId lookup
+                        string formIdKey = null;
+                        string rawFormId = null;
+                        foreach (string key in parameters.AllKeys)
                         {
-                            var resolvedName = ResolveFormName(item.Database, formId);
-                            if (!string.IsNullOrEmpty(resolvedName) && parameters["FormName"] != resolvedName)
+                            if (string.Equals(key, "FormId", StringComparison.OrdinalIgnoreCase))
                             {
-                                parameters["FormName"] = resolvedName;
+                                formIdKey = key;
+                                rawFormId = parameters[key];
+                                break;
+                            }
+                        }
+
+                        if (!string.IsNullOrEmpty(rawFormId))
+                        {
+                            var sanitizedFormId = SanitizeFormId(rawFormId);
+                            var resolvedName = ResolveFormName(item.Database, sanitizedFormId);
+
+                            // Find existing FormName key or default to "FormName"
+                            string formNameKey = "FormName";
+                            foreach (string key in parameters.AllKeys)
+                            {
+                                if (string.Equals(key, "FormName", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    formNameKey = key;
+                                    break;
+                                }
+                            }
+
+                            string currentFormName = parameters[formNameKey];
+
+                            // Update FormId to sanitized version if it had brackets/7B
+                            bool formIdUpdated = false;
+                            if (formIdKey != null && !string.Equals(rawFormId, sanitizedFormId, StringComparison.Ordinal))
+                            {
+                                parameters[formIdKey] = sanitizedFormId;
+                                formIdUpdated = true;
+                            }
+
+                            if ((!string.IsNullOrEmpty(resolvedName) && currentFormName != resolvedName) || formIdUpdated)
+                            {
+                                if (!string.IsNullOrEmpty(resolvedName))
+                                {
+                                    parameters[formNameKey] = resolvedName;
+                                }
 
                                 var sb = new StringBuilder();
                                 foreach (string key in parameters.AllKeys)
@@ -93,7 +131,7 @@ namespace XmCloudNextJsStarter.Events
                                 rendering.Parameters = sb.ToString();
 
                                 isModified = true;
-                                Log.Info(string.Format("[FormNameAutoPopulate] Page '{0}' automatically saved FormName '{1}' for FormId '{2}'", item.Paths.FullPath, resolvedName, formId), typeof(FormNameAutoPopulateHandler));
+                                Log.Info(string.Format("[FormNameAutoPopulate] Page '{0}' automatically saved FormName '{1}' for FormId '{2}'", item.Paths.FullPath, resolvedName, sanitizedFormId), typeof(FormNameAutoPopulateHandler));
                             }
                         }
                     }
@@ -108,10 +146,35 @@ namespace XmCloudNextJsStarter.Events
             return isModified;
         }
 
+        /// <summary>
+        /// Sanitizes Form ID by stripping curly brackets, URL-encoded %7B/%7D, and accidental 7B prefix.
+        /// </summary>
+        public static string SanitizeFormId(string formId)
+        {
+            if (string.IsNullOrWhiteSpace(formId))
+                return string.Empty;
+
+            var clean = formId.Trim('{', '}', ' ', '"', '\'')
+                              .Replace("%7B", "")
+                              .Replace("%7b", "")
+                              .Replace("%7D", "")
+                              .Replace("%7d", "");
+
+            // If 7B remains at the start of a long hex/alphanumeric ID (ASCII '{' without the '%')
+            if (clean.StartsWith("7B", StringComparison.OrdinalIgnoreCase) && clean.Length > 30)
+            {
+                clean = clean.Substring(2);
+            }
+
+            return clean.Trim();
+        }
+
         public static string ResolveFormName(Sitecore.Data.Database db, string formId)
         {
             if (string.IsNullOrWhiteSpace(formId))
                 return string.Empty;
+
+            formId = SanitizeFormId(formId);
 
             // 1. Check in-memory runtime cache
             string cachedName;
@@ -133,6 +196,8 @@ namespace XmCloudNextJsStarter.Events
                     catch { }
 
                     var url = string.Format("https://edge-platform.sitecorecloud.io/v1/forms/publisher/{0}?sitecoreContextId={1}", formId, edgeContextId);
+                    Log.Info(string.Format("[FormNameAutoPopulate] Fetching form markup for FormId '{0}' from Edge API: {1}", formId, url), typeof(FormNameAutoPopulateHandler));
+
                     using (var webClient = new WebClient())
                     {
                         webClient.Headers.Add("User-Agent", "Sitecore-Authoring");
