@@ -77,7 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Events\FormNameAutoPopulateHandler.cs" />
-    <Compile Include="Pipelines\InitializeFormNameMigration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
