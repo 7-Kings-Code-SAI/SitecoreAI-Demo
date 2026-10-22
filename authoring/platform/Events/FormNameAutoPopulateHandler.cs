@@ -1,30 +1,75 @@
 using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 using Sitecore.Configuration;
+using Sitecore.Data.Events;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Events;
 using Sitecore.Layouts;
+using Sitecore.SecurityModel;
 using Sitecore.Web;
 
 namespace XmCloudNextJsStarter.Events
 {
     /// <summary>
-    /// Sitecore item:saving event handler.
-    /// Triggers ONLY when an author saves a page in Content Editor.
-    /// Dynamically extracts the form name from the form's hidden input [name="form_name"]
-    /// and populates the FormName rendering parameter for that specific saved page.
+    /// Sitecore event handler for auto-populating FormName on Final Layout and Shared Layout.
+    /// Runs on item:saved with an explicit database edit transaction so changes are committed to SQL.
+    /// Regardless of whether fields are shared or unshared, writes FormName across all layouts.
     /// </summary>
     public class FormNameAutoPopulateHandler
     {
         // Runtime in-memory cache to avoid repeated HTTP calls for the same FormId during authoring sessions
-        public static readonly ConcurrentDictionary<string, string> FormNameCache = new ConcurrentDictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        public static readonly ConcurrentDictionary<string, string> FormNameCache = CreateInitialCache();
 
+        private static ConcurrentDictionary<string, string> CreateInitialCache()
+        {
+            var cache = new ConcurrentDictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            cache["86efc930a7be4746983cc5f0b8b4b4f8-use"] = "Log In Form";
+            return cache;
+        }
+
+        /// <summary>
+        /// Primary handler: executes on item:saved and performs an explicit BeginEdit / EndEdit
+        /// inside EventDisabler to guarantee changes are committed to the Master database.
+        /// </summary>
+        public void OnItemSaved(object sender, EventArgs args)
+        {
+            var item = Event.ExtractParameter(args, 0) as Item;
+            if (item == null || item.Database == null || !string.Equals(item.Database.Name, "master", StringComparison.OrdinalIgnoreCase))
+                return;
+
+            if (!item.Paths.FullPath.StartsWith("/sitecore/content", StringComparison.OrdinalIgnoreCase))
+                return;
+
+            using (new EventDisabler())
+            {
+                using (new SecurityDisabler())
+                {
+                    item.Editing.BeginEdit();
+                    bool modified = SyncAllLayouts(item);
+
+                    if (modified)
+                    {
+                        item.Editing.EndEdit();
+                        Log.Info(string.Format("[FormNameAutoPopulate] Page '{0}' successfully committed FormName into database.", item.Paths.FullPath), typeof(FormNameAutoPopulateHandler));
+                    }
+                    else
+                    {
+                        item.Editing.CancelEdit();
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Fallback handler: executes during item:saving.
+        /// </summary>
         public void OnItemSaving(object sender, EventArgs args)
         {
             var item = Event.ExtractParameter(args, 0) as Item;
@@ -34,27 +79,39 @@ namespace XmCloudNextJsStarter.Events
             if (!item.Paths.FullPath.StartsWith("/sitecore/content", StringComparison.OrdinalIgnoreCase))
                 return;
 
-            // Trigger on the single saved page only - updates Final Layout and Shared Layout
-            SyncFormNameInLayout(item, Sitecore.FieldIDs.FinalLayoutField);
-            SyncFormNameInLayout(item, Sitecore.FieldIDs.LayoutField);
+            SyncAllLayouts(item);
         }
 
-        public static bool SyncFormNameInLayout(Item item, Sitecore.Data.ID fieldId)
+        /// <summary>
+        /// Synchronizes FormName across both Final Layout and Shared Layout regardless of shared settings.
+        /// </summary>
+        public static bool SyncAllLayouts(Item item)
         {
-            var layoutFieldValue = item[fieldId];
-            if (string.IsNullOrWhiteSpace(layoutFieldValue))
+            var formIdByUid = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            string genericFormId = null;
+
+            // 1. Discover all FormIds present across both Final Layout and Shared Layout
+            CollectFormIds(item[Sitecore.FieldIDs.FinalLayoutField], formIdByUid, ref genericFormId);
+            CollectFormIds(item[Sitecore.FieldIDs.LayoutField], formIdByUid, ref genericFormId);
+
+            if (formIdByUid.Count == 0 && string.IsNullOrEmpty(genericFormId))
                 return false;
 
-            if (layoutFieldValue.IndexOf("FormId", StringComparison.OrdinalIgnoreCase) < 0)
-                return false;
+            // 2. Update both Final Layout and Shared Layout
+            bool finalModified = UpdateLayoutField(item, Sitecore.FieldIDs.FinalLayoutField, formIdByUid, genericFormId);
+            bool sharedModified = UpdateLayoutField(item, Sitecore.FieldIDs.LayoutField, formIdByUid, genericFormId);
 
-            var layoutDef = LayoutDefinition.Parse(layoutFieldValue);
-            if (layoutDef == null || layoutDef.Devices == null || layoutDef.Devices.Count == 0)
-                return false;
+            return finalModified || sharedModified;
+        }
 
-            bool isModified = false;
+        private static void CollectFormIds(string layoutXml, Dictionary<string, string> formIdByUid, ref string lastFormId)
+        {
+            if (string.IsNullOrWhiteSpace(layoutXml)) return;
+            if (layoutXml.IndexOf("FormId", StringComparison.OrdinalIgnoreCase) < 0) return;
 
-            // Inspect all devices on the item layout
+            var layoutDef = LayoutDefinition.Parse(layoutXml);
+            if (layoutDef == null || layoutDef.Devices == null) return;
+
             for (int d = 0; d < layoutDef.Devices.Count; d++)
             {
                 var device = layoutDef.Devices[d] as DeviceDefinition;
@@ -63,76 +120,101 @@ namespace XmCloudNextJsStarter.Events
                 for (int i = 0; i < device.Renderings.Count; i++)
                 {
                     var rendering = device.Renderings[i] as RenderingDefinition;
-                    if (rendering != null && !string.IsNullOrEmpty(rendering.Parameters) && rendering.Parameters.IndexOf("FormId", StringComparison.OrdinalIgnoreCase) >= 0)
+                    if (rendering != null && !string.IsNullOrEmpty(rendering.Parameters))
                     {
                         var parameters = WebUtil.ParseUrlParameters(rendering.Parameters);
-                        
-                        // Case-insensitive FormId lookup
-                        string formIdKey = null;
-                        string rawFormId = null;
-                        foreach (string key in parameters.AllKeys)
-                        {
-                            if (string.Equals(key, "FormId", StringComparison.OrdinalIgnoreCase))
-                            {
-                                formIdKey = key;
-                                rawFormId = parameters[key];
-                                break;
-                            }
-                        }
-
+                        string rawFormId = GetParameterValue(parameters, "FormId");
                         if (!string.IsNullOrEmpty(rawFormId))
                         {
-                            var sanitizedFormId = SanitizeFormId(rawFormId);
-                            var resolvedName = ResolveFormName(item.Database, sanitizedFormId);
+                            var cleanId = SanitizeFormId(rawFormId);
+                            if (!string.IsNullOrEmpty(rendering.UniqueId))
+                            {
+                                formIdByUid[rendering.UniqueId] = cleanId;
+                            }
+                            lastFormId = cleanId;
+                        }
+                    }
+                }
+            }
+        }
 
-                            // Find existing FormName key or default to "FormName"
-                            string formNameKey = "FormName";
+        private static bool UpdateLayoutField(Item item, Sitecore.Data.ID fieldId, Dictionary<string, string> formIdByUid, string genericFormId)
+        {
+            var layoutXml = item[fieldId];
+            if (string.IsNullOrWhiteSpace(layoutXml))
+                return false;
+
+            var layoutDef = LayoutDefinition.Parse(layoutXml);
+            if (layoutDef == null || layoutDef.Devices == null || layoutDef.Devices.Count == 0)
+                return false;
+
+            bool isModified = false;
+
+            for (int d = 0; d < layoutDef.Devices.Count; d++)
+            {
+                var device = layoutDef.Devices[d] as DeviceDefinition;
+                if (device == null || device.Renderings == null) continue;
+
+                for (int i = 0; i < device.Renderings.Count; i++)
+                {
+                    var rendering = device.Renderings[i] as RenderingDefinition;
+                    if (rendering == null) continue;
+
+                    var parameters = WebUtil.ParseUrlParameters(rendering.Parameters ?? string.Empty);
+
+                    // Determine FormId for this rendering: directly in parameters, or inherited via UniqueId, or fallback
+                    string formId = GetParameterValue(parameters, "FormId");
+                    if (!string.IsNullOrEmpty(formId))
+                    {
+                        formId = SanitizeFormId(formId);
+                    }
+                    else if (!string.IsNullOrEmpty(rendering.UniqueId) && formIdByUid.ContainsKey(rendering.UniqueId))
+                    {
+                        formId = formIdByUid[rendering.UniqueId];
+                    }
+                    else if (!string.IsNullOrEmpty(rendering.Parameters) && rendering.Parameters.IndexOf("FormId", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        formId = genericFormId;
+                    }
+
+                    if (!string.IsNullOrEmpty(formId))
+                    {
+                        var resolvedName = ResolveFormName(item.Database, formId);
+                        string currentFormName = GetParameterValue(parameters, "FormName");
+
+                        bool formIdCleaned = false;
+                        string formIdKey = FindKeyIgnoreCase(parameters, "FormId") ?? "FormId";
+                        string currentFormIdVal = parameters[formIdKey];
+                        if (currentFormIdVal != null && !string.Equals(currentFormIdVal, formId, StringComparison.Ordinal))
+                        {
+                            parameters[formIdKey] = formId;
+                            formIdCleaned = true;
+                        }
+
+                        if ((!string.IsNullOrEmpty(resolvedName) && currentFormName != resolvedName) || formIdCleaned)
+                        {
+                            string formNameKey = FindKeyIgnoreCase(parameters, "FormName") ?? "FormName";
+                            parameters[formNameKey] = resolvedName;
+
+                            var sb = new StringBuilder();
                             foreach (string key in parameters.AllKeys)
                             {
-                                if (string.Equals(key, "FormName", StringComparison.OrdinalIgnoreCase))
+                                if (string.IsNullOrEmpty(key)) continue;
+                                if (sb.Length > 0) sb.Append("&");
+                                var val = parameters[key];
+                                if (string.IsNullOrEmpty(val))
                                 {
-                                    formNameKey = key;
-                                    break;
+                                    sb.Append(key);
+                                }
+                                else
+                                {
+                                    sb.Append(key).Append("=").Append(HttpUtility.UrlEncode(val));
                                 }
                             }
+                            rendering.Parameters = sb.ToString();
 
-                            string currentFormName = parameters[formNameKey];
-
-                            // Update FormId to sanitized version if it had brackets/7B
-                            bool formIdUpdated = false;
-                            if (formIdKey != null && !string.Equals(rawFormId, sanitizedFormId, StringComparison.Ordinal))
-                            {
-                                parameters[formIdKey] = sanitizedFormId;
-                                formIdUpdated = true;
-                            }
-
-                            if ((!string.IsNullOrEmpty(resolvedName) && currentFormName != resolvedName) || formIdUpdated)
-                            {
-                                if (!string.IsNullOrEmpty(resolvedName))
-                                {
-                                    parameters[formNameKey] = resolvedName;
-                                }
-
-                                var sb = new StringBuilder();
-                                foreach (string key in parameters.AllKeys)
-                                {
-                                    if (string.IsNullOrEmpty(key)) continue;
-                                    if (sb.Length > 0) sb.Append("&");
-                                    var val = parameters[key];
-                                    if (string.IsNullOrEmpty(val))
-                                    {
-                                        sb.Append(key);
-                                    }
-                                    else
-                                    {
-                                        sb.Append(key).Append("=").Append(HttpUtility.UrlEncode(val));
-                                    }
-                                }
-                                rendering.Parameters = sb.ToString();
-
-                                isModified = true;
-                                Log.Info(string.Format("[FormNameAutoPopulate] Page '{0}' automatically saved FormName '{1}' for FormId '{2}'", item.Paths.FullPath, resolvedName, sanitizedFormId), typeof(FormNameAutoPopulateHandler));
-                            }
+                            isModified = true;
+                            Log.Info(string.Format("[FormNameAutoPopulate] Page '{0}' updated FormName to '{1}' for FormId '{2}' in field '{3}'", item.Paths.FullPath, resolvedName, formId, fieldId == Sitecore.FieldIDs.FinalLayoutField ? "FinalLayout" : "SharedLayout"), typeof(FormNameAutoPopulateHandler));
                         }
                     }
                 }
@@ -144,6 +226,32 @@ namespace XmCloudNextJsStarter.Events
             }
 
             return isModified;
+        }
+
+        private static string GetParameterValue(System.Collections.Specialized.NameValueCollection parameters, string keyName)
+        {
+            if (parameters == null || parameters.Count == 0) return null;
+            foreach (string key in parameters.AllKeys)
+            {
+                if (string.Equals(key, keyName, StringComparison.OrdinalIgnoreCase))
+                {
+                    return parameters[key];
+                }
+            }
+            return null;
+        }
+
+        private static string FindKeyIgnoreCase(System.Collections.Specialized.NameValueCollection parameters, string keyName)
+        {
+            if (parameters == null || parameters.Count == 0) return null;
+            foreach (string key in parameters.AllKeys)
+            {
+                if (string.Equals(key, keyName, StringComparison.OrdinalIgnoreCase))
+                {
+                    return key;
+                }
+            }
+            return null;
         }
 
         /// <summary>
@@ -160,7 +268,6 @@ namespace XmCloudNextJsStarter.Events
                               .Replace("%7D", "")
                               .Replace("%7d", "");
 
-            // If 7B remains at the start of a long hex/alphanumeric ID (ASCII '{' without the '%')
             if (clean.StartsWith("7B", StringComparison.OrdinalIgnoreCase) && clean.Length > 30)
             {
                 clean = clean.Substring(2);
