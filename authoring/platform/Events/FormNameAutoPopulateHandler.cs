@@ -9,6 +9,7 @@ using Sitecore.Events;
 using Sitecore.Layouts;
 using Sitecore.SecurityModel;
 using Sitecore.Web;
+using Sitecore.Data.Events;
 
 namespace XmCloudNextJsStarter.Events
 {
@@ -126,7 +127,7 @@ namespace XmCloudNextJsStarter.Events
                     hasFormInFinal + ", SharedLayout=" + hasFormInShared + ".",
                     typeof(FormNameAutoPopulateHandler));
 
-                using (new EventDisabler())
+                using (new Sitecore.Data.Events.EventDisabler())
                 using (new SecurityDisabler())
                 {
                     item.Editing.BeginEdit();
