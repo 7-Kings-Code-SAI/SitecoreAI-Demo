@@ -1,0 +1,39 @@
+﻿---
+ID: "f2ecd733-d637-4766-95d9-b9f6527e2097"
+Parent: "c23c3833-5eb4-476f-951d-2dd2c7e7965d"
+Template: "efe4ba04-1589-42fa-af80-87e6486744ff"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/AI Generated Image Labels/White"
+SharedFields:
+- ID: "673b3f0f-f71b-4576-8703-041666656b16"
+  Hint: Label Image
+  Value: |
+    <image mediaid="{D7269A8C-A769-4C63-8B40-8929B7E56076}" alt="White AI Generated Label" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261020T155015Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "607e7e48-cceb-4fd2-acc9-ebc9166bb7e9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261020T163644Z

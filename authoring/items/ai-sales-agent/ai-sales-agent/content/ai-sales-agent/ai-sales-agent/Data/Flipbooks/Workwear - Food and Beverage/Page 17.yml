@@ -1,0 +1,114 @@
+---
+ID: "1E0B2653-B5B6-4FCA-97BC-A0953026EE3E"
+Parent: "1084C3A9-AF38-4ADD-85F2-2D54DE27DD8C"
+Template: "AAAF4921-54EF-4618-9D40-89BFB23B0B2F"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear - Food and Beverage/Page 17"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1700
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: 1E0B2653-B5B6-4FCA-97BC-A0953026EE3E
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261106T212543Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 1E0B2653-B5B6-4FCA-97BC-A0953026EE3E
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261106T212543Z
+    - ID: "706566AF-D28D-4152-99B4-CA5FE0023805"
+      Hint: Page Image
+      Value: /flipbook/large/a25f86a004c713fd2f82eb02d80e0fa4.webp
+    - ID: "1BC2894D-E407-45A2-9DC3-9C91B6F3AC84"
+      Hint: Thumbnail
+      Value: /flipbook/thumb/d5a6aa7f0317aa9f68d19e952396d754.webp
+    - ID: "3EC86414-814E-4D46-AA46-ED20A0AED303"
+      Hint: Page Label
+      Value: "17"
+    - ID: "CEAE6324-5D0A-473D-AF5B-C7CF50E2EB47"
+      Hint: Search Text
+      Value: |
+        Food Comfort
+        Trousers with elasticated waistband
+        Pull-on trousers Bib and brace overalls Coveralls
+        Material 65% polyester/35% cotton 
+        245 g/m2
+        65% polyester/35% cotton 
+        215 g/m2
+        65% polyester/35% cotton 
+        245 g/m2
+        65% polyester/35% cotton 
+        245 g/m2
+        Description - Comfortable, close-fitting trousers with 
+        belt loops 
+        - Elasticated waistband at the back for a 
+        comfortable fit
+        - Side pockets offer plenty of storage space
+        - Optional Cordura® knee pad pockets 
+        or cargo pockets to suit different tasks
+        - Comfortable pull-on trousers with an 
+        elasticated waistband 
+        - Side pockets and an internal back pocket 
+        provide plenty of storage space
+        - Modern, close-fitting bib and brace overalls 
+        with stretch side panels for greater freedom 
+        of movement
+        - Elasticated waistband
+        - A spacious internal bib pocket and side 
+        pockets provide plenty of storage
+        - Optional Cordura® knee pad pockets
+         or cargo pockets to suit different tasks
+        - Comfortable coveralls with a classic 
+        turn-down collar
+        - Elasticated waistband
+        - Adjustable sleeve openings for a secure fit
+        - An internal chest pocket and side pockets 
+        provide secure storage
+        - Optional Cordura® knee pad pockets 
+        or cargo pockets to suit different tasks
+        Sizes Men: 38–76 S/R/L, Women: 32–68 S/R/L
+        with cuffs: 38–76 N
+        2XS–8XL S/R/L
+        with cuffs: 2XS–8XL N
+        2XS–8XL S/R/L
+        with cuffs: 2XS–8XL N
+        2XS–5XL S/R/L
+        with cuffs: 2XS–5XL N
+        Standards HACCP–DIN 10524:2012
+        Risk class 3: white, light grey, light blue
+        Risk class 1: dark green, dark blue, blue
+        HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 HACCP–DIN 10524:2012
+        Risk class 3: white
+        Risk class 1: dark blue, blue
+        Colours 1009625
+        1009622
+        1010273
+        1009624
+        1009623
+        1009621
+        1008045 1008051 1010278 1008053 1008301 1008302
+        With cuffs
+        HACCP risk class 1
+        1011943 1011956 1011952 1011954
+        Women’s fit 1009629 / / /
+        | 17
+    - ID: "1B816220-5A10-4889-8134-EC73A3840D85"
+      Hint: Hotspots
+      Value: ""

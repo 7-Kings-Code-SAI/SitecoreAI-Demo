@@ -1,0 +1,65 @@
+﻿---
+ID: "2c8b2ae2-55f5-4b8c-ae43-95c22371d4a6"
+Parent: "aabfa677-a13d-4132-b14b-2e9d2ce68d6f"
+Template: "a81ac047-8453-4f50-b2dc-c6903b485cdb"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Quiz Questions/Questions Folder/first"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "204d6088-6a82-43c6-b569-1355180f5fac"
+      Hint: AnswerA_Points
+      Value: 10
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T121650Z
+    - ID: "2b443099-612f-4459-9085-546dd80ce090"
+      Hint: ZoneLabel
+      Value: Entrance
+    - ID: "40dc9062-1aad-4a73-952e-8796c9c5cdeb"
+      Hint: QuestionNumber
+      Value: q1
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5d908586-883e-4386-afa2-a5c197bb759e"
+      Hint: AnswerB_Text
+      Value: Partially protected – mats are in place, but without a consistent service concept.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "628fb8b5-4af0-4afe-b390-74bf052dd529"
+      Hint: ZoneImage
+      Value: |
+        <image mediaid="{C0169140-1FB8-4A69-8387-570CE003634A}" />
+    - ID: "70f152e6-f396-4e48-95c1-d5a502e11665"
+      Hint: AnswerA_Text
+      Value: "Optimally protected – a professionally serviced, multi-zone entrance matting system ensures maximum cleanliness and safety."
+    - ID: "82053dab-56b5-4c84-8615-b5cc4eb35eb6"
+      Hint: AnswerB_Points
+      Value: 5
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d9f13906-9423-42a5-8694-b015aabca507"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "bb039f89-05e9-43f6-b392-5f9a0da86977"
+      Hint: AnswerC_Text
+      Value: Insufficiently protected – no structured matting system in use.
+    - ID: "cadf4662-2f04-4103-b460-c4dbeacfa08d"
+      Hint: AnswerC_Points
+      Value: 0
+    - ID: "cdc26f15-742b-4c1d-b4c2-720e3bcfeeee"
+      Hint: ZoneKey
+      Value: Entrance
+    - ID: "d3ab0087-f96c-4d62-aab5-0832de4f9331"
+      Hint: QuestionText
+      Value: "How effectively do you protect your facility from dirt and contaminants right at the entrance?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261105T220506Z

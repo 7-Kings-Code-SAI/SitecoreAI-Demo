@@ -1,0 +1,72 @@
+﻿---
+ID: "f2647aab-ab82-4b6f-a95f-34b9395fd183"
+Parent: "aabfa677-a13d-4132-b14b-2e9d2ce68d6f"
+Template: "a81ac047-8453-4f50-b2dc-c6903b485cdb"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Quiz Questions/Questions Folder/fifth"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b0a9681f-f4b7-4994-a0e1-2af7c238fb72"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "204d6088-6a82-43c6-b569-1355180f5fac"
+      Hint: AnswerA_Points
+      Value: 10
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T121650Z
+    - ID: "2b443099-612f-4459-9085-546dd80ce090"
+      Hint: ZoneLabel
+      Value: Washrooms
+    - ID: "40dc9062-1aad-4a73-952e-8796c9c5cdeb"
+      Hint: QuestionNumber
+      Value: q5
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5d908586-883e-4386-afa2-a5c197bb759e"
+      Hint: AnswerB_Text
+      Value: "Partially modernised – some touch-free elements are in place."
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "628fb8b5-4af0-4afe-b390-74bf052dd529"
+      Hint: ZoneImage
+      Value: |
+        <image mediaid="{6E6E3239-E24E-4395-8BF5-D7ED929FC907}" />
+    - ID: "70f152e6-f396-4e48-95c1-d5a502e11665"
+      Hint: AnswerA_Text
+      Value: "Premium hygiene experience – fully touch-free solutions ensuring maximum safety and comfort."
+    - ID: "82053dab-56b5-4c84-8615-b5cc4eb35eb6"
+      Hint: AnswerB_Points
+      Value: 5
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0f48dce4-f359-43d7-b826-863b32d56982"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "bb039f89-05e9-43f6-b392-5f9a0da86977"
+      Hint: AnswerC_Text
+      Value: Conventional – most touchpoints require manual contact.
+    - ID: "cadf4662-2f04-4103-b460-c4dbeacfa08d"
+      Hint: AnswerC_Points
+      Value: 0
+    - ID: "cdc26f15-742b-4c1d-b4c2-720e3bcfeeee"
+      Hint: ZoneKey
+      Value: Washrooms
+    - ID: "d3ab0087-f96c-4d62-aab5-0832de4f9331"
+      Hint: QuestionText
+      Value: "What kind of hygiene experience do your washrooms provide for patients and visitors?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261105T220614Z

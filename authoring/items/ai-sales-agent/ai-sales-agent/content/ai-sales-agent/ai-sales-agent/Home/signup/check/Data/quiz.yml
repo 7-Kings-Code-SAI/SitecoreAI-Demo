@@ -1,0 +1,54 @@
+﻿---
+ID: "d670772b-7127-46e4-9df2-8ef11a99d578"
+Parent: "7781263b-d682-44e5-8917-68d16e6dbceb"
+Template: "5f2c69ad-3373-45ce-8d0d-275756588f6f"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/signup/check/Data/quiz"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "243bdd30-63ef-4925-b926-4c6511bdce4c"
+      Hint: StepFormat
+      Value: "Question {0} / {1}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T124847Z
+    - ID: "43cfbc96-6cdf-44f0-a738-d19f83a6cb91"
+      Hint: ResultsPageLink
+      Value: |
+        <link text="Calculate Results" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{3BE76EE6-27BE-4459-A6FC-5253278C1F12}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "566fdfe6-07c7-49a2-a621-2287e8af3a07"
+      Hint: Questions
+      Value: |
+        {2C8B2AE2-55F5-4B8C-AE43-95C22371D4A6}
+        {90F18E02-DD62-4183-ADEB-8A4EF236D19F}
+        {DA235CA1-2790-4223-B988-7C0969366D94}
+        {3292BBD8-B092-4AFE-B3CB-F5E47A8CB5C4}
+        {F2647AAB-AB82-4B6F-A95F-34B9395FD183}
+        {7E09614B-F31F-48B9-84B4-AE59618917E9}
+        {5B8D247D-D34E-4390-A755-1B4058C4EFC6}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "81c3f737-9ff3-44b2-a0b0-ea4704641e79"
+      Hint: NextButtonText
+      Value: Next
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "28d43477-05d6-4d31-9096-186ec57be69a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "cfd89597-d4e7-481e-8f53-15e339bf1408"
+      Hint: CalculateButtonText
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261102T214328Z

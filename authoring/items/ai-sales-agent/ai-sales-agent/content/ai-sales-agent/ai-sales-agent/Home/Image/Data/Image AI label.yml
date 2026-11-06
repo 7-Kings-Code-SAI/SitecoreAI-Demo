@@ -1,0 +1,47 @@
+﻿---
+ID: "7fd1e6d7-7342-4550-9305-e92766ced997"
+Parent: "45d4704b-c579-40c4-a882-ae88eebd763b"
+Template: "0bf60694-f82e-4ac0-bb40-53552dced0f4"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Image/Data/Image AI label"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "11416028-faae-4142-961b-9ce410336fb0"
+      Hint: AI Generated
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261027T141825Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "735c5871-8240-4916-8c7e-a0d6cf3378e9"
+      Hint: Image
+      Value: |
+        <image mediaid="ed58f498-634e-4835-a077-549af5fa9605" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "119689c7-b233-4173-b85f-28cf65ed8172"
+    - ID: "8f72e4b5-70e0-4184-a45e-cea6046c5f86"
+      Hint: Label Position
+      Value: "{1B9BCD15-12E0-4B97-B8DE-B056E18BFC02}"
+    - ID: "a3d41ddf-6030-477f-9bdd-8169e9a1b759"
+      Hint: AI generated label
+      Value: "{F2ECD733-D637-4766-95D9-B9F6527E2097}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261027T160327Z

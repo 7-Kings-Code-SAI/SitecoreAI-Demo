@@ -1,0 +1,39 @@
+﻿---
+ID: "5c50b537-d2e6-42ff-b020-8066b735e54b"
+Parent: "c23c3833-5eb4-476f-951d-2dd2c7e7965d"
+Template: "efe4ba04-1589-42fa-af80-87e6486744ff"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/AI Generated Image Labels/Black"
+SharedFields:
+- ID: "673b3f0f-f71b-4576-8703-041666656b16"
+  Hint: Label Image
+  Value: |
+    <image mediaid="{56329F26-991A-42F0-8C7D-5B8ECA90BED5}" alt="Black AI Generated Label" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261020T155015Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a4229449-a0fe-4b3f-ae55-c5ba278be338"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261020T163632Z

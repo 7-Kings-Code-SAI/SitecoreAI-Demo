@@ -1,0 +1,68 @@
+﻿---
+ID: "1f6b9d8b-7718-45c2-8362-0f4f6fa7f9af"
+Parent: "75ac90d7-2df5-4808-be80-d0fc8be3444d"
+Template: "c1dd4644-29ab-432f-b5c2-3f1976534cbf"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/results/Data/Health check results"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1455a96e-2116-4e48-945a-b63b7e24492c"
+      Hint: ZoneBreakdownLabel
+      Value: Zone Breakdown
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T155005Z
+    - ID: "272d1a6e-fb6a-43b8-b4e4-512eaaecd91d"
+      Hint: DownloadCtaLabel
+      Value: Download your Hygiene PDF Report
+    - ID: "32b7ab16-22e3-4314-906e-72b447708b5d"
+      Hint: EmailTabLabel
+      Value: Email
+    - ID: "43b6c4fb-b0c2-4d17-8521-65cc87011338"
+      Hint: ModalTitle
+      Value: "How should we reach out ?"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6112a1ef-c864-4360-90b7-36400b843a1d"
+      Hint: DiscussCtaLabel
+      Value: Discuss your results with CWS Hygiene
+    - ID: "649a884c-43f7-46eb-9ba3-d892f439c97c"
+      Hint: PhoneTabLabel
+      Value: Phone
+    - ID: "6c64bf48-064f-477b-937a-87fb619a1908"
+      Hint: ScoreLabel
+      Value: /100 hygeien Score
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "56b409a6-7fae-4fe6-828d-bc213cb5f187"
+    - ID: "a129ecfd-21cc-4444-9610-202adc377b4c"
+      Hint: ModalDescription
+      Value: Choose your preffered channel and we;ll be in touch in 1 bussiness day.
+    - ID: "a8a3bc1e-d717-4d8e-bf4b-f449911611f1"
+      Hint: SuccessRoute
+      Value: |
+        <link text="Request Contact" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{889AD6BE-624F-4D36-B9EB-11BD19F71B40}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d1263c72-a231-4066-93a9-9c1643361e15"
+      Hint: Tiers
+      Value: |
+        {439DD092-7E65-4199-96B3-23309F81D783}
+        {9D3605B2-5313-47F1-9FF4-0DCFA1585A99}
+        {0A39694F-8BD9-49CB-B14A-F26B752D7800}
+    - ID: "d4493908-ac36-4630-ad36-3ae34a8fe8a0"
+      Hint: ModalSubmitLabel
+      Value: Request Contact
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261103T215342Z

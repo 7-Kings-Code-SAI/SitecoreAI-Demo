@@ -126,8 +126,23 @@ const asBoolean = (field: unknown, fallback = false): boolean => {
   return fallback;
 };
 
+const normalizeAssetPath = (src: string): string => {
+  const trimmed = src.trim();
+  if (!trimmed) return trimmed;
+  // Sitecore media paths and app-relative paths are used as-is; anything
+  // else is assumed to live under /flipbook/ in the Next.js public folder.
+  if (/^(https?:)?\/\//.test(trimmed) || trimmed.startsWith('/')) return trimmed;
+  return `/${trimmed.replace(/^\.?\//, '')}`;
+};
+
 const asImage = (field: unknown): FlipbookImage | undefined => {
   const value = unwrapField(field);
+
+  // Text field holding an asset path/URL (e.g. /flipbook/large/page.webp).
+  if (typeof value === 'string') {
+    const src = normalizeAssetPath(value);
+    return src ? { src } : undefined;
+  }
   if (!isRecord(value)) return undefined;
 
   // GraphQL ImageField shape: { value: { src, alt } } already unwrapped,
@@ -140,7 +155,7 @@ const asImage = (field: unknown): FlipbookImage | undefined => {
   if (!src || typeof src !== 'string') return undefined;
 
   return {
-    src,
+    src: normalizeAssetPath(src),
     alt:
       typeof (value as { alt?: string }).alt === 'string'
         ? (value as { alt: string }).alt

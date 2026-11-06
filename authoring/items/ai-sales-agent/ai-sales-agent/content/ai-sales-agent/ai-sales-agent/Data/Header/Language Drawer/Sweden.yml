@@ -9,11 +9,14 @@ SharedFields:
   Value: Schweden
 - ID: "75b1d4a6-7724-4f3a-905f-d6ae1c165315"
   Hint: Language Code Field
-  Value: SV
+  Value: "sv-SE"
 - ID: "b6a1037a-ef9c-42b4-b664-4d2aafc09bbc"
   Hint: Url
   Value: |
     <link anchor="" target="" linktype="external" text="DE" url="/sv-SE/" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "767aff25-58ce-44d2-9c37-aa4976158b6f"
 - ID: "fd0f89ab-5679-4df5-9b64-aead4649fde2"
   Hint: Icon
   Value: |
@@ -64,14 +67,14 @@ Languages:
         sitecore\zainarshad@7kcdev.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2e9c06b5-8c19-4f6c-85fc-aaf1480b14cd"
+      Value: "9e369e86-a44b-476f-9ad2-8acec3b3a579"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\zainarshad@7kcdev.com
+        sitecore\hammad@7kcdev.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260921T213644Z
+      Value: 20261015T114902Z
 - Language: "en-IE"
   Versions:
   - Version: 1

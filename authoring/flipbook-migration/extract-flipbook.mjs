@@ -73,12 +73,36 @@ if (existsSync(searchConfigPath)) {
 let flipPages = [];
 if (existsSync(flipPagesPath)) {
   const src = readFileSync(flipPagesPath, 'utf8');
-  const m = src.match(/fliphtml5_pages\s*[:=]\s*(\[[\s\S]*?\])/);
-  if (m) {
-    try {
-      flipPages = vm.runInNewContext(`(${m[1]})`, {});
-    } catch {
-      console.warn('Could not parse fliphtml5_pages');
+  const keyIdx = src.indexOf('fliphtml5_pages');
+  if (keyIdx !== -1) {
+    // Balanced-bracket scan: the array contains nested arrays/objects, so a
+    // lazy regex would stop at the first inner ']'.
+    const start = src.indexOf('[', keyIdx);
+    if (start !== -1) {
+      let depth = 0;
+      let end = -1;
+      let inStr = false;
+      for (let i = start; i < src.length; i++) {
+        const ch = src[i];
+        if (inStr) {
+          if (ch === '\\') i++;
+          else if (ch === '"' || ch === "'") inStr = false;
+          continue;
+        }
+        if (ch === '"' || ch === "'") inStr = true;
+        else if (ch === '[' || ch === '{') depth++;
+        else if (ch === ']' || ch === '}') {
+          depth--;
+          if (depth === 0) { end = i; break; }
+        }
+      }
+      if (end !== -1) {
+        try {
+          flipPages = vm.runInNewContext(`(${src.slice(start, end + 1)})`, {});
+        } catch {
+          console.warn('Could not parse fliphtml5_pages');
+        }
+      }
     }
   }
 }
@@ -162,8 +186,13 @@ const pages = readerConfig.pages.map((p, i) => {
   return {
     index: i,
     label: String(p.L9f ?? i + 1),
-    image: p.FW9 ?? null,
-    thumb: p.Jyi ?? flipPages[i]?.t ?? null,
+    // Prefer local filenames from fliphtml5_pages (config.js) — pageEditor.js
+    // FW9/Jyi values are remote fliphtml5.com URLs, while the static export
+    // stores pages under files/large|thumb with hashed local names.
+    image: flipPages[i]?.n?.[0]
+      ? `./files/large/${flipPages[i].n[0]}`
+      : (p.FW9 ?? null),
+    thumb: flipPages[i]?.t ?? p.Jyi ?? null,
     searchText: typeof searchTexts[i] === 'string' ? searchTexts[i] : '',
     hotspots: items.map((it, hi) => decodeHotspot(it, hi)),
   };

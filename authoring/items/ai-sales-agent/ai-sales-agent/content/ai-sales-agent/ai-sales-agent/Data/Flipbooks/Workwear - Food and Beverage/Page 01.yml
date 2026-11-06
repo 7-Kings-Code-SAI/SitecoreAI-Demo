@@ -1,0 +1,52 @@
+---
+ID: "3B005229-9778-4C61-A0BB-77FCE33CDEDD"
+Parent: "1084C3A9-AF38-4ADD-85F2-2D54DE27DD8C"
+Template: "AAAF4921-54EF-4618-9D40-89BFB23B0B2F"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear - Food and Beverage/Page 01"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: 3B005229-9778-4C61-A0BB-77FCE33CDEDD
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261106T212543Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 3B005229-9778-4C61-A0BB-77FCE33CDEDD
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261106T212543Z
+    - ID: "706566AF-D28D-4152-99B4-CA5FE0023805"
+      Hint: Page Image
+      Value: /flipbook/large/333814207aef05d4bafffc79792354c3.webp
+    - ID: "1BC2894D-E407-45A2-9DC3-9C91B6F3AC84"
+      Hint: Thumbnail
+      Value: /flipbook/thumb/f506f43f02e037f3cb9a2dfaffeca66a.webp
+    - ID: "3EC86414-814E-4D46-AA46-ED20A0AED303"
+      Hint: Page Label
+      Value: "1"
+    - ID: "CEAE6324-5D0A-473D-AF5B-C7CF50E2EB47"
+      Hint: Search Text
+      Value: |
+        Workwear as a service for the 
+        food and beverage industry
+    - ID: "1B816220-5A10-4889-8134-EC73A3840D85"
+      Hint: Hotspots
+      Value: ""
