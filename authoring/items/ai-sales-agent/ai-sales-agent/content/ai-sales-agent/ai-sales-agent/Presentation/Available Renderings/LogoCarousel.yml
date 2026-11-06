@@ -1,12 +1,12 @@
 ﻿---
-ID: "1fac29c5-4bd7-412f-9f88-f09078b88055"
+ID: "94bcfde6-8add-486c-892c-6f1140c10d61"
 Parent: "2318cb50-469e-4ed1-889d-7baf8f1c4f37"
 Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Presentation/Available Renderings/LogoCarousel"
 SharedFields:
 - ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
   Hint: Renderings
-  Value: "{EFBF672E-AC17-4ED7-A0DB-69CE83C6BA97}"
+  Value: "{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
   Value: "5b3800f0-fd51-4012-b2ea-d0be4f86ccaa"
