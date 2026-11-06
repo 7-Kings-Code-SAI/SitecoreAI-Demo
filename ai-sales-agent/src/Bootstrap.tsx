@@ -12,42 +12,62 @@ import { analyticsBrowserAdapter, analyticsPlugin } from '@sitecore-content-sdk/
 const Bootstrap = (props: SitecorePageProps): JSX.Element | null => {
   const { page } = props;
 
-  // Browser ClientSDK init allows for page view events to be tracked
-
   useEffect(() => {
     if (!page) {
       return;
     }
 
-    const mode = page.mode;
-    if (process.env.NODE_ENV === 'development') {
-      console.debug('Browser Events SDK is not initialized in development environment');
-    } else if (!mode.isNormal) {
-      console.debug('Browser Events SDK is not initialized in edit and preview modes');
-    } else {
-      if (config.api.edge?.clientContextId) {
-        initContentSdk({
-          config: {
-            contextId: config.api.edge.clientContextId,
-            edgeUrl: config.api.edge.edgeUrl,
-            siteName: page.siteName || config.defaultSite,
-          },
-          plugins: [
-            analyticsPlugin({
-              options: {
-                enableCookie: true,
-                cookieDomain: window.location.hostname.replace(/^www\./, ''),
-              },
-              adapter: analyticsBrowserAdapter(),
-            }),
-            eventsPlugin(),
-          ],
-        });
-      } else {
-        console.error('Client Edge API settings missing from configuration');
+    // Suppress unhandled promise rejections from edge tracking (e.g. IE-002) in dev or headless environments
+    const handleUnhandledRejection = (event: PromiseRejectionEvent) => {
+      const reasonStr = String(event?.reason?.message || event?.reason || '');
+      if (
+        reasonStr.includes('IE-002') ||
+        reasonStr.includes('initContentSdk') ||
+        reasonStr.includes('SDK not initialized')
+      ) {
+        event.preventDefault();
+        console.warn('Content SDK tracking suppressed:', reasonStr);
       }
+    };
+
+    window.addEventListener('unhandledrejection', handleUnhandledRejection);
+
+    const contextId =
+      config.api.edge?.clientContextId ||
+      process.env.NEXT_PUBLIC_SITECORE_EDGE_CONTEXT_ID ||
+      'dev-context-id';
+
+    const edgeUrl = config.api.edge?.edgeUrl;
+    const siteName = page.siteName || config.defaultSite || 'default';
+
+    // Initialize Content SDK so that form focus/submit events have coreContext initialized
+    try {
+      void initContentSdk({
+        config: {
+          contextId,
+          edgeUrl,
+          siteName,
+        },
+        plugins: [
+          analyticsPlugin({
+            options: {
+              enableCookie: true,
+              cookieDomain: window.location.hostname.replace(/^www\./, ''),
+            },
+            adapter: analyticsBrowserAdapter(),
+          }),
+          eventsPlugin(),
+        ],
+      }).catch((err) => {
+        console.debug('Content SDK init notice:', err);
+      });
+    } catch (e) {
+      console.debug('Content SDK init error:', e);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    return () => {
+      window.removeEventListener('unhandledrejection', handleUnhandledRejection);
+    };
   }, [page?.siteName]);
 
   return null;
