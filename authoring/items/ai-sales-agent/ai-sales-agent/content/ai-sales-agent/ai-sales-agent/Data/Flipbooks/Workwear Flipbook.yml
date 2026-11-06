@@ -1,77 +1,77 @@
 ---
-ID: "11111111-2222-3333-4444-555555555555"
-Parent: "11111111-2222-3333-4444-555555555556"
-Template: "11111111-2222-3333-4444-555555555555"
+ID: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+Parent: "92424a8e-cd0f-5409-b2fe-35558c75aa99"
+Template: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook"
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: "__Sortorder"
-  Value: "100"
+  Hint: '__Sortorder'
+  Value: '100'
 Languages:
-- Language: "en"
+- Language: 'en'
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: "__Created"
-      Value: "20260101T000000Z"
+      Hint: '__Created'
+      Value: '20260101T000000Z'
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: "__Owner"
-      Value: "sitecore\\admin"
+      Hint: '__Owner'
+      Value: 'sitecore\admin'
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: "__Created by"
-      Value: "sitecore\\admin"
+      Hint: '__Created by'
+      Value: 'sitecore\admin'
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: "__Revision"
-      Value: "11111111-2222-3333-4444-555555555555"
+      Hint: '__Revision'
+      Value: '48fc7aa1-7119-5d18-b116-9a2fbed0801f'
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: "__Updated by"
-      Value: "sitecore\\admin"
+      Hint: '__Updated by'
+      Value: 'sitecore\admin'
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: "__Updated"
-      Value: "20260101T000000Z"
+      Hint: '__Updated'
+      Value: '20260101T000000Z'
     - ID: "A1B2C3D4-E5F6-7890-ABCD-EF1234567890"
-      Hint: "Title"
-      Value: "Workwear - Food and beverage industry"
+      Hint: 'Title'
+      Value: 'Workwear - Food and beverage industry'
     - ID: "B2C3D4E5-F6A7-8901-BCDE-F12345678901"
-      Hint: "Description"
-      Value: ""
+      Hint: 'Description'
+      Value: ''
     - ID: "C3D4E5F6-A7B8-9012-CDEF-123456789012"
-      Hint: "Page Width"
-      Value: "1167"
+      Hint: 'Page Width'
+      Value: '1167'
     - ID: "D4E5F6A7-B8C9-0123-DEF0-234567890123"
-      Hint: "Page Height"
-      Value: "825"
+      Hint: 'Page Height'
+      Value: '825'
     - ID: "E5F6A7B8-C9D0-1234-EF01-345678901234"
-      Hint: "Flip Style"
-      Value: "Flip"
+      Hint: 'Flip Style'
+      Value: 'Flip'
     - ID: "F6A7B8C9-D0E1-2345-F012-456789012345"
-      Hint: "Theme Color"
-      Value: "#397AF3"
+      Hint: 'Theme Color'
+      Value: '#397AF3'
     - ID: "A7B8C9D0-E1F2-3456-0123-567890123456"
-      Hint: "Background Color"
-      Value: "#1b2930"
+      Hint: 'Background Color'
+      Value: '#1b2930'
     - ID: "B8C9D0E1-F2A3-4567-1234-678901234567"
-      Hint: "Show Toolbar"
-      Value: "1"
+      Hint: 'Show Toolbar'
+      Value: '1'
     - ID: "C9D0E1F2-A3B4-5678-2345-789012345678"
-      Hint: "Show Thumbnails"
-      Value: "1"
+      Hint: 'Show Thumbnails'
+      Value: '1'
     - ID: "D0E1F2A3-B4C5-6789-3456-890123456789"
-      Hint: "Show Table Of Contents"
-      Value: "1"
+      Hint: 'Show Table Of Contents'
+      Value: '1'
     - ID: "E1F2A3B4-C5D6-7890-4567-901234567890"
-      Hint: "Show Search"
-      Value: "1"
+      Hint: 'Show Search'
+      Value: '1'
     - ID: "F2A3B4C5-D6E7-8901-5678-012345678901"
-      Hint: "Show Page Numbers"
-      Value: "1"
+      Hint: 'Show Page Numbers'
+      Value: '1'
     - ID: "A3B4C5D6-E7F8-9012-6789-123456789012"
-      Hint: "Right To Left"
-      Value: "0"
+      Hint: 'Right To Left'
+      Value: '0'
     - ID: "B4C5D6E7-F8A9-0123-7890-234567890123"
-      Hint: "Auto Play"
-      Value: "0"
+      Hint: 'Auto Play'
+      Value: '0'
     - ID: "C5D6E7F8-A9B0-1234-8901-345678901234"
-      Hint: "Auto Play Interval"
-      Value: "5"
+      Hint: 'Auto Play Interval'
+      Value: '5'

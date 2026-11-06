@@ -1,0 +1,68 @@
+---
+ID: "4b2010d0-f6ae-5463-960d-e48ff9207006"
+Parent: "889e8082-c489-5325-b641-bbf21b0a24c0"
+Template: "A6B7C8D9-E0F1-2345-6789-012345678901"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/Page 7/Hotspot 3"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: '__Sortorder'
+  Value: '300'
+Languages:
+- Language: 'en'
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: '__Created'
+      Value: '20260101T000000Z'
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: '__Owner'
+      Value: 'sitecore\admin'
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: '__Created by'
+      Value: 'sitecore\admin'
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: '__Revision'
+      Value: '4b2010d0-f6ae-5463-960d-e48ff9207006'
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: '__Updated by'
+      Value: 'sitecore\admin'
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: '__Updated'
+      Value: '20260101T000000Z'
+    - ID: "C8D9E0F1-E2F3-4567-8901-234567890123"
+      Hint: 'Hotspot Type'
+      Value: 'internalPage'
+    - ID: "D9E0F1E2-F3A4-5678-9012-345678901234"
+      Hint: 'Area Left'
+      Value: '66.07'
+    - ID: "E0F1E2F3-A4B5-6789-0123-456789012345"
+      Hint: 'Area Top'
+      Value: '87.21'
+    - ID: "F1E2F3A4-B5C6-7890-1234-567890123456"
+      Hint: 'Area Width'
+      Value: '11.57'
+    - ID: "E2F3A4B5-C6D7-8901-2345-678901234567"
+      Hint: 'Area Height'
+      Value: '2.42'
+    - ID: "F3A4B5C6-D7E8-9012-3456-789012345678"
+      Hint: 'Label'
+      Value: '101250830152864545454447'
+    - ID: "A4B5C6D7-E8F9-0123-4567-890123456789"
+      Hint: 'Target Page'
+      Value: ''
+    - ID: "B5C6D7E8-F9A0-1234-5678-901234567890"
+      Hint: 'Link'
+      Value: ''
+    - ID: "C6D7E8F9-A0B1-2345-6789-012345678901"
+      Hint: 'Popup Image'
+      Value: ''
+    - ID: "D7E8F9A0-B1C2-3456-7890-123456789012"
+      Hint: 'Video URL'
+      Value: ''
+    - ID: "8B2A3E1F-4C5D-4E2F-9A1B-8C7D6E5F4A3B"
+      Hint: 'Iframe URL'
+      Value: ''
+    - ID: "F9A0B1C2-D3E4-5678-9012-345678901234"
+      Hint: 'Audio URL'
+      Value: ''
