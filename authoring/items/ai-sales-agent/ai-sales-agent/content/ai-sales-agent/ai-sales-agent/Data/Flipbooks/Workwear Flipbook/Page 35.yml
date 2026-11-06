@@ -1,0 +1,44 @@
+---
+ID: "77f426f7-d584-538c-9cab-617e1b9a2f56"
+Parent: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+Template: "8B2A3E1F-4C5D-4E2F-9A1B-8C7D6E5F4A3B"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/Page 35"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: '__Sortorder'
+  Value: '3500'
+Languages:
+- Language: 'en'
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: '__Created'
+      Value: '20260101T000000Z'
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: '__Owner'
+      Value: 'sitecore\admin'
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: '__Created by'
+      Value: 'sitecore\admin'
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: '__Revision'
+      Value: '77f426f7-d584-538c-9cab-617e1b9a2f56'
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: '__Updated by'
+      Value: 'sitecore\admin'
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: '__Updated'
+      Value: '20260101T000000Z'
+    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+      Hint: 'Page Label'
+      Value: '35'
+    - ID: "D3E4F5A6-B7C8-9012-3456-789012345678"
+      Hint: 'Search Text'
+      Value: 'Our Smart Lockers keep workwear available around the clock. Stock management is fully automated, with no manual effort required. Stay in control with Smart Lockers Find the right size in just a few clicks Determine your staff’s clothing sizes online. Finding the right fit has never been easier. Avoid incorrect deliveries, reduce returns and ensure your staff are always comfortable – all in just a few clicks. Submit repair requests through the app Report damaged clothing using your smartphone. Simply scan the barcode on your garment and submit a repair request – it’s quick and flexible, with no need to make any further arrangements. More than a logo – make your workwear part of your brand Boost your company’s image with personalised workwear. We apply wash-resistant logos, names or job titles to your garments in line with your corporate identity guidelines. This ensures a consistent look and builds trust among your customers. Personal and digital support for you Whether you work 9 to 5 or 24/7, all your contract and service information is available at any time through our customer portal. You can also request changes and track their progress. Full transparency with RFID technology Smart RFID technology allows you to keep track of your workwear stock. It flags shortages and surpluses, making your inventory management more efficient and more secure. Your workwear, delivered straight to your locker With our locker service, your employees receive freshly laundered workwear delivered directly to their personal locker compartments. Hygienic, secure and well organised. | 35'
+    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+      Hint: 'Page Image'
+      Value: ''
+    - ID: "B1C2D3E4-F5A6-7890-1234-567890123456"
+      Hint: 'Thumbnail'
+      Value: ''

@@ -1,0 +1,44 @@
+---
+ID: "004222fc-907e-5079-9199-77bb080e3a37"
+Parent: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+Template: "8B2A3E1F-4C5D-4E2F-9A1B-8C7D6E5F4A3B"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/Page 21"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: '__Sortorder'
+  Value: '2100'
+Languages:
+- Language: 'en'
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: '__Created'
+      Value: '20260101T000000Z'
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: '__Owner'
+      Value: 'sitecore\admin'
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: '__Created by'
+      Value: 'sitecore\admin'
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: '__Revision'
+      Value: '004222fc-907e-5079-9199-77bb080e3a37'
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: '__Updated by'
+      Value: 'sitecore\admin'
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: '__Updated'
+      Value: '20260101T000000Z'
+    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+      Hint: 'Page Label'
+      Value: '21'
+    - ID: "D3E4F5A6-B7C8-9012-3456-789012345678"
+      Hint: 'Search Text'
+      Value: 'Food Deluxe Work jacket Work coat Trousers with elasticated waistband Pull-on trousers Bib and brace overalls Material 65% polyester/35% cotton 245 g/m2 65% polyester/35% cotton 245 g/m2 65% polyester/35% cotton 245 g/m2 65% polyester/35% cotton 215 g/m2 65% polyester/35% cotton 245 g/m2 Description - Modern, close-fitting work jacket - The stand-up collar and the contrasting inserts on the shoulders create a clean, high-quality look - Long sleeves with adjustable openings for a secure fit - For practical storage: two internal chest pockets with press studs - Underarm vents provide effective ventilation - Modern, close-fitting work coat - The stand-up collar and the contrasting inserts on the shoulders create a clean, high-quality look - A vent at the back provides greater freedom of movement - Long sleeves with adjustable openings for a secure fit - Two internal chest pockets with press studs - Underarm vents provide effective ventilation - Modern, close-fitting trousers with belt loops - Elasticated waistband at the back for a comfortable fit - Side pockets, back and leg pockets provide plenty of storage space - Optional Cordura® knee pad pockets to suit different tasks - Modern, comfortable pull-on trousers with an elasticated waistband - Side pockets, back and leg pockets provide plenty of storage space - Modern, close-fitting bib and brace overalls with stretch side panels for greater freedom of movement - Elasticated waistband - Spacious front, back and leg pockets, as well as an internal bib pocket, provide plenty of storage space - Optional Cordura® knee pad pockets to suit different tasks Sizes 2XS–8XL 2XS–8XL 38–76 S/R/L 2XS–8XL S/R/L 2XS–8XL S/R/L Standards HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 Risk class 3: white, light grey Risk class 1: dark green, dark blue, blue HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 Risk class 3: white, light grey Risk class 1: dark blue, blue Colours 1008039 1008284 1008283 1008040 1008282 1008281 1009627 1009626 1009952 1010034 1010033 1008037 1008041 1008298 1008299 1008300 With cuffs HACCP risk class 1 / / / 1011957 (2XS–8XL N) / | 21'
+    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+      Hint: 'Page Image'
+      Value: ''
+    - ID: "B1C2D3E4-F5A6-7890-1234-567890123456"
+      Hint: 'Thumbnail'
+      Value: ''
