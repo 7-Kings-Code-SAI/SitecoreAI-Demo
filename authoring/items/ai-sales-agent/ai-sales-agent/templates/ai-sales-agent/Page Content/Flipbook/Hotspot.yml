@@ -1,0 +1,17 @@
+---
+ID: "a6b7c8d9-e0f1-2345-6789-012345678901"
+Parent: "2f3a4b5c-6d7e-4f80-9012-345678abcdef"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/ai-sales-agent/Page Content/Flipbook/Hotspot"
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260101T000000Z

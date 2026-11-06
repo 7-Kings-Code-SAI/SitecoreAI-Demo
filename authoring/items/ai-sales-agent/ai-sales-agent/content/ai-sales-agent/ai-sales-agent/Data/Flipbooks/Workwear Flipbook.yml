@@ -1,5 +1,5 @@
 ---
-ID: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+ID: "2cbbac5d-0488-5f08-993c-ae3363637fb5"
 Parent: "92424a8e-cd0f-5409-b2fe-35558c75aa99"
 Template: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook"
@@ -30,48 +30,48 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: '__Updated'
       Value: '20260101T000000Z'
-    - ID: "A1B2C3D4-E5F6-7890-ABCD-EF1234567890"
+    - ID: "86832ddc-f326-594d-af65-80145b50d7a4"
       Hint: 'Title'
       Value: 'Workwear - Food and beverage industry'
-    - ID: "B2C3D4E5-F6A7-8901-BCDE-F12345678901"
+    - ID: "3e6155b8-ba70-57c8-8f88-651742b32a29"
       Hint: 'Description'
       Value: ''
-    - ID: "C3D4E5F6-A7B8-9012-CDEF-123456789012"
+    - ID: "9ba84490-d0e5-51b7-8130-4dabb2f86677"
       Hint: 'Page Width'
       Value: '1167'
-    - ID: "D4E5F6A7-B8C9-0123-DEF0-234567890123"
+    - ID: "4b3cfffb-8fd0-585f-97dd-798556273b99"
       Hint: 'Page Height'
       Value: '825'
-    - ID: "E5F6A7B8-C9D0-1234-EF01-345678901234"
+    - ID: "670d39d3-b68a-5061-997d-89f8b8b0d2c5"
       Hint: 'Flip Style'
       Value: 'Flip'
-    - ID: "F6A7B8C9-D0E1-2345-F012-456789012345"
+    - ID: "c236ca6c-9053-54ac-8243-45c341e43aa8"
       Hint: 'Theme Color'
       Value: '#397AF3'
-    - ID: "A7B8C9D0-E1F2-3456-0123-567890123456"
+    - ID: "5320d45b-492e-50e8-8910-1aa0843afade"
       Hint: 'Background Color'
       Value: '#1b2930'
-    - ID: "B8C9D0E1-F2A3-4567-1234-678901234567"
+    - ID: "4c77cbce-87f8-5c30-b8c9-a9de10e9eb29"
       Hint: 'Show Toolbar'
       Value: '1'
-    - ID: "C9D0E1F2-A3B4-5678-2345-789012345678"
+    - ID: "091a4172-0720-5661-90cf-f2144fd76e9a"
       Hint: 'Show Thumbnails'
       Value: '1'
-    - ID: "D0E1F2A3-B4C5-6789-3456-890123456789"
+    - ID: "df5a287e-82de-51e2-9383-415a62384f00"
       Hint: 'Show Table Of Contents'
       Value: '1'
-    - ID: "E1F2A3B4-C5D6-7890-4567-901234567890"
+    - ID: "b0f4df88-4b3d-52ca-889b-094fa62702c4"
       Hint: 'Show Search'
       Value: '1'
-    - ID: "F2A3B4C5-D6E7-8901-5678-012345678901"
+    - ID: "e82d1380-67e8-53bc-a67e-53c0ca0b9f1f"
       Hint: 'Show Page Numbers'
       Value: '1'
-    - ID: "A3B4C5D6-E7F8-9012-6789-123456789012"
+    - ID: "3c694a22-1e58-59fa-8020-27e0a4753cc5"
       Hint: 'Right To Left'
       Value: '0'
-    - ID: "B4C5D6E7-F8A9-0123-7890-234567890123"
+    - ID: "99ce03f0-07ba-5fcc-be73-b9dc82a0ab6a"
       Hint: 'Auto Play'
       Value: '0'
-    - ID: "C5D6E7F8-A9B0-1234-8901-345678901234"
+    - ID: "e656f2d1-5aa8-547a-8916-bbb9cf8ba81e"
       Hint: 'Auto Play Interval'
       Value: '5'

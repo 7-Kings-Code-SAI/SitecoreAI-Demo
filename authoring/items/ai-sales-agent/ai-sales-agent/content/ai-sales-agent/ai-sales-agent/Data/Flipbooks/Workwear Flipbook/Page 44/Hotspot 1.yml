@@ -30,39 +30,39 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: '__Updated'
       Value: '20260101T000000Z'
-    - ID: "C8D9E0F1-E2F3-4567-8901-234567890123"
+    - ID: "26658d5a-66bf-52e7-bf59-3a6f772c85d1"
       Hint: 'Hotspot Type'
       Value: 'externalLink'
-    - ID: "D9E0F1E2-F3A4-5678-9012-345678901234"
+    - ID: "94a9f010-a1ba-5778-84a5-310ebf2bf143"
       Hint: 'Area Left'
       Value: '8.38'
-    - ID: "E0F1E2F3-A4B5-6789-0123-456789012345"
+    - ID: "6a0ab84b-5ea5-5066-b27a-3187cd691334"
       Hint: 'Area Top'
       Value: '84.41'
-    - ID: "F1E2F3A4-B5C6-7890-1234-567890123456"
+    - ID: "4e5bc8ed-c18b-50b1-8a3c-405c3ff20baa"
       Hint: 'Area Width'
       Value: '3.51'
-    - ID: "E2F3A4B5-C6D7-8901-2345-678901234567"
+    - ID: "0678414c-59f0-5513-8438-3d4f4df04b40"
       Hint: 'Area Height'
       Value: '4.97'
-    - ID: "F3A4B5C6-D7E8-9012-3456-789012345678"
+    - ID: "c2ff8d8a-2b17-57fc-b402-b9f1869b9957"
       Hint: 'Label'
       Value: '682860292731960273487475'
-    - ID: "A4B5C6D7-E8F9-0123-4567-890123456789"
+    - ID: "2a17d165-f2a0-54e8-8954-8ea8f6c558c5"
       Hint: 'Target Page'
       Value: ''
-    - ID: "B5C6D7E8-F9A0-1234-5678-901234567890"
+    - ID: "5e37d96a-6a04-5eb3-933b-9c9aa4cde086"
       Hint: 'Link'
       Value: '<link text="www.facebook.com/CWSWorkwearGroup" linktype="external" url="www.facebook.com/CWSWorkwearGroup" target="_blank" />'
-    - ID: "C6D7E8F9-A0B1-2345-6789-012345678901"
+    - ID: "698245e3-9e12-5e41-959e-d200598dbdca"
       Hint: 'Popup Image'
       Value: ''
-    - ID: "D7E8F9A0-B1C2-3456-7890-123456789012"
+    - ID: "7f57079a-5464-5dd8-9e42-d9ab1cadc7aa"
       Hint: 'Video URL'
       Value: 'www.facebook.com/CWSWorkwearGroup'
-    - ID: "8B2A3E1F-4C5D-4E2F-9A1B-8C7D6E5F4A3B"
+    - ID: "80493651-0455-5a39-9067-39c0ae232a50"
       Hint: 'Iframe URL'
       Value: 'www.facebook.com/CWSWorkwearGroup'
-    - ID: "F9A0B1C2-D3E4-5678-9012-345678901234"
+    - ID: "5fce2642-d124-51ea-be09-ea0fc02de368"
       Hint: 'Audio URL'
       Value: 'www.facebook.com/CWSWorkwearGroup'

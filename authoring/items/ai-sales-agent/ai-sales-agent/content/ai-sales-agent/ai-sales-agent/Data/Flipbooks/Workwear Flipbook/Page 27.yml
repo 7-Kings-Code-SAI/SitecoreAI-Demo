@@ -1,6 +1,6 @@
 ---
 ID: "c2af7f9c-20ed-5a21-b431-d070e4ad6815"
-Parent: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+Parent: "2cbbac5d-0488-5f08-993c-ae3363637fb5"
 Template: "8B2A3E1F-4C5D-4E2F-9A1B-8C7D6E5F4A3B"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/Page 27"
 SharedFields:
@@ -30,15 +30,15 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: '__Updated'
       Value: '20260101T000000Z'
-    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+    - ID: "f9dea1e5-1a18-55a2-a198-cc006c5a8866"
       Hint: 'Page Label'
       Value: '27'
-    - ID: "D3E4F5A6-B7C8-9012-3456-789012345678"
+    - ID: "8e61e1b8-00bb-5065-a46a-02c602197ffc"
       Hint: 'Search Text'
       Value: 'Food Xtra Thermal parka Thermal parka Thermal bodywarmer Thermal bib and brace overalls Material 100% polyamide 630 g/m2 100% polyamide 415 g/m2 65% polyester/35% cotton 210 g/m2 100% polyamide 630 g/m2 Description - Highly insulated thermal parka with faux-fur lining, a turn-down collar and a hook-andloop tab for fastening at the neck - Red woven reflective tape front and back for good visibility - Back with an elasticated waistband for a comfortable fit - Fastens with a zip and an additional row of press studs - Sleeves with elasticated knitted cuffs for excellent thermal insulation - Practical storage space: a zipped chest pocket on the left and two side pockets with flaps - Highly insulated thermal parka with a stand-up collar and warm fleece lining - Reflective piping front and back for good visibility - Back with an elasticated waistband for a comfortable fit - Fastens with a zip and an additional row of press studs - Sleeves with elasticated knitted cuffs for excellent thermal insulation - Ample storage space: a pen compartment, two side pockets and two internal pockets for a mobile phone and a pick-by-voice device - Warm, lined thermal bodywarmer with a hood - Comfortable fit with an extended back for maximum freedom of movement - Fastens at the front with a contrasting red zip - Handy storage space: two zipped side pockets - Highly insulating, lined thermal bib and brace overalls with a high waist that reliably protects the torso from the cold - Elasticated straps with clip buckles for a secure fit and excellent comfort - Side zips let the wearer regulate temperature for all-day comfort as conditions change - Front zip makes the overalls easy to put on and take off - Red woven reflective tape on the legs for good visibility - Two side pockets provide practical storage space - Knee pad pockets promote ergonomic working Sizes 42/44–66/68 46/48–62/64 2XS–4XL 46/48–66/68 Standards EN 342 EN 342 / EN 342 Colour 1003559 1001776 1001926 1003558 | 27'
-    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+    - ID: "0c76f1fc-9e72-58ad-a9b3-1ccf479f9dd3"
       Hint: 'Page Image'
       Value: ''
-    - ID: "B1C2D3E4-F5A6-7890-1234-567890123456"
+    - ID: "d3062b18-5de9-5640-be65-88ab1eac1db4"
       Hint: 'Thumbnail'
       Value: ''

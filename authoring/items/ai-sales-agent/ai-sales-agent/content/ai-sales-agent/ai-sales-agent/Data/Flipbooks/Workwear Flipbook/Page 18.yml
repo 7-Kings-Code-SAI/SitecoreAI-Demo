@@ -1,6 +1,6 @@
 ---
 ID: "144aca8a-305f-5af1-8b2c-88a3fb7bda2c"
-Parent: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+Parent: "2cbbac5d-0488-5f08-993c-ae3363637fb5"
 Template: "8B2A3E1F-4C5D-4E2F-9A1B-8C7D6E5F4A3B"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/Page 18"
 SharedFields:
@@ -30,15 +30,15 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: '__Updated'
       Value: '20260101T000000Z'
-    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+    - ID: "f9dea1e5-1a18-55a2-a198-cc006c5a8866"
       Hint: 'Page Label'
       Value: '18'
-    - ID: "D3E4F5A6-B7C8-9012-3456-789012345678"
+    - ID: "8e61e1b8-00bb-5065-a46a-02c602197ffc"
       Hint: 'Search Text'
       Value: '18 |'
-    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+    - ID: "0c76f1fc-9e72-58ad-a9b3-1ccf479f9dd3"
       Hint: 'Page Image'
       Value: ''
-    - ID: "B1C2D3E4-F5A6-7890-1234-567890123456"
+    - ID: "d3062b18-5de9-5640-be65-88ab1eac1db4"
       Hint: 'Thumbnail'
       Value: ''

@@ -1,0 +1,13 @@
+---
+ID: "d78497a0-7e7f-506d-bfc3-98f5dd2fffbb"
+Parent: "a6b7c8d9-e0f1-2345-6789-012345678901"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: "/sitecore/templates/Project/ai-sales-agent/Page Content/Flipbook/Hotspot/Content"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260101T000000Z
