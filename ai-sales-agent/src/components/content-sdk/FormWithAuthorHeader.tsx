@@ -115,7 +115,7 @@ export const withAuthorFormHeader = (BuiltInForm: any) => {
               if (input.type === 'hidden' || input.type === 'submit') continue;
               const name = (input.name || '').toLowerCase();
               const id = (input.id || '').toLowerCase();
-              const placeholder = (input.placeholder || '').toLowerCase();
+              const placeholder = ('placeholder' in input ? input.placeholder : '').toLowerCase();
 
               const parentContainer =
                 input.closest('.shared-input-field, .form-field, [class*="field"], .landing-page-row') ||
