@@ -1,0 +1,38 @@
+﻿---
+ID: "601c56a9-d90d-461a-b3aa-2e8db36936e8"
+Parent: "038a04a2-f9c9-449b-bc3d-1cc1bc99edd1"
+Template: "038a04a2-f9c9-449b-bc3d-1cc1bc99edd1"
+Path: "/sitecore/templates/Project/ai-sales-agent/Page Content/HealthCheckResults/TiersSettings/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{D85B13AB-737B-4CE3-A33B-3C26506710EF}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "f71d1197-8e8e-49c9-836f-80e7fad5a623"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T145604Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "54620c7f-c651-4514-a613-2c1e7d05ba22"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261102T145628Z

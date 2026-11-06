@@ -1,0 +1,63 @@
+﻿---
+ID: "3a0c5253-008f-4dc2-8089-1334976d61e3"
+Parent: "3aecb683-a984-4d9e-a3d2-d23147cf26e0"
+Template: "211b4ca6-dd6f-446f-bedd-f6709d2338d8"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/signup/Data/health cehck"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "16e897c6-44f8-49ad-9eae-e522780407c2"
+      Hint: PrimaryCta
+      Value: |
+        <link text="Health Check" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E72AB90D-432F-4F6E-A278-311FAAC9C4B3}" />
+    - ID: "1fb6b7cb-70fe-4830-9b91-ea6c74652ebc"
+      Hint: Pill3_Text
+      Value: |
+        <div class="ck-content"><p>Insights</p><p>&nbsp;</p><p>&nbsp;</p><p>for better hygiene</p></div>
+    - ID: "23c00a9d-a3f3-4e69-9292-95aca7fc75cd"
+      Hint: Subtitle
+      Value: "Is your facility passing the test?"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T120011Z
+    - ID: "5737f9b1-fe58-4eff-9cd3-ef1dcaf3940c"
+      Hint: Pill2_Text
+      Value: |
+        <div class="ck-content"><p>Your Score</p><p>&nbsp;</p><p>&nbsp;</p><p>instantly calculated</p></div>
+    - ID: "68857407-f606-4d3f-b230-43996a9e17b4"
+      Hint: BadgeText
+      Value: Hygiene Health Check
+    - ID: "865362ed-106c-4209-97fc-4e9af2c6874e"
+      Hint: SecondaryLink
+      Value: |
+        <link text="About us page with unknown rendering" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9C887615-27DB-41A4-B229-2E223A024947}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fb0568a8-1509-45ab-92e2-9d1e7dadac99"
+    - ID: "949d7a60-fbe9-4521-bcab-fe3a54f31a7e"
+      Hint: Logo
+      Value: |
+        <image mediaid="{740DE97A-AB3D-4D3F-B01F-DCC6FCF80E75}" />
+    - ID: "a132bfcc-72bf-49c1-8a09-a4f8fe5cc5ef"
+      Hint: HeroImage
+      Value: |
+        <image mediaid="{2E8CFFD5-363A-4B02-82A4-DE396CBA685D}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "c0dce775-c5bc-4b0f-a327-b5d6744e39c7"
+      Hint: Title
+      Value: "Where in your facility are infections transmitted?"
+    - ID: "d57a5284-224a-479f-9816-8d73b61fd01d"
+      Hint: Pill1_Text
+      Value: |
+        <div class="ck-content"><p>1 min</p><p>&nbsp;</p><p>&nbsp;</p><p>that's all it takes</p></div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261102T161357Z

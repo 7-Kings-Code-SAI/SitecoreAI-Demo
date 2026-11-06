@@ -1,0 +1,46 @@
+﻿---
+ID: "0a39694f-8bd9-49cb-b14a-f26b752d7800"
+Parent: "f1c14bd9-b03a-4ca3-af7c-4c1a0832c36d"
+Template: "d85b13ab-737b-4ce3-a33b-3c26506710ef"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Hygiene health check tiers/Hygiene Tiers/Opportunity"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1e849e67-98e7-4fe4-8d95-dc608bc7bfe8"
+      Hint: GaugeColor
+      Value: #e2001a
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T150147Z
+    - ID: "2a80f941-c04b-40ec-b9da-7731ddedebb2"
+      Hint: SummaryText
+      Value: "Your results indicate that several areas of your workplace hygiene setup needattention. Whether it's gaps in equipment availability, inconsistent restocking, or a lack of structuredhygiene management – these are risks that affect how your workplace is perceived and how safe itfeels for the people inside it. The good news is that CWS specialises in exactly this: turning hygienechallenges into fully managed, reliable solutions – so you can focus on running your business withconfidence."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f1103af-4fea-43d3-972f-8c7c7fee228d"
+      Hint: BadgeLabel
+      Value: Hygiene Opportunity
+    - ID: "7c740f5f-2736-4161-9e84-55656d23b806"
+      Hint: MinScore
+      Value: 0
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5874bf63-8906-456e-9648-1cbedf39ac20"
+    - ID: "8ce5a93d-ff79-4548-8c6d-4c500643179a"
+      Hint: MaxScore
+      Value: 34
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261102T182301Z

@@ -1,0 +1,23 @@
+﻿---
+ID: "f1c14bd9-b03a-4ca3-af7c-4c1a0832c36d"
+Parent: "1fc7903c-3e8a-477c-9b68-7ac3b1fe2665"
+Template: "038a04a2-f9c9-449b-bc3d-1cc1bc99edd1"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Hygiene health check tiers/Hygiene Tiers"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T150119Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6c9256a4-0d55-4fd9-b4dc-281ae081a372"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261102T150130Z

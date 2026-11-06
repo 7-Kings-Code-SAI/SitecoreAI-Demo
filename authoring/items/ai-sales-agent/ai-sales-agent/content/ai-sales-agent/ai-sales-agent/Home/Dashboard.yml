@@ -8,6 +8,24 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{D2650CA6-8D8A-492E-8A0A-7A9454927791}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a0374bac-22b0-40f9-a9ec-42e5ef2bfcb6"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{37CE933C-8794-41D5-B1E0-E8B6C5F8186C}"
+          s:ds=""
+          s:id="{62DD1639-9F28-4040-8738-C886480B2127}"
+          s:par="FormId=86efc930a7be4746983cc5f0b8b4b4f8-use&amp;FormName&amp;GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="headless-main" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:
@@ -25,9 +43,17 @@ Languages:
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
               uid="{7F20AADA-6CF2-43EB-B6CD-83273B35D06C}"
+              p:before="*"
               s:ds="local:/Data/dashboard"
               s:id="{F1FFB9C4-74A9-418D-8967-708BD237592C}"
               s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{4CF2AC9C-0715-4C8D-93C7-BCB3589BA8BC}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{62DD1639-9F28-4040-8738-C886480B2127}"
+              s:par="FormId=86efc930a7be4746983cc5f0b8b4b4f8-use&amp;FormName&amp;GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
               s:ph="headless-main" />
           </d>
         </r>
@@ -39,14 +65,14 @@ Languages:
       Value: Dashboard
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f9070c01-96fe-4f22-963f-2428ab401c02"
+      Value: "fad02fda-419c-42e8-b049-e3cfa0013a3d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\hammad@7kcdev.com
+        sitecore\zainarshad@7kcdev.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261008T210641Z
+      Value: 20261022T200527Z
     - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
       Hint: Title
       Value: Dashboard

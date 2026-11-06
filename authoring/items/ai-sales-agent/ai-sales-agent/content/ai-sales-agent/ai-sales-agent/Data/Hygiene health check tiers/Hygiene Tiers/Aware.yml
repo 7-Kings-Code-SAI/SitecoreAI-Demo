@@ -1,0 +1,46 @@
+﻿---
+ID: "9d3605b2-5313-47f1-9ff4-0dcfa1585a99"
+Parent: "f1c14bd9-b03a-4ca3-af7c-4c1a0832c36d"
+Template: "d85b13ab-737b-4ce3-a33b-3c26506710ef"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Hygiene health check tiers/Hygiene Tiers/Aware"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1e849e67-98e7-4fe4-8d95-dc608bc7bfe8"
+      Hint: GaugeColor
+      Value: #fb923c
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T150234Z
+    - ID: "2a80f941-c04b-40ec-b9da-7731ddedebb2"
+      Hint: SummaryText
+      Value: "Your results show that hygiene is on your radar and that you're making solid effortsacross several areas of your workplace. However, there are gaps that could affect the experience ofyour employees, visitors, and customers – and potentially your compliance standing. The good news:targeted improvements in the right zones can make a significant difference, quickly. CWS offersflexible, scalable hygiene solutions that fit your specific situation and help you close those gapswithout operational disruption."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "6f1103af-4fea-43d3-972f-8c7c7fee228d"
+      Hint: BadgeLabel
+      Value: Hygiene Aware
+    - ID: "7c740f5f-2736-4161-9e84-55656d23b806"
+      Hint: MinScore
+      Value: 35
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "22a23e6d-04e0-414f-9cf7-71d3167bc418"
+    - ID: "8ce5a93d-ff79-4548-8c6d-4c500643179a"
+      Hint: MaxScore
+      Value: 55
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261102T182317Z

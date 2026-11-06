@@ -39,63 +39,84 @@ Languages:
               p:before="*"
               s:ds="local:/Data/Hero banner"
               s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
-              s:par="CSSStyles&amp;FieldNames=%7BEEB6C1D0-DA18-4D76-A87C-6CA2E1021060%7D"
+              s:par="FieldNames=%7bEEB6C1D0-DA18-4D76-A87C-6CA2E1021060%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}"
               p:after="r[@uid='{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}']"
               s:ds="local:/Data/Video player"
               s:id="{09F215E8-7CED-4A70-9588-041F496EDA4A}"
-              s:par="CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{949D458F-B626-4246-8442-82E9A238A180}"
+              p:after="r[@uid='{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}']"
+              s:ds="local:/Data/Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}"
               p:after="r[@uid='{949D458F-B626-4246-8442-82E9A238A180}']"
               s:ds="local:/Data/Industry Grid"
               s:id="{76B61C82-F557-4B54-8E2D-AF782120066D}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7D&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames=%7bFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}"
+              p:after="r[@uid='{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}']"
+              s:ds="local:/Data/new Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7bC212B759-D864-4EE2-A476-D81FA98F8680%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}"
               p:after="r[@uid='{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}']"
               s:ds="local:/Data/ROI Calculate"
               s:id="{65B8671F-F7AD-4E92-AD2A-5817FB73DB45}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{212BC737-DD42-4137-B7A2-75167977F60B}"
               p:after="r[@uid='{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}']"
               s:ds="local:/Data/Clients Testimonials"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}"
               p:after="r[@uid='{212BC737-DD42-4137-B7A2-75167977F60B}']"
               s:ds="local:/Data/Pricing section"
               s:id="{F972B3BA-9FA8-4328-AE21-263A7588A975}"
-              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}"
+              p:after="r[@uid='{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}']"
+              s:ds="local:/Data/Testing logo"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{94ABD86B-1D79-4732-B16D-FA0035C863A1}"
               p:after="r[@uid='{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}']"
               s:ds="local:/Data/FAQs"
               s:id="{B136A9BA-9C9E-48C4-BA27-CD5444568674}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{85AD90E4-E438-4C52-BA6D-D58A797ED002}"
               p:after="r[@uid='{94ABD86B-1D79-4732-B16D-FA0035C863A1}']"
               s:ds="local:/Data/Wysiwyg"
               s:id="{F1FFB9C4-74A9-418D-8967-708BD237592C}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{203F07EB-AE36-4D15-97A0-6587444F8501}"
               p:after="*[1=2]"
               s:ds="local:/Data/testimon"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
           </d>
         </r>
@@ -134,17 +155,17 @@ Languages:
       Value: "Skalieren Sie Ihr Vertriebsteam | Nicht Ihre Personalkosten | KI-Vertriebsagent"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "45a7f8ea-b5d1-4f15-91d7-a9b639088726"
+      Value: "975aa931-d32f-4655-9f0a-f190d6d1abe1"
     - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
       Hint: __Version Name
       Value: AI translated
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\hammad@7kcdev.com
+        sitecore\zainarshad@7kcdev.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261006T133816Z
+      Value: 20261106T212329Z
     - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
       Hint: Title
       Value: "KI-Vertriebsagent kontaktieren | Sprechen Sie mit unseren KI-Vertriebsexperten"
@@ -167,56 +188,84 @@ Languages:
               p:before="*"
               s:ds="local:/Data/Hero banner"
               s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
-              s:par="CSSStyles&amp;FieldNames=%7B1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7D"
+              s:par="FieldNames=%7b1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}"
               p:after="r[@uid='{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}']"
               s:ds="local:/Data/Video player"
               s:id="{09F215E8-7CED-4A70-9588-041F496EDA4A}"
-              s:par="CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{D5730C86-832C-4204-85B7-F17F21B0EF74}"
+              p:after="r[@uid='{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}']"
+              s:ds="local:/Data/Image"
+              s:id="{7CE18F16-EBC6-411D-BAE3-E80A921207AF}"
+              s:par="FieldNames=%7b80D26B28-4CA5-4F1A-B050-04906CB880A7%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{949D458F-B626-4246-8442-82E9A238A180}"
+              p:after="r[@uid='{D5730C86-832C-4204-85B7-F17F21B0EF74}']"
+              s:ds="local:/Data/Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{D7AD7315-FC92-40CA-8FB4-188ECD15B93E}"
               p:after="r[@uid='{949D458F-B626-4246-8442-82E9A238A180}']"
               s:ds="local:/Data/feature section"
               s:id="{97082648-0E27-4C30-AA33-306D386DA319}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}"
               p:after="r[@uid='{D7AD7315-FC92-40CA-8FB4-188ECD15B93E}']"
               s:ds="local:/Data/Industry Grid"
               s:id="{76B61C82-F557-4B54-8E2D-AF782120066D}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7D&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames=%7bFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}"
+              p:after="r[@uid='{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}']"
+              s:ds="local:/Data/new Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7bC212B759-D864-4EE2-A476-D81FA98F8680%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}"
               p:after="r[@uid='{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}']"
               s:ds="local:/Data/ROI Calculate"
               s:id="{65B8671F-F7AD-4E92-AD2A-5817FB73DB45}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{212BC737-DD42-4137-B7A2-75167977F60B}"
               p:after="r[@uid='{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}']"
               s:ds="local:/Data/Clients Testimonials"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}"
               p:after="r[@uid='{212BC737-DD42-4137-B7A2-75167977F60B}']"
               s:ds="local:/Data/Pricing section"
               s:id="{F972B3BA-9FA8-4328-AE21-263A7588A975}"
-              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{94ABD86B-1D79-4732-B16D-FA0035C863A1}"
-              p:after="*[1=2]"
+              p:after="r[@uid='{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}']"
               s:ds="local:/Data/FAQs"
               s:id="{B136A9BA-9C9E-48C4-BA27-CD5444568674}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{DCA171A7-A807-4EC4-8BAF-C5B153B76EFA}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/Image"
+              s:id="{7CE18F16-EBC6-411D-BAE3-E80A921207AF}"
+              s:par="FieldNames=%7b80D26B28-4CA5-4F1A-B050-04906CB880A7%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
           </d>
         </r>
@@ -225,7 +274,7 @@ Languages:
       Value: Scale Your Sales Team | Not Your Payroll | AI Sale Agent
     - ID: "2569d76b-a34e-48bd-9fb5-505f5f170c51"
       Hint: baseMetadataDescription
-      Value:
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260916T145837Z
@@ -258,20 +307,20 @@ Languages:
       Value: Scale Your Sales Team | Not Your Payroll | AI Sale Agent
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9cd66a5e-5e9b-4016-b6d2-9bbdf41538b0"
+      Value: "05b14b5a-3c9b-4a4d-af2a-80cce89c0cd7"
     - ID: "a1b03767-ad31-45d6-8edb-1940f1ab4d0d"
       Hint: baseMetadataTitle
-      Value:
+      Value: 
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zainarshad@7kcdev.com
     - ID: "cb3deb57-fa16-43de-a76b-9704e6620c24"
       Hint: baseMetadataKeywords
-      Value:
+      Value: 
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261012T140408Z
+      Value: 20261106T212328Z
     - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
       Hint: Title
       Value: Contact AI Sales Agent | Talk to Our AI Sales Experts
@@ -294,63 +343,84 @@ Languages:
               p:before="*"
               s:ds="local:/Data/Hero banner"
               s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
-              s:par="CSSStyles&amp;FieldNames=%7B1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7D"
+              s:par="FieldNames=%7b1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}"
               p:after="r[@uid='{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}']"
               s:ds="local:/Data/Video player"
               s:id="{09F215E8-7CED-4A70-9588-041F496EDA4A}"
-              s:par="CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{949D458F-B626-4246-8442-82E9A238A180}"
+              p:after="r[@uid='{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}']"
+              s:ds="local:/Data/Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}"
               p:after="r[@uid='{949D458F-B626-4246-8442-82E9A238A180}']"
               s:ds="local:/Data/Industry Grid"
               s:id="{76B61C82-F557-4B54-8E2D-AF782120066D}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7D&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames=%7bFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}"
+              p:after="r[@uid='{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}']"
+              s:ds="local:/Data/new Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7bC212B759-D864-4EE2-A476-D81FA98F8680%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}"
               p:after="r[@uid='{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}']"
               s:ds="local:/Data/ROI Calculate"
               s:id="{65B8671F-F7AD-4E92-AD2A-5817FB73DB45}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{212BC737-DD42-4137-B7A2-75167977F60B}"
               p:after="r[@uid='{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}']"
               s:ds="local:/Data/Clients Testimonials"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}"
               p:after="r[@uid='{212BC737-DD42-4137-B7A2-75167977F60B}']"
               s:ds="local:/Data/Pricing section"
               s:id="{F972B3BA-9FA8-4328-AE21-263A7588A975}"
-              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}"
+              p:after="r[@uid='{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}']"
+              s:ds="local:/Data/Testing logo"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{94ABD86B-1D79-4732-B16D-FA0035C863A1}"
               p:after="r[@uid='{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}']"
               s:ds="local:/Data/FAQs"
               s:id="{B136A9BA-9C9E-48C4-BA27-CD5444568674}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{85AD90E4-E438-4C52-BA6D-D58A797ED002}"
               p:after="r[@uid='{94ABD86B-1D79-4732-B16D-FA0035C863A1}']"
               s:ds="local:/Data/Wysiwyg"
               s:id="{F1FFB9C4-74A9-418D-8967-708BD237592C}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{203F07EB-AE36-4D15-97A0-6587444F8501}"
               p:after="*[1=2]"
               s:ds="local:/Data/testimon"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
           </d>
         </r>
@@ -389,17 +459,17 @@ Languages:
       Value: Scale Your Sales Team | Not Your Payroll | AI Sales Agent
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "18c225bd-4be4-4144-bb22-216c535d609a"
+      Value: "5e23c912-dcb0-4105-8479-6806c0993ca8"
     - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
       Hint: __Version Name
       Value: AI translated
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\hammad@7kcdev.com
+        sitecore\zainarshad@7kcdev.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261006T194112Z
+      Value: 20261106T212328Z
     - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
       Hint: Title
       Value: Contact AI Sales Agent | Talk to Our AI Sales Experts
@@ -422,63 +492,84 @@ Languages:
               p:before="*"
               s:ds="local:/Data/Hero banner"
               s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
-              s:par="CSSStyles&amp;FieldNames=%7B1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7D"
+              s:par="FieldNames=%7b1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}"
               p:after="r[@uid='{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}']"
               s:ds="local:/Data/Video player"
               s:id="{09F215E8-7CED-4A70-9588-041F496EDA4A}"
-              s:par="CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{949D458F-B626-4246-8442-82E9A238A180}"
+              p:after="r[@uid='{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}']"
+              s:ds="local:/Data/Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}"
               p:after="r[@uid='{949D458F-B626-4246-8442-82E9A238A180}']"
               s:ds="local:/Data/Industry Grid"
               s:id="{76B61C82-F557-4B54-8E2D-AF782120066D}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7D&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames=%7bFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}"
+              p:after="r[@uid='{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}']"
+              s:ds="local:/Data/new Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7bC212B759-D864-4EE2-A476-D81FA98F8680%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}"
               p:after="r[@uid='{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}']"
               s:ds="local:/Data/ROI Calculate"
               s:id="{65B8671F-F7AD-4E92-AD2A-5817FB73DB45}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{212BC737-DD42-4137-B7A2-75167977F60B}"
               p:after="r[@uid='{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}']"
               s:ds="local:/Data/Clients Testimonials"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}"
               p:after="r[@uid='{212BC737-DD42-4137-B7A2-75167977F60B}']"
               s:ds="local:/Data/Pricing section"
               s:id="{F972B3BA-9FA8-4328-AE21-263A7588A975}"
-              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}"
+              p:after="r[@uid='{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}']"
+              s:ds="local:/Data/Testing logo"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{94ABD86B-1D79-4732-B16D-FA0035C863A1}"
               p:after="r[@uid='{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}']"
               s:ds="local:/Data/FAQs"
               s:id="{B136A9BA-9C9E-48C4-BA27-CD5444568674}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{85AD90E4-E438-4C52-BA6D-D58A797ED002}"
               p:after="r[@uid='{94ABD86B-1D79-4732-B16D-FA0035C863A1}']"
               s:ds="local:/Data/Wysiwyg"
               s:id="{F1FFB9C4-74A9-418D-8967-708BD237592C}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{203F07EB-AE36-4D15-97A0-6587444F8501}"
               p:after="*[1=2]"
               s:ds="local:/Data/testimon"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
           </d>
         </r>
@@ -517,7 +608,7 @@ Languages:
       Value: Povećajte svoj prodajni tim | Ne svoje troškove plaća | AI prodajni agent
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "171377cc-8554-4ae9-b00f-bdc6f6a20168"
+      Value: "f1ffcc47-683c-400b-bb46-4de13c3df2c3"
     - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
       Hint: __Version Name
       Value: AI translated
@@ -527,7 +618,7 @@ Languages:
         sitecore\zainarshad@7kcdev.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261007T145132Z
+      Value: 20261106T212328Z
     - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
       Hint: Title
       Value: Kontaktirajte AI prodajnog agenta | Razgovarajte s našim stručnjacima za AI prodaju
@@ -576,49 +667,63 @@ Languages:
               p:before="*"
               s:ds="local:/Data/Hero banner"
               s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
-              s:par="CSSStyles&amp;FieldNames=%7BEEB6C1D0-DA18-4D76-A87C-6CA2E1021060%7D"
+              s:par="FieldNames=%7bEEB6C1D0-DA18-4D76-A87C-6CA2E1021060%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}"
               p:after="r[@uid='{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}']"
               s:ds="local:/Data/Video player"
               s:id="{09F215E8-7CED-4A70-9588-041F496EDA4A}"
-              s:par="CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{949D458F-B626-4246-8442-82E9A238A180}"
+              p:after="r[@uid='{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}']"
+              s:ds="local:/Data/Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}"
               p:after="r[@uid='{949D458F-B626-4246-8442-82E9A238A180}']"
               s:ds="local:/Data/Industry Grid"
               s:id="{76B61C82-F557-4B54-8E2D-AF782120066D}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7D&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames=%7bFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}"
+              p:after="r[@uid='{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}']"
+              s:ds="local:/Data/new Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7bC212B759-D864-4EE2-A476-D81FA98F8680%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}"
               p:after="r[@uid='{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}']"
               s:ds="local:/Data/ROI Calculate"
               s:id="{65B8671F-F7AD-4E92-AD2A-5817FB73DB45}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{212BC737-DD42-4137-B7A2-75167977F60B}"
               p:after="r[@uid='{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}']"
               s:ds="local:/Data/Clients Testimonials"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}"
               p:after="r[@uid='{212BC737-DD42-4137-B7A2-75167977F60B}']"
               s:ds="local:/Data/Pricing section"
               s:id="{F972B3BA-9FA8-4328-AE21-263A7588A975}"
-              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{94ABD86B-1D79-4732-B16D-FA0035C863A1}"
               p:after="*[1=2]"
               s:ds="local:/Data/FAQs"
               s:id="{B136A9BA-9C9E-48C4-BA27-CD5444568674}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
           </d>
         </r>
@@ -638,20 +743,20 @@ Languages:
         sitecore\hammad@7kcdev.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1d56bffa-2270-4430-8acc-afd7465c638a"
+      Value: "0aa61ad0-167a-42e7-882d-bf18cceac4ff"
     - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
       Hint: __Version Name
       Value: AI translated
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\hammad@7kcdev.com
+        sitecore\zainarshad@7kcdev.com
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 20261002T181003Z
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261005T131056Z
+      Value: 20261106T212328Z
     - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
       Hint: Title
       Value: "ai-försäljningsagent"
@@ -672,63 +777,84 @@ Languages:
               p:before="*"
               s:ds="local:/Data/Hero banner"
               s:id="{58EC10C7-C5E4-49D8-80D3-227DF599328C}"
-              s:par="CSSStyles&amp;FieldNames=%7B1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7D"
+              s:par="FieldNames=%7b1C1167D9-0B34-449A-8F04-B71D01F2D9C0%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}"
               p:after="r[@uid='{F3CB173A-ED2B-4A0E-9CE8-49E3C9B59200}']"
               s:ds="local:/Data/Video player"
               s:id="{09F215E8-7CED-4A70-9588-041F496EDA4A}"
-              s:par="CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{949D458F-B626-4246-8442-82E9A238A180}"
+              p:after="r[@uid='{CDED5F7F-77F6-4BBD-B5F0-80BC88783918}']"
+              s:ds="local:/Data/Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}"
               p:after="r[@uid='{949D458F-B626-4246-8442-82E9A238A180}']"
               s:ds="local:/Data/Industry Grid"
               s:id="{76B61C82-F557-4B54-8E2D-AF782120066D}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7D&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames=%7bFF4BD1AD-4953-4F1E-9B12-20C5303E307C%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}"
+              p:after="r[@uid='{BB4258B1-6C28-43A5-BBD2-98E15C4021F4}']"
+              s:ds="local:/Data/new Integration Logos"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7bC212B759-D864-4EE2-A476-D81FA98F8680%7d&amp;Styles&amp;CSSStyles&amp;GridParameters"
               s:ph="headless-main" />
             <r
               uid="{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}"
               p:after="r[@uid='{94A99EFD-88FC-4BE4-9337-DEE53F82E8EF}']"
               s:ds="local:/Data/ROI Calculate"
               s:id="{65B8671F-F7AD-4E92-AD2A-5817FB73DB45}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{212BC737-DD42-4137-B7A2-75167977F60B}"
               p:after="r[@uid='{9A93C6B4-1F87-4D0E-AFEF-6B716979C0A5}']"
               s:ds="local:/Data/Clients Testimonials"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}"
               p:after="r[@uid='{212BC737-DD42-4137-B7A2-75167977F60B}']"
               s:ds="local:/Data/Pricing section"
               s:id="{F972B3BA-9FA8-4328-AE21-263A7588A975}"
-              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters"
+              s:ph="headless-main" />
+            <r
+              uid="{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}"
+              p:after="r[@uid='{E21AAE1A-DD9C-48FE-B263-549CC0E42E11}']"
+              s:ds="local:/Data/Testing logo"
+              s:id="{9F0BADD3-ACA7-4CFF-8880-7C824BBCDA84}"
+              s:par="FieldNames=%7b70B450C0-6963-44B5-8090-0D4D364627A6%7d&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{94ABD86B-1D79-4732-B16D-FA0035C863A1}"
               p:after="r[@uid='{45BEFA3A-5FDC-47A3-806D-4A58A5AD1461}']"
               s:ds="local:/Data/FAQs"
               s:id="{B136A9BA-9C9E-48C4-BA27-CD5444568674}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{85AD90E4-E438-4C52-BA6D-D58A797ED002}"
               p:after="r[@uid='{94ABD86B-1D79-4732-B16D-FA0035C863A1}']"
               s:ds="local:/Data/Wysiwyg"
               s:id="{F1FFB9C4-74A9-418D-8967-708BD237592C}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
             <r
               uid="{203F07EB-AE36-4D15-97A0-6587444F8501}"
               p:after="*[1=2]"
               s:ds="local:/Data/testimon"
               s:id="{6A3BB086-62DD-4E2F-B1C0-8221ECC114C0}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;CSSStyles"
+              s:par="FieldNames&amp;Styles&amp;CSSStyles&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
               s:ph="headless-main" />
           </d>
         </r>
@@ -767,20 +893,20 @@ Languages:
       Value: Skala upp ditt säljteam | Inte din lönekostnad | AI Sale Agent
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "526c1a3c-271b-4f32-b4ce-f73f7bb93b41"
+      Value: "2e91d774-8621-4168-a6e9-d97ccfdb6513"
     - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
       Hint: __Version Name
       Value: AI translated
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\hammad@7kcdev.com
+        sitecore\zainarshad@7kcdev.com
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
-      Value:
+      Value: 
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261006T105442Z
+      Value: 20261106T212328Z
     - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
       Hint: Title
       Value: "Kontakta AI Sales Agent | Prata med våra AI-säljexperter"

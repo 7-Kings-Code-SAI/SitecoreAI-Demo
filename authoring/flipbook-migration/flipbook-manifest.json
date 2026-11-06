@@ -1,0 +1,904 @@
+{
+  "source": "C:\\Users\\zain\\Downloads\\Workwear - Food Beverage Flipbook en-DE",
+  "generatedAt": "2026-11-06T20:49:57.346Z",
+  "pageCount": 44,
+  "pageWidth": 1167,
+  "pageHeight": 825,
+  "settings": {
+    "title": "Workwear - Food and beverage industry",
+    "flipStyle": "Flip",
+    "themeColor": "#397AF3",
+    "backgroundColor": "#1b2930",
+    "showToolbar": true,
+    "showThumbnails": true,
+    "showTableOfContents": true,
+    "showSearch": true,
+    "showPageNumbers": true,
+    "rightToLeft": false,
+    "autoPlay": false,
+    "autoPlayInterval": 5
+  },
+  "toc": [
+    {
+      "caption": "Food Clean",
+      "targetPage": 7
+    },
+    {
+      "caption": "Food Comfort",
+      "targetPage": 13
+    },
+    {
+      "caption": "Food Deluxe",
+      "targetPage": 19
+    },
+    {
+      "caption": "Food Xtra",
+      "targetPage": 23
+    }
+  ],
+  "pages": [
+    {
+      "index": 0,
+      "label": "1",
+      "image": "./files/large/333814207aef05d4bafffc79792354c3.webp",
+      "thumb": "./files/thumb/f506f43f02e037f3cb9a2dfaffeca66a.webp",
+      "searchText": "Workwear as a service for the \r\nfood and beverage industry",
+      "hotspots": []
+    },
+    {
+      "index": 1,
+      "label": "2",
+      "image": "./files/large/6700a828749dd23b2ab9d4abb123b805.webp",
+      "thumb": "./files/thumb/dbd2702d1ea273dcde9ec1fa9a9585d1.webp",
+      "searchText": "2 |",
+      "hotspots": []
+    },
+    {
+      "index": 2,
+      "label": "3",
+      "image": "./files/large/b9fd08b9d6a696f838af2a0dd197033b.webp",
+      "thumb": "./files/thumb/6d169765466f09d64ae3c6bbabff34c7.webp",
+      "searchText": "Hygiene you \r\ncan wear\r\nWhen it comes to food processing, every detail counts. \r\nThat’s why we offer comfortable, practical workwear \r\ncertified to DIN 10524 and designed for the food \r\nindustry’s strict hygiene requirements.\r\nWe don’t design our collections around individual \r\ngarments, but around the needs of the people who wear \r\nthem. Each collection is tailored to different working \r\nenvironments, combining hygienic solutions, all-day \r\ncomfort and practical features for everyday work.\r\nOur passion for textiles goes back more than 100 years \r\nand shows in our professional laundry care and attention \r\nto detail – in every fibre and every seam.\r\n| 3",
+      "hotspots": []
+    },
+    {
+      "index": 3,
+      "label": "4",
+      "image": "./files/large/b1b41f267749e17922fbb2a9f50aa06e.webp",
+      "thumb": "./files/thumb/d10a2128c2fb058b7059d0e0050a2c09.webp",
+      "searchText": "4 |",
+      "hotspots": []
+    },
+    {
+      "index": 4,
+      "label": "5",
+      "image": "./files/large/53fba00830b5ced95ee98f849c324500.webp",
+      "thumb": "./files/thumb/3bcc77575f259bde77ebf4fa096b58fd.webp",
+      "searchText": "Table of Contents\r\nSafe and professional:\r\nFood Clean\r\nJackets, coats, tunics, trousers and coveralls for HACCP risk \r\nclasses 1–3. Available in two fabric weights for maximum flexibility. p. 7\r\nErgonomic and functional:\r\nFood Comfort\r\nJackets, coats, tunics, trousers and coveralls for food \r\nprocessing areas with strict hygiene requirements.. p. 13\r\nSmart and practical:\r\nFood Deluxe\r\nJackets, coats and trousers for medium-risk food processing \r\nenvironments. Designed for hygiene and practicality. p. 19\r\nReliable in extreme temperatures:\r\nFood Xtra\r\nThermal workwear for chilled environments and cold stores, \r\nincluding specialist garments for temperatures as low as –49 °C, \r\nplus additional workwear and accessories. p. 23\r\n| 5",
+      "hotspots": [
+        {
+          "index": 0,
+          "type": "internalPage",
+          "label": "744450331393234263234010",
+          "rect": {
+            "left": 54.87,
+            "top": 14.3,
+            "width": 40.27,
+            "height": 13.21
+          },
+          "targetPage": 7,
+          "url": null,
+          "targetIndex": 6
+        },
+        {
+          "index": 1,
+          "type": "internalPage",
+          "label": "74892029413231110458396",
+          "rect": {
+            "left": 54.87,
+            "top": 33.94,
+            "width": 40.27,
+            "height": 13.33
+          },
+          "targetPage": 13,
+          "url": null,
+          "targetIndex": 12
+        },
+        {
+          "index": 2,
+          "type": "internalPage",
+          "label": "752146957001694714480983",
+          "rect": {
+            "left": 54.93,
+            "top": 51.03,
+            "width": 40.27,
+            "height": 12.85
+          },
+          "targetPage": 27,
+          "url": null,
+          "targetIndex": 26
+        },
+        {
+          "index": 3,
+          "type": "internalPage",
+          "label": "756530870722307797397892",
+          "rect": {
+            "left": 54.87,
+            "top": 53.76,
+            "width": 40.27,
+            "height": 13.21
+          },
+          "targetPage": 19,
+          "url": null,
+          "targetIndex": 18
+        },
+        {
+          "index": 4,
+          "type": "internalPage",
+          "label": "76086944172319772416687",
+          "rect": {
+            "left": 54.91,
+            "top": 73.45,
+            "width": 40.27,
+            "height": 13.33
+          },
+          "targetPage": 23,
+          "url": null,
+          "targetIndex": 22
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "6",
+      "image": "./files/large/6dadb1a30626143ebe8c79c177c27a42.webp",
+      "thumb": "./files/thumb/76f048857b58cd73e86d207726a5248c.webp",
+      "searchText": "6 |",
+      "hotspots": []
+    },
+    {
+      "index": 6,
+      "label": "7",
+      "image": "./files/large/65efdcc34a786b9d7c0c57c19217bd50.webp",
+      "thumb": "./files/thumb/059573c793c909d15a6a873e41e68156.webp",
+      "searchText": "The Food Clean collection is designed for food processing environments \r\nwith strict hygiene requirements, with garments for HACCP risk classes 1–3.\r\nThe garments have no external pockets, significantly reducing the risk of \r\ncontamination. This makes them suitable for handling perishable foods.\r\nSafe and \r\nprofessional\r\nFood Clean\r\nJackets\r\nCoats\r\nTunics\r\nTrousers\r\nCoveralls\r\n| 7",
+      "hotspots": [
+        {
+          "index": 0,
+          "type": "internalPage",
+          "label": "87466767983296298998603",
+          "rect": {
+            "left": 66.07,
+            "top": 76.24,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": null,
+          "url": null
+        },
+        {
+          "index": 1,
+          "type": "internalPage",
+          "label": "123213724780011736454492",
+          "rect": {
+            "left": 66.07,
+            "top": 76.24,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 8,
+          "url": null,
+          "targetIndex": 7
+        },
+        {
+          "index": 2,
+          "type": "internalPage",
+          "label": "101250830152864545454447",
+          "rect": {
+            "left": 66.07,
+            "top": 87.21,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 10,
+          "url": null,
+          "targetIndex": 9
+        },
+        {
+          "index": 3,
+          "type": "internalPage",
+          "label": "13583185184506610393010",
+          "rect": {
+            "left": 66.07,
+            "top": 90.91,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 11,
+          "url": null,
+          "targetIndex": 10
+        },
+        {
+          "index": 4,
+          "type": "internalPage",
+          "label": "123662882141076890356054",
+          "rect": {
+            "left": 66.07,
+            "top": 79.88,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 9,
+          "url": null,
+          "targetIndex": 8
+        },
+        {
+          "index": 5,
+          "type": "internalPage",
+          "label": "124056853490406370864754",
+          "rect": {
+            "left": 66.07,
+            "top": 83.52,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 9,
+          "url": null,
+          "targetIndex": 8
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "label": "8",
+      "image": "./files/large/aef3c8fd1a3929331bf7468df26a476c.webp",
+      "thumb": "./files/thumb/34d7ce397eab9bdfaf1c03410d4685b7.webp",
+      "searchText": "Choice of colours\r\nFood Clean and Food Clean Light offer a choice of fabric weights \r\nto suit different working conditions and individual needs. \r\nThe lighter Food Clean Light fabric provides added comfort \r\nin warmer environments or during physically demanding work.\r\nA choice of two \r\nfabric weights\r\n White\r\n Light grey\r\n Light blue\r\n Blue\r\n Dark blue\r\n Red\r\n Dark green\r\n8 | Single-colour",
+      "hotspots": []
+    },
+    {
+      "index": 8,
+      "label": "9",
+      "image": "./files/large/4bd7c0cefb4cd384342ec904f87b69e0.webp",
+      "thumb": "./files/thumb/6433514f801e7572f30f2fc61ef8480d.webp",
+      "searchText": "Work jacket Work coat Work coat Slip-on tunic\r\nMaterial 65% polyester/35% cotton\r\n245 g/m²\r\n65% polyester/35% cotton\r\n245 g/m²\r\n65% polyester/35% cotton\r\n245 g/m²\r\n65% polyester/35% cotton\r\n215 g/m²\r\nDescription - Straight-cut work jacket with a classic \r\nturn-down collar\r\n- Adjustable cuffs ensure a snug fit\r\n- The internal chest pocket provides secure \r\nstorage space\r\n- Straight-cut work coat with a classic \r\nturn-down collar\r\n- Adjustable cuffs ensure a snug fit\r\n- The internal chest pocket provides secure \r\nstorage space\r\n- Straight-cut work coat with a classic \r\nturn-down collar\r\n- Adjustable cuffs ensure a snug fit\r\n- The internal chest pocket provides \r\nsecure storage space\r\n- Additional side pockets with protective \r\nflaps for hygienic working\r\n- Comfortable straight cut with side \r\nslits for freedom of movement\r\n- V-neck makes the tunic easy to put \r\non and take off\r\n- Long sleeves with fitted cuffs for \r\nhygienic working\r\n- The internal chest pocket provides \r\nsecure storage space\r\nSizes 2XS–8XL Men: 2XS–8XL, Women: 2XS–5XL 2XS–8XL S/R/L 2XS–8XL\r\nStandards HACCP–DIN 10524:2012\r\nRisk class 3: white, light grey, light blue\r\nRisk class 1: dark green, blue, dark blue, red\r\nHACCP–DIN 10524:2012\r\nRisk class 3: white, light grey, light blue\r\nRisk class 1: dark green, blue, dark blue, red\r\nHACCP–DIN 10524:2012 HACCP–DIN 10524:2012\r\nColours 1008061\r\n1008289\r\n1008290\r\n1008291\r\n1009310\r\n1008292\r\n1008063\r\n1008294\r\n1008295\r\n1008296\r\n1010158 1008070\r\nWith cuffs\r\nHACCP risk class 1\r\n1011944 1011958 1011949\r\n1011963\r\n1011960\r\n1011961\r\n1011962 / /\r\nWomen’s fit / 1008065 / /\r\nFood Clean Light – 215g/m2\r\nAdditional internal front pockets\r\nColours 1010270 1010271 1010272 1010279\r\n1010274\r\n1010275\r\n1010276\r\n1010277 / /\r\nWith cuffs\r\nHACCP risk class 1\r\n1011945 1011950 / /\r\nWomen’s fit / 1008078 / /\r\nFood Clean | 9",
+      "hotspots": []
+    },
+    {
+      "index": 9,
+      "label": "10",
+      "image": "./files/large/27424bf76036c146208aa65d45c850bf.webp",
+      "thumb": "./files/thumb/0f65ccefb90274190ed52fefa94bb0c5.webp",
+      "searchText": "10 | Single-colour",
+      "hotspots": []
+    },
+    {
+      "index": 10,
+      "label": "11",
+      "image": "./files/large/a26573aa6003275b6216301b64fde7e8.webp",
+      "thumb": "./files/thumb/7faeab18b52bf7e94fb61b81d91ee039.webp",
+      "searchText": "Food Clean\r\nTrousers with elasticated waistband Pull-on trousers Bib and brace overalls Coveralls\r\nMaterial 65% polyester/35% cotton\r\n245 g/m²\r\n65% polyester/35% cotton\r\n215g/m²\r\n65% polyester/35% cotton\r\n245 g/m²\r\n65% polyester/35% cotton\r\n245 g/m²\r\nDescription - Stylish, close-fitting trousers with an elasticated \r\nwaistband and belt loops\r\n- Pocket-free design for hygienic working\r\n- Can be customised with functional pockets, \r\nsuch as Cordura® knee pad pockets or practical \r\ncargo pockets – ideal for a variety of work \r\nrequirements\r\n- Comfortable pull-on trousers with \r\nan elasticated waistband\r\n- Internal back pocket on the right \r\nfor discreet, hygienic storage\r\n- Modern bib and brace overalls with \r\nstretch side panels for greater freedom \r\nof movement\r\n- Elasticated waistband\r\n- An internal bib pocket provides \r\nsecure storage\r\n- Optional Cordura® knee pad pockets \r\nor cargo pockets to suit different tasks\r\n- Comfortable coveralls with a \r\nclassic turn-down collar\r\n- Elasticated waistband\r\n- Adjustable sleeve openings\r\n- The internal chest pocket provides \r\nsecure storage space\r\n- Optional Cordura® knee pad pockets \r\nor cargo pockets to suit different tasks\r\nSizes Men: 38–76 S/R/L, Women: 32–68 S/R/L\r\nwith cuffs: 38–76 N\r\n2XS–8XL S/R/L\r\nwith cuffs: 2XS–8XL N\r\n38–76 S/R/L\r\nwith cuffs: 38–76 N\r\n2XS–5XL S/R/L\r\nwith cuffs: 2XS–5XL N\r\nStandards HACCP–DIN 10524:2012\r\nRisk class 3: white\r\nRisk class 1: dark green, dark blue, red\r\nHACCP–DIN 10524:2012 HACCP–DIN 10524:2012\r\nRisk class 3: white, light grey\r\nRisk class 1: dark green, dark blue, red\r\nHACCP–DIN 10524:2012\r\nColours 1009632\r\n1009630\r\n10009631\r\n1010159\r\n1008059 1008066\r\n1009312\r\n1009311\r\n1009314\r\n1009313 1008068\r\nWith cuffs\r\nHACCP risk class 1\r\n1011947 1011955 1011951 1011953\r\nWomen’s fit 1009636 / / /\r\nFood Clean Light – 215g/m2\r\nColours 1009620 / 1008079 /\r\nWith cuffs\r\nHACCP risk class 1\r\n1011948 / / /\r\nWomen’s fit 1009635 / / /\r\n| 11",
+      "hotspots": []
+    },
+    {
+      "index": 11,
+      "label": "12",
+      "image": "./files/large/6a874d0fe3c89e4da7ab7a9b572e33bc.webp",
+      "thumb": "./files/thumb/6d0e2fe4d5526700694404b811aad65b.webp",
+      "searchText": "12 |",
+      "hotspots": []
+    },
+    {
+      "index": 12,
+      "label": "13",
+      "image": "./files/large/68b08675828115c88726042f30176f81.webp",
+      "thumb": "./files/thumb/0e4cc635bfd733c7ed754b3315cb197a.webp",
+      "searchText": "Food Comfort\r\nJackets\r\nCoats\r\nTunics\r\nTrousers\r\nCoveralls\r\nDesigned for food processing areas with strict hygiene requirements, the \r\nFood Comfort collection combines high standards of hygiene with practical \r\nfeatures. It includes garments suitable for HACCP risk classes 1–3.\r\nEach garment is tailored to different tasks and designed for comfort \r\nand ease of movement.\r\nErgonomic and \r\nfunctional\r\n| 13",
+      "hotspots": [
+        {
+          "index": 0,
+          "type": "internalPage",
+          "label": "2195580118236706962692647",
+          "rect": {
+            "left": 66.07,
+            "top": 76.24,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 15,
+          "url": null,
+          "targetIndex": 14
+        },
+        {
+          "index": 1,
+          "type": "internalPage",
+          "label": "2196912693476803497634",
+          "rect": {
+            "left": 66.07,
+            "top": 79.88,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 15,
+          "url": null,
+          "targetIndex": 14
+        },
+        {
+          "index": 2,
+          "type": "internalPage",
+          "label": "21971332203941651799504579",
+          "rect": {
+            "left": 66.07,
+            "top": 83.52,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 15,
+          "url": null,
+          "targetIndex": 14
+        },
+        {
+          "index": 3,
+          "type": "internalPage",
+          "label": "2198431939947314297309807",
+          "rect": {
+            "left": 66.07,
+            "top": 87.15,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 17,
+          "url": null,
+          "targetIndex": 16
+        },
+        {
+          "index": 4,
+          "type": "internalPage",
+          "label": "219996241959463577714548",
+          "rect": {
+            "left": 66.07,
+            "top": 90.79,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 17,
+          "url": null,
+          "targetIndex": 16
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "label": "14",
+      "image": "./files/large/f565515c23e6099cf0ca9565543eee5f.webp",
+      "thumb": "./files/thumb/dd5d98ea17010f1e1e269578f981c2ca.webp",
+      "searchText": "Thoughtful design, practical pockets and cuts that allow easy \r\nmovement help staff work comfortably, even for long periods. \r\nWith jackets, coats, tunics, trousers and coveralls to choose \r\nfrom, you can equip your team for a wide range of tasks.\r\nSelected garments, including trousers and coveralls, are also \r\navailable in other colours to help you colour-code different \r\nhygiene zones and work areas.\r\nThis is how \r\ncomfortable \r\nworkwear can be\r\n White\r\n Light grey\r\n Light blue\r\n Blue\r\n Dark blue\r\n Dark green\r\nChoice of colours\r\n14 | Single-colour",
+      "hotspots": []
+    },
+    {
+      "index": 14,
+      "label": "15",
+      "image": "./files/large/801790e0f15a1d298a5073a1e9e0f169.webp",
+      "thumb": "./files/thumb/0692b1fd74365bba3ed05637435a7cf5.webp",
+      "searchText": "This is how \r\ncomfortable \r\nworkwear can be\r\nFood Comfort\r\nWork jacket Work coat Slip-on tunic\r\nMaterial 65% polyester/35% cotton \r\n245g/m2\r\n65% polyester/35% cotton \r\n245 g/m2\r\n65% polyester/35% cotton \r\n215 g/m2\r\nDescription - A modern work jacket with a slim \r\nfit and a stand-up collar \r\n- Long sleeves with adjustable \r\nopenings for a secure fit\r\n- The internal chest pockets \r\nprovide secure storage space\r\n- Underarm vents provide effective \r\nventilation\r\n- A modern, close-fitting work coat with \r\na stand-up collar and a vent for ease of \r\nmovement\r\n- Long sleeves with adjustable openings \r\nfor a secure fit\r\n- The internal chest pockets provide secure \r\nstorage space\r\n- Underarm vents provide effective ventilation\r\n- A comfortable slip-on tunic with a straight cut \r\nand side slits\r\n- Polo collar with a press-stud fastening makes \r\nthe tunic easy to put on and take off\r\n- Long sleeves with adjustable openings \r\nfor a secure fit\r\n- An internal chest pocket provides secure \r\nstorage space\r\n- Underarm vents provide effective ventilation\r\nSizes 2XS–8XL Men: 2XS–8XL\r\nWomen: 2XS–4XL\r\n2XS–8XL\r\nStandards HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 HACCP–DIN 10524:2012\r\nColour 1008047 1008049 1008055\r\nWith cuffs\r\nHACCP risk class 1\r\n1011946 1011959 / /\r\nWomen’s fit / 1008050 /\r\n| 15",
+      "hotspots": []
+    },
+    {
+      "index": 15,
+      "label": "16",
+      "image": "./files/large/8019460bd090d1137b61b1bd65de01f6.webp",
+      "thumb": "./files/thumb/6271439349b5d2e4c95fa7b5c779afee.webp",
+      "searchText": "16 | Single-colour",
+      "hotspots": []
+    },
+    {
+      "index": 16,
+      "label": "17",
+      "image": "./files/large/a25f86a004c713fd2f82eb02d80e0fa4.webp",
+      "thumb": "./files/thumb/d5a6aa7f0317aa9f68d19e952396d754.webp",
+      "searchText": "Food Comfort\r\nTrousers with elasticated waistband\r\nPull-on trousers Bib and brace overalls Coveralls\r\nMaterial 65% polyester/35% cotton \r\n245 g/m2\r\n65% polyester/35% cotton \r\n215 g/m2\r\n65% polyester/35% cotton \r\n245 g/m2\r\n65% polyester/35% cotton \r\n245 g/m2\r\nDescription - Comfortable, close-fitting trousers with \r\nbelt loops \r\n- Elasticated waistband at the back for a \r\ncomfortable fit\r\n- Side pockets offer plenty of storage space\r\n- Optional Cordura® knee pad pockets \r\nor cargo pockets to suit different tasks\r\n- Comfortable pull-on trousers with an \r\nelasticated waistband \r\n- Side pockets and an internal back pocket \r\nprovide plenty of storage space\r\n- Modern, close-fitting bib and brace overalls \r\nwith stretch side panels for greater freedom \r\nof movement\r\n- Elasticated waistband\r\n- A spacious internal bib pocket and side \r\npockets provide plenty of storage\r\n- Optional Cordura® knee pad pockets\r\n or cargo pockets to suit different tasks\r\n- Comfortable coveralls with a classic \r\nturn-down collar\r\n- Elasticated waistband\r\n- Adjustable sleeve openings for a secure fit\r\n- An internal chest pocket and side pockets \r\nprovide secure storage\r\n- Optional Cordura® knee pad pockets \r\nor cargo pockets to suit different tasks\r\nSizes Men: 38–76 S/R/L, Women: 32–68 S/R/L\r\nwith cuffs: 38–76 N\r\n2XS–8XL S/R/L\r\nwith cuffs: 2XS–8XL N\r\n2XS–8XL S/R/L\r\nwith cuffs: 2XS–8XL N\r\n2XS–5XL S/R/L\r\nwith cuffs: 2XS–5XL N\r\nStandards HACCP–DIN 10524:2012\r\nRisk class 3: white, light grey, light blue\r\nRisk class 1: dark green, dark blue, blue\r\nHACCP–DIN 10524:2012 HACCP–DIN 10524:2012 HACCP–DIN 10524:2012\r\nRisk class 3: white\r\nRisk class 1: dark blue, blue\r\nColours 1009625\r\n1009622\r\n1010273\r\n1009624\r\n1009623\r\n1009621\r\n1008045 1008051 1010278 1008053 1008301 1008302\r\nWith cuffs\r\nHACCP risk class 1\r\n1011943 1011956 1011952 1011954\r\nWomen’s fit 1009629 / / /\r\n| 17",
+      "hotspots": []
+    },
+    {
+      "index": 17,
+      "label": "18",
+      "image": "./files/large/05375ca24a2c60aecb928271db7c81d4.webp",
+      "thumb": "./files/thumb/0c5af74b9fca4bd452b940c32e455965.webp",
+      "searchText": "18 |",
+      "hotspots": []
+    },
+    {
+      "index": 18,
+      "label": "19",
+      "image": "./files/large/7ba406e32f9a5cff5a9bae27bea1b725.webp",
+      "thumb": "./files/thumb/8c869d52d0a82a87dfcd12403f930a1e.webp",
+      "searchText": "Food Deluxe\r\nJackets\r\nCoats\r\nTrousers\r\nThe Food Deluxe collection is well suited to medium-risk food \r\nprocessing environments.\r\nIdeal for beverage production and packaged food processing, \r\nit combines practical features with a design that supports \r\nhygienic working. \r\nSmart and \r\npractical\r\n| 19",
+      "hotspots": [
+        {
+          "index": 0,
+          "type": "internalPage",
+          "label": "3212199918676895156403265",
+          "rect": {
+            "left": 66.07,
+            "top": 83.52,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 20,
+          "url": null,
+          "targetIndex": 19
+        },
+        {
+          "index": 1,
+          "type": "internalPage",
+          "label": "32166987026122746423796",
+          "rect": {
+            "left": 66.07,
+            "top": 87.15,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 20,
+          "url": null,
+          "targetIndex": 19
+        },
+        {
+          "index": 2,
+          "type": "internalPage",
+          "label": "322084747624476039531622",
+          "rect": {
+            "left": 66.07,
+            "top": 90.79,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 20,
+          "url": null,
+          "targetIndex": 19
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "label": "20",
+      "image": "./files/large/8e28fe76270a83237a833e8c49115a04.webp",
+      "thumb": "./files/thumb/067b3ea1b366b199bfebc7941c74713e.webp",
+      "searchText": "Spacious external pockets and leg pockets with flaps \r\nprovide secure storage, helping staff work efficiently \r\nwhile maintaining hygiene.\r\nColour accents make it clear at a glance which hygiene \r\nzone or work area each garment is intended for.\r\nEfficiency for \r\nfast-paced \r\nenvironments\r\nWhite/red\r\nWhite/blue\r\nWhite/green\r\nWhite\r\nLight grey\r\nBlue\r\nDark blue\r\nDark green\r\nChoice of colours\r\n20 | Two-colour",
+      "hotspots": []
+    },
+    {
+      "index": 20,
+      "label": "21",
+      "image": "./files/large/ad90bb08a148e4a428e382c653e76426.webp",
+      "thumb": "./files/thumb/cddfee5ed74c2643db4c346b091e1d2e.webp",
+      "searchText": "Food Deluxe\r\nWork jacket Work coat Trousers with elasticated \r\nwaistband\r\nPull-on trousers Bib and brace overalls\r\nMaterial 65% polyester/35% cotton \r\n245 g/m2\r\n65% polyester/35% cotton\r\n245 g/m2\r\n65% polyester/35% cotton \r\n245 g/m2\r\n65% polyester/35% cotton \r\n215 g/m2\r\n65% polyester/35% cotton\r\n245 g/m2\r\nDescription - Modern, close-fitting work jacket\r\n- The stand-up collar and the \r\ncontrasting inserts on the \r\nshoulders create a clean, \r\nhigh-quality look\r\n- Long sleeves with adjustable \r\nopenings for a secure fit\r\n- For practical storage: two internal \r\nchest pockets with press studs\r\n- Underarm vents provide effective \r\nventilation\r\n- Modern, close-fitting work coat\r\n- The stand-up collar and the \r\ncontrasting inserts on the \r\nshoulders create a clean, \r\nhigh-quality look\r\n- A vent at the back provides \r\ngreater freedom of movement\r\n- Long sleeves with adjustable \r\nopenings for a secure fit\r\n- Two internal chest pockets with \r\npress studs\r\n- Underarm vents provide effective \r\nventilation\r\n- Modern, close-fitting trousers \r\nwith belt loops \r\n- Elasticated waistband at the \r\nback for a comfortable fit\r\n- Side pockets, back and leg \r\npockets provide plenty of \r\nstorage space\r\n- Optional Cordura® knee pad \r\npockets to suit different tasks\r\n- Modern, comfortable pull-on \r\ntrousers with an elasticated \r\nwaistband \r\n- Side pockets, back and leg \r\npockets provide plenty of storage \r\nspace\r\n- Modern, close-fitting bib and \r\nbrace overalls with stretch side \r\npanels for greater freedom of \r\nmovement\r\n- Elasticated waistband\r\n- Spacious front, back and leg \r\npockets, as well as an internal \r\nbib pocket, provide plenty of \r\nstorage space\r\n- Optional Cordura® knee pad \r\npockets to suit different tasks\r\nSizes 2XS–8XL 2XS–8XL 38–76 S/R/L 2XS–8XL S/R/L 2XS–8XL S/R/L\r\nStandards HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 HACCP–DIN 10524:2012\r\nRisk class 3: white, light grey\r\nRisk class 1: dark green, dark blue, blue\r\nHACCP–DIN 10524:2012 HACCP–DIN 10524:2012\r\nRisk class 3: white, light grey \r\nRisk class 1: dark blue, blue\r\nColours 1008039\r\n1008284\r\n1008283 1008040\r\n1008282\r\n1008281 1009627\r\n1009626\r\n1009952\r\n1010034\r\n1010033 \r\n1008037 1008041\r\n1008298\r\n1008299 \r\n1008300\r\nWith cuffs\r\nHACCP risk class 1\r\n/ / / 1011957\r\n(2XS–8XL N)\r\n/\r\n| 21",
+      "hotspots": []
+    },
+    {
+      "index": 21,
+      "label": "22",
+      "image": "./files/large/991302c56ee5f932f8102291789ba9bc.webp",
+      "thumb": "./files/thumb/fb3676a3e1e214d41c5735ac086131af.webp",
+      "searchText": "22 |",
+      "hotspots": []
+    },
+    {
+      "index": 22,
+      "label": "23",
+      "image": "./files/large/be8257e295af463dcb072ceeafd52a6d.webp",
+      "thumb": "./files/thumb/151eec86b4f9aba31a8846665a80799c.webp",
+      "searchText": "Food Xtra\r\nJackets\r\nBodywarmers\r\nCoats\r\nTrousers\r\nThe Food Xtra collection was developed for use in temperatures as low as \r\n–49°C – ideal for cold store and deep-freeze areas, handling frozen goods, \r\nand deep-freeze logistics and storage.\r\nReliable in extreme \r\ntemperatures\r\n| 23",
+      "hotspots": [
+        {
+          "index": 0,
+          "type": "internalPage",
+          "label": "382594796680065447157583",
+          "rect": {
+            "left": 65.9,
+            "top": 79.88,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 25,
+          "url": null,
+          "targetIndex": 24
+        },
+        {
+          "index": 1,
+          "type": "internalPage",
+          "label": "3826458172914228621534107",
+          "rect": {
+            "left": 65.92,
+            "top": 83.52,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 25,
+          "url": null,
+          "targetIndex": 24
+        },
+        {
+          "index": 2,
+          "type": "internalPage",
+          "label": "382731220488302886942428",
+          "rect": {
+            "left": 65.92,
+            "top": 87.15,
+            "width": 11.57,
+            "height": 2.3
+          },
+          "targetPage": 29,
+          "url": null,
+          "targetIndex": 28
+        },
+        {
+          "index": 3,
+          "type": "internalPage",
+          "label": "38280367452993783351112",
+          "rect": {
+            "left": 65.92,
+            "top": 90.67,
+            "width": 11.57,
+            "height": 2.42
+          },
+          "targetPage": 25,
+          "url": null,
+          "targetIndex": 24
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "label": "24",
+      "image": "./files/large/983bfd4d93ed0b7f4d9b428de7513a5b.webp",
+      "thumb": "./files/thumb/55f4eecb5ff573f6e0ce863d6a41f092.webp",
+      "searchText": "Insulated jackets and bodywarmers keep you warm \r\nand comfortable while providing good visibility and full \r\nfreedom of movement – even at low temperatures.\r\nIdeal for cooler \r\nenvironments\r\nThermal clothing\r\n White\r\nChoice of colours\r\n24 |",
+      "hotspots": []
+    },
+    {
+      "index": 24,
+      "label": "25",
+      "image": "./files/large/6cbe5eab3c09b0806cd51ccee0ba9458.webp",
+      "thumb": "./files/thumb/b0e5fc9bce056e622933559ca09df87a.webp",
+      "searchText": "Food Xtra\r\nThermal jacket Thermal jacket Thermal bodywarmer Thermal bodywarmer Thermal bib and brace \r\noveralls\r\nMaterial 100% polyester \r\n370 g/m2\r\n65% polyester/35% cotton\r\n300 g/m2\r\n65% polyester/35% cotton\r\n490 g/m2\r\n65% polyester/35% cotton \r\n245 g/m2\r\n65% polyester/35% cotton \r\n300 g/m2\r\nDescription - A warm thermal jacket with quilted \r\npadding with a stand-up collar \r\nthat fits snugly around the neck, \r\noffering reliable protection in cold \r\nconditions\r\n- Comfortable fit with an extended \r\nback for maximum freedom of \r\nmovement\r\n- The zip makes it quick to put on \r\nand take off\r\n- Sleeve cuffs help retain body heat\r\n- A handy internal chest pocket \r\nprovides secure storage space\r\n- A warm, lined thermal jacket with a \r\nstand-up collar that fits snugly \r\naround the neck, offering reliable \r\nprotection in cold conditions\r\n- Comfortable fit with an extended \r\nback for maximum freedom of \r\nmovement\r\n- Adjustable sleeve openings \r\nhelp retain body heat\r\n- Handy internal chest pockets \r\nprovide secure storage space\r\n- A warm thermal bodywarmer with \r\nquilted padding, red contrast \r\nstitching and an elasticated \r\nstand-up collar for extra protection \r\nagainst the cold\r\n- Straight cut and extended back for \r\nmaximum freedom of movement\r\n- Elasticated ribbing around the \r\narmholes ensures a good fit and \r\nprovides extra protection against \r\nthe cold\r\n- A warm, lined thermal bodywarmer with two press studs and a \r\nstand-up collar that fits snugly \r\naround the neck\r\n- Straight cut and extended back for \r\nmaximum freedom of movement\r\n- Warm, lined thermal bib and brace \r\noveralls with a comfortable fit and \r\nstretch side panels for maximum \r\nfreedom of movement\r\n- Elasticated straps with clip \r\nbuckles for a secure fit \r\n- Leg openings with press-stud \r\nadjustment for a personalised \r\nfit and good thermal insulation\r\nSizes XS–4XL 42–66 | 94–110 38–72 | 19–33 | 84–122 S–2XL 42–66 | 94–110\r\nStandards / Based on the HACCP standard / / Based on the HACCP standard\r\nColour 1007684 1001921 1001920 1007033 1001922\r\nBodywarmer / 1010393\r\nCertified to:\r\nHACCP–DIN 10524:2012\r\n/ / /\r\n| 25",
+      "hotspots": []
+    },
+    {
+      "index": 25,
+      "label": "26",
+      "image": "./files/large/e97d0a4ec62754930d90ea1752f858f4.webp",
+      "thumb": "./files/thumb/0a913a76219f48b8a4839ff911ff172d.webp",
+      "searchText": "Even during extended periods of work in chilled and \r\ndeep-freeze environments at temperatures well below \r\n0°C, the Food-Xtra collection provides reliable EN \r\n342-certified protection, keeping wearers warm \r\nand comfortable.\r\nThe comfortable \r\nsolution for cold stores\r\nCold-protective workwear\r\nDark blue\r\nChoice of colours\r\n26 |",
+      "hotspots": []
+    },
+    {
+      "index": 26,
+      "label": "27",
+      "image": "./files/large/7d816f08941e038fab82b3e8dd49e213.webp",
+      "thumb": "./files/thumb/5875f21f8f73f4183d50332e8f1366f1.webp",
+      "searchText": "Food Xtra\r\nThermal parka Thermal parka Thermal bodywarmer Thermal bib and brace overalls\r\nMaterial 100% polyamide \r\n630 g/m2\r\n100% polyamide \r\n415 g/m2\r\n65% polyester/35% cotton \r\n210 g/m2\r\n100% polyamide \r\n630 g/m2\r\nDescription - Highly insulated thermal parka with faux-fur \r\nlining, a turn-down collar and a hook-andloop tab for fastening at the neck\r\n- Red woven reflective tape front and back \r\nfor good visibility\r\n- Back with an elasticated waistband for a \r\ncomfortable fit\r\n- Fastens with a zip and an additional row of \r\npress studs\r\n- Sleeves with elasticated knitted cuffs for \r\nexcellent thermal insulation\r\n- Practical storage space: a zipped chest \r\npocket on the left and two side pockets \r\nwith flaps\r\n- Highly insulated thermal parka with a \r\nstand-up collar and warm fleece lining\r\n- Reflective piping front and back for good \r\nvisibility\r\n- Back with an elasticated waistband for a \r\ncomfortable fit\r\n- Fastens with a zip and an additional row of \r\npress studs\r\n- Sleeves with elasticated knitted cuffs for \r\nexcellent thermal insulation\r\n- Ample storage space: a pen compartment, \r\ntwo side pockets and two internal pockets \r\nfor a mobile phone and a pick-by-voice \r\ndevice\r\n- Warm, lined thermal bodywarmer with \r\na hood\r\n- Comfortable fit with an extended back \r\nfor maximum freedom of movement\r\n- Fastens at the front with a contrasting \r\nred zip\r\n- Handy storage space: two zipped side \r\npockets\r\n- Highly insulating, lined thermal bib and \r\nbrace overalls with a high waist that \r\nreliably protects the torso from the cold\r\n- Elasticated straps with clip buckles for a \r\nsecure fit and excellent comfort\r\n- Side zips let the wearer regulate temperature for all-day comfort as conditions \r\nchange\r\n- Front zip makes the overalls easy to put \r\non and take off\r\n- Red woven reflective tape on the legs for \r\ngood visibility\r\n- Two side pockets provide practical \r\nstorage space\r\n- Knee pad pockets promote ergonomic \r\nworking\r\nSizes 42/44–66/68 46/48–62/64 2XS–4XL 46/48–66/68\r\nStandards EN 342\r\n \r\n EN 342\r\n \r\n/ EN 342\r\n \r\nColour 1003559 1001776 1001926 1003558 \r\n| 27",
+      "hotspots": []
+    },
+    {
+      "index": 27,
+      "label": "28",
+      "image": "./files/large/30270248456c0d6f942c4a68c5eaf6f9.webp",
+      "thumb": "./files/thumb/1d5bb79f5b22dfd875b14a70764c5cf0.webp",
+      "searchText": "A range of accessories complements your HACCP \r\nworkwear wherever extra protection and hygiene \r\nare needed. \r\nJackets, coats, bib aprons and headwear are \r\ndesigned to meet the specific requirements of \r\nthe food processing industry. Skin-friendly \r\nmaterials, easy-care fabrics and quality workmanship deliver comfort and safety on the job.\r\nThe perfect addition \r\nfor every job\r\n White\r\nChoice of colours\r\n28 | Supplementary products",
+      "hotspots": []
+    },
+    {
+      "index": 28,
+      "label": "29",
+      "image": "./files/large/bdd38fe1c86fdb3d005dca369245f388.webp",
+      "thumb": "./files/thumb/f1a39c0eb7fc7c08623cf0e0cb5c1bbf.webp",
+      "searchText": "Food Xtra\r\nWork jacket \r\nwith roll-up sleeves\r\nWork coat Hooded \r\nwork coat\r\nBib apron Cap Hygiene hood Cap \r\nwith hairnet\r\nMaterial 65% polyester/\r\n35% cotton \r\n210 g/m2\r\n65% polyester/\r\n35% cotton \r\n245 g/m2\r\n65% polyester/\r\n35% cotton \r\n245 g/m2\r\n65% polyester/\r\n35% cotton \r\n270 g/m2\r\n65% polyester/\r\n35% cotton \r\n245 g/m2\r\n45% polyester/\r\n55% cotton \r\n185 g/m2\r\n100% polyester\r\n70 g/m2\r\nDescription - A practical work jacket with a \r\nclassic turn-down collar\r\n- Long sleeves with fastenings \r\nto hold them in place when \r\nrolled up\r\n- Sleeve openings with \r\npress-stud adjustment \r\nfor hygienic working\r\n- Internal chest pocket for \r\nsecure storage\r\n- A practical work coat with a \r\nclassic turn-down collar and a \r\nstraight fit\r\n- Underarm vents and an \r\nadjustable hem for all-day \r\ncomfort\r\n- Practical storage space: two \r\ninternal chest pockets, the \r\nleft-hand one with a separate \r\npen compartment\r\n- Practical work coat with a \r\nloose fit\r\n- A high-neck hood with an \r\nelasticated band ensures \r\nhygienic working conditions\r\n- Long sleeves with cuffs for a \r\ngood fit\r\n- Internal chest pocket for \r\nsecure storage\r\n- Practical bib apron \r\nwith side ties\r\n- Practical cap with \r\na reinforced peak \r\nand elasticated \r\nback for a secure, \r\ncomfortable fit\r\n- Practical hood for \r\nhygienic working \r\n- The integrated \r\nshoulder panel \r\nensures a secure \r\nfit and prevents \r\nthe hood from \r\nslipping\r\n- Practical hygiene \r\ncap with a \r\nreinforced peak \r\nand integrated \r\nhairnet\r\n- The hook-and-loop \r\nfastening at the \r\nback allows the \r\ncap to be adjusted \r\nfor a secure and \r\ncomfortable fit\r\nSizes 38–72 | 84–122 | 19–33 42–64 | 90–114 | 23–30 44–70 1–5 50–66 One size fits all One size fits all\r\nStandards HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 Based on the HACCP standard / / / /\r\nColour 1001692 1001134 1008130 1001541 1002027 1007113 1009458\r\nWomen’s fit\r\nwith a stand-up \r\ncollar\r\n1001691 (30–68) / / / / / /\r\n| 29",
+      "hotspots": []
+    },
+    {
+      "index": 29,
+      "label": "30",
+      "image": "./files/large/561267c3636f2ea51df6cdd4f6777568.webp",
+      "thumb": "./files/thumb/a37ddd4d49814646c9e5dd4a95f7b400.webp",
+      "searchText": "30 |",
+      "hotspots": []
+    },
+    {
+      "index": 30,
+      "label": "31",
+      "image": "./files/large/d85608324767b409176462f0b48b1c5c.webp",
+      "thumb": "./files/thumb/7f3b473313550f5e8878e744823840ea.webp",
+      "searchText": "Smart: FLEX Comfort \r\nThe smart choice for those on a budget: ideal for a stable \r\nworkforce and normal working conditions. Cleaning, repairs \r\nand delivery included – a reliable and cost-effective option.\r\nCustomisable: FLEX Cozy\r\nGreater flexibility for a dynamic workforce: free size exchanges \r\nincluded, with the option to remove up to 20% of wearers per \r\nyear. This keeps your budget predictable while ensuring your \r\nentire workforce is fully equipped.\r\nComplete peace of mind with FLEX Prime\r\nOur premium solution for workwear subject to heavy use \r\nincludes additional cover for premature wear, giving you \r\nmaximum cost certainty – even in the most demanding \r\nworkplaces.\r\nCWS Workwear’s FLEX service gives you \r\nmore than hygienic workwear. We take \r\ncare of the professional cleaning, reliable \r\nrepair and on-time delivery of your \r\nworkwear and protective clothing, so \r\nyou don't have to. Choose the contract \r\nmodel that best suits your business.\r\nWorkwear as \r\na service\r\nWorkwear as a service\r\n| 31",
+      "hotspots": []
+    },
+    {
+      "index": 31,
+      "label": "32",
+      "image": "./files/large/b3c3d6c4d3bbf582df460eaefb7d0c4f.webp",
+      "thumb": "./files/thumb/031c118bef5c3432cc355f9f2726a6ec.webp",
+      "searchText": "Workwear as a service\r\nImage edited with AI\r\nYour workwear is in good hands with us at each of our 33 modern \r\nindustrial laundries. You can rely on our service driver to collect \r\nyour worn workwear.\r\nEach item then undergoes a standardised washing, \r\ninspection and finishing process tailored to the material. \r\nFollowing the final quality check, we return your workwear \r\nclean and on time – straight to your employees’ personal \r\nlocker compartments, if you wish.\r\nSimply put \r\nit on – we \r\ntake care \r\nof the rest.\r\n32 |",
+      "hotspots": []
+    },
+    {
+      "index": 32,
+      "label": "33",
+      "image": "./files/large/ae7ec533469080c6587cf29fd73ffa55.webp",
+      "thumb": "./files/thumb/e9aa30ed45a518e43087ef48a9eb17b5.webp",
+      "searchText": "When you take off your work clothes, that’s when our work begins:\r\nYour workwear will be hygienically cleaned in our certified laundries, \r\nchecked by our specialist staff and, if necessary, repaired or replaced \r\nstraight away.\r\nWe’ll collect your \r\nworn workwear \r\nfrom your \r\npremises.\r\nWe’ll deliver your \r\nworkwear back to you, \r\nready for use, and \r\ncollect the next load \r\nof soiled laundry.\r\n| 33",
+      "hotspots": []
+    },
+    {
+      "index": 33,
+      "label": "34",
+      "image": "./files/large/75bcffa7ef5f4a06b8615d09e16b585b.webp",
+      "thumb": "./files/thumb/ca243340be1722b09eab9e0d5b23f427.webp",
+      "searchText": "In person or online, we’re your trusted \r\npartner for workwear. With modern tools, \r\nwe simplify processes, save time and \r\ndeliver a service you’ll love.\r\n34 |",
+      "hotspots": []
+    },
+    {
+      "index": 34,
+      "label": "35",
+      "image": "./files/large/87bc84efb05f93f2ff19befad7468fb7.webp",
+      "thumb": "./files/thumb/b4256ab428bb23f30fe4dd9eda579f52.webp",
+      "searchText": "Our Smart Lockers keep workwear available around the clock. \r\nStock management is fully automated, with no manual effort \r\nrequired.\r\nStay in control with \r\nSmart Lockers\r\nFind the right size in just a few clicks\r\nDetermine your staff’s clothing sizes online. Finding the right fit has \r\nnever been easier. Avoid incorrect deliveries, reduce returns and \r\nensure your staff are always comfortable – all in just a few clicks.\r\nSubmit repair requests through the app\r\nReport damaged clothing using your smartphone. Simply scan the \r\nbarcode on your garment and submit a repair request – it’s quick \r\nand flexible, with no need to make any further arrangements.\r\nMore than a logo – make your workwear part of \r\nyour brand\r\nBoost your company’s image with personalised workwear. We apply \r\nwash-resistant logos, names or job titles to your garments in line with \r\nyour corporate identity guidelines. This ensures a consistent look and \r\nbuilds trust among your customers.\r\nPersonal and digital support for you\r\nWhether you work 9 to 5 or 24/7, all your contract and service \r\ninformation is available at any time through our customer portal. \r\nYou can also request changes and track their progress.\r\nFull transparency with RFID technology \r\nSmart RFID technology allows you to keep track of your workwear \r\nstock. It flags shortages and surpluses, making your inventory \r\nmanagement more efficient and more secure.\r\nYour workwear, delivered straight to your locker\r\nWith our locker service, your employees receive freshly laundered \r\nworkwear delivered directly to their personal locker compartments. \r\nHygienic, secure and well organised.\r\n| 35",
+      "hotspots": [
+        {
+          "index": 0,
+          "type": "externalLink",
+          "label": "5918975552944783033352763",
+          "rect": {
+            "left": 32.82,
+            "top": 49.09,
+            "width": 8.57,
+            "height": 12.12
+          },
+          "targetPage": null,
+          "url": "cws-main.kundenheimat.de/en/workwear/additional-solutions/smartlockers"
+        },
+        {
+          "index": 1,
+          "type": "externalLink",
+          "label": "591661359662443534952762",
+          "rect": {
+            "left": 87.32,
+            "top": 5.82,
+            "width": 8.57,
+            "height": 12.12
+          },
+          "targetPage": null,
+          "url": "www.cws.com/en/workwear/core-solutions/service-center"
+        },
+        {
+          "index": 2,
+          "type": "externalLink",
+          "label": "5914100694748205752762",
+          "rect": {
+            "left": 87.3,
+            "top": 20.73,
+            "width": 8.57,
+            "height": 12.12
+          },
+          "targetPage": null,
+          "url": "www.cws.com/en/workwear/additional-solutions/online-sizing"
+        },
+        {
+          "index": 3,
+          "type": "externalLink",
+          "label": "5912486459455393521552762",
+          "rect": {
+            "left": 87.3,
+            "top": 35.39,
+            "width": 8.57,
+            "height": 12.12
+          },
+          "targetPage": null,
+          "url": "www.cws.com/en/workwear/additional-solutions/cws-repair-app"
+        },
+        {
+          "index": 4,
+          "type": "externalLink",
+          "label": "5910997390450321854552762",
+          "rect": {
+            "left": 87.3,
+            "top": 50.12,
+            "width": 8.57,
+            "height": 12.12
+          },
+          "targetPage": null,
+          "url": "cws-main.kundenheimat.de/en/workwear/additional-solutions/smartlockers"
+        },
+        {
+          "index": 5,
+          "type": "externalLink",
+          "label": "590864308169720202852762",
+          "rect": {
+            "left": 87.3,
+            "top": 64.73,
+            "width": 8.57,
+            "height": 12.12
+          },
+          "targetPage": null,
+          "url": "www.cws.com/en/workwear/additional-solutions/locker-service"
+        },
+        {
+          "index": 6,
+          "type": "externalLink",
+          "label": "590681336451356993552762",
+          "rect": {
+            "left": 87.3,
+            "top": 79.64,
+            "width": 8.57,
+            "height": 12.12
+          },
+          "targetPage": null,
+          "url": "www.cws.com/en/workwear/additional-solutions/logo-service"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "label": "36",
+      "image": "./files/large/ad24d8baaac23d9c91072eaf2bf838a1.webp",
+      "thumb": "./files/thumb/aeb39c9dc3333cbb0b0cf0e5cbe2be62.webp",
+      "searchText": "Small footprint, \r\ngreen heart\r\nWe are reimagining workwear for the \r\nworld we want to leave behind for our \r\nchildren and grandchildren. Sustainable \r\nmaterials, resource-efficient garment \r\ncare and durable clothing create a cycle \r\nthat protects both the environment and \r\npeople – today and in the future.\r\n36 |",
+      "hotspots": [
+        {
+          "index": 0,
+          "type": "externalLink",
+          "label": "638157926759736388523937",
+          "rect": {
+            "left": 83.63,
+            "top": 76.73,
+            "width": 12,
+            "height": 16.97
+          },
+          "targetPage": null,
+          "url": "www.cws.com/en/workwear/about-us/sustainable-workwear/emission-calculator"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "label": "37",
+      "image": "./files/large/a4e9937c84d617a3e45d897ad39b9431.webp",
+      "thumb": "./files/thumb/81ae42222a53b2eeeef770432c765f8e.webp",
+      "searchText": "Responsible supply \r\nchains\r\nOur collections are designed in Germany and manufactured in \r\nEurope – which means short supply chains and a strong European \r\nsupply base. \r\nAll our suppliers meet ESG criteria and, by signing the CWS \r\nWorkwear Code of Conduct, commit to strict social and \r\nenvironmental standards. We ensure that these values \r\nare put into practice through regular amfori BSCI audits.\r\nQuality made in Europe: we are passionate about sustainability \r\nand local sourcing.\r\n-70%\r\nOur workwear enables you to reduce the \r\nharmful environmental impact typically \r\nassociated with the use of workwear by \r\n70 per cent.\r\n68%\r\nOf our raw materials are sustainable – \r\nthey are either recyclable or made from \r\nrenewable resources.\r\n| 37",
+      "hotspots": []
+    },
+    {
+      "index": 37,
+      "label": "38",
+      "image": "./files/large/ffad215f7cd3390e70d70b310fa8467b.webp",
+      "thumb": "./files/thumb/d775024dd8178a0c168ca9287cabb1f0.webp",
+      "searchText": "Let’s make your business more sustainable – together. The textile \r\nindustry is one of the biggest contributors to global greenhouse gas \r\nemissions. We’ve always worked differently: long before anyone \r\ncoined the term “circular economy”, we were developing eco-friendly \r\nreusable solutions – and building sustainability into everything we do, \r\nday in, day out.\r\nBecause we don’t just take care of workwear. \r\nWe take responsibility.\r\n100%\r\nsafety\r\nThanks to EN ISO 15797 certification, \r\nyour workwear provides reliable \r\nprotection at all times, even after \r\nintensive cleaning and numerous \r\nwash cycles.\r\n100%\r\nfit for the \r\nfuture\r\nWe’re continually developing our \r\nsustainable workwear range to make \r\nresponsible use of environmentally \r\nfriendly, resource-efficient materials. \r\nThe result is workwear that performs \r\ntoday and sets the standard for \r\ntomorrow.\r\nThe benefits \r\nof industrial \r\nlaundering\r\n9001:2015 45001:2018 14001:2015 BS EN 14065 Class 1–3\r\n38 |",
+      "hotspots": []
+    },
+    {
+      "index": 38,
+      "label": "39",
+      "image": "./files/large/3329868e2f2d9ff6b7ae67e0d2adb2ed.webp",
+      "thumb": "./files/thumb/785c803560c419738b26d9e0c1810d48.webp",
+      "searchText": "The benefits \r\nof industrial \r\nlaundering\r\n| 39",
+      "hotspots": []
+    },
+    {
+      "index": 39,
+      "label": "40",
+      "image": "./files/large/0ac024a3b9881ecfd46a41163d78b19e.webp",
+      "thumb": "./files/thumb/daf8e2e44dbecd54b825ea164868b002.webp",
+      "searchText": "Thanks for stopping by\r\n40 |",
+      "hotspots": []
+    },
+    {
+      "index": 40,
+      "label": "41",
+      "image": "./files/large/569c961f16c4fc53edee28dca061c9f2.webp",
+      "thumb": "./files/thumb/95b464c0dee492d997251c578f0f91c5.webp",
+      "searchText": "| 41",
+      "hotspots": []
+    },
+    {
+      "index": 41,
+      "label": "42",
+      "image": "./files/large/edb78ffaece55a3379eb65177dba795c.webp",
+      "thumb": "./files/thumb/0180f6a4ea8f301443969dc8c3845aaf.webp",
+      "searchText": "Even more \r\nworkwear\r\nCWS Workwear offers a wide range of industrial and trade clothing, \r\nwelders’ protective clothing, multi-standard protective clothing, \r\nhigh-visibility clothing and other personal protective equipment (PPE), \r\nas well as matching T-shirts, polo shirts, sweatshirts, hoodies, fleece \r\nand softshell jackets, bodywarmers, rainwear and much more. \r\nJust ask us about our other catalogues and \r\noffers.\r\n42 |",
+      "hotspots": []
+    },
+    {
+      "index": 42,
+      "label": "43",
+      "image": "./files/large/ad9b81ab223d91f33f0b287af74f16c2.webp",
+      "thumb": "./files/thumb/b1aa3b3ee0ce4c5dd37254707b866f3d.webp",
+      "searchText": "| 43",
+      "hotspots": []
+    },
+    {
+      "index": 43,
+      "label": "44",
+      "image": "./files/large/56f1c1678d79c605eb7f4a602d428620.webp",
+      "thumb": "./files/thumb/24d6ef0c3503cb454876a5d7e4aaa582.webp",
+      "searchText": "44 |\r\ncws.com/workwear\r\nFollow CWS Workwear on\r\nVersion 001/2026-09",
+      "hotspots": [
+        {
+          "index": 0,
+          "type": "externalLink",
+          "label": "682860292731960273487475",
+          "rect": {
+            "left": 8.38,
+            "top": 84.41,
+            "width": 3.51,
+            "height": 4.97
+          },
+          "targetPage": null,
+          "url": "www.facebook.com/CWSWorkwearGroup"
+        },
+        {
+          "index": 1,
+          "type": "externalLink",
+          "label": "68295143380797027785694093",
+          "rect": {
+            "left": 11.96,
+            "top": 84.41,
+            "width": 3.51,
+            "height": 4.97
+          },
+          "targetPage": null,
+          "url": "www.instagram.com/cwsworkwear/"
+        },
+        {
+          "index": 2,
+          "type": "externalLink",
+          "label": "6830282578009879325699002",
+          "rect": {
+            "left": 15.54,
+            "top": 84.41,
+            "width": 3.51,
+            "height": 4.97
+          },
+          "targetPage": null,
+          "url": "www.youtube.com/@CWSWorkwear"
+        },
+        {
+          "index": 3,
+          "type": "externalLink",
+          "label": "683103197430790460303977",
+          "rect": {
+            "left": 19.12,
+            "top": 84.41,
+            "width": 3.51,
+            "height": 4.97
+          },
+          "targetPage": null,
+          "url": "www.tiktok.com/@cws.workwear"
+        },
+        {
+          "index": 4,
+          "type": "externalLink",
+          "label": "683221655337716987210968",
+          "rect": {
+            "left": 4.8,
+            "top": 91.27,
+            "width": 12,
+            "height": 2.18
+          },
+          "targetPage": null,
+          "url": "cws.com/workwear"
+        },
+        {
+          "index": 5,
+          "type": "externalLink",
+          "label": "772544771183485434167282",
+          "rect": {
+            "left": 4.8,
+            "top": 84.36,
+            "width": 3.51,
+            "height": 4.97
+          },
+          "targetPage": null,
+          "url": "www.linkedin.com/company/cws-workwear"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+﻿---
+ID: "aabfa677-a13d-4132-b14b-2e9d2ce68d6f"
+Parent: "a46569ed-e5ca-46f8-b3a9-fec398dff194"
+Template: "0b1a2a79-89ca-4f8a-90f1-53d3fc628010"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Quiz Questions/Questions Folder"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T121637Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac19ff80-c206-45fe-9b12-a1fdce30eb57"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261102T121637Z

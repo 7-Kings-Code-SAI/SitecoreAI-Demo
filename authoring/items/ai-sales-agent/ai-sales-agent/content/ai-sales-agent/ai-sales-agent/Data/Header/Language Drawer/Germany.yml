@@ -9,11 +9,14 @@ SharedFields:
   Value: Germany
 - ID: "75b1d4a6-7724-4f3a-905f-d6ae1c165315"
   Hint: Language Code Field
-  Value: DE
+  Value: "de-DE"
 - ID: "b6a1037a-ef9c-42b4-b664-4d2aafc09bbc"
   Hint: Url
   Value: |
     <link linktype="external" url="/de-DE/" anchor="" target="" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b7754495-bb8c-49ce-864d-29d0e9b2d35d"
 - ID: "fd0f89ab-5679-4df5-9b64-aead4649fde2"
   Hint: Icon
   Value: |
@@ -61,14 +64,14 @@ Languages:
         sitecore\hammad@7kcdev.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c826c7a8-8af5-4188-bee4-4043bf951e36"
+      Value: "ed0b0d10-4a47-4237-93a8-788793cf9730"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\hammad@7kcdev.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261006T104747Z
+      Value: 20261015T114851Z
 - Language: "en-IE"
   Versions:
   - Version: 1

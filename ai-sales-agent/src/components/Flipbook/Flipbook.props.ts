@@ -28,7 +28,7 @@ export interface FlipbookHotspotItem {
     Label?: Field<string>;
     'Target Page'?: { id?: string; [key: string]: unknown } | Field<string>;
     Link?: LinkField;
-    'Popup Image'?: ImageField;
+    'Popup Image'?: Field<string> | ImageField;
     'Video URL'?: Field<string>;
     'Iframe URL'?: Field<string>;
     'Audio URL'?: Field<string>;
@@ -39,8 +39,8 @@ export interface FlipbookHotspotItem {
 export interface FlipbookPageItem {
   id?: string;
   fields: {
-    'Page Image'?: ImageField;
-    Thumbnail?: ImageField;
+    'Page Image'?: Field<string> | ImageField;
+    Thumbnail?: Field<string> | ImageField;
     'Page Label'?: Field<string>;
     'Search Text'?: Field<string>;
     Hotspots?: FlipbookHotspotItem[];

@@ -1,0 +1,40 @@
+﻿---
+ID: "f839f1a9-052f-4b64-b515-00fe31cc38b9"
+Parent: "211b4ca6-dd6f-446f-bedd-f6709d2338d8"
+Template: "211b4ca6-dd6f-446f-bedd-f6709d2338d8"
+Path: "/sitecore/templates/Project/ai-sales-agent/Page Content/HealthCheckHero/HealthCheckHero/__Standard Values"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fb6b7cb-70fe-4830-9b91-ea6c74652ebc"
+      Hint: Pill3_Text
+      Value: Insights
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261102T113619Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "5737f9b1-fe58-4eff-9cd3-ef1dcaf3940c"
+      Hint: Pill2_Text
+      Value: Score
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9acc33d6-3641-4b82-9363-624a8f77f25d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zainarshad@7kcdev.com
+    - ID: "d57a5284-224a-479f-9816-8d73b61fd01d"
+      Hint: Pill1_Text
+      Value: Time
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261102T114003Z
