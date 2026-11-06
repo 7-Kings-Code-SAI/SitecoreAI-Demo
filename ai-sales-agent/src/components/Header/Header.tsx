@@ -47,6 +47,16 @@ export default function Header(props: any) {
         };
     }, []);
 
+    const headerLogoSrc = data?.fields?.find(
+        (field: any) => field.name === "Logo"
+    )?.jsonValue?.value?.src;
+
+    useEffect(() => {
+        if (typeof window !== "undefined" && headerLogoSrc) {
+            sessionStorage.setItem("hygiene-brand-logo", headerLogoSrc);
+        }
+    }, [headerLogoSrc]);
+
     if (!data) {
         return null;
     }

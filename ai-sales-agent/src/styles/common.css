@@ -656,3 +656,475 @@ form[data-formid] .shared-input-field:has(input[name="form_name"]) {
     transition: none !important;
   }
 }
+
+
+/* ==========================================================================
+   Health Check Gate Form Theme (Triggered by hidden field: "health_check_ui")
+   Clones high-converting CWS results unlock card:
+   - Centered Title & Subtitle sitting directly on page background
+   - 620px rounded-3xl floating white card (.hc-inner-card)
+   - 2-column side-by-side pairing for Zip+City and Phone+Company
+   - 3-column pill cards for customer status radio group
+   - Coral/rose pill CTA button (#eb5778)
+   - Clean reCAPTCHA disclaimer at bottom
+   ========================================================================== */
+
+/* ── 1. Form Outer Wrapper (Transparent, Centered, 620px) ── */
+form:has(input[name*="health_check_ui"]),
+form:has(input[value*="health_check_ui"]),
+form:has([data-id*="health_check_ui"]),
+form:has([data-prefill*="health_check_ui"]),
+form:has(input[placeholder*="health_check_ui"]),
+form.health-check-ui-form,
+.health-check-ui-container form,
+form[data-formid]:has(input[name*="health_check_ui"]),
+form[data-formid].health-check-ui-form {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 620px !important;
+  min-height: auto !important;
+  height: auto !important;
+  margin: 32px auto 24px auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* ── 1b. Title & Subtitle Centering (Above the Card) ── */
+.hc-title-row,
+form.health-check-ui-form .hc-title-row,
+form:has(input[name*="health_check_ui"]) .hc-title-row,
+form.health-check-ui-form .text-component:has(h1),
+form.health-check-ui-form .text-component:has(h2),
+form.health-check-ui-form .text-component:first-of-type {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 auto 8px auto !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.hc-title-row p,
+.hc-title-row h1,
+.hc-title-row h2,
+.hc-title-row h3,
+.hc-title-row span,
+form.health-check-ui-form .hc-title-row p,
+form:has(input[name*="health_check_ui"]) .hc-title-row p,
+form.health-check-ui-form .text-component:first-of-type p {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+.hc-subtitle-row,
+form.health-check-ui-form .hc-subtitle-row,
+form:has(input[name*="health_check_ui"]) .hc-subtitle-row,
+form.health-check-ui-form .text-component:nth-of-type(2) {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 auto 24px auto !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.hc-subtitle-row p,
+.hc-subtitle-row span,
+form.health-check-ui-form .hc-subtitle-row p,
+form:has(input[name*="health_check_ui"]) .hc-subtitle-row p,
+form.health-check-ui-form .text-component:nth-of-type(2) p {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: #64748b !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+/* ── 1c. Inner Floating White Card ── */
+.hc-inner-card,
+form.health-check-ui-form:not(:has(.hc-inner-card)),
+form:has(input[name*="health_check_ui"]):not(:has(.hc-inner-card)) {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  max-width: 620px !important;
+  background: #ffffff !important;
+  border: 1px solid #f1f5f9 !important;
+  border-radius: 32px !important;
+  padding: 40px 36px !important;
+  box-shadow: 0 20px 45px -15px rgba(15, 23, 42, 0.08), 0 0 1px 1px rgba(0, 0, 0, 0.02) !important;
+  box-sizing: border-box !important;
+  margin: 0 auto !important;
+}
+
+@media (max-width: 640px) {
+  .hc-inner-card,
+  form.health-check-ui-form:not(:has(.hc-inner-card)),
+  form:has(input[name*="health_check_ui"]):not(:has(.hc-inner-card)) {
+    padding: 28px 20px !important;
+    border-radius: 24px !important;
+  }
+}
+
+/* ── 2. Hide trigger field completely ── */
+form:has(input[name*="health_check_ui"]) .shared-input-field:has(input[name*="health_check_ui"]),
+form:has(input[value*="health_check_ui"]) .shared-input-field:has(input[value*="health_check_ui"]),
+form:has([data-id*="health_check_ui"]) .shared-input-field:has([data-id*="health_check_ui"]),
+form.health-check-ui-form .shared-input-field:has(input[name*="health_check_ui"]),
+form.health-check-ui-form .shared-input-field:has(input[value*="health_check_ui"]),
+form.health-check-ui-form .shared-input-field:has([data-id*="health_check_ui"]),
+input[name*="health_check_ui"],
+input[value*="health_check_ui"],
+[data-id*="health_check_ui"] {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* ── 3. Input field spacing & labels ── */
+form.health-check-ui-form .shared-input-field,
+form:has(input[name*="health_check_ui"]) .shared-input-field,
+form:has(input[value*="health_check_ui"]) .shared-input-field,
+.health-check-ui-container .shared-input-field,
+.hc-inner-card .shared-input-field {
+  width: 100% !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+form.health-check-ui-form .global-input-label,
+form.health-check-ui-form .form-field-label,
+form:has(input[name*="health_check_ui"]) .global-input-label,
+form:has(input[name*="health_check_ui"]) .form-field-label,
+form:has(input[value*="health_check_ui"]) .global-input-label,
+form:has(input[value*="health_check_ui"]) .form-field-label,
+.health-check-ui-container .global-input-label,
+.hc-inner-card .global-input-label {
+  display: flex !important;
+  align-items: center !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  color: #334155 !important;
+  margin: 0 0 6px 0 !important;
+  text-align: left !important;
+}
+
+form.health-check-ui-form .global-field-required,
+form.health-check-ui-form .form-field-required,
+form:has(input[name*="health_check_ui"]) .global-field-required,
+form:has(input[value*="health_check_ui"]) .global-field-required,
+.health-check-ui-container .global-field-required,
+.hc-inner-card .global-field-required {
+  color: #334155 !important;
+  font-weight: 600 !important;
+  margin-left: 2px !important;
+}
+
+/* ── 4. Input boxes ── */
+form.health-check-ui-form .global-input-wrapper,
+form.health-check-ui-form .form-input-wrapper-div,
+form:has(input[name*="health_check_ui"]) .global-input-wrapper,
+form:has(input[name*="health_check_ui"]) .form-input-wrapper-div,
+form:has(input[value*="health_check_ui"]) .global-input-wrapper,
+form:has(input[value*="health_check_ui"]) .form-input-wrapper-div,
+.health-check-ui-container .global-input-wrapper,
+.health-check-ui-container .form-input-wrapper-div,
+.hc-inner-card .global-input-wrapper,
+.hc-inner-card .form-input-wrapper-div {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 48px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+  box-sizing: border-box !important;
+}
+
+form.health-check-ui-form .global-input-wrapper:focus-within,
+form.health-check-ui-form .form-input-wrapper-div:focus-within,
+form:has(input[name*="health_check_ui"]) .global-input-wrapper:focus-within,
+form:has(input[name*="health_check_ui"]) .form-input-wrapper-div:focus-within,
+form:has(input[value*="health_check_ui"]) .global-input-wrapper:focus-within,
+form:has(input[value*="health_check_ui"]) .form-input-wrapper-div:focus-within,
+.health-check-ui-container .global-input-wrapper:focus-within,
+.hc-inner-card .global-input-wrapper:focus-within {
+  border-color: #eb5778 !important;
+  box-shadow: 0 0 0 3px rgba(235, 87, 120, 0.15) !important;
+}
+
+form.health-check-ui-form .shared-input-field input,
+form:has(input[name*="health_check_ui"]) .shared-input-field input,
+form:has(input[value*="health_check_ui"]) .shared-input-field input,
+.health-check-ui-container .shared-input-field input,
+.hc-inner-card .shared-input-field input {
+  height: 100% !important;
+  padding: 0 16px !important;
+  font-size: 14.5px !important;
+  color: #0f172a !important;
+  font-weight: 400 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 12px !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+
+form.health-check-ui-form .shared-input-field input::placeholder,
+form:has(input[name*="health_check_ui"]) .shared-input-field input::placeholder,
+form:has(input[value*="health_check_ui"]) .shared-input-field input::placeholder,
+.health-check-ui-container .shared-input-field input::placeholder,
+.hc-inner-card .shared-input-field input::placeholder {
+  color: #94a3b8 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+/* ── 5. 2-Column Row Layout (Zip + City, Phone + Company) ── */
+.hc-row-2col,
+form.health-check-ui-form .hc-row-2col,
+form:has(input[name*="health_check_ui"]) .hc-row-2col,
+.health-check-ui-container .hc-row-2col,
+.hc-inner-card .hc-row-2col {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  width: 100% !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.hc-row-2col > *,
+.hc-row-2col > .landing-page-row,
+.hc-row-2col > .shared-input-field,
+.hc-row-2col > div {
+  flex: 1 1 0% !important;
+  width: calc(50% - 8px) !important;
+  max-width: calc(50% - 8px) !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 540px) {
+  .hc-row-2col,
+  form.health-check-ui-form .hc-row-2col,
+  form:has(input[name*="health_check_ui"]) .hc-row-2col {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .hc-row-2col > *,
+  .hc-row-2col > .landing-page-row,
+  .hc-row-2col > .shared-input-field,
+  .hc-row-2col > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ── 6. Radio button cards ("Are you already a CWS Hygiene customer?") ── */
+.hc-radio-group,
+form.health-check-ui-form .hc-radio-group,
+form:has(input[name*="health_check_ui"]) .hc-radio-group,
+.health-check-ui-container .radio-group-field,
+.hc-inner-card .radio-group-field {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: 100% !important;
+  margin: 8px 0 18px 0 !important;
+}
+
+.hc-radio-card,
+form.health-check-ui-form .hc-radio-card,
+form:has(input[name*="health_check_ui"]) .hc-radio-card,
+form.health-check-ui-form label:has(input[type="radio"]),
+form:has(input[name*="health_check_ui"]) label:has(input[type="radio"]),
+.health-check-ui-container label:has(input[type="radio"]),
+.hc-inner-card label:has(input[type="radio"]) {
+  flex: 1 1 0% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  padding: 12px 16px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #334155 !important;
+  transition: all 0.15s ease !important;
+  box-sizing: border-box !important;
+  user-select: none !important;
+}
+
+.hc-radio-card:hover,
+form.health-check-ui-form label:has(input[type="radio"]):hover,
+form:has(input[name*="health_check_ui"]) label:has(input[type="radio"]):hover {
+  border-color: #cbd5e1 !important;
+  background: #f8fafc !important;
+}
+
+.hc-radio-card:has(input:checked),
+form.health-check-ui-form label:has(input[type="radio"]:checked),
+form:has(input[name*="health_check_ui"]) label:has(input[type="radio"]:checked) {
+  border-color: #eb5778 !important;
+  background: #fff5f7 !important;
+  color: #eb5778 !important;
+}
+
+input[type="radio"] {
+  accent-color: #eb5778 !important;
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+}
+
+/* ── 7. Checkbox ("I agree...") ── */
+.checkbox-field,
+form.health-check-ui-form .checkbox-field,
+form:has(input[name*="health_check_ui"]) .checkbox-field,
+.health-check-ui-container .checkbox-field,
+.hc-inner-card .checkbox-field {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  margin: 8px 0 20px 0 !important;
+  height: auto !important;
+  width: 100% !important;
+}
+
+form.health-check-ui-form input[type="checkbox"],
+form:has(input[name*="health_check_ui"]) input[type="checkbox"],
+.health-check-ui-container input[type="checkbox"],
+.hc-inner-card input[type="checkbox"] {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  margin-top: 2px !important;
+  border: 1.5px solid #cbd5e1 !important;
+  border-radius: 4px !important;
+  accent-color: #eb5778 !important;
+  cursor: pointer !important;
+}
+
+form.health-check-ui-form .checkbox-field span,
+form.health-check-ui-form .checkbox-field label,
+form:has(input[name*="health_check_ui"]) .checkbox-field span,
+form:has(input[name*="health_check_ui"]) .checkbox-field label,
+.health-check-ui-container .checkbox-field span,
+.hc-inner-card .checkbox-field span {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #475569 !important;
+  line-height: 1.45 !important;
+  white-space: normal !important;
+  cursor: pointer !important;
+}
+
+form.health-check-ui-form .checkbox-field a,
+form:has(input[name*="health_check_ui"]) .checkbox-field a,
+.hc-inner-card .checkbox-field a {
+  color: #334155 !important;
+  text-decoration: underline !important;
+}
+
+/* ── 8. Vibrant Coral/Pink Submit Button ── */
+form.health-check-ui-form button.submit-button,
+form.health-check-ui-form button[type="submit"],
+form.health-check-ui-form input[type="submit"],
+form:has(input[name*="health_check_ui"]) button.submit-button,
+form:has(input[name*="health_check_ui"]) button[type="submit"],
+form:has(input[name*="health_check_ui"]) input[type="submit"],
+form:has(input[value*="health_check_ui"]) button.submit-button,
+form:has(input[value*="health_check_ui"]) button[type="submit"],
+form:has(input[value*="health_check_ui"]) input[type="submit"],
+.health-check-ui-container button.submit-button,
+.health-check-ui-container button[type="submit"],
+.hc-inner-card button.submit-button,
+.hc-inner-card button[type="submit"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 52px !important;
+  margin: 12px 0 0 0 !important;
+  padding: 0 24px !important;
+  background-color: #eb5778 !important;
+  background: #eb5778 !important;
+  color: #ffffff !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  border: none !important;
+  border-radius: 9999px !important;
+  cursor: pointer !important;
+  box-shadow: 0 8px 20px -4px rgba(235, 87, 120, 0.45) !important;
+  transition: all 0.2s ease !important;
+  text-transform: none !important;
+}
+
+form.health-check-ui-form button.submit-button:hover,
+form.health-check-ui-form button[type="submit"]:hover,
+form.health-check-ui-form input[type="submit"]:hover,
+form:has(input[name*="health_check_ui"]) button.submit-button:hover,
+form:has(input[name*="health_check_ui"]) button[type="submit"]:hover,
+form:has(input[name*="health_check_ui"]) input[type="submit"]:hover,
+form:has(input[value*="health_check_ui"]) button.submit-button:hover,
+.health-check-ui-container button.submit-button:hover,
+.hc-inner-card button.submit-button:hover,
+.hc-inner-card button[type="submit"]:hover {
+  background-color: #dd4169 !important;
+  background: #dd4169 !important;
+  box-shadow: 0 10px 24px -4px rgba(235, 87, 120, 0.55) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* ── 9. reCAPTCHA disclaimer at bottom ── */
+.hc-recaptcha-notice {
+  margin-top: 18px !important;
+  font-size: 11.5px !important;
+  line-height: 1.5 !important;
+  color: #64748b !important;
+  text-align: left !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+}
+
+.hc-recaptcha-notice a {
+  color: #475569 !important;
+  text-decoration: underline !important;
+}
