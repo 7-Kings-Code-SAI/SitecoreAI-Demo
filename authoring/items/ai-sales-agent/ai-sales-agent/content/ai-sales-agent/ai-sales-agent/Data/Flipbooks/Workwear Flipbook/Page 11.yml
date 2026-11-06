@@ -1,6 +1,6 @@
 ---
 ID: "45e759f4-8d04-583c-a1ea-17f5a5176c55"
-Parent: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+Parent: "2cbbac5d-0488-5f08-993c-ae3363637fb5"
 Template: "8B2A3E1F-4C5D-4E2F-9A1B-8C7D6E5F4A3B"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/Page 11"
 SharedFields:
@@ -30,15 +30,15 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: '__Updated'
       Value: '20260101T000000Z'
-    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+    - ID: "f9dea1e5-1a18-55a2-a198-cc006c5a8866"
       Hint: 'Page Label'
       Value: '11'
-    - ID: "D3E4F5A6-B7C8-9012-3456-789012345678"
+    - ID: "8e61e1b8-00bb-5065-a46a-02c602197ffc"
       Hint: 'Search Text'
       Value: 'Food Clean Trousers with elasticated waistband Pull-on trousers Bib and brace overalls Coveralls Material 65% polyester/35% cotton 245 g/m² 65% polyester/35% cotton 215g/m² 65% polyester/35% cotton 245 g/m² 65% polyester/35% cotton 245 g/m² Description - Stylish, close-fitting trousers with an elasticated waistband and belt loops - Pocket-free design for hygienic working - Can be customised with functional pockets, such as Cordura® knee pad pockets or practical cargo pockets – ideal for a variety of work requirements - Comfortable pull-on trousers with an elasticated waistband - Internal back pocket on the right for discreet, hygienic storage - Modern bib and brace overalls with stretch side panels for greater freedom of movement - Elasticated waistband - An internal bib pocket provides secure storage - Optional Cordura® knee pad pockets or cargo pockets to suit different tasks - Comfortable coveralls with a classic turn-down collar - Elasticated waistband - Adjustable sleeve openings - The internal chest pocket provides secure storage space - Optional Cordura® knee pad pockets or cargo pockets to suit different tasks Sizes Men: 38–76 S/R/L, Women: 32–68 S/R/L with cuffs: 38–76 N 2XS–8XL S/R/L with cuffs: 2XS–8XL N 38–76 S/R/L with cuffs: 38–76 N 2XS–5XL S/R/L with cuffs: 2XS–5XL N Standards HACCP–DIN 10524:2012 Risk class 3: white Risk class 1: dark green, dark blue, red HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 Risk class 3: white, light grey Risk class 1: dark green, dark blue, red HACCP–DIN 10524:2012 Colours 1009632 1009630 10009631 1010159 1008059 1008066 1009312 1009311 1009314 1009313 1008068 With cuffs HACCP risk class 1 1011947 1011955 1011951 1011953 Women’s fit 1009636 / / / Food Clean Light – 215g/m2 Colours 1009620 / 1008079 / With cuffs HACCP risk class 1 1011948 / / / Women’s fit 1009635 / / / | 11'
-    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+    - ID: "0c76f1fc-9e72-58ad-a9b3-1ccf479f9dd3"
       Hint: 'Page Image'
       Value: ''
-    - ID: "B1C2D3E4-F5A6-7890-1234-567890123456"
+    - ID: "d3062b18-5de9-5640-be65-88ab1eac1db4"
       Hint: 'Thumbnail'
       Value: ''

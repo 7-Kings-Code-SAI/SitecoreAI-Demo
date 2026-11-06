@@ -1,0 +1,13 @@
+---
+ID: "7f899030-7271-5c21-b7d8-0ba79913c4a5"
+Parent: "f8a9b0c1-d2e3-4567-1234-678901234567"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: "/sitecore/templates/Project/ai-sales-agent/Page Content/Flipbook/TOC Item/Content"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260101T000000Z

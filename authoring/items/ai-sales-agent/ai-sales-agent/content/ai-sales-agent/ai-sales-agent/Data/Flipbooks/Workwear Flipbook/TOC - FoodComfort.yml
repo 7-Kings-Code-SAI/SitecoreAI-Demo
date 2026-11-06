@@ -1,6 +1,6 @@
 ---
 ID: "44444444-0001-6666-7777-999999999999"
-Parent: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+Parent: "2cbbac5d-0488-5f08-993c-ae3363637fb5"
 Template: "F8A9B0C1-D2E3-4567-1234-678901234567"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/TOC - FoodComfort"
 SharedFields:
@@ -30,9 +30,9 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: '__Updated'
       Value: '20260101T000000Z'
-    - ID: "B0C1D2E3-F4A5-6789-0123-456789012345"
+    - ID: "b17e458e-20bc-5f45-ac59-b8af6cbdfa9c"
       Hint: 'Caption'
       Value: 'Food Comfort'
-    - ID: "C1D2E3F4-A5B6-7890-1234-567890123456"
+    - ID: "0c31bebc-7449-5fd3-aff0-a48ea4f6cac9"
       Hint: 'Target Page'
       Value: 'c3b3fcec-c9e1-5513-9c42-eff2b5e9ac47'

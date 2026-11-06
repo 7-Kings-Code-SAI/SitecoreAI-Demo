@@ -1,6 +1,6 @@
 ---
 ID: "c4848347-beb9-500a-8594-bc54d15c5fbc"
-Parent: "48fc7aa1-7119-5d18-b116-9a2fbed0801f"
+Parent: "2cbbac5d-0488-5f08-993c-ae3363637fb5"
 Template: "8B2A3E1F-4C5D-4E2F-9A1B-8C7D6E5F4A3B"
 Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/Page 15"
 SharedFields:
@@ -30,15 +30,15 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: '__Updated'
       Value: '20260101T000000Z'
-    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+    - ID: "f9dea1e5-1a18-55a2-a198-cc006c5a8866"
       Hint: 'Page Label'
       Value: '15'
-    - ID: "D3E4F5A6-B7C8-9012-3456-789012345678"
+    - ID: "8e61e1b8-00bb-5065-a46a-02c602197ffc"
       Hint: 'Search Text'
       Value: 'This is how comfortable workwear can be Food Comfort Work jacket Work coat Slip-on tunic Material 65% polyester/35% cotton 245g/m2 65% polyester/35% cotton 245 g/m2 65% polyester/35% cotton 215 g/m2 Description - A modern work jacket with a slim fit and a stand-up collar - Long sleeves with adjustable openings for a secure fit - The internal chest pockets provide secure storage space - Underarm vents provide effective ventilation - A modern, close-fitting work coat with a stand-up collar and a vent for ease of movement - Long sleeves with adjustable openings for a secure fit - The internal chest pockets provide secure storage space - Underarm vents provide effective ventilation - A comfortable slip-on tunic with a straight cut and side slits - Polo collar with a press-stud fastening makes the tunic easy to put on and take off - Long sleeves with adjustable openings for a secure fit - An internal chest pocket provides secure storage space - Underarm vents provide effective ventilation Sizes 2XS–8XL Men: 2XS–8XL Women: 2XS–4XL 2XS–8XL Standards HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 HACCP–DIN 10524:2012 Colour 1008047 1008049 1008055 With cuffs HACCP risk class 1 1011946 1011959 / / Women’s fit / 1008050 / | 15'
-    - ID: "A0B1C2D3-E4F5-6789-0123-456789012345"
+    - ID: "0c76f1fc-9e72-58ad-a9b3-1ccf479f9dd3"
       Hint: 'Page Image'
       Value: ''
-    - ID: "B1C2D3E4-F5A6-7890-1234-567890123456"
+    - ID: "d3062b18-5de9-5640-be65-88ab1eac1db4"
       Hint: 'Thumbnail'
       Value: ''
