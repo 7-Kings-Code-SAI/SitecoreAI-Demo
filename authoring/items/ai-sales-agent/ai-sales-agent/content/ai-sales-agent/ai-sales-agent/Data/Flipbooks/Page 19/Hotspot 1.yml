@@ -1,0 +1,85 @@
+---
+ID:33333333-0018-0000-7777-888888888888
+Parent:22222222-0018-4444-5555-666666666666
+Template:A6B7C8D9-E0F1-2345-6789-012345678901
+Path:/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear Flipbook/Page 19/Hotspot 1
+SharedFields:-
+SharedFields:  ID:ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+SharedFields:  Hint:__Sortorder
+SharedFields:  Value:100
+Languages:-
+Languages:  Language:en
+Languages:  Versions:-
+Languages:  Versions:  Version:1
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:25bed78c-4957-4165-998a-ca1b52f67497
+Languages:  Versions:  Fields:  Hint:__Created
+Languages:  Versions:  Fields:  Value:20260101T000000Z
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:52807595-0f8f-4b20-8d2a-cb71d28c6103
+Languages:  Versions:  Fields:  Hint:__Owner
+Languages:  Versions:  Fields:  Value:sitecore\admin
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:5dd74568-4d4b-44c1-b513-0af5f4cda34f
+Languages:  Versions:  Fields:  Hint:__Created by
+Languages:  Versions:  Fields:  Value:sitecore\admin
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:8cdc337e-a112-42fb-bbb4-4143751e123f
+Languages:  Versions:  Fields:  Hint:__Revision
+Languages:  Versions:  Fields:  Value:33333333-0018-0000-7777-888888888888
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:badd9cf9-53e0-4d0c-bcc0-2d784c282f6a
+Languages:  Versions:  Fields:  Hint:__Updated by
+Languages:  Versions:  Fields:  Value:sitecore\admin
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:d9cf14b1-fa16-4ba6-9288-e8a174d4d522
+Languages:  Versions:  Fields:  Hint:__Updated
+Languages:  Versions:  Fields:  Value:20260101T000000Z
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:C8D9E0F1-E2F3-4567-8901-234567890123
+Languages:  Versions:  Fields:  Hint:Hotspot Type
+Languages:  Versions:  Fields:  Value:internalPage
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:D9E0F1E2-F3A4-5678-9012-345678901234
+Languages:  Versions:  Fields:  Hint:Area Left
+Languages:  Versions:  Fields:  Value:66.07
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:E0F1E2F3-A4B5-6789-0123-456789012345
+Languages:  Versions:  Fields:  Hint:Area Top
+Languages:  Versions:  Fields:  Value:83.52
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:F1E2F3A4-B5C6-7890-1234-567890123456
+Languages:  Versions:  Fields:  Hint:Area Width
+Languages:  Versions:  Fields:  Value:11.57
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:E2F3A4B5-C6D7-8901-2345-678901234567
+Languages:  Versions:  Fields:  Hint:Area Height
+Languages:  Versions:  Fields:  Value:2.42
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:F3A4B5C6-D7E8-9012-3456-789012345678
+Languages:  Versions:  Fields:  Hint:Label
+Languages:  Versions:  Fields:  Value:3212199918676895156403265
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:A4B5C6D7-E8F9-0123-4567-890123456789
+Languages:  Versions:  Fields:  Hint:Target Page
+Languages:  Versions:  Fields:  Value:
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:B5C6D7E8-F9A0-1234-5678-901234567890
+Languages:  Versions:  Fields:  Hint:Link
+Languages:  Versions:  Fields:  Value:
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:C6D7E8F9-A0B1-2345-6789-012345678901
+Languages:  Versions:  Fields:  Hint:Popup Image
+Languages:  Versions:  Fields:  Value:
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:D7E8F9A0-B1C2-3456-7890-123456789012
+Languages:  Versions:  Fields:  Hint:Video URL
+Languages:  Versions:  Fields:  Value:
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:E8F9A0B1-C2D3-4567-8901-234567890123
+Languages:  Versions:  Fields:  Hint:Iframe URL
+Languages:  Versions:  Fields:  Value:
+Languages:  Versions:  Fields:-
+Languages:  Versions:  Fields:  ID:F9A0B1C2-D3E4-5678-9012-345678901234
+Languages:  Versions:  Fields:  Hint:Audio URL
+Languages:  Versions:  Fields:  Value:
