@@ -1,0 +1,69 @@
+---
+ID: "1973C422-3042-4957-AA7E-7EAC6AFC8722"
+Parent: "1084C3A9-AF38-4ADD-85F2-2D54DE27DD8C"
+Template: "AAAF4921-54EF-4618-9D40-89BFB23B0B2F"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks/Workwear - Food and Beverage/Page 13"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1300
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: 1973C422-3042-4957-AA7E-7EAC6AFC8722
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261106T212543Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 1973C422-3042-4957-AA7E-7EAC6AFC8722
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261106T212543Z
+    - ID: "706566AF-D28D-4152-99B4-CA5FE0023805"
+      Hint: Page Image
+      Value: /flipbook/large/68b08675828115c88726042f30176f81.webp
+    - ID: "1BC2894D-E407-45A2-9DC3-9C91B6F3AC84"
+      Hint: Thumbnail
+      Value: /flipbook/thumb/0e4cc635bfd733c7ed754b3315cb197a.webp
+    - ID: "3EC86414-814E-4D46-AA46-ED20A0AED303"
+      Hint: Page Label
+      Value: "13"
+    - ID: "CEAE6324-5D0A-473D-AF5B-C7CF50E2EB47"
+      Hint: Search Text
+      Value: |
+        Food Comfort
+        Jackets
+        Coats
+        Tunics
+        Trousers
+        Coveralls
+        Designed for food processing areas with strict hygiene requirements, the 
+        Food Comfort collection combines high standards of hygiene with practical 
+        features. It includes garments suitable for HACCP risk classes 1–3.
+        Each garment is tailored to different tasks and designed for comfort 
+        and ease of movement.
+        Ergonomic and 
+        functional
+        | 13
+    - ID: "1B816220-5A10-4889-8134-EC73A3840D85"
+      Hint: Hotspots
+      Value: |
+        {895931E8-64D7-4421-9E9F-9BB358BD59D3}
+        {E18CB491-E1A2-4842-A1A6-B5B2B115F97A}
+        {69DE2F98-9342-4B11-B815-F79713D3C438}
+        {862F2FD4-AED1-4350-974F-800ADE3A56A6}
+        {60B06B78-9CC6-4E1E-A6F5-C7F4BA829597}
