@@ -1,0 +1,76 @@
+# Create a minimal serialization config that excludes flipbook items
+# This will force deletion when pushed
+
+{
+  "$schema": "https://dev.sitecore.net/schemas/sitecore-item-serialization/7.0/sitecore-item-serialization.schema.json",
+  "serialization": {
+    "modules": [
+      {
+        "name": "7kc.ai-sales-agent.content",
+        "include": [
+          {
+            "path": "/sitecore/content/ai-sales-agent/ai-sales-agent",
+            "scope": "itemAndDescendants",
+            "exclude": [
+              "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/Flipbooks",
+              "/sitecore/content/ai-sales-agent/ai-sales-agent/Settings/Flipbook",
+              "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/Data/Flipbook",
+              "/sitecore/content/ai-sales-agent/ai-sales-agent/Presentation/Available Renderings/Flipbook"
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "path": "**",
+            "language": "en",
+            "shared": "on",
+            "version": "1"
+          }
+        ],
+        "format": "Yaml"
+      },
+      {
+        "name": "7kc.ai-sales-agent.templates",
+        "include": [
+          {
+            "path": "/sitecore/templates/Project/ai-sales-agent",
+            "scope": "itemAndDescendants",
+            "exclude": [
+              "/sitecore/templates/Project/ai-sales-agent/Page Content/Flipbook"
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "path": "**",
+            "language": "en",
+            "shared": "on",
+            "version": "1"
+          }
+        ],
+        "format": "Yaml"
+      },
+      {
+        "name": "7kc.ai-sales-agent.renderings",
+        "include": [
+          {
+            "path": "/sitecore/layout/Renderings/Project/ai-sales-agent",
+            "scope": "itemAndDescendants",
+            "exclude": [
+              "/sitecore/layout/Renderings/Project/ai-sales-agent/Page Content/Flipbook"
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "path": "**",
+            "language": "en",
+            "shared": "on",
+            "version": "1"
+          }
+        ],
+        "format": "Yaml"
+      }
+    ]
+  }
+}
