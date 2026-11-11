@@ -1,5 +1,5 @@
 const path = require('path');
-
+//Locale and routing
 /**
  * @type {import('next').NextConfig}
  */
