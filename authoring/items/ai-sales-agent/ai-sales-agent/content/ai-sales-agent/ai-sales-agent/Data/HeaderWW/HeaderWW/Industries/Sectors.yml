@@ -1,0 +1,45 @@
+---
+ID: "c278468a-cede-47f7-b67e-9533492a041a"
+Parent: "86eedad7-dbf9-4d37-b834-8295841b9f5c"
+Template: "eb624858-900c-419b-9992-167e5ca2d3f4"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/HeaderWW/HeaderWW/Industries/Sectors"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: b3caf518-244f-480d-8ef1-0518d649b895
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05b463d8-214b-4c73-960c-0930199507b3"
+      Hint: Link
+      Value: |
+        <link class="" id="{9C887615-27DB-41A4-B229-2E223A024947}" querystring="" anchor="" target="" title="" linktype="internal" text="Key Sectors" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "77085711-ceea-430e-bdc5-2b183d19e744"
+      Hint: Title
+      Value: Key Sectors
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 0ed2bb45-c17b-4282-81dd-d4875d784432
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z

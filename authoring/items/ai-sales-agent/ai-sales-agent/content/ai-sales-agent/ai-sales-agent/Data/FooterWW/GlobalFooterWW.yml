@@ -1,0 +1,48 @@
+---
+ID: "545a6476-d16c-4302-962c-6602d5055557"
+Parent: "40e7e4a3-d76f-4ce1-a5e9-2e31b819a5c4"
+Template: "0d7c6889-1c35-4d48-97e2-20afe4810cfd"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/FooterWW/GlobalFooterWW"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "32b6f7a0-e7ca-49a8-8341-6d803f06f9c5"
+      Hint: LeftLinks
+      Value: |
+        {B1724670-32C8-4635-9AA0-7E493858E9B8}
+        {01429611-633A-4827-B0A5-82BF7F06B2BD}
+    - ID: "4e29cc92-5c83-4b0a-b53f-274892d1c9af"
+      Hint: RightLinks
+      Value: |
+        {D7B0F341-1786-4B64-A4A6-51D37BDB4D6F}
+        {1EB9833A-3043-4B0D-BFD0-28D6F6D5459C}
+        {5996B4E6-4944-4033-BD5D-DF6909C65AD6}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cc706f0-90ea-476f-a5c2-d1d69857a1cd"
+      Hint: Copyright
+      Value: © 2026 AI Sales Agent
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 44f78d95-ef35-44da-8177-1736651d9313
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z
+    - ID: "fad2ca11-f0e5-4d5f-98a2-ec2fbe4745fb"
+      Hint: LegalInlineText
+      Value: All rights reserved. Intelligent workwear sales automation.

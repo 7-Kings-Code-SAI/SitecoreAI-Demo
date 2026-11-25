@@ -1,0 +1,112 @@
+---
+ID: "68e8d9ae-74f9-401f-8a52-0611f7952a70"
+Parent: "85843ade-09cd-4a9d-be13-2f2879040233"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/ai-sales-agent/NavigationWW/HeaderWW"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: HeaderWW
+- ID: "069a8361-b1cd-437c-8c32-a3be78941446"
+  Hint: Placeholders
+  Value: |
+    {8326476C-5449-479A-9373-4F80C94BCCB3}
+    {B796C3A8-7F98-483F-A180-D7AD07CA0D0C}
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_header.png
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query HeaderWWQuery($datasource: String!, $language: String!) {
+      datasource: item(path: $datasource, language: $language) {
+        id
+        name
+        ContactLabel: field(name: "ContactLabel") {
+          value
+        }
+        ContactLink: field(name: "ContactLink") {
+          jsonValue
+        }
+        LoginLink: field(name: "LoginLink") {
+          jsonValue
+        }
+        children {
+          results {
+            id
+            name
+            displayName
+            fields {
+              name
+              value
+              jsonValue
+            }
+            children {
+              results {
+                id
+                name
+                displayName
+                fields {
+                  name
+                  value
+                  jsonValue
+                }
+                children {
+                  results {
+                    id
+                    name
+                    displayName
+                    fields {
+                      name
+                      value
+                      jsonValue
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: "/sitecore/templates/Project/ai-sales-agent/NavigationWW/LinkListFolderWW"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{4247AAD4-EBDE-4994-998F-E067A51B1FE4}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data"
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsRenderingsWithDynamicPlaceholders=true
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ec6e81a4-ccea-442b-aebf-e8a72b1d67d2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T193000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cc616704-60d5-4998-89b1-6992049e2608"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T193000Z

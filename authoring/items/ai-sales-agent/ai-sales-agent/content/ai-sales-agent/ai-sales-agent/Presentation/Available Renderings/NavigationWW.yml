@@ -1,0 +1,44 @@
+---
+ID: "1ae8c5a6-7d7f-4254-b6fc-9c33f7e3990a"
+Parent: "2318cb50-469e-4ed1-889d-7baf8f1c4f37"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Presentation/Available Renderings/NavigationWW"
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {68E8D9AE-74F9-401F-8A52-0611F7952A70}
+    {C994929A-4AED-4964-9F43-6A26EBDE78F6}
+    {5D006B20-E648-4856-9F08-9E79CF144FE8}
+    {6C825408-36A8-4461-8E48-F867F18AE6FD}
+    {5C3CA541-8474-416D-9549-307D27ED0C92}
+    {0724FB97-06E5-4390-B861-3F7AF3E35DB1}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "bf8dc15c-50b1-4998-a805-fe012cf241fd"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T193000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "298d9b01-2441-4aa3-b675-5778868cffa0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T193000Z

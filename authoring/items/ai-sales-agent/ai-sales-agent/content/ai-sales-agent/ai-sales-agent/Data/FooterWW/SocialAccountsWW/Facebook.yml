@@ -1,0 +1,42 @@
+---
+ID: "a2c8d3cd-2090-48ed-b7f1-0ce28fe8a3e1"
+Parent: "e68ca14e-9372-44f9-9e7a-1a2ccdc28640"
+Template: "e52b9109-0f26-4671-99a5-b015fdf424e8"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/FooterWW/SocialAccountsWW/Facebook"
+SharedFields:
+- ID: "fe8381e6-e6e4-4e51-bd08-f64136ee97c3"
+  Hint: Icon
+  Value: facebook
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: ee0d21b0-127d-4070-a378-fd1c6fe202e3
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: b6f6913e-8783-46da-9055-1c54c259f398
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "cfc8f265-b8f1-43f5-ab10-3b36ab2419b4"
+      Hint: Link
+      Value: |
+        <link text="Facebook" linktype="external" url="https://www.facebook.com" anchor="" target="_blank" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z

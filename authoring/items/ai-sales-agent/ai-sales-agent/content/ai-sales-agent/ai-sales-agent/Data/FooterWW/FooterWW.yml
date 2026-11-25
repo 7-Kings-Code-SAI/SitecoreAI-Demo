@@ -1,0 +1,65 @@
+---
+ID: "40b228a0-3469-4574-a43c-aafdb081eee6"
+Parent: "40e7e4a3-d76f-4ce1-a5e9-2e31b819a5c4"
+Template: "ad62a85a-a374-479a-ae99-ca1c8da246bf"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/FooterWW/FooterWW"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "332cc771-454c-44fc-9ed4-fb549c318f15"
+      Hint: PR Agency
+      Value: |
+        <p><strong>PR Agency</strong><br />Northbridge Communications<br /><a href="mailto:media@northbridge.example.com">media@northbridge.example.com</a></p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6293aba7-6003-45a4-905e-d378fa4228b0"
+      Hint: LoginLink
+      Value: |
+        <link class="" id="{D156B6D6-359B-4267-8FBB-A0CF6E655315}" querystring="" anchor="" target="" title="" linktype="internal" text="Customer Login" />
+    - ID: "646d9070-4a27-4c7f-b4a1-8a0c1b15b808"
+      Hint: ContactTitle
+      Value: Get in touch with us
+    - ID: "6c0d4788-6315-49b3-bca4-a0dfefcfb602"
+      Hint: GetInTouchLabel
+      Value: Get in touch
+    - ID: "84712b9e-cf30-486d-8ef6-443e67e52a5b"
+      Hint: Phone Number
+      Value: "+49 800 555 0199"
+    - ID: "84cfccc3-b59c-4dec-a98f-ca0d1ec4b560"
+      Hint: Social Accounts
+      Value: "{E68CA14E-9372-44F9-9E7A-1A2CCDC28640}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: f64be475-b3b5-4118-a3bd-b20db96fde25
+    - ID: "962a6066-9c93-4f27-af6d-6cf4fb4064df"
+      Hint: Press Contact
+      Value: |
+        <p><strong>Press Contact</strong><br />Maria Weber<br /><a href="mailto:press@example.com">press@example.com</a><br /><a href="tel:+498005550101">+49 800 555 0101</a></p>
+    - ID: "9a66997e-faea-4545-bc02-ca3a295f3465"
+      Hint: Message Label
+      Value: Send us a message
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z
+    - ID: "dfab1bb4-2a68-4d3d-ba22-ba9049257d0c"
+      Hint: Working Hours
+      Value: "Mon - Fri, 08:00 - 18:00 CET"
+    - ID: "e034057a-6557-4c10-a378-82a8d4b9485f"
+      Hint: ContactLink
+      Value: |
+        <link text="Get in touch" linktype="external" url="#contact" anchor="" target="" />

@@ -1,0 +1,48 @@
+---
+ID: "b7dcc49a-2a17-42bd-b1f0-3ce1b86bde24"
+Parent: "26780b4d-708d-4aee-92ca-a570dafcdb8e"
+Template: "d0d440a0-380c-46a6-8486-6aca07bc145b"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/HeaderWW/TopHeaderWW/Customer Portal"
+SharedFields:
+- ID: "7377b5d0-31e0-438a-9061-7afe58d6fabe"
+  Hint: IsCustomerPortal
+  Value: 1
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: 5c30bc94-5667-418c-9eb3-a7d43e76653d
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "26fde028-9fad-4b3f-b21a-5df33d01683f"
+      Hint: Text
+      Value: Customer Portal
+    - ID: "49fb0ecb-b883-49ce-8c7a-57723b81d060"
+      Hint: Link Text
+      Value: Customer Portal
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6d8f8dd3-08c3-4475-aa7b-7cc4e03a5c42"
+      Hint: Link
+      Value: |
+        <link class="" id="{4DD04A8B-0A38-40B5-831E-6F4180CF6D53}" querystring="" anchor="" target="" title="" linktype="internal" text="Customer Portal" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 85cc1364-cb05-4e2f-8a4a-e14bfce57844
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z
