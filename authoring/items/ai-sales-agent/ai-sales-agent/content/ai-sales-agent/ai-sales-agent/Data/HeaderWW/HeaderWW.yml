@@ -1,0 +1,42 @@
+---
+ID: "7b43e868-2382-450b-b2e2-d9c12ae99d1b"
+Parent: "e389e8bb-831f-4231-a648-4e486ee883d7"
+Template: "3f407551-2d97-4bbb-a814-614e8a185f86"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/HeaderWW/HeaderWW"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04f0655c-9b28-46cb-b001-005abeb69a0d"
+      Hint: ContactLink
+      Value: |
+        <link text="Contact" linktype="external" url="#contact" anchor="" target="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "3c9f794f-2ab5-4a1e-802f-272b8fb8ceaa"
+      Hint: ContactLabel
+      Value: Contact
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: ef01086e-3afb-4bb9-8244-bb62ab66b30b
+    - ID: "aae0a9ae-dcbb-4e5f-9ac9-08d637ff42d4"
+      Hint: LoginLink
+      Value: |
+        <link class="" id="{D156B6D6-359B-4267-8FBB-A0CF6E655315}" querystring="" anchor="" target="" title="" linktype="internal" text="Log in" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z

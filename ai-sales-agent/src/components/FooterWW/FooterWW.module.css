@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/assets/fonts/suisseIntl-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/assets/fonts/suisseIntl-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/assets/fonts/suisseIntl-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/assets/fonts/suisseIntl-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.footer {
+  background-color: #f9e244;
+  font-family: 'Suisse Intl', Arial, sans-serif;
+  background-image: var(--footer-background-mobile, none);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    background-image: var(--footer-background-desktop, none);
+  }
+}

@@ -1,0 +1,43 @@
+---
+ID: "0b4895ff-189a-4529-a021-322fd8246c7d"
+Parent: "e389e8bb-831f-4231-a648-4e486ee883d7"
+Template: "cefcb566-d234-47d4-a9df-098aface4f40"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/HeaderWW/LogoWW"
+SharedFields:
+- ID: "8d4d0685-f8b5-4dff-b240-dd8f2533a60d"
+  Hint: Image
+  Value: |
+    <image mediaid="{9B1DDEB9-DC74-4F69-8787-13B101A77DC6}" alt="AI Sales Agent" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: ac84f1f1-8aa6-416e-9b95-00a041369b64
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0ed7cd0a-fa18-467c-8a35-8eaea0c4309b"
+      Hint: Link
+      Value: |
+        <link class="" id="{9C887615-27DB-41A4-B229-2E223A024947}" querystring="" anchor="" target="" title="" linktype="internal" text="Home" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 525fba31-d42d-409a-80d6-d67dbfc344ef
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z

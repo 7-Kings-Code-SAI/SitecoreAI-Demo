@@ -1,0 +1,59 @@
+---
+ID: "a04cd555-4e0b-4d72-9994-374b320b5524"
+Parent: "7b43e868-2382-450b-b2e2-d9c12ae99d1b"
+Template: "eb624858-900c-419b-9992-167e5ca2d3f4"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/HeaderWW/HeaderWW/Solutions"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: 06601c62-3fdd-49ed-b50f-6d742cc0f96e
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05b463d8-214b-4c73-960c-0930199507b3"
+      Hint: Link
+      Value: |
+        <link class="" id="{B06AA33C-D824-47A3-9A08-0506D2C7E871}" querystring="" anchor="" target="" title="" linktype="internal" text="Solutions" />
+    - ID: "08a6e285-b117-403d-9a39-5d72cb394b1b"
+      Hint: News Link
+      Value: |
+        <link class="" id="{B06AA33C-D824-47A3-9A08-0506D2C7E871}" querystring="" anchor="" target="" title="" linktype="internal" text="Explore AI Features" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "77085711-ceea-430e-bdc5-2b183d19e744"
+      Hint: Title
+      Value: Solutions
+    - ID: "7ce2f307-cadc-4644-8a94-7d8765015c65"
+      Hint: News Image
+      Value: |
+        <image mediaid="{01D00FFD-41B8-4E7C-89C8-0D9DE7F45CAF}" alt="AI Sales Playbook 2026" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 8000414b-cf6e-4b45-b8e4-4d8455c23b13
+    - ID: "a29d9dee-c54c-4151-ab02-12d741edf45d"
+      Hint: News Title
+      Value: AI Sales Playbook 2026
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z
+    - ID: "e82415a8-44d3-4bb5-addb-a14c49c59800"
+      Hint: News Description
+      Value: See how guided selling and CRM automation accelerate revenue cycles.

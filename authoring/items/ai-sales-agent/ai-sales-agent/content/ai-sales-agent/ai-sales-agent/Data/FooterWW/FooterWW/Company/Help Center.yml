@@ -1,0 +1,41 @@
+---
+ID: "0ae195c9-2d75-4257-9d66-0406d6490cb5"
+Parent: "006569bd-44df-48f4-81b9-887a9119f691"
+Template: "d0d440a0-380c-46a6-8486-6aca07bc145b"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Data/FooterWW/FooterWW/Company/Help Center"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T194500Z
+    - ID: "26fde028-9fad-4b3f-b21a-5df33d01683f"
+      Hint: Text
+      Value: Help Center
+    - ID: "49fb0ecb-b883-49ce-8c7a-57723b81d060"
+      Hint: Link Text
+      Value: Help Center
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6d8f8dd3-08c3-4475-aa7b-7cc4e03a5c42"
+      Hint: Link
+      Value: |
+        <link text="Help Center" linktype="external" url="https://www.example.com/support" anchor="" target="_blank" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 5f330e91-a387-4505-8d66-ef2342515d0f
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194500Z
