@@ -12,70 +12,13 @@ SharedFields:
   Value: |
     {8326476C-5449-479A-9373-4F80C94BCCB3}
     {B796C3A8-7F98-483F-A180-D7AD07CA0D0C}
+    {7B531FE8-A491-4939-8D53-8EDF2B5ABE60}
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Office/32x32/window_header.png
 - ID: "17bb046a-a32a-41b3-8315-81217947611b"
   Hint: ComponentQuery
-  Value: |
-    query HeaderWWQuery($datasource: String!, $language: String!) {
-      datasource: item(path: $datasource, language: $language) {
-        id
-        name
-        ContactLabel: field(name: "ContactLabel") {
-          value
-        }
-        ContactLink: field(name: "ContactLink") {
-          jsonValue
-        }
-        LoginLink: field(name: "LoginLink") {
-          jsonValue
-        }
-        children {
-          results {
-            id
-            name
-            displayName
-            fields(ownFields: true) {
-              name
-              value
-              jsonValue
-            }
-            children {
-              results {
-                ...linkWithImageFieldsWW
-                children {
-                  results {
-                    ...linkFieldsWW
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    
-    fragment linkWithImageFieldsWW on Item {
-      id
-      name
-      displayName
-      title: field(name: "Title") {
-        value
-      }
-      link: field(name: "Link") {
-        link: jsonValue
-      }
-    }
-    
-    fragment linkFieldsWW on Item {
-      id
-      name
-      displayName
-      link: field(name: "Link") {
-        link: jsonValue
-      }
-    }
+  Value: 
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: "/sitecore/templates/Project/ai-sales-agent/NavigationWW/LinkListFolderWW"
@@ -109,11 +52,11 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cc616704-60d5-4998-89b1-6992049e2608"
+      Value: "3155df42-fb18-45b8-b74c-245460249d07"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261125T193000Z
+      Value: 20261126T160000Z

@@ -1,4 +1,4 @@
-import type { ImageField, LinkField } from '@sitecore-content-sdk/nextjs';
+import type { Field, ImageField, LinkField } from '@sitecore-content-sdk/nextjs';
 import type { ComponentProps } from 'src/lib/component-props';
 
 export interface HeaderNavigationLinkValueWW {
@@ -51,7 +51,7 @@ export interface HeaderNavigationNodeWW {
   };
 }
 
-interface HeaderLanguageWW {
+export interface HeaderLanguageWW {
   name?: {
     value?: string;
   };
@@ -71,14 +71,12 @@ interface HeaderLanguageWW {
 
 type HeaderLoginFieldWW = LinkField | { jsonValue?: LinkField; link?: LinkField };
 
-interface HeaderWWDatasource {
+export interface HeaderWWDatasource {
   loginLink?: HeaderLoginFieldWW;
   LoginLink?: HeaderLoginFieldWW;
   ContactLink?: HeaderLoginFieldWW;
   contactLink?: HeaderLoginFieldWW;
-  ContactLabel?: {
-    value?: string;
-  };
+  ContactLabel?: Field<string>;
   logo?: {
     jsonValue?: ImageField;
   };
@@ -88,24 +86,12 @@ interface HeaderWWDatasource {
   languages?: {
     results?: HeaderLanguageWW[];
   };
-  contactButtonText?: {
-    value?: string;
-  };
-  backButtonText?: {
-    value?: string;
-  };
-  openSearchAriaLabel?: {
-    value?: string;
-  };
-  closeMenuAriaLabel?: {
-    value?: string;
-  };
-  openMenuAriaLabel?: {
-    value?: string;
-  };
-  backToNavigationAriaLabel?: {
-    value?: string;
-  };
+  contactButtonText?: Field<string>;
+  backButtonText?: Field<string>;
+  openSearchAriaLabel?: Field<string>;
+  closeMenuAriaLabel?: Field<string>;
+  openMenuAriaLabel?: Field<string>;
+  backToNavigationAriaLabel?: Field<string>;
 }
 
 export interface HeaderWWFields {
@@ -113,6 +99,7 @@ export interface HeaderWWFields {
   loginLink?: HeaderLoginFieldWW;
   ContactLink?: HeaderLoginFieldWW;
   contactLink?: HeaderLoginFieldWW;
+  ContactLabel?: Field<string>;
   datasource?: HeaderWWDatasource;
   data?: {
     datasource?: HeaderWWDatasource;
