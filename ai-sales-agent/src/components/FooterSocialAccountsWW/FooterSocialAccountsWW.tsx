@@ -50,13 +50,20 @@ type SocialDatasource = {
   domainLabel?: { value?: string; jsonValue?: { value?: string } };
 };
 
+const resolveIconPathOrUrl = (candidate: string): string | undefined => {
+  const trimmed = candidate.trim();
+  if (!trimmed) return undefined;
+  if (/^(\/|https?:\/\/|data:)/i.test(trimmed)) return trimmed;
+  return getSocialIcon(trimmed)?.src;
+};
+
 const readIconSrc = (iconField?: SocialIconField): string | undefined => {
   if (!iconField) return undefined;
-  if (typeof iconField.src === 'string' && iconField.src.trim()) return iconField.src.trim();
+  if (typeof iconField.src === 'string') return resolveIconPathOrUrl(iconField.src);
   const val = iconField.jsonValue?.value ?? iconField.value;
-  if (typeof val === 'string' && val.trim()) return val.trim();
-  if (val && typeof val === 'object' && typeof val.src === 'string' && val.src.trim()) {
-    return val.src.trim();
+  if (typeof val === 'string') return resolveIconPathOrUrl(val);
+  if (val && typeof val === 'object' && typeof val.src === 'string') {
+    return resolveIconPathOrUrl(val.src);
   }
   return undefined;
 };
