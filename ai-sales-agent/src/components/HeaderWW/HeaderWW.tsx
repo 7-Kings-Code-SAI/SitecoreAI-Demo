@@ -1,30 +1,51 @@
 'use client';
 
 import {
+  useContext,
   useEffect,
+  useMemo,
   useRef,
   useState,
   type MouseEvent as ReactMouseEvent,
 } from 'react';
 import { useRouter } from 'next/router';
 import {
+  ComponentPropsReactContext,
   Placeholder,
+  Text as SitecoreText,
   useComponentProps,
   useSitecore,
-  type LinkField,
+  type Field,
 } from '@sitecore-content-sdk/nextjs';
 import { useI18n } from 'next-localization';
-import HeaderLogoWW from '../HeaderLogoWW/HeaderLogoWW';
-import type { HeaderNavigationNodeWW, HeaderWWProps } from './HeaderWW.props';
+import HeaderLogoWW, { type HeaderLogoWWProps } from '../HeaderLogoWW/HeaderLogoWW';
+import { HeaderMenuGroupViewWW } from '../HeaderMenuGroupWW/HeaderMenuGroupWW';
+import { HeaderWWNavContext } from '../HeaderMenuWW/HeaderMenuWW';
+import type { HeaderLanguageWW, HeaderWWDatasource, HeaderWWProps } from './HeaderWW.props';
 import {
   getHeaderWWSpacer,
   getHeaderWWTone,
   headerWWLayout,
 } from 'src/lib/ww/HeaderWW.styles';
-import { isHeaderWWTransparentPage } from 'src/lib/ww/HeaderWW.utils';
-import styles from './HeaderWW.module.css';
+import {
+  getPlaceholderItems,
+  isHeaderWWTransparentPage,
+  placeholderHasItems,
+  resolveHeaderPlaceholderName,
+} from 'src/lib/ww/HeaderWW.utils';
+import {
+  extractLinkFieldWW,
+  extractTextFieldWW,
+  extractTextValueWW,
+  newsHasContentWW,
+  resolveHeaderSectionsWW,
+  sectionHasActiveLinkWW,
+  sectionHasRenderableLinksWW,
+  type NormalizedHeaderSectionWW,
+} from 'src/lib/ww/header-ww-data';
 import { LinkWW } from 'src/lib/ww/LinkWW';
-import { CheckIcon, ChevronRightIcon } from 'src/lib/ww/icons';
+import { MegaMenuFeaturedNewsWW } from 'src/lib/ww/MegaMenuFeaturedNewsWW';
+import { CheckIcon } from 'src/lib/ww/icons';
 import {
   cn,
   isUrlActiveWW,
@@ -32,206 +53,15 @@ import {
   resolveLinkHrefWW,
   useLocaleWW,
 } from 'src/lib/ww/utils';
-
-const getField = (node: any, name: string): any =>
-  node?.fields?.find?.((f: any) => f.name === name) ?? node?.[name];
-
-const getNodeTitle = (node?: any): string => {
-  if (!node) return '';
-  const f = getField(node, 'Title');
-  const textField = getField(node, 'Text');
-  const linkField = getField(node, 'Link');
-  return (
-    f?.value ||
-    f?.jsonValue?.value ||
-    textField?.value ||
-    textField?.jsonValue?.value ||
-    node?.title?.value ||
-    linkField?.jsonValue?.value?.text ||
-    linkField?.value?.text ||
-    node?.link?.link?.value?.text ||
-    node?.link?.value?.text ||
-    ''
-  ).trim();
-};
-
-const toLinkField = (f: any): LinkField | undefined => {
-  if (f?.jsonValue?.value) return f.jsonValue;
-  if (f?.link?.value) return f.link;
-  if (f?.value) return f;
-  return undefined;
-};
-
-const getNodeLink = (node?: any): LinkField | undefined =>
-  node ? (toLinkField(getField(node, 'Link')) ?? toLinkField(node.link)) : undefined;
-
-const getNewsLink = (node?: any): LinkField | undefined =>
-  node ? (toLinkField(getField(node, 'News Link')) ?? toLinkField(node.newsLink)) : undefined;
-
-const getChildNodes = (node?: any): any[] => {
-  if (!node) return [];
-  const ch = node.children;
-  return Array.isArray(ch) ? ch : (ch?.results ?? []);
-};
-
-const getLinkFieldFromUnion = (value: unknown): LinkField | undefined => {
-  if (!value || typeof value !== 'object') return undefined;
-  const field = value as Record<string, unknown>;
-  if (field.value && typeof field.value === 'object') return value as LinkField;
-  if (field.jsonValue) return getLinkFieldFromUnion(field.jsonValue);
-  if (field.link) return getLinkFieldFromUnion(field.link);
-  return undefined;
-};
-
-const sectionHasFeaturedNews = (section?: any): boolean => {
-  if (!section) return false;
-  const title = (getField(section, 'News Title')?.value || section.newsTitle?.value || '').trim();
-  const desc = (
-    getField(section, 'News Description')?.value ||
-    section.newsDescription?.value ||
-    ''
-  ).trim();
-  const img =
-    getField(section, 'News Image')?.jsonValue?.value?.src || section.newsImage?.image?.value?.src;
-  const href = resolveLinkHrefWW(getNewsLink(section));
-  return Boolean(title || desc || img || href);
-};
-
-const MegaMenuFeaturedNewsWW: React.FC<{
-  section: any;
-  locale: string;
-}> = ({ section, locale }) => {
-  const title = (getField(section, 'News Title')?.value || section.newsTitle?.value || '').trim();
-  const description = (
-    getField(section, 'News Description')?.value ||
-    section.newsDescription?.value ||
-    ''
-  ).trim();
-  const imgVal =
-    getField(section, 'News Image')?.jsonValue?.value || section.newsImage?.image?.value;
-  const imageSrc = imgVal?.src?.trim();
-  const imageAlt = (imgVal?.alt && imgVal.alt.trim()) || title || '';
-  const newsLinkField = normalizeLinkFieldWW(getNewsLink(section), locale);
-  const href = resolveLinkHrefWW(newsLinkField);
-
-  if (!title && !description && !imageSrc && !href) return null;
-
-  const cardClass = cn(
-    'relative mx-auto w-full max-w-[500px] overflow-hidden rounded-sm bg-neutral-200 shadow-md transition-shadow',
-    'aspect-[500/412]',
-    'lg:mx-0 lg:aspect-auto lg:h-[206px] lg:w-[260px] lg:max-w-none lg:shrink-0',
-    'group-hover:shadow-lg',
-  );
-
-  const cardBody = (
-    <div className={cardClass}>
-      {imageSrc ? (
-        <img
-          src={imageSrc}
-          alt={imageAlt}
-          className="absolute inset-0 h-full w-full object-cover"
-          loading="lazy"
-        />
-      ) : (
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-neutral-700 to-neutral-900"
-          aria-hidden="true"
-        />
-      )}
-      <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"
-        aria-hidden="true"
-      />
-      <div className="relative z-10 flex h-full flex-col justify-end">
-        <div className="relative w-full overflow-hidden px-3 pt-4 pb-2.5">
-          <div
-            className="pointer-events-none absolute inset-0 z-0 -translate-x-full bg-[#f9e244] transition-transform duration-250 ease-[cubic-bezier(0.33,1,0.68,1)] group-hover:translate-x-0 motion-reduce:duration-0"
-            aria-hidden="true"
-          />
-          <div className="relative z-10 flex flex-col gap-1 text-white transition-colors duration-300 group-hover:text-black">
-            {title ? (
-              <p
-                className="block h-[15px] cursor-pointer text-xs leading-[15px] font-bold hyphens-manual"
-                style={{ fontFamily: 'suisse_intlbold, sans-serif', fontWeight: '400' }}
-              >
-                {title}
-              </p>
-            ) : null}
-            {description ? (
-              <p
-                className="line-clamp-2 h-[30px] text-xs leading-[15px] font-normal opacity-95 hyphens-manual group-hover:opacity-100"
-                style={{ fontFamily: 'suisse_intlregular, sans-serif', fontWeight: '400' }}
-              >
-                {description}
-              </p>
-            ) : null}
-          </div>
-        </div>
-      </div>
-      {href ? (
-        <span
-          className="pointer-events-none absolute right-3 bottom-3 z-10 block h-4 w-4"
-          aria-hidden="true"
-        >
-          <img
-            src="/assets/icons/up-right-arrow-white-megamenu.svg"
-            alt=""
-            className="absolute inset-0 h-4 w-4"
-            loading="lazy"
-          />
-          <span className="absolute inset-0 origin-bottom-right scale-0 opacity-0 transition-[transform,opacity] delay-[250ms] duration-200 ease-in-out group-hover:scale-100 group-hover:opacity-100 motion-reduce:delay-0 motion-reduce:duration-0">
-            <img
-              src="/assets/icons/up-right-arrow-white-megamenu.svg"
-              alt=""
-              className="absolute inset-0 h-4 w-4 brightness-0 group-hover:[animation:bouncingArrow_1s_ease-in-out_250ms_forwards] motion-reduce:[animation:none]"
-              loading="lazy"
-            />
-          </span>
-        </span>
-      ) : null}
-    </div>
-  );
-
-  if (href && newsLinkField) {
-    return (
-      <LinkWW
-        field={newsLinkField}
-        className="group block shrink-0 rounded-sm no-underline outline-none focus-visible:ring-2 focus-visible:ring-[#eb0045]"
-      >
-        {cardBody}
-      </LinkWW>
-    );
-  }
-
-  return <div className="group block shrink-0">{cardBody}</div>;
-};
-
-const hasActiveDescendantLink = (
-  node: HeaderNavigationNodeWW | undefined,
-  asPath: string | undefined,
-  locale: string,
-): boolean => {
-  if (!node) return false;
-
-  const patched = normalizeLinkFieldWW(getNodeLink(node), locale);
-  const nodeHref = resolveLinkHrefWW(patched);
-
-  if (nodeHref && isUrlActiveWW(nodeHref, asPath, locale)) return true;
-
-  const children = getChildNodes(node);
-  for (const child of children) {
-    if (hasActiveDescendantLink(child, asPath, locale)) return true;
-  }
-
-  return false;
-};
+import styles from './HeaderWW.module.css';
 
 const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
-  const { fields, rendering } = props;
+  const { fields, rendering, params } = props;
   const { page } = useSitecore();
   const router = useRouter();
   const locale = useLocaleWW();
   const i18n = useI18n();
+  const allComponentProps = useContext(ComponentPropsReactContext);
 
   const translateOrFallback = (key: string, fallback: string): string => {
     try {
@@ -243,24 +73,28 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
   };
 
   const isPageEditing = Boolean(page?.mode?.isEditing);
-  const isTransparentPage = isHeaderWWTransparentPage((page as any)?.layout?.sitecore?.route);
+  const isTransparentPage = isHeaderWWTransparentPage(
+    (page as { layout?: { sitecore?: { route?: unknown } } } | undefined)?.layout?.sitecore
+      ?.route,
+  );
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileMenuDir, setMobileMenuDir] = useState<'forward' | 'back'>('forward');
   const [activeMenuIndex, setActiveMenuIndex] = useState<number | null>(null);
-  const [activeSectionIndex, setActiveSectionIndex] = useState<number | null>(null);
+  const [editingActiveMenuUid, setEditingActiveMenuUid] = useState<string | null>(null);
   const [expandedMobileMenus, setExpandedMobileMenus] = useState<number[]>([]);
   const [isSticky, setIsSticky] = useState(false);
   const [hasScrolledFromHero, setHasScrolledFromHero] = useState(false);
   const [isHeroSolid, setIsHeroSolid] = useState(false);
   const [isMobileLanguageOpen, setIsMobileLanguageOpen] = useState(false);
+  const [failedFlagImages, setFailedFlagImages] = useState<Set<string>>(new Set());
+
   const megaMenuRef = useRef<HTMLDivElement>(null);
   const navBarRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLElement>(null);
   const topBarRef = useRef<HTMLDivElement>(null);
   const buttonStackRef = useRef<HTMLDivElement>(null);
   const megaMenuCloseTimerRef = useRef<number | null>(null);
-  const [failedFlagImages, setFailedFlagImages] = useState<Set<string>>(new Set());
 
   const cancelMegaMenuClose = () => {
     if (megaMenuCloseTimerRef.current !== null) {
@@ -278,98 +112,78 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
   };
 
   const renderingPlaceholders = rendering?.placeholders as Record<string, unknown> | undefined;
-  const renderingPlaceholderKeys = Object.keys(renderingPlaceholders ?? {});
-  const getPlaceholderLeafName = (placeholderName: string) =>
-    placeholderName.split('/').filter(Boolean).pop() ?? placeholderName;
+  const dynamicPlaceholderId =
+    params?.DynamicPlaceholderId ?? rendering?.params?.DynamicPlaceholderId;
 
-  const resolveHeaderPlaceholderName = (candidateBaseNames: string[]): string => {
-    const dynamicPlaceholderId =
-      props?.params?.DynamicPlaceholderId ?? props?.rendering?.params?.DynamicPlaceholderId;
+  const headerLogoPlaceholderName = resolveHeaderPlaceholderName(
+    renderingPlaceholders,
+    ['header-logo-ww', 'header-logo'],
+    dynamicPlaceholderId,
+  );
+  const topHeaderPlaceholderName = resolveHeaderPlaceholderName(
+    renderingPlaceholders,
+    ['top-header-ww', 'top-header'],
+    dynamicPlaceholderId,
+  );
+  const headerNavPlaceholderName = resolveHeaderPlaceholderName(
+    renderingPlaceholders,
+    ['header-nav-ww', 'header-nav'],
+    dynamicPlaceholderId,
+  );
 
-    for (const baseName of candidateBaseNames) {
-      const normalizedBaseName = baseName.toLowerCase();
-      const matchedPlaceholderName = renderingPlaceholderKeys.find((placeholderKey) => {
-        const leafName = getPlaceholderLeafName(placeholderKey).toLowerCase();
-        return leafName === normalizedBaseName || leafName.startsWith(`${normalizedBaseName}-`);
-      });
+  const hasTopHeaderPlaceholder = placeholderHasItems(renderingPlaceholders, [
+    'top-header-ww',
+    'top-header',
+  ]);
+  const hasHeaderLogoPlaceholder = placeholderHasItems(renderingPlaceholders, [
+    'header-logo-ww',
+    'header-logo',
+  ]);
 
-      if (matchedPlaceholderName) {
-        const leafName = getPlaceholderLeafName(matchedPlaceholderName);
-        if (leafName.includes('{*}') && dynamicPlaceholderId) {
-          return leafName.replace('{*}', String(dynamicPlaceholderId));
-        }
-        return leafName;
-      }
-    }
+  const datasource = (fields?.data?.datasource ?? fields?.datasource ?? fields) as
+    | HeaderWWDatasource
+    | undefined;
 
-    const primaryBaseName = candidateBaseNames[0];
-    return dynamicPlaceholderId ? `${primaryBaseName}-${dynamicPlaceholderId}` : primaryBaseName;
-  };
+  const navigationSections = useMemo(
+    () => resolveHeaderSectionsWW(renderingPlaceholders, fields, allComponentProps),
+    [renderingPlaceholders, fields, allComponentProps],
+  );
 
-  const placeholderHasItems = (candidateBaseNames: string[]): boolean =>
-    Object.entries(renderingPlaceholders ?? {}).some(([placeholderName, placeholderItems]) => {
-      const placeholderLeafName = getPlaceholderLeafName(placeholderName).toLowerCase();
-      const matches = candidateBaseNames.some((baseName) => {
-        const normalizedBaseName = baseName.toLowerCase();
-        return (
-          placeholderLeafName === normalizedBaseName ||
-          placeholderLeafName.startsWith(`${normalizedBaseName}-`)
-        );
-      });
-      if (!matches) return false;
-      if (Array.isArray(placeholderItems)) return placeholderItems.length > 0;
-      return Boolean(placeholderItems);
-    });
+  const activeSectionIndex = useMemo(() => {
+    const idx = navigationSections.findIndex((section) =>
+      sectionHasActiveLinkWW(section, router?.asPath, locale),
+    );
+    return idx >= 0 ? idx : null;
+  }, [navigationSections, router?.asPath, locale]);
 
-  const getPlaceholderItems = (candidateBaseNames: string[]): any[] => {
-    const matchingEntry = Object.entries(renderingPlaceholders ?? {}).find(([placeholderName]) => {
-      const placeholderLeafName = getPlaceholderLeafName(placeholderName).toLowerCase();
-      return candidateBaseNames.some((baseName) => {
-        const normalizedBaseName = baseName.toLowerCase();
-        return (
-          placeholderLeafName === normalizedBaseName ||
-          placeholderLeafName.startsWith(`${normalizedBaseName}-`)
-        );
-      });
-    });
-
-    if (!matchingEntry) return [];
-    const [, placeholderItems] = matchingEntry;
-    return Array.isArray(placeholderItems)
-      ? placeholderItems
-      : placeholderItems
-        ? [placeholderItems]
-        : [];
-  };
-
-  const headerLogoPlaceholderName = resolveHeaderPlaceholderName(['header-logo-ww', 'header-logo']);
-  const topHeaderPlaceholderName = resolveHeaderPlaceholderName(['top-header-ww', 'top-header']);
-
-  const datasource = fields?.data?.datasource ?? fields?.datasource ?? (fields as any);
-  const navigationSections: any[] = getChildNodes(datasource);
-  const languages: any[] = Array.isArray(datasource?.languages)
+  const languages: HeaderLanguageWW[] = Array.isArray(datasource?.languages)
     ? datasource.languages
     : (datasource?.languages?.results ?? []);
 
+  const contactLabelField = extractTextFieldWW(
+    datasource?.ContactLabel ?? datasource?.contactButtonText,
+  );
   const contactButtonText =
-    datasource?.ContactLabel?.value ||
-    datasource?.contactButtonText?.value ||
+    extractTextValueWW(datasource?.ContactLabel) ||
+    extractTextValueWW(datasource?.contactButtonText) ||
     translateOrFallback('header-contactButton-label', 'Contact');
-  const backButtonText = datasource?.backButtonText?.value || 'Back';
-  const closeMenuAriaLabel = datasource?.closeMenuAriaLabel?.value || 'Close menu';
-  const openMenuAriaLabel = datasource?.openMenuAriaLabel?.value || 'Open menu';
+  const backButtonText = extractTextValueWW(datasource?.backButtonText) || 'Back';
+  const closeMenuAriaLabel = extractTextValueWW(datasource?.closeMenuAriaLabel) || 'Close menu';
+  const openMenuAriaLabel = extractTextValueWW(datasource?.openMenuAriaLabel) || 'Open menu';
   const backToNavigationAriaLabel =
-    datasource?.backToNavigationAriaLabel?.value || 'Back to main navigation';
-
-  const hasTopHeaderPlaceholder = placeholderHasItems(['top-header-ww', 'top-header']);
-  const hasHeaderLogoPlaceholder = placeholderHasItems(['header-logo-ww', 'header-logo']);
+    extractTextValueWW(datasource?.backToNavigationAriaLabel) || 'Back to main navigation';
 
   const hasNavigation = navigationSections.length > 0;
-  const hasDesktopNavigation = navigationSections.some((section) => Boolean(getNodeTitle(section)));
+  const hasDesktopNavigation = navigationSections.some((section) =>
+    Boolean(section.title || section.link?.value?.text),
+  );
   const showMainNavigationBar = isPageEditing || hasDesktopNavigation;
   const desktopHeaderOffset = showMainNavigationBar ? 106 : 52;
 
-  const headerLogoRendering = getPlaceholderItems(['header-logo-ww', 'header-logo']).find(
+  const headerLogoRendering = getPlaceholderItems(renderingPlaceholders, [
+    'header-logo-ww',
+    'header-logo',
+  ]).find(
     (placeholderRendering) =>
       placeholderRendering?.componentName === 'HeaderLogoWW' ||
       placeholderRendering?.componentName === 'HeaderLogo',
@@ -382,7 +196,11 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
   const showMobileHeaderControls = showMobileMenuToggle;
 
   const isSolidHeader: boolean =
-    !isTransparentPage || isHeroSolid || isMobileMenuOpen || activeMenuIndex !== null;
+    !isTransparentPage ||
+    isHeroSolid ||
+    isMobileMenuOpen ||
+    activeMenuIndex !== null ||
+    editingActiveMenuUid !== null;
 
   const isHeroState: boolean =
     isTransparentPage && !isPageEditing && !hasScrolledFromHero && !isSolidHeader;
@@ -411,18 +229,21 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
 
   const rawLoginLink =
     datasource?.LoginLink ?? datasource?.loginLink ?? fields?.LoginLink ?? fields?.loginLink;
-  const loginLink = normalizeLinkFieldWW(getLinkFieldFromUnion(rawLoginLink), locale);
+  const loginLink = normalizeLinkFieldWW(extractLinkFieldWW(rawLoginLink), locale);
   const loginText =
     loginLink?.value?.text || translateOrFallback('header-loginButton-label', 'Log in');
 
   const rawContactLink =
-    datasource?.ContactLink ?? datasource?.contactLink ?? fields?.ContactLink ?? fields?.contactLink;
-  const contactLink = normalizeLinkFieldWW(getLinkFieldFromUnion(rawContactLink), locale);
+    datasource?.ContactLink ??
+    datasource?.contactLink ??
+    fields?.ContactLink ??
+    fields?.contactLink;
+  const contactLink = normalizeLinkFieldWW(extractLinkFieldWW(rawContactLink), locale);
 
   const renderLoginButton = (className: string, onClick?: () => void) =>
-    loginLink?.value?.href ? (
+    loginLink?.value?.href || (isPageEditing && loginLink) ? (
       <LinkWW field={loginLink} className={className} onClick={onClick} data-tracking="header-login">
-        {loginText}
+        {isPageEditing ? undefined : loginText}
       </LinkWW>
     ) : null;
 
@@ -431,22 +252,6 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
     const contactTarget = document.querySelector('#contact, [data-component="FooterWW"], footer');
     contactTarget?.scrollIntoView({ behavior: 'smooth' });
   };
-
-  useEffect(() => {
-    const findActiveSection = () => {
-      for (let i = 0; i < navigationSections.length; i++) {
-        const section = navigationSections[i];
-        if (!section) continue;
-        if (hasActiveDescendantLink(section, router?.asPath, locale)) {
-          return i;
-        }
-      }
-      return -1;
-    };
-
-    const activeIndex = findActiveSection();
-    setActiveSectionIndex(activeIndex >= 0 ? activeIndex : null);
-  }, [navigationSections, router?.asPath, locale]);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -509,6 +314,7 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
       if (e.key === 'Escape') {
         setIsMobileMenuOpen(false);
         setActiveMenuIndex(null);
+        setEditingActiveMenuUid(null);
       }
     };
 
@@ -542,44 +348,17 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
     setExpandedMobileMenus((prev) => (prev[0] === index ? [] : [index]));
   };
 
-  const sectionHasRenderableLinks = (section: HeaderNavigationNodeWW | undefined): boolean => {
-    if (!section) return false;
-    const primaryItems = getChildNodes(section);
-    return primaryItems.some((primaryItem) => {
-      const primaryTitle = getNodeTitle(primaryItem);
-      const primaryLink = normalizeLinkFieldWW(getNodeLink(primaryItem), locale);
-      const primaryHref = resolveLinkHrefWW(primaryLink);
-      const primaryText = primaryLink?.value?.text || primaryTitle;
+  const renderMegaMenu = (section: NormalizedHeaderSectionWW, index: number) => {
+    if (!section || section.groups.length === 0) return null;
+    if (!sectionHasRenderableLinksWW(section, locale)) return null;
 
-      if (primaryHref && primaryText) return true;
-
-      const childLinks = getChildNodes(primaryItem);
-      return childLinks.some((childLink) => {
-        const itemTitle = getNodeTitle(childLink);
-        const itemLink = normalizeLinkFieldWW(getNodeLink(childLink), locale);
-        const itemHref = resolveLinkHrefWW(itemLink);
-        if (!itemHref) return false;
-        const displayText = itemLink?.value?.text || itemTitle;
-        return Boolean(displayText);
-      });
-    });
-  };
-
-  const renderMegaMenu = (index: number) => {
-    const section = navigationSections[index];
-    const primaryItems = getChildNodes(section);
-
-    if (!section || primaryItems.length === 0) return null;
-    if (!sectionHasRenderableLinks(section)) return null;
-
-    const showFeaturedNews = sectionHasFeaturedNews(section);
-    const megaMenuSectionTitle = getNodeTitle(section);
+    const showFeaturedNews = newsHasContentWW(section.news, locale);
 
     return (
       <div
         ref={megaMenuRef}
         data-nav-menu
-        data-nav-parent={megaMenuSectionTitle}
+        data-nav-parent={section.title}
         className="pointer-events-auto fixed top-[var(--header-offset,72px)] right-0 left-0 z-[55] mx-auto w-full max-w-[1360px] border-t border-[#eb0045]"
         style={{ animation: 'slideDown 0.15s ease-out' }}
         onMouseEnter={() => {
@@ -617,76 +396,22 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                   showFeaturedNews && 'lg:max-w-[calc(100%-308px)]',
                 )}
               >
-                {primaryItems.map((primaryItem, categoryIndex) => {
-                  const categoryTitle = getNodeTitle(primaryItem);
-                  const categoryLink = normalizeLinkFieldWW(getNodeLink(primaryItem), locale);
-                  const childLinks = getChildNodes(primaryItem);
-
-                  return (
-                    <div key={categoryIndex} className="flex flex-col gap-3">
-                      {categoryTitle && (
-                        <div className="mb-2">
-                          {resolveLinkHrefWW(categoryLink) ? (
-                            <LinkWW
-                              field={categoryLink}
-                              className="inline-flex items-center gap-1.5 text-base font-semibold tracking-wide no-underline transition-colors duration-200 hover:text-[#eb0045]"
-                            >
-                              {categoryTitle}
-                              <ChevronRightIcon size={16} strokeWidth={2.5} />
-                            </LinkWW>
-                          ) : (
-                            <h4 className="inline-flex items-center gap-1.5 text-base font-bold tracking-wide">
-                              {categoryTitle}
-                              <ChevronRightIcon size={16} strokeWidth={2.5} />
-                            </h4>
-                          )}
-                        </div>
-                      )}
-
-                      {childLinks.length > 0 && (
-                        <div className="mt-2 grid grid-cols-2 gap-x-3 gap-y-8 md:grid-cols-3 lg:grid-cols-5 lg:gap-x-7">
-                          {childLinks.map((childLink, childIndex) => {
-                            const itemTitle = getNodeTitle(childLink);
-                            const itemLink = normalizeLinkFieldWW(getNodeLink(childLink), locale);
-                            const itemHref = resolveLinkHrefWW(itemLink);
-
-                            if (!itemTitle && !itemLink?.value?.text) return null;
-
-                            const displayText = itemLink?.value?.text || itemTitle;
-
-                            return itemHref ? (
-                              <LinkWW
-                                key={childIndex}
-                                field={itemLink}
-                                className={cn(
-                                  'block text-[16px] leading-[16px] font-normal break-words no-underline antialiased transition-colors duration-200 hover:text-[#eb0045]',
-                                  isUrlActiveWW(itemHref, router?.asPath, locale)
-                                    ? 'text-[#eb0045]'
-                                    : 'text-black',
-                                )}
-                              >
-                                {displayText}
-                              </LinkWW>
-                            ) : (
-                              <span key={childIndex} className="leading-[16px]">
-                                {displayText}
-                              </span>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+                {section.groups.map((group, categoryIndex) => (
+                  <HeaderMenuGroupViewWW
+                    key={group.uid || `${group.title}-${categoryIndex}`}
+                    group={group}
+                    locale={locale}
+                    asPath={router?.asPath}
+                    onNavigate={() => setActiveMenuIndex(null)}
+                  />
+                ))}
               </div>
               {showFeaturedNews ? (
                 <aside
                   className="w-full shrink-0 lg:w-[260px]"
-                  aria-label={
-                    megaMenuSectionTitle ? `${megaMenuSectionTitle} — featured` : 'Featured'
-                  }
+                  aria-label={section.title ? `${section.title} — featured` : 'Featured'}
                 >
-                  <MegaMenuFeaturedNewsWW section={section} locale={locale} />
+                  <MegaMenuFeaturedNewsWW news={section.news} locale={locale} />
                 </aside>
               ) : null}
             </div>
@@ -749,10 +474,13 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
         }
       `}</style>
 
-      {activeMenuIndex !== null && (
+      {(activeMenuIndex !== null || editingActiveMenuUid !== null) && (
         <div
           className="fixed top-[var(--header-offset,108px)] right-0 bottom-0 left-0 z-40 bg-black/50"
-          onClick={() => setActiveMenuIndex(null)}
+          onClick={() => {
+            setActiveMenuIndex(null);
+            setEditingActiveMenuUid(null);
+          }}
           aria-hidden="true"
         />
       )}
@@ -798,11 +526,11 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                   )}
                 >
                   <HeaderLogoWW
-                    rendering={headerLogoRendering}
-                    params={{ ...((headerLogoRendering as any)?.params ?? {}), InHeader: '1' }}
+                    rendering={headerLogoRendering as HeaderWWProps['rendering']}
+                    params={{ ...(headerLogoRendering.params ?? {}), InHeader: '1' }}
                     fields={
-                      (headerLogoComponentProps?.fields as any) ??
-                      (headerLogoRendering as any)?.fields
+                      (headerLogoComponentProps?.fields as HeaderLogoWWProps['fields']) ??
+                      (headerLogoRendering.fields as HeaderLogoWWProps['fields'])
                     }
                   />
                 </div>
@@ -928,17 +656,21 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
               layout.navRow,
             )}
             ref={navBarRef}
-            onMouseLeave={(event: ReactMouseEvent<HTMLDivElement>) => {
-              const nextTarget = event.relatedTarget;
-              if (
-                megaMenuRef.current &&
-                nextTarget instanceof Node &&
-                megaMenuRef.current.contains(nextTarget)
-              ) {
-                return;
-              }
-              scheduleMegaMenuClose();
-            }}
+            onMouseLeave={
+              !isPageEditing
+                ? (event: ReactMouseEvent<HTMLDivElement>) => {
+                    const nextTarget = event.relatedTarget;
+                    if (
+                      megaMenuRef.current &&
+                      nextTarget instanceof Node &&
+                      megaMenuRef.current.contains(nextTarget)
+                    ) {
+                      return;
+                    }
+                    scheduleMegaMenuClose();
+                  }
+                : undefined
+            }
           >
             <div
               className={cn(
@@ -948,64 +680,81 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
             >
               <div className="flex h-10 items-center justify-between">
                 {/* Desktop Navigation */}
-                <nav
-                  className={cn('h-full lg:flex', layout.navPointer)}
-                  aria-label="Main navigation"
-                >
-                  {navigationSections.map((section, index) => {
-                    const menuTitle = getNodeTitle(section);
-                    const sectionLink = normalizeLinkFieldWW(getNodeLink(section), locale);
-                    const sectionHref = resolveLinkHrefWW(sectionLink);
-                    const hasMenu = sectionHasRenderableLinks(section);
+                {isPageEditing ? (
+                  <HeaderWWNavContext.Provider
+                    value={{
+                      isSolidHeader,
+                      activeMenuUid: editingActiveMenuUid,
+                      setActiveMenuUid: setEditingActiveMenuUid,
+                    }}
+                  >
+                    <nav
+                      className={cn('h-full lg:flex', layout.navPointer)}
+                      aria-label="Main navigation"
+                    >
+                      <Placeholder name={headerNavPlaceholderName} rendering={props.rendering} />
+                    </nav>
+                  </HeaderWWNavContext.Provider>
+                ) : (
+                  <nav
+                    className={cn('h-full lg:flex', layout.navPointer)}
+                    aria-label="Main navigation"
+                  >
+                    {navigationSections.map((section, index) => {
+                      const menuTitle = section.title;
+                      const sectionLink = normalizeLinkFieldWW(section.link, locale);
+                      const sectionHref = resolveLinkHrefWW(sectionLink);
+                      const hasMenu = sectionHasRenderableLinksWW(section, locale);
 
-                    if (!menuTitle) return null;
+                      if (!menuTitle) return null;
 
-                    const isHoverActive = activeMenuIndex === index;
-                    const isRouteActive = activeSectionIndex === index;
+                      const isHoverActive = activeMenuIndex === index;
+                      const isRouteActive = activeSectionIndex === index;
 
-                    const triggerClasses = cn(
-                      'relative inline-flex h-full cursor-pointer items-center gap-1 px-0 pl-0 font-semibold no-underline transition-all duration-200',
-                      'after:absolute after:right-0 after:bottom-[-3px] after:left-0 after:h-[2px] after:origin-left after:transition-all after:duration-300',
-                      tone.navLink,
-                      layout.navItem,
-                      isHoverActive
-                        ? cn(tone.navActive, 'after:scale-x-100')
-                        : isRouteActive
-                          ? cn(tone.navActive, 'after:scale-x-50')
-                          : cn('after:scale-x-0', tone.navIdle),
-                    );
+                      const triggerClasses = cn(
+                        'relative inline-flex h-full cursor-pointer items-center gap-1 px-0 pl-0 font-semibold no-underline transition-all duration-200',
+                        'after:absolute after:right-0 after:bottom-[-3px] after:left-0 after:h-[2px] after:origin-left after:transition-all after:duration-300',
+                        tone.navLink,
+                        layout.navItem,
+                        isHoverActive
+                          ? cn(tone.navActive, 'after:scale-x-100')
+                          : isRouteActive
+                            ? cn(tone.navActive, 'after:scale-x-50')
+                            : cn('after:scale-x-0', tone.navIdle),
+                      );
 
-                    return (
-                      <div
-                        key={menuTitle + index}
-                        className="relative flex h-full items-center md:pb-1"
-                        onMouseEnter={() => {
-                          cancelMegaMenuClose();
-                          setActiveMenuIndex(hasMenu ? index : null);
-                        }}
-                      >
-                        {sectionHref ? (
-                          <LinkWW field={sectionLink} className={triggerClasses}>
-                            {menuTitle}
-                          </LinkWW>
-                        ) : (
-                          <button
-                            type="button"
-                            className={triggerClasses}
-                            onClick={() =>
-                              setActiveMenuIndex((prev) => (prev === index ? null : index))
-                            }
-                            aria-expanded={activeMenuIndex === index}
-                          >
-                            {menuTitle}
-                          </button>
-                        )}
+                      return (
+                        <div
+                          key={section.uid || `${menuTitle}-${index}`}
+                          className="relative flex h-full items-center md:pb-1"
+                          onMouseEnter={() => {
+                            cancelMegaMenuClose();
+                            setActiveMenuIndex(hasMenu ? index : null);
+                          }}
+                        >
+                          {sectionHref ? (
+                            <LinkWW field={sectionLink} className={triggerClasses}>
+                              {menuTitle}
+                            </LinkWW>
+                          ) : (
+                            <button
+                              type="button"
+                              className={triggerClasses}
+                              onClick={() =>
+                                setActiveMenuIndex((prev) => (prev === index ? null : index))
+                              }
+                              aria-expanded={activeMenuIndex === index}
+                            >
+                              {menuTitle}
+                            </button>
+                          )}
 
-                        {activeMenuIndex === index && hasMenu && renderMegaMenu(index)}
-                      </div>
-                    );
-                  })}
-                </nav>
+                          {activeMenuIndex === index && hasMenu && renderMegaMenu(section, index)}
+                        </div>
+                      );
+                    })}
+                  </nav>
+                )}
 
                 {/* Log in & Contact stacked buttons */}
                 <div
@@ -1018,13 +767,19 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                   )}
                 >
                   {renderLoginButton(layout.loginButton)}
-                  {contactLink?.value?.href ? (
+                  {contactLink?.value?.href || (isPageEditing && contactLink) ? (
                     <LinkWW
                       field={contactLink}
                       data-tracking="header-contact"
                       className={layout.contactButton}
                     >
-                      <span className="text-[14px]">{contactButtonText}</span>
+                      <span className="text-[14px]">
+                        {isPageEditing && contactLabelField ? (
+                          <SitecoreText field={contactLabelField as Field<string>} />
+                        ) : (
+                          contactButtonText
+                        )}
+                      </span>
                     </LinkWW>
                   ) : (
                     <button
@@ -1033,7 +788,13 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                       data-tracking="header-contact"
                       className={layout.contactButton}
                     >
-                      <span className="text-[14px]">{contactButtonText}</span>
+                      <span className="text-[14px]">
+                        {isPageEditing && contactLabelField ? (
+                          <SitecoreText field={contactLabelField as Field<string>} />
+                        ) : (
+                          contactButtonText
+                        )}
+                      </span>
                     </button>
                   )}
                 </div>
@@ -1083,7 +844,7 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                   </div>
 
                   <div className="space-y-0">
-                    {languages.map((lang: any, index: number) => {
+                    {languages.map((lang, index) => {
                       const langName = lang?.name?.value || '';
                       const langCode = lang?.code?.value || '';
                       const isSelected = lang?.selected?.value || false;
@@ -1143,16 +904,16 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                   }}
                 >
                   {navigationSections.map((section, index) => {
-                    const menuTitle = getNodeTitle(section);
-                    const destination = normalizeLinkFieldWW(getNodeLink(section), locale);
+                    const menuTitle = section.title;
+                    const destination = normalizeLinkFieldWW(section.link, locale);
                     const destinationHref = resolveLinkHrefWW(destination);
-                    const hasMenu = getChildNodes(section).length > 0;
+                    const hasMenu = section.groups.length > 0;
                     const isRouteActive = activeSectionIndex === index;
 
                     if (!menuTitle) return null;
 
                     return (
-                      <div key={menuTitle + index}>
+                      <div key={section.uid || `${menuTitle}-${index}`}>
                         <div className="py-0">
                           {hasMenu ? (
                             <button
@@ -1220,12 +981,11 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                 <>
                   {expandedMobileMenus.map((menuIndex) => {
                     const section = navigationSections[menuIndex];
-                    const menuTitle = getNodeTitle(section);
-                    const destination = normalizeLinkFieldWW(getNodeLink(section), locale);
-                    const destinationHref = resolveLinkHrefWW(destination);
-                    const primaryItems = getChildNodes(section);
-
                     if (!section) return null;
+
+                    const menuTitle = section.title;
+                    const destination = normalizeLinkFieldWW(section.link, locale);
+                    const destinationHref = resolveLinkHrefWW(destination);
 
                     return (
                       <div
@@ -1275,21 +1035,16 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                             </LinkWW>
                           )}
 
-                          {primaryItems.map((primaryItem, primaryIndex) => {
-                            const primaryTitle = getNodeTitle(primaryItem);
-                            const primaryLink = normalizeLinkFieldWW(
-                              getNodeLink(primaryItem),
-                              locale,
-                            );
+                          {section.groups.map((group, primaryIndex) => {
+                            const primaryLink = normalizeLinkFieldWW(group.link, locale);
                             const primaryHref = resolveLinkHrefWW(primaryLink);
-                            const childLinks = getChildNodes(primaryItem);
 
-                            if (!primaryTitle && !childLinks.length) {
+                            if (!group.title && group.links.length === 0) {
                               return null;
                             }
 
                             return (
-                              <div key={`primary-${primaryIndex}`} className="space-y-1">
+                              <div key={group.uid || `primary-${primaryIndex}`} className="space-y-1">
                                 {primaryHref && (
                                   <LinkWW
                                     field={primaryLink}
@@ -1300,21 +1055,18 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                                     )}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                   >
-                                    <span>{primaryLink?.value?.text || primaryTitle}</span>
+                                    <span>{primaryLink?.value?.text || group.title}</span>
                                   </LinkWW>
                                 )}
-                                {!primaryHref && primaryTitle && (
+                                {!primaryHref && group.title && (
                                   <span className="block text-[11px] leading-[14px] font-normal">
-                                    {primaryTitle}
+                                    {group.title}
                                   </span>
                                 )}
 
                                 <div className="flex flex-col gap-1">
-                                  {childLinks.map((childLink, childIndex) => {
-                                    const nestedLink = normalizeLinkFieldWW(
-                                      getNodeLink(childLink),
-                                      locale,
-                                    );
+                                  {group.links.map((childItem, childIndex) => {
+                                    const nestedLink = normalizeLinkFieldWW(childItem.link, locale);
                                     const nestedHref = resolveLinkHrefWW(nestedLink);
                                     if (!nestedHref) return null;
 
@@ -1326,7 +1078,7 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
 
                                     return (
                                       <LinkWW
-                                        key={`child-${primaryIndex}-${childIndex}`}
+                                        key={childItem.id || `child-${primaryIndex}-${childIndex}`}
                                         field={nestedLink}
                                         className={cn(
                                           'block text-right text-[11px] leading-[14px] no-underline hover:text-[#eb0045]',
@@ -1334,9 +1086,7 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                                         )}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                       >
-                                        {nestedLink?.value?.text ||
-                                          getNodeTitle(childLink) ||
-                                          nestedHref}
+                                        {childItem.title || nestedHref}
                                       </LinkWW>
                                     );
                                   })}
@@ -1345,9 +1095,9 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
                             );
                           })}
 
-                          {sectionHasFeaturedNews(section) && (
+                          {newsHasContentWW(section.news, locale) && (
                             <div className="mt-4 pb-4">
-                              <MegaMenuFeaturedNewsWW section={section} locale={locale} />
+                              <MegaMenuFeaturedNewsWW news={section.news} locale={locale} />
                             </div>
                           )}
                         </div>
