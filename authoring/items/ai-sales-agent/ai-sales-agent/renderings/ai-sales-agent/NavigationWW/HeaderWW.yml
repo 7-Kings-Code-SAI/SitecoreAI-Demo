@@ -36,37 +36,44 @@ SharedFields:
             id
             name
             displayName
-            fields {
+            fields(ownFields: true) {
               name
               value
               jsonValue
             }
             children {
               results {
-                id
-                name
-                displayName
-                fields {
-                  name
-                  value
-                  jsonValue
-                }
+                ...linkWithImageFieldsWW
                 children {
                   results {
-                    id
-                    name
-                    displayName
-                    fields {
-                      name
-                      value
-                      jsonValue
-                    }
+                    ...linkFieldsWW
                   }
                 }
               }
             }
           }
         }
+      }
+    }
+    
+    fragment linkWithImageFieldsWW on Item {
+      id
+      name
+      displayName
+      title: field(name: "Title") {
+        value
+      }
+      link: field(name: "Link") {
+        link: jsonValue
+      }
+    }
+    
+    fragment linkFieldsWW on Item {
+      id
+      name
+      displayName
+      link: field(name: "Link") {
+        link: jsonValue
       }
     }
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"

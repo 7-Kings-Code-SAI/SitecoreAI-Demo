@@ -837,7 +837,7 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
               )}
 
               {/* Right side utility links */}
-              {hasTopHeaderPlaceholder && isMounted && (
+              {(hasTopHeaderPlaceholder || isPageEditing) && isMounted && (
                 <div className={cn('hidden lg:flex lg:items-center', tone.utilityLinks, layout.utility)}>
                   <Placeholder name={topHeaderPlaceholderName} rendering={props.rendering} />
                 </div>

@@ -1,0 +1,43 @@
+﻿---
+ID: "3039de11-4256-4c9e-80b5-ee2765564766"
+Parent: "9c887615-27db-41a4-b229-2e223a024947"
+Template: "1454a0f3-e9a4-489b-9778-db6b5ba5bd6d"
+Path: "/sitecore/content/ai-sales-agent/ai-sales-agent/Home/WW Page"
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{597B1C0F-F123-4E23-B813-2C50DD972DA5}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{56D7037B-85A8-4C64-8507-46669431F2D0}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "df486012-f8db-429e-b035-668d158ecc9d"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T192421Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: WW Page
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b395b32-663e-4d66-85cf-9a9d660d33b2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hammad@7kcdev.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261125T194156Z
+    - ID: "f4aface6-ac21-450a-8f8d-80b31ba9b484"
+      Hint: Title
+      Value: WW Page

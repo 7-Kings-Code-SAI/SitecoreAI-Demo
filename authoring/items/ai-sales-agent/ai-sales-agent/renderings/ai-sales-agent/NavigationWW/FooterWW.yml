@@ -21,37 +21,9 @@ SharedFields:
     query FooterWWQuery($datasource: String!, $language: String!) {
       datasource: item(path: $datasource, language: $language) {
         id
-        phoneNumber: field(name: "Phone Number") {
+        fields(ownFields: true) {
+          name
           value
-        }
-        workingHours: field(name: "Working Hours") {
-          value
-        }
-        messageLabel: field(name: "Message Label") {
-          value
-        }
-        pressContact: field(name: "Press Contact") {
-          value
-        }
-        prAgency: field(name: "PR Agency") {
-          value
-        }
-        contactTitle: field(name: "ContactTitle") {
-          value
-        }
-        GetInTouchLabel: field(name: "GetInTouchLabel") {
-          value
-        }
-        LoginLink: field(name: "LoginLink") {
-          jsonValue
-        }
-        ContactLink: field(name: "ContactLink") {
-          jsonValue
-        }
-        DesktopBackgroundImage: field(name: "DesktopBackgroundImage") {
-          jsonValue
-        }
-        MobileBackgroundImage: field(name: "MobileBackgroundImage") {
           jsonValue
         }
         children {
@@ -66,9 +38,7 @@ SharedFields:
                 id
                 name
                 link: field(name: "Link") {
-                  ... on LinkField {
-                    jsonValue
-                  }
+                  link: jsonValue
                 }
               }
             }
