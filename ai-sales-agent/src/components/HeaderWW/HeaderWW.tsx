@@ -245,11 +245,6 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
   const isPageEditing = Boolean(page?.mode?.isEditing);
   const isTransparentPage = isHeaderWWTransparentPage((page as any)?.layout?.sitecore?.route);
 
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileMenuDir, setMobileMenuDir] = useState<'forward' | 'back'>('forward');
   const [activeMenuIndex, setActiveMenuIndex] = useState<number | null>(null);
@@ -837,13 +832,21 @@ const HeaderWWContent: React.FC<HeaderWWProps> = (props) => {
               )}
 
               {/* Right side utility links */}
-              {(hasTopHeaderPlaceholder || isPageEditing) && isMounted && (
-                <div className={cn('hidden lg:flex lg:items-center', tone.utilityLinks, layout.utility)}>
+              {(hasTopHeaderPlaceholder || isPageEditing) && (
+                <div
+                  className={cn(
+                    isPageEditing
+                      ? 'absolute top-0 right-10 z-[80] flex h-full min-w-[140px] items-center justify-end lg:right-[31px] lg:w-[calc(50%-153px)] [&_.sc-jss-empty-placeholder]:min-h-[36px] [&_.sc-jss-empty-placeholder]:min-w-[140px]'
+                      : 'hidden lg:z-[80] lg:flex lg:items-center',
+                    tone.utilityLinks,
+                    layout.utility,
+                  )}
+                >
                   <Placeholder name={topHeaderPlaceholderName} rendering={props.rendering} />
                 </div>
               )}
 
-              {hasTopHeaderPlaceholder && isMounted && (
+              {!isPageEditing && hasTopHeaderPlaceholder && (
                 <div
                   className={cn(
                     'absolute top-0 left-2 z-10 flex h-full items-center lg:hidden',
